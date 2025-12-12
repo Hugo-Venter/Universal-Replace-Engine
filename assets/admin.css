@@ -1,0 +1,255 @@
+/**
+ * Universal Replace Engine - Admin Styles
+ *
+ * @package UniversalReplaceEngine
+ * @since 1.0.0
+ */
+
+/* Main Container */
+.ure-admin-wrap {
+	max-width: 1400px;
+}
+
+.ure-container {
+	margin-top: 20px;
+}
+
+/* Sections */
+.ure-section {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.ure-section h2 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/* Form Styling */
+.ure-form .form-table th {
+	width: 200px;
+	padding: 15px 10px 15px 0;
+}
+
+.ure-form .form-table td {
+	padding: 15px 10px;
+}
+
+.ure-form input[type="text"].regular-text {
+	width: 100%;
+	max-width: 500px;
+}
+
+/* Buttons */
+.ure-apply-btn {
+	background: #d63638;
+	border-color: #d63638;
+	color: #fff;
+}
+
+.ure-apply-btn:hover,
+.ure-apply-btn:focus {
+	background: #b52727;
+	border-color: #b52727;
+	color: #fff;
+}
+
+.ure-undo-btn {
+	background: #f0ad4e;
+	border-color: #eea236;
+	color: #fff;
+}
+
+.ure-undo-btn:hover,
+.ure-undo-btn:focus {
+	background: #ec971f;
+	border-color: #d58512;
+	color: #fff;
+}
+
+/* Preview Table */
+.ure-preview-table {
+	margin-top: 15px;
+}
+
+.ure-preview-table th,
+.ure-preview-table td {
+	vertical-align: top;
+	padding: 12px;
+}
+
+.ure-preview-table td {
+	word-break: break-word;
+}
+
+.ure-preview-table .ure-highlight {
+	background-color: #ffff00;
+	padding: 2px 4px;
+	border-radius: 2px;
+	font-weight: 600;
+}
+
+.ure-preview-table small {
+	color: #666;
+}
+
+/* History Table */
+.ure-history-table {
+	margin-top: 15px;
+}
+
+.ure-history-table th,
+.ure-history-table td {
+	padding: 12px;
+}
+
+.ure-history-table td form {
+	margin: 0;
+}
+
+/* Pro Teaser */
+.ure-pro-teaser {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: #fff;
+	border: none;
+}
+
+.ure-pro-teaser h3 {
+	color: #fff;
+	margin-top: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	padding-bottom: 10px;
+}
+
+.ure-pro-teaser ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+}
+
+.ure-pro-teaser ul li {
+	padding: 8px 0 8px 30px;
+	position: relative;
+	font-size: 15px;
+}
+
+.ure-pro-teaser ul li:before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	font-weight: bold;
+	font-size: 18px;
+	color: #4ade80;
+}
+
+.ure-pro-teaser .button {
+	background: #fff;
+	color: #667eea;
+	border: none;
+	padding: 10px 30px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.ure-pro-teaser .button:hover {
+	background: #f0f0f0;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Notices */
+.ure-section .notice.inline {
+	margin: 10px 0;
+	padding: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.ure-form .form-table th,
+	.ure-form .form-table td {
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.ure-form .form-table th {
+		border-bottom: none;
+	}
+
+	.ure-preview-table th,
+	.ure-preview-table td {
+		display: block;
+		width: 100%;
+	}
+
+	.ure-preview-table thead {
+		display: none;
+	}
+
+	.ure-preview-table td:before {
+		content: attr(data-label);
+		font-weight: bold;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+/* Loading State */
+.ure-loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.ure-loading:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin: -16px 0 0 -16px;
+	border: 3px solid #f3f3f3;
+	border-top: 3px solid #3498db;
+	border-radius: 50%;
+	animation: ure-spin 1s linear infinite;
+}
+
+@keyframes ure-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Accessibility */
+.ure-form label {
+	cursor: pointer;
+}
+
+.ure-form input[type="checkbox"]:focus {
+	outline: 2px solid #0073aa;
+	outline-offset: 2px;
+}
+
+/* Success/Error Messages */
+.settings-error {
+	margin: 20px 0;
+}
+
+.settings-error.updated {
+	border-left-color: #46b450;
+}
+
+.settings-error.error {
+	border-left-color: #dc3232;
+}
+
+.settings-error.notice-info {
+	border-left-color: #00a0d2;
+}
