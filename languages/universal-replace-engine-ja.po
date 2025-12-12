@@ -24,22 +24,22 @@ msgstr "ユニバーサル置換エンジン"
 #. Plugin URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com/universal-replace-engine"
-msgstr ""
+msgstr "https://yoursite.com/universal-replace-engine"
 
 #. Description of the plugin
 #: universal-replace-engine.php
 msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr ""
+msgstr "WordPress用のエンタープライズグレードの検索と置換。コンテンツ&データベース操作、SQLバックアップ、マルチサイト対応、GUID保護、保存プロファイル、およびPro正規表現モード。"
 
 #. Author of the plugin
 #: universal-replace-engine.php
 msgid "Your Name"
-msgstr ""
+msgstr "Your Name"
 
 #. Author URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com"
-msgstr ""
+msgstr "https://yoursite.com"
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -47,11 +47,11 @@ msgstr "セキュリティチェックに失敗しました。"
 
 #: includes/class-ure-admin.php:117
 msgid "You do not have permission to perform this action."
-msgstr ""
+msgstr "このアクションを実行する権限がありません。"
 
 #: includes/class-ure-admin.php:194
 msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr ""
+msgstr "高度なスコープ(投稿メタ、Elementor、すべての場所)にはProバージョンが必要です。投稿コンテンツにフォールバックします。"
 
 #: includes/class-ure-admin.php:203
 #: includes/class-ure-admin.php:1007
@@ -65,21 +65,21 @@ msgstr "一致するものが見つかりません。"
 #. translators: %d: number of matches
 #: includes/class-ure-admin.php:255
 msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr ""
+msgstr "%d件の一致が見つかりました。以下を確認して「変更を適用」をクリックして続行してください。"
 
 #: includes/class-ure-admin.php:280
 #: includes/class-ure-admin.php:1096
 msgid "Preview data expired. Please run preview again."
-msgstr ""
+msgstr "プレビューデータの有効期限が切れました。もう一度プレビューを実行してください。"
 
 #. translators: %d: number of posts modified
 #: includes/class-ure-admin.php:311
 msgid "Successfully modified %d post(s)."
-msgstr ""
+msgstr "%d件の投稿を正常に変更しました。"
 
 #: includes/class-ure-admin.php:339
 msgid "Invalid log ID."
-msgstr ""
+msgstr "無効なログIDです。"
 
 #: includes/class-ure-admin.php:401
 msgid "Search & Replace"
@@ -103,7 +103,7 @@ msgstr "ヘルプ"
 
 #: includes/class-ure-admin.php:430
 msgid "Search and Replace"
-msgstr ""
+msgstr "検索と置換"
 
 #: includes/class-ure-admin.php:438
 msgid "Search for"
@@ -111,7 +111,7 @@ msgstr "検索"
 
 #: includes/class-ure-admin.php:456
 msgid "Enter the text you want to search for."
-msgstr ""
+msgstr "検索するテキストを入力してください。"
 
 #: includes/class-ure-admin.php:463
 msgid "Replace with"
@@ -119,84 +119,84 @@ msgstr "置換"
 
 #: includes/class-ure-admin.php:480
 msgid "Enter the replacement text (leave empty to only search)."
-msgstr ""
+msgstr "置換後のテキストを入力してください(検索のみの場合は空のままにしてください)。"
 
 #: includes/class-ure-admin.php:487
 msgid "Search Scope"
-msgstr ""
+msgstr "検索範囲"
 
 #: includes/class-ure-admin.php:500
 msgid "Post Content"
-msgstr ""
+msgstr "投稿コンテンツ"
 
 #: includes/class-ure-admin.php:501
 msgid "(post_content field only)"
-msgstr ""
+msgstr "(post_contentフィールドのみ)"
 
 #: includes/class-ure-admin.php:508
 msgid "Post Meta"
-msgstr ""
+msgstr "投稿メタ"
 
 #: includes/class-ure-admin.php:509
 msgid "(custom fields, excluding Elementor)"
-msgstr ""
+msgstr "(カスタムフィールド、Elementorを除く)"
 
 #: includes/class-ure-admin.php:521
 msgid "Elementor Data"
-msgstr ""
+msgstr "Elementorデータ"
 
 #: includes/class-ure-admin.php:522
 msgid "(_elementor_data JSON field)"
-msgstr ""
+msgstr "(_elementor_data JSONフィールド)"
 
 #: includes/class-ure-admin.php:534
 msgid "All Locations"
-msgstr ""
+msgstr "すべての場所"
 
 #: includes/class-ure-admin.php:535
 msgid "(content + postmeta + Elementor)"
-msgstr ""
+msgstr "(コンテンツ + 投稿メタ + Elementor)"
 
 #: includes/class-ure-admin.php:544
 msgid "Choose where to search and replace."
-msgstr ""
+msgstr "検索と置換を行う場所を選択してください。"
 
 #: includes/class-ure-admin.php:548
 msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr ""
+msgstr "Proにアップグレードして、投稿メタ、Elementorデータ、およびすべての場所のスコープのロックを解除してください。"
 
 #: includes/class-ure-admin.php:557
 #: templates/admin-profiles.php:65
 msgid "Post Types"
-msgstr ""
+msgstr "投稿タイプ"
 
 #: includes/class-ure-admin.php:562
 msgid "Select which post types to search in."
-msgstr ""
+msgstr "検索する投稿タイプを選択してください。"
 
 #: includes/class-ure-admin.php:569
 #: templates/admin-db-search.php:112
 #: templates/admin-profiles.php:66
 msgid "Options"
-msgstr ""
+msgstr "オプション"
 
 #: includes/class-ure-admin.php:578
 #: templates/admin-db-search.php:115
 msgid "Case sensitive"
-msgstr ""
+msgstr "大文字と小文字を区別"
 
 #: includes/class-ure-admin.php:589
 #: templates/admin-db-search.php:124
 msgid "Regex mode"
-msgstr ""
+msgstr "正規表現モード"
 
 #: includes/class-ure-admin.php:592
 msgid "Regex mode (Pro feature)"
-msgstr ""
+msgstr "正規表現モード(Pro機能)"
 
 #: includes/class-ure-admin.php:603
 msgid "Run Preview"
-msgstr ""
+msgstr "プレビューを実行"
 
 #: includes/class-ure-admin.php:608
 msgid "Apply Changes"
@@ -204,105 +204,105 @@ msgstr "変更を適用"
 
 #: includes/class-ure-admin.php:618
 msgid "Preview Results"
-msgstr ""
+msgstr "プレビュー結果"
 
 #. translators: 1: shown count, 2: total count
 #: includes/class-ure-admin.php:626
 msgid "Showing %1$d of %2$d matches (Free version limit)."
-msgstr ""
+msgstr "%2$d件中%1$d件の一致を表示しています(無料版の制限)。"
 
 #. translators: %d: total matches
 #: includes/class-ure-admin.php:640
 msgid "Showing all %d matches (unlimited preview in Pro version)."
-msgstr ""
+msgstr "すべての%d件の一致を表示しています(Pro版では無制限プレビュー)。"
 
 #: includes/class-ure-admin.php:651
 msgid "Location"
-msgstr ""
+msgstr "場所"
 
 #: includes/class-ure-admin.php:652
 msgid "Before"
-msgstr ""
+msgstr "変更前"
 
 #: includes/class-ure-admin.php:653
 msgid "After"
-msgstr ""
+msgstr "変更後"
 
 #. translators: 1: post type, 2: post ID
 #: includes/class-ure-admin.php:666
 msgid "%1$s (ID: %2$d)"
-msgstr ""
+msgstr "%1$s (ID: %2$d)"
 
 #: includes/class-ure-admin.php:679
 msgid "Search only"
-msgstr ""
+msgstr "検索のみ"
 
 #. translators: %d: history limit
 #: includes/class-ure-admin.php:698
 msgid "History (Last %d Operations)"
-msgstr ""
+msgstr "履歴(最新%d件の操作)"
 
 #: includes/class-ure-admin.php:702
 msgid "History (Last 5 Operations)"
-msgstr ""
+msgstr "履歴(最新5件の操作)"
 
 #: includes/class-ure-admin.php:729
 msgid "Unlock Pro Features"
-msgstr ""
+msgstr "Pro機能のロックを解除"
 
 #: includes/class-ure-admin.php:731
 msgid "Search and replace in postmeta, options, and term meta"
-msgstr ""
+msgstr "投稿メタ、オプション、およびタームメタでの検索と置換"
 
 #: includes/class-ure-admin.php:732
 msgid "Elementor page builder support"
-msgstr ""
+msgstr "Elementorページビルダーのサポート"
 
 #: includes/class-ure-admin.php:733
 msgid "ACF custom fields support"
-msgstr ""
+msgstr "ACFカスタムフィールドのサポート"
 
 #: includes/class-ure-admin.php:734
 msgid "Unlimited preview results"
-msgstr ""
+msgstr "無制限のプレビュー結果"
 
 #: includes/class-ure-admin.php:735
 msgid "Full regex mode"
-msgstr ""
+msgstr "完全な正規表現モード"
 
 #: includes/class-ure-admin.php:736
 msgid "WP-CLI commands"
-msgstr ""
+msgstr "WP-CLIコマンド"
 
 #: includes/class-ure-admin.php:737
 msgid "Multisite support"
-msgstr ""
+msgstr "マルチサイト対応"
 
 #: includes/class-ure-admin.php:825
 msgid "No operations recorded yet."
-msgstr ""
+msgstr "まだ操作が記録されていません。"
 
 #: includes/class-ure-admin.php:833
 msgid "Date/Time"
-msgstr ""
+msgstr "日時"
 
 #: includes/class-ure-admin.php:834
 #: templates/admin-backup.php:116
 msgid "User"
-msgstr ""
+msgstr "ユーザー"
 
 #: includes/class-ure-admin.php:835
 msgid "Summary"
-msgstr ""
+msgstr "概要"
 
 #: includes/class-ure-admin.php:836
 #: templates/admin-backup.php:120
 msgid "Actions"
-msgstr ""
+msgstr "アクション"
 
 #: includes/class-ure-admin.php:854
 msgid "Are you sure you want to undo this operation?"
-msgstr ""
+msgstr "この操作を元に戻してもよろしいですか?"
 
 #: includes/class-ure-admin.php:855
 msgid "Undo"
@@ -310,387 +310,387 @@ msgstr "元に戻す"
 
 #: includes/class-ure-admin.php:859
 msgid "N/A"
-msgstr ""
+msgstr "該当なし"
 
 #: includes/class-ure-admin.php:883
 msgid "Please select at least one table to backup."
-msgstr ""
+msgstr "バックアップするテーブルを少なくとも1つ選択してください。"
 
 #. translators: 1: table count, 2: file size
 #: includes/class-ure-admin.php:897
 msgid "Backup created successfully! %1$d tables backed up (%2$.2f MB)."
-msgstr ""
+msgstr "バックアップが正常に作成されました! %1$d個のテーブルをバックアップしました(%2$.2f MB)。"
 
 #: includes/class-ure-admin.php:926
 #: includes/class-ure-admin.php:964
 msgid "Invalid backup filename."
-msgstr ""
+msgstr "無効なバックアップファイル名です。"
 
 #: includes/class-ure-admin.php:1017
 msgid "Please select at least one table."
-msgstr ""
+msgstr "少なくとも1つのテーブルを選択してください。"
 
 #. translators: 1: changes count, 2: tables count
 #: includes/class-ure-admin.php:1066
 msgid "Found %1$d potential changes across %2$d tables. Review below."
-msgstr ""
+msgstr "%2$d個のテーブルで%1$d件の潜在的な変更が見つかりました。以下を確認してください。"
 
 #: includes/class-ure-admin.php:1076
 msgid "No matches found in selected tables."
-msgstr ""
+msgstr "選択したテーブルで一致するものが見つかりません。"
 
 #. translators: 1: search, 2: replace, 3: updates count, 4: tables count
 #: includes/class-ure-admin.php:1135
 msgid "Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d tables."
-msgstr ""
+msgstr "データベース操作: %4$d個のテーブルの%3$d行で「%1$s」を「%2$s」に置き換えました。"
 
 #. translators: 1: updates count, 2: tables count
 #: includes/class-ure-admin.php:1165
 msgid "Successfully updated %1$d rows across %2$d tables."
-msgstr ""
+msgstr "%2$d個のテーブルで%1$d行を正常に更新しました。"
 
 #: includes/class-ure-admin.php:1175
 msgid "No changes were made."
-msgstr ""
+msgstr "変更は行われませんでした。"
 
 #: includes/class-ure-admin.php:1191
 msgid "No settings data received."
-msgstr ""
+msgstr "設定データが受信されませんでした。"
 
 #: includes/class-ure-admin.php:1205
 msgid "Settings saved successfully."
-msgstr ""
+msgstr "設定が正常に保存されました。"
 
 #: includes/class-ure-admin.php:1212
 msgid "Failed to save settings. Please try again."
-msgstr ""
+msgstr "設定の保存に失敗しました。もう一度お試しください。"
 
 #: includes/class-ure-admin.php:1226
 msgid "Settings have been reset to defaults."
-msgstr ""
+msgstr "設定がデフォルトにリセットされました。"
 
 #: includes/class-ure-admin.php:1233
 msgid "Failed to reset settings. Please try again."
-msgstr ""
+msgstr "設定のリセットに失敗しました。もう一度お試しください。"
 
 #: includes/class-ure-admin.php:1249
 msgid "Please enter a profile name."
-msgstr ""
+msgstr "プロファイル名を入力してください。"
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1271
 msgid "Profile \"%s\" saved successfully."
-msgstr ""
+msgstr "プロファイル「%s」が正常に保存されました。"
 
 #: includes/class-ure-admin.php:1280
 msgid "Failed to save profile. Please try again."
-msgstr ""
+msgstr "プロファイルの保存に失敗しました。もう一度お試しください。"
 
 #: includes/class-ure-admin.php:1296
 msgid "Please select a profile to load."
-msgstr ""
+msgstr "読み込むプロファイルを選択してください。"
 
 #: includes/class-ure-admin.php:1308
 msgid "Profile not found."
-msgstr ""
+msgstr "プロファイルが見つかりません。"
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1322
 msgid "Profile \"%s\" loaded successfully. Review the settings below and click Preview or Apply."
-msgstr ""
+msgstr "プロファイル「%s」が正常に読み込まれました。以下の設定を確認して、プレビューまたは適用をクリックしてください。"
 
 #: includes/class-ure-admin.php:1339
 msgid "Please select a profile to delete."
-msgstr ""
+msgstr "削除するプロファイルを選択してください。"
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1351
 msgid "Profile \"%s\" deleted successfully."
-msgstr ""
+msgstr "プロファイル「%s」が正常に削除されました。"
 
 #: includes/class-ure-admin.php:1360
 msgid "Failed to delete profile. Please try again."
-msgstr ""
+msgstr "プロファイルの削除に失敗しました。もう一度お試しください。"
 
 #: includes/class-ure-admin.php:1372
 #: templates/admin-db-search.php:44
 msgid "Database Search & Replace"
-msgstr ""
+msgstr "データベースの検索と置換"
 
 #: includes/class-ure-admin.php:1385
 msgid "Backup & Restore"
-msgstr ""
+msgstr "バックアップと復元"
 
 #: includes/class-ure-admin.php:1398
 msgid "URE Settings"
-msgstr ""
+msgstr "URE設定"
 
 #: includes/class-ure-admin.php:1411
 msgid "URE Help"
-msgstr ""
+msgstr "UREヘルプ"
 
 #: includes/class-ure-ajax.php:58
 #: includes/class-ure-ajax.php:113
 #: includes/class-ure-ajax.php:180
 msgid "Insufficient permissions."
-msgstr ""
+msgstr "権限が不足しています。"
 
 #: includes/class-ure-ajax.php:69
 #: includes/class-ure-ajax.php:124
 msgid "Search term is required."
-msgstr ""
+msgstr "検索語が必要です。"
 
 #. translators: 1: search, 2: replace, 3: updates count
 #: includes/class-ure-ajax.php:149
 msgid "Replaced \"%1$s\" with \"%2$s\" in %3$d posts."
-msgstr ""
+msgstr "%3$d件の投稿で「%1$s」を「%2$s」に置き換えました。"
 
 #: includes/class-ure-ajax.php:186
 msgid "Operation ID is required."
-msgstr ""
+msgstr "操作IDが必要です。"
 
 #: includes/class-ure-ajax.php:192
 msgid "Operation not found or expired."
-msgstr ""
+msgstr "操作が見つからないか、有効期限が切れています。"
 
 #: includes/class-ure-backup-manager.php:100
 msgid "No tables specified for backup."
-msgstr ""
+msgstr "バックアップするテーブルが指定されていません。"
 
 #: includes/class-ure-backup-manager.php:117
 msgid "Could not create backup file."
-msgstr ""
+msgstr "バックアップファイルを作成できませんでした。"
 
 #: includes/class-ure-backup-manager.php:149
 msgid "Backup created successfully."
-msgstr ""
+msgstr "バックアップが正常に作成されました。"
 
 #: includes/class-ure-backup-manager.php:373
 #: includes/class-ure-logger.php:123
 #: includes/class-ure-logger.php:157
 msgid "Unknown"
-msgstr ""
+msgstr "不明"
 
 #: includes/class-ure-backup-manager.php:399
 msgid "Backup not found in metadata."
-msgstr ""
+msgstr "メタデータにバックアップが見つかりません。"
 
 #: includes/class-ure-backup-manager.php:408
 msgid "Backup file not found or not readable."
-msgstr ""
+msgstr "バックアップファイルが見つからないか、読み取れません。"
 
 #: includes/class-ure-backup-manager.php:436
 msgid "Could not read backup file."
-msgstr ""
+msgstr "バックアップファイルを読み取れませんでした。"
 
 #. translators: %d: number of queries
 #: includes/class-ure-backup-manager.php:467
 msgid "Executed %d queries successfully."
-msgstr ""
+msgstr "%d件のクエリを正常に実行しました。"
 
 #: includes/class-ure-backup-manager.php:504
 msgid "Backup not found."
-msgstr ""
+msgstr "バックアップが見つかりません。"
 
 #: includes/class-ure-backup-manager.php:520
 msgid "Backup deleted successfully."
-msgstr ""
+msgstr "バックアップが正常に削除されました。"
 
 #: includes/class-ure-database-manager.php:234
 msgid "Table does not exist."
-msgstr ""
+msgstr "テーブルが存在しません。"
 
 #: includes/class-ure-database-manager.php:246
 msgid "Table has no primary key."
-msgstr ""
+msgstr "テーブルに主キーがありません。"
 
 #. translators: %d: row number
 #: includes/class-ure-database-manager.php:345
 msgid "Error updating row %d"
-msgstr ""
+msgstr "行%dの更新エラー"
 
 #: includes/class-ure-logger.php:175
 msgid "Log entry not found."
-msgstr ""
+msgstr "ログエントリが見つかりません。"
 
 #: includes/class-ure-logger.php:184
 msgid "No rollback data available."
-msgstr ""
+msgstr "ロールバックデータがありません。"
 
 #. translators: 1: number of posts, 2: original log ID
 #: includes/class-ure-logger.php:245
 msgid "Rolled back %1$d post(s) from operation #%2$d."
-msgstr ""
+msgstr "操作#%2$dから%1$d件の投稿をロールバックしました。"
 
 #. translators: %d: number of posts
 #: includes/class-ure-logger.php:265
 msgid "Successfully rolled back %d post(s)."
-msgstr ""
+msgstr "%d件の投稿を正常にロールバックしました。"
 
 #: includes/class-ure-search-replace.php:79
 #: includes/class-ure-search-replace.php:471
 msgid "No valid post types selected."
-msgstr ""
+msgstr "有効な投稿タイプが選択されていません。"
 
 #: includes/class-ure-search-replace.php:478
 msgid "Search term cannot be empty."
-msgstr ""
+msgstr "検索語を空にすることはできません。"
 
 #. translators: 1: number of posts, 2: search term, 3: replace term
 #: includes/class-ure-search-replace.php:615
 msgid "Replaced \"%2$s\" with \"%3$s\" in %1$d post(s)."
-msgstr ""
+msgstr "%1$d件の投稿で「%2$s」を「%3$s」に置き換えました。"
 
 #: includes/class-ure-search-replace.php:645
 msgid "Invalid regex pattern."
-msgstr ""
+msgstr "無効な正規表現パターンです。"
 
 #. translators: %s: error message
 #: includes/class-ure-search-replace.php:651
 msgid "Regex error: %s"
-msgstr ""
+msgstr "正規表現エラー: %s"
 
 #: templates/admin-backup.php:29
 msgid "Backup & Restore - Use With Caution!"
-msgstr ""
+msgstr "バックアップと復元 - 慎重に使用してください!"
 
 #: templates/admin-backup.php:32
 msgid "Creating backups and restoring your database are critical operations. Always ensure you have a recent working backup before making major changes."
-msgstr ""
+msgstr "バックアップの作成とデータベースの復元は重要な操作です。大きな変更を行う前に、必ず最新の動作するバックアップがあることを確認してください。"
 
 #: templates/admin-backup.php:39
 #: templates/admin-db-search.php:35
 msgid "ALWAYS create a backup before proceeding"
-msgstr ""
+msgstr "続行する前に必ずバックアップを作成してください"
 
 #: templates/admin-backup.php:40
 #: templates/admin-db-search.php:36
 msgid "Test on a staging site first"
-msgstr ""
+msgstr "最初にステージングサイトでテストしてください"
 
 #: templates/admin-backup.php:41
 msgid "Understand what you're restoring"
-msgstr ""
+msgstr "復元する内容を理解してください"
 
 #: templates/admin-backup.php:47
 msgid "Create Backup (Recommended)"
-msgstr ""
+msgstr "バックアップを作成(推奨)"
 
 #: templates/admin-backup.php:54
 msgid "Tables to Backup"
-msgstr ""
+msgstr "バックアップするテーブル"
 
 #: templates/admin-backup.php:57
 #: templates/admin-db-search.php:80
 msgid "Select All"
-msgstr ""
+msgstr "すべて選択"
 
 #: templates/admin-backup.php:58
 #: templates/admin-db-search.php:81
 msgid "Deselect All"
-msgstr ""
+msgstr "すべて選択解除"
 
 #: templates/admin-backup.php:59
 msgid "Core Tables Only"
-msgstr ""
+msgstr "コアテーブルのみ"
 
 #: templates/admin-backup.php:74
 #: templates/admin-db-search.php:95
 msgid "Protected"
-msgstr ""
+msgstr "保護"
 
 #: templates/admin-backup.php:91
 msgid "Comment (Optional)"
-msgstr ""
+msgstr "コメント(オプション)"
 
 #: templates/admin-backup.php:97
 msgid "E.g., Before domain migration"
-msgstr ""
+msgstr "例: ドメイン移行前"
 
 #: templates/admin-backup.php:103
 msgid "Create Backup"
-msgstr ""
+msgstr "バックアップを作成"
 
 #: templates/admin-backup.php:111
 msgid "Available Backups"
-msgstr ""
+msgstr "利用可能なバックアップ"
 
 #: templates/admin-backup.php:115
 msgid "Created"
-msgstr ""
+msgstr "作成日時"
 
 #: templates/admin-backup.php:117
 msgid "Tables"
-msgstr ""
+msgstr "テーブル"
 
 #: templates/admin-backup.php:118
 msgid "Size"
-msgstr ""
+msgstr "サイズ"
 
 #: templates/admin-backup.php:119
 msgid "Comment"
-msgstr ""
+msgstr "コメント"
 
 #: templates/admin-backup.php:148
 msgid "Are you sure you want to restore this backup? This will overwrite current data!"
-msgstr ""
+msgstr "このバックアップを復元してもよろしいですか? これにより現在のデータが上書きされます!"
 
 #: templates/admin-backup.php:150
 msgid "Restore"
-msgstr ""
+msgstr "復元"
 
 #: templates/admin-backup.php:161
 msgid "Are you sure you want to delete this backup?"
-msgstr ""
+msgstr "このバックアップを削除してもよろしいですか?"
 
 #: templates/admin-backup.php:163
 #: templates/admin-profiles.php:51
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 #: templates/admin-db-search.php:25
 msgid "Advanced Mode - Use With Caution!"
-msgstr ""
+msgstr "高度モード - 慎重に使用してください!"
 
 #: templates/admin-db-search.php:28
 msgid "Advanced mode allows you to search and replace across any database table, including wp_options, usermeta, and custom plugin tables. This is powerful but potentially dangerous."
-msgstr ""
+msgstr "高度モードでは、wp_options、usermeta、カスタムプラグインテーブルなど、あらゆるデータベーステーブルを検索および置換できます。これは強力ですが、潜在的に危険です。"
 
 #: templates/admin-db-search.php:37
 msgid "Be very specific with your search terms"
-msgstr ""
+msgstr "検索語は非常に具体的にしてください"
 
 #: templates/admin-db-search.php:38
 msgid "Understand what you're changing"
-msgstr ""
+msgstr "変更内容を理解してください"
 
 #: templates/admin-db-search.php:52
 msgid "Search For"
-msgstr ""
+msgstr "検索"
 
 #: templates/admin-db-search.php:61
 msgid "Text to search for..."
-msgstr ""
+msgstr "検索するテキスト..."
 
 #: templates/admin-db-search.php:66
 msgid "Replace With"
-msgstr ""
+msgstr "置換"
 
 #: templates/admin-db-search.php:72
 msgid "Replacement text..."
-msgstr ""
+msgstr "置換後のテキスト..."
 
 #: templates/admin-db-search.php:77
 msgid "Select Tables"
-msgstr ""
+msgstr "テーブルを選択"
 
 #: templates/admin-db-search.php:119
 msgid "Skip GUIDs (recommended)"
-msgstr ""
+msgstr "GUIDをスキップ(推奨)"
 
 #: templates/admin-db-search.php:132
 msgid "Preview Changes"
-msgstr ""
+msgstr "変更をプレビュー"
 
 #: templates/admin-help.php:20
 msgid "Universal Replace Engine - Help & Documentation"

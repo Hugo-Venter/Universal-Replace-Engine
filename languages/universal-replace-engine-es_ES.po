@@ -24,22 +24,22 @@ msgstr "Motor de Reemplazo Universal"
 #. Plugin URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com/universal-replace-engine"
-msgstr ""
+msgstr "https://yoursite.com/universal-replace-engine"
 
 #. Description of the plugin
 #: universal-replace-engine.php
 msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr ""
+msgstr "Motor de búsqueda y reemplazo de nivel empresarial para WordPress. Operaciones de contenido y base de datos, respaldos SQL, soporte multisitio, protección GUID, perfiles guardados y modo regex Pro."
 
 #. Author of the plugin
 #: universal-replace-engine.php
 msgid "Your Name"
-msgstr ""
+msgstr "Su Nombre"
 
 #. Author URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com"
-msgstr ""
+msgstr "https://yoursite.com"
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -47,11 +47,11 @@ msgstr "Falló la verificación de seguridad."
 
 #: includes/class-ure-admin.php:117
 msgid "You do not have permission to perform this action."
-msgstr ""
+msgstr "No tiene permisos para realizar esta acción."
 
 #: includes/class-ure-admin.php:194
 msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr ""
+msgstr "Los ámbitos avanzados (Meta de Entrada, Elementor, Todas las Ubicaciones) requieren la versión Pro. Volviendo a Contenido de Entrada."
 
 #: includes/class-ure-admin.php:203
 #: includes/class-ure-admin.php:1007
@@ -65,21 +65,21 @@ msgstr "No se encontraron coincidencias."
 #. translators: %d: number of matches
 #: includes/class-ure-admin.php:255
 msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr ""
+msgstr "Se encontraron %d coincidencia(s). Revise abajo y haga clic en \"Aplicar Cambios\" para continuar."
 
 #: includes/class-ure-admin.php:280
 #: includes/class-ure-admin.php:1096
 msgid "Preview data expired. Please run preview again."
-msgstr ""
+msgstr "Los datos de la vista previa caducaron. Por favor ejecute la vista previa nuevamente."
 
 #. translators: %d: number of posts modified
 #: includes/class-ure-admin.php:311
 msgid "Successfully modified %d post(s)."
-msgstr ""
+msgstr "Se modificaron exitosamente %d entrada(s)."
 
 #: includes/class-ure-admin.php:339
 msgid "Invalid log ID."
-msgstr ""
+msgstr "ID de registro inválido."
 
 #: includes/class-ure-admin.php:401
 msgid "Search & Replace"
@@ -103,7 +103,7 @@ msgstr "Ayuda"
 
 #: includes/class-ure-admin.php:430
 msgid "Search and Replace"
-msgstr ""
+msgstr "Buscar y Reemplazar"
 
 #: includes/class-ure-admin.php:438
 msgid "Search for"
@@ -111,7 +111,7 @@ msgstr "Buscar"
 
 #: includes/class-ure-admin.php:456
 msgid "Enter the text you want to search for."
-msgstr ""
+msgstr "Ingrese el texto que desea buscar."
 
 #: includes/class-ure-admin.php:463
 msgid "Replace with"
@@ -119,84 +119,84 @@ msgstr "Reemplazar con"
 
 #: includes/class-ure-admin.php:480
 msgid "Enter the replacement text (leave empty to only search)."
-msgstr ""
+msgstr "Ingrese el texto de reemplazo (dejar vacío solo para buscar)."
 
 #: includes/class-ure-admin.php:487
 msgid "Search Scope"
-msgstr ""
+msgstr "Ámbito de Búsqueda"
 
 #: includes/class-ure-admin.php:500
 msgid "Post Content"
-msgstr ""
+msgstr "Contenido de Entrada"
 
 #: includes/class-ure-admin.php:501
 msgid "(post_content field only)"
-msgstr ""
+msgstr "(solo campo post_content)"
 
 #: includes/class-ure-admin.php:508
 msgid "Post Meta"
-msgstr ""
+msgstr "Meta de Entrada"
 
 #: includes/class-ure-admin.php:509
 msgid "(custom fields, excluding Elementor)"
-msgstr ""
+msgstr "(campos personalizados, excluyendo Elementor)"
 
 #: includes/class-ure-admin.php:521
 msgid "Elementor Data"
-msgstr ""
+msgstr "Datos de Elementor"
 
 #: includes/class-ure-admin.php:522
 msgid "(_elementor_data JSON field)"
-msgstr ""
+msgstr "(campo JSON _elementor_data)"
 
 #: includes/class-ure-admin.php:534
 msgid "All Locations"
-msgstr ""
+msgstr "Todas las Ubicaciones"
 
 #: includes/class-ure-admin.php:535
 msgid "(content + postmeta + Elementor)"
-msgstr ""
+msgstr "(contenido + postmeta + Elementor)"
 
 #: includes/class-ure-admin.php:544
 msgid "Choose where to search and replace."
-msgstr ""
+msgstr "Elija dónde buscar y reemplazar."
 
 #: includes/class-ure-admin.php:548
 msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr ""
+msgstr "Actualice a Pro para desbloquear los ámbitos Meta de Entrada, Datos de Elementor y Todas las Ubicaciones."
 
 #: includes/class-ure-admin.php:557
 #: templates/admin-profiles.php:65
 msgid "Post Types"
-msgstr ""
+msgstr "Tipos de Entrada"
 
 #: includes/class-ure-admin.php:562
 msgid "Select which post types to search in."
-msgstr ""
+msgstr "Seleccione en qué tipos de entrada buscar."
 
 #: includes/class-ure-admin.php:569
 #: templates/admin-db-search.php:112
 #: templates/admin-profiles.php:66
 msgid "Options"
-msgstr ""
+msgstr "Opciones"
 
 #: includes/class-ure-admin.php:578
 #: templates/admin-db-search.php:115
 msgid "Case sensitive"
-msgstr ""
+msgstr "Distinguir mayúsculas y minúsculas"
 
 #: includes/class-ure-admin.php:589
 #: templates/admin-db-search.php:124
 msgid "Regex mode"
-msgstr ""
+msgstr "Modo regex"
 
 #: includes/class-ure-admin.php:592
 msgid "Regex mode (Pro feature)"
-msgstr ""
+msgstr "Modo regex (característica Pro)"
 
 #: includes/class-ure-admin.php:603
 msgid "Run Preview"
-msgstr ""
+msgstr "Ejecutar Vista Previa"
 
 #: includes/class-ure-admin.php:608
 msgid "Apply Changes"
@@ -204,105 +204,105 @@ msgstr "Aplicar Cambios"
 
 #: includes/class-ure-admin.php:618
 msgid "Preview Results"
-msgstr ""
+msgstr "Resultados de la Vista Previa"
 
 #. translators: 1: shown count, 2: total count
 #: includes/class-ure-admin.php:626
 msgid "Showing %1$d of %2$d matches (Free version limit)."
-msgstr ""
+msgstr "Mostrando %1$d de %2$d coincidencias (límite de versión gratuita)."
 
 #. translators: %d: total matches
 #: includes/class-ure-admin.php:640
 msgid "Showing all %d matches (unlimited preview in Pro version)."
-msgstr ""
+msgstr "Mostrando todas las %d coincidencias (vista previa ilimitada en versión Pro)."
 
 #: includes/class-ure-admin.php:651
 msgid "Location"
-msgstr ""
+msgstr "Ubicación"
 
 #: includes/class-ure-admin.php:652
 msgid "Before"
-msgstr ""
+msgstr "Antes"
 
 #: includes/class-ure-admin.php:653
 msgid "After"
-msgstr ""
+msgstr "Después"
 
 #. translators: 1: post type, 2: post ID
 #: includes/class-ure-admin.php:666
 msgid "%1$s (ID: %2$d)"
-msgstr ""
+msgstr "%1$s (ID: %2$d)"
 
 #: includes/class-ure-admin.php:679
 msgid "Search only"
-msgstr ""
+msgstr "Solo buscar"
 
 #. translators: %d: history limit
 #: includes/class-ure-admin.php:698
 msgid "History (Last %d Operations)"
-msgstr ""
+msgstr "Historial (Últimas %d Operaciones)"
 
 #: includes/class-ure-admin.php:702
 msgid "History (Last 5 Operations)"
-msgstr ""
+msgstr "Historial (Últimas 5 Operaciones)"
 
 #: includes/class-ure-admin.php:729
 msgid "Unlock Pro Features"
-msgstr ""
+msgstr "Desbloquear Características Pro"
 
 #: includes/class-ure-admin.php:731
 msgid "Search and replace in postmeta, options, and term meta"
-msgstr ""
+msgstr "Buscar y reemplazar en postmeta, opciones y meta de términos"
 
 #: includes/class-ure-admin.php:732
 msgid "Elementor page builder support"
-msgstr ""
+msgstr "Soporte para constructor de páginas Elementor"
 
 #: includes/class-ure-admin.php:733
 msgid "ACF custom fields support"
-msgstr ""
+msgstr "Soporte para campos personalizados ACF"
 
 #: includes/class-ure-admin.php:734
 msgid "Unlimited preview results"
-msgstr ""
+msgstr "Resultados de vista previa ilimitados"
 
 #: includes/class-ure-admin.php:735
 msgid "Full regex mode"
-msgstr ""
+msgstr "Modo regex completo"
 
 #: includes/class-ure-admin.php:736
 msgid "WP-CLI commands"
-msgstr ""
+msgstr "Comandos WP-CLI"
 
 #: includes/class-ure-admin.php:737
 msgid "Multisite support"
-msgstr ""
+msgstr "Soporte multisitio"
 
 #: includes/class-ure-admin.php:825
 msgid "No operations recorded yet."
-msgstr ""
+msgstr "Aún no se han registrado operaciones."
 
 #: includes/class-ure-admin.php:833
 msgid "Date/Time"
-msgstr ""
+msgstr "Fecha/Hora"
 
 #: includes/class-ure-admin.php:834
 #: templates/admin-backup.php:116
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #: includes/class-ure-admin.php:835
 msgid "Summary"
-msgstr ""
+msgstr "Resumen"
 
 #: includes/class-ure-admin.php:836
 #: templates/admin-backup.php:120
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: includes/class-ure-admin.php:854
 msgid "Are you sure you want to undo this operation?"
-msgstr ""
+msgstr "¿Está seguro de que desea deshacer esta operación?"
 
 #: includes/class-ure-admin.php:855
 msgid "Undo"
@@ -310,212 +310,212 @@ msgstr "Deshacer"
 
 #: includes/class-ure-admin.php:859
 msgid "N/A"
-msgstr ""
+msgstr "N/D"
 
 #: includes/class-ure-admin.php:883
 msgid "Please select at least one table to backup."
-msgstr ""
+msgstr "Por favor seleccione al menos una tabla para respaldar."
 
 #. translators: 1: table count, 2: file size
 #: includes/class-ure-admin.php:897
 msgid "Backup created successfully! %1$d tables backed up (%2$.2f MB)."
-msgstr ""
+msgstr "¡Respaldo creado exitosamente! %1$d tablas respaldadas (%2$.2f MB)."
 
 #: includes/class-ure-admin.php:926
 #: includes/class-ure-admin.php:964
 msgid "Invalid backup filename."
-msgstr ""
+msgstr "Nombre de archivo de respaldo inválido."
 
 #: includes/class-ure-admin.php:1017
 msgid "Please select at least one table."
-msgstr ""
+msgstr "Por favor seleccione al menos una tabla."
 
 #. translators: 1: changes count, 2: tables count
 #: includes/class-ure-admin.php:1066
 msgid "Found %1$d potential changes across %2$d tables. Review below."
-msgstr ""
+msgstr "Se encontraron %1$d cambios potenciales en %2$d tablas. Revise abajo."
 
 #: includes/class-ure-admin.php:1076
 msgid "No matches found in selected tables."
-msgstr ""
+msgstr "No se encontraron coincidencias en las tablas seleccionadas."
 
 #. translators: 1: search, 2: replace, 3: updates count, 4: tables count
 #: includes/class-ure-admin.php:1135
 msgid "Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d tables."
-msgstr ""
+msgstr "Operación de base de datos: Se reemplazó \"%1$s\" con \"%2$s\" en %3$d filas a través de %4$d tablas."
 
 #. translators: 1: updates count, 2: tables count
 #: includes/class-ure-admin.php:1165
 msgid "Successfully updated %1$d rows across %2$d tables."
-msgstr ""
+msgstr "Se actualizaron exitosamente %1$d filas a través de %2$d tablas."
 
 #: includes/class-ure-admin.php:1175
 msgid "No changes were made."
-msgstr ""
+msgstr "No se realizaron cambios."
 
 #: includes/class-ure-admin.php:1191
 msgid "No settings data received."
-msgstr ""
+msgstr "No se recibieron datos de configuración."
 
 #: includes/class-ure-admin.php:1205
 msgid "Settings saved successfully."
-msgstr ""
+msgstr "Configuración guardada exitosamente."
 
 #: includes/class-ure-admin.php:1212
 msgid "Failed to save settings. Please try again."
-msgstr ""
+msgstr "Error al guardar la configuración. Por favor intente nuevamente."
 
 #: includes/class-ure-admin.php:1226
 msgid "Settings have been reset to defaults."
-msgstr ""
+msgstr "La configuración se ha restablecido a valores predeterminados."
 
 #: includes/class-ure-admin.php:1233
 msgid "Failed to reset settings. Please try again."
-msgstr ""
+msgstr "Error al restablecer la configuración. Por favor intente nuevamente."
 
 #: includes/class-ure-admin.php:1249
 msgid "Please enter a profile name."
-msgstr ""
+msgstr "Por favor ingrese un nombre de perfil."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1271
 msgid "Profile \"%s\" saved successfully."
-msgstr ""
+msgstr "Perfil \"%s\" guardado exitosamente."
 
 #: includes/class-ure-admin.php:1280
 msgid "Failed to save profile. Please try again."
-msgstr ""
+msgstr "Error al guardar el perfil. Por favor intente nuevamente."
 
 #: includes/class-ure-admin.php:1296
 msgid "Please select a profile to load."
-msgstr ""
+msgstr "Por favor seleccione un perfil para cargar."
 
 #: includes/class-ure-admin.php:1308
 msgid "Profile not found."
-msgstr ""
+msgstr "Perfil no encontrado."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1322
 msgid "Profile \"%s\" loaded successfully. Review the settings below and click Preview or Apply."
-msgstr ""
+msgstr "Perfil \"%s\" cargado exitosamente. Revise la configuración abajo y haga clic en Vista Previa o Aplicar."
 
 #: includes/class-ure-admin.php:1339
 msgid "Please select a profile to delete."
-msgstr ""
+msgstr "Por favor seleccione un perfil para eliminar."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1351
 msgid "Profile \"%s\" deleted successfully."
-msgstr ""
+msgstr "Perfil \"%s\" eliminado exitosamente."
 
 #: includes/class-ure-admin.php:1360
 msgid "Failed to delete profile. Please try again."
-msgstr ""
+msgstr "Error al eliminar el perfil. Por favor intente nuevamente."
 
 #: includes/class-ure-admin.php:1372
 #: templates/admin-db-search.php:44
 msgid "Database Search & Replace"
-msgstr ""
+msgstr "Búsqueda y Reemplazo en Base de Datos"
 
 #: includes/class-ure-admin.php:1385
 msgid "Backup & Restore"
-msgstr ""
+msgstr "Respaldo y Restauración"
 
 #: includes/class-ure-admin.php:1398
 msgid "URE Settings"
-msgstr ""
+msgstr "Configuración URE"
 
 #: includes/class-ure-admin.php:1411
 msgid "URE Help"
-msgstr ""
+msgstr "Ayuda URE"
 
 #: includes/class-ure-ajax.php:58
 #: includes/class-ure-ajax.php:113
 #: includes/class-ure-ajax.php:180
 msgid "Insufficient permissions."
-msgstr ""
+msgstr "Permisos insuficientes."
 
 #: includes/class-ure-ajax.php:69
 #: includes/class-ure-ajax.php:124
 msgid "Search term is required."
-msgstr ""
+msgstr "Se requiere un término de búsqueda."
 
 #. translators: 1: search, 2: replace, 3: updates count
 #: includes/class-ure-ajax.php:149
 msgid "Replaced \"%1$s\" with \"%2$s\" in %3$d posts."
-msgstr ""
+msgstr "Se reemplazó \"%1$s\" con \"%2$s\" en %3$d entradas."
 
 #: includes/class-ure-ajax.php:186
 msgid "Operation ID is required."
-msgstr ""
+msgstr "Se requiere ID de operación."
 
 #: includes/class-ure-ajax.php:192
 msgid "Operation not found or expired."
-msgstr ""
+msgstr "Operación no encontrada o caducada."
 
 #: includes/class-ure-backup-manager.php:100
 msgid "No tables specified for backup."
-msgstr ""
+msgstr "No se especificaron tablas para respaldar."
 
 #: includes/class-ure-backup-manager.php:117
 msgid "Could not create backup file."
-msgstr ""
+msgstr "No se pudo crear el archivo de respaldo."
 
 #: includes/class-ure-backup-manager.php:149
 msgid "Backup created successfully."
-msgstr ""
+msgstr "Respaldo creado exitosamente."
 
 #: includes/class-ure-backup-manager.php:373
 #: includes/class-ure-logger.php:123
 #: includes/class-ure-logger.php:157
 msgid "Unknown"
-msgstr ""
+msgstr "Desconocido"
 
 #: includes/class-ure-backup-manager.php:399
 msgid "Backup not found in metadata."
-msgstr ""
+msgstr "Respaldo no encontrado en metadatos."
 
 #: includes/class-ure-backup-manager.php:408
 msgid "Backup file not found or not readable."
-msgstr ""
+msgstr "Archivo de respaldo no encontrado o no legible."
 
 #: includes/class-ure-backup-manager.php:436
 msgid "Could not read backup file."
-msgstr ""
+msgstr "No se pudo leer el archivo de respaldo."
 
 #. translators: %d: number of queries
 #: includes/class-ure-backup-manager.php:467
 msgid "Executed %d queries successfully."
-msgstr ""
+msgstr "Se ejecutaron %d consultas exitosamente."
 
 #: includes/class-ure-backup-manager.php:504
 msgid "Backup not found."
-msgstr ""
+msgstr "Respaldo no encontrado."
 
 #: includes/class-ure-backup-manager.php:520
 msgid "Backup deleted successfully."
-msgstr ""
+msgstr "Respaldo eliminado exitosamente."
 
 #: includes/class-ure-database-manager.php:234
 msgid "Table does not exist."
-msgstr ""
+msgstr "La tabla no existe."
 
 #: includes/class-ure-database-manager.php:246
 msgid "Table has no primary key."
-msgstr ""
+msgstr "La tabla no tiene clave primaria."
 
 #. translators: %d: row number
 #: includes/class-ure-database-manager.php:345
 msgid "Error updating row %d"
-msgstr ""
+msgstr "Error al actualizar la fila %d"
 
 #: includes/class-ure-logger.php:175
 msgid "Log entry not found."
-msgstr ""
+msgstr "Entrada de registro no encontrada."
 
 #: includes/class-ure-logger.php:184
 msgid "No rollback data available."
-msgstr ""
+msgstr "No hay datos de reversión disponibles."
 
 #. translators: 1: number of posts, 2: original log ID
 #: includes/class-ure-logger.php:245

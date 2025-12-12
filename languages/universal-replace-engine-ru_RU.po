@@ -24,22 +24,22 @@ msgstr "Универсальный Движок Замены"
 #. Plugin URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com/universal-replace-engine"
-msgstr ""
+msgstr "https://yoursite.com/universal-replace-engine"
 
 #. Description of the plugin
 #: universal-replace-engine.php
 msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr ""
+msgstr "Профессиональный поиск и замена для WordPress. Операции с контентом и базой данных, резервное копирование SQL, поддержка мультисайта, защита GUID, сохраненные профили и Pro режим регулярных выражений."
 
 #. Author of the plugin
 #: universal-replace-engine.php
 msgid "Your Name"
-msgstr ""
+msgstr "Ваше Имя"
 
 #. Author URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com"
-msgstr ""
+msgstr "https://yoursite.com"
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -47,11 +47,11 @@ msgstr "Проверка безопасности не удалась."
 
 #: includes/class-ure-admin.php:117
 msgid "You do not have permission to perform this action."
-msgstr ""
+msgstr "У вас нет прав для выполнения этого действия."
 
 #: includes/class-ure-admin.php:194
 msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr ""
+msgstr "Расширенные области (Мета записи, Elementor, Все местоположения) требуют Pro версию. Переключение на Содержимое записи."
 
 #: includes/class-ure-admin.php:203
 #: includes/class-ure-admin.php:1007
@@ -65,21 +65,21 @@ msgstr "Совпадений не найдено."
 #. translators: %d: number of matches
 #: includes/class-ure-admin.php:255
 msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr ""
+msgstr "Найдено совпадений: %d. Просмотрите результаты ниже и нажмите \"Применить изменения\" для продолжения."
 
 #: includes/class-ure-admin.php:280
 #: includes/class-ure-admin.php:1096
 msgid "Preview data expired. Please run preview again."
-msgstr ""
+msgstr "Данные предпросмотра устарели. Пожалуйста, запустите предпросмотр снова."
 
 #. translators: %d: number of posts modified
 #: includes/class-ure-admin.php:311
 msgid "Successfully modified %d post(s)."
-msgstr ""
+msgstr "Успешно изменено записей: %d."
 
 #: includes/class-ure-admin.php:339
 msgid "Invalid log ID."
-msgstr ""
+msgstr "Неверный ID журнала."
 
 #: includes/class-ure-admin.php:401
 msgid "Search & Replace"
@@ -103,7 +103,7 @@ msgstr "Помощь"
 
 #: includes/class-ure-admin.php:430
 msgid "Search and Replace"
-msgstr ""
+msgstr "Поиск и Замена"
 
 #: includes/class-ure-admin.php:438
 msgid "Search for"
@@ -111,7 +111,7 @@ msgstr "Искать"
 
 #: includes/class-ure-admin.php:456
 msgid "Enter the text you want to search for."
-msgstr ""
+msgstr "Введите текст, который вы хотите найти."
 
 #: includes/class-ure-admin.php:463
 msgid "Replace with"
@@ -119,84 +119,84 @@ msgstr "Заменить на"
 
 #: includes/class-ure-admin.php:480
 msgid "Enter the replacement text (leave empty to only search)."
-msgstr ""
+msgstr "Введите текст для замены (оставьте пустым для поиска без замены)."
 
 #: includes/class-ure-admin.php:487
 msgid "Search Scope"
-msgstr ""
+msgstr "Область поиска"
 
 #: includes/class-ure-admin.php:500
 msgid "Post Content"
-msgstr ""
+msgstr "Содержимое записи"
 
 #: includes/class-ure-admin.php:501
 msgid "(post_content field only)"
-msgstr ""
+msgstr "(только поле post_content)"
 
 #: includes/class-ure-admin.php:508
 msgid "Post Meta"
-msgstr ""
+msgstr "Мета записи"
 
 #: includes/class-ure-admin.php:509
 msgid "(custom fields, excluding Elementor)"
-msgstr ""
+msgstr "(произвольные поля, исключая Elementor)"
 
 #: includes/class-ure-admin.php:521
 msgid "Elementor Data"
-msgstr ""
+msgstr "Данные Elementor"
 
 #: includes/class-ure-admin.php:522
 msgid "(_elementor_data JSON field)"
-msgstr ""
+msgstr "(поле JSON _elementor_data)"
 
 #: includes/class-ure-admin.php:534
 msgid "All Locations"
-msgstr ""
+msgstr "Все местоположения"
 
 #: includes/class-ure-admin.php:535
 msgid "(content + postmeta + Elementor)"
-msgstr ""
+msgstr "(контент + postmeta + Elementor)"
 
 #: includes/class-ure-admin.php:544
 msgid "Choose where to search and replace."
-msgstr ""
+msgstr "Выберите, где искать и заменять."
 
 #: includes/class-ure-admin.php:548
 msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr ""
+msgstr "Обновитесь до Pro, чтобы разблокировать области Мета записи, Данные Elementor и Все местоположения."
 
 #: includes/class-ure-admin.php:557
 #: templates/admin-profiles.php:65
 msgid "Post Types"
-msgstr ""
+msgstr "Типы записей"
 
 #: includes/class-ure-admin.php:562
 msgid "Select which post types to search in."
-msgstr ""
+msgstr "Выберите типы записей для поиска."
 
 #: includes/class-ure-admin.php:569
 #: templates/admin-db-search.php:112
 #: templates/admin-profiles.php:66
 msgid "Options"
-msgstr ""
+msgstr "Опции"
 
 #: includes/class-ure-admin.php:578
 #: templates/admin-db-search.php:115
 msgid "Case sensitive"
-msgstr ""
+msgstr "Учитывать регистр"
 
 #: includes/class-ure-admin.php:589
 #: templates/admin-db-search.php:124
 msgid "Regex mode"
-msgstr ""
+msgstr "Режим регулярных выражений"
 
 #: includes/class-ure-admin.php:592
 msgid "Regex mode (Pro feature)"
-msgstr ""
+msgstr "Режим регулярных выражений (Pro функция)"
 
 #: includes/class-ure-admin.php:603
 msgid "Run Preview"
-msgstr ""
+msgstr "Запустить предпросмотр"
 
 #: includes/class-ure-admin.php:608
 msgid "Apply Changes"
@@ -204,101 +204,101 @@ msgstr "Применить Изменения"
 
 #: includes/class-ure-admin.php:618
 msgid "Preview Results"
-msgstr ""
+msgstr "Результаты предпросмотра"
 
 #. translators: 1: shown count, 2: total count
 #: includes/class-ure-admin.php:626
 msgid "Showing %1$d of %2$d matches (Free version limit)."
-msgstr ""
+msgstr "Показано %1$d из %2$d совпадений (ограничение бесплатной версии)."
 
 #. translators: %d: total matches
 #: includes/class-ure-admin.php:640
 msgid "Showing all %d matches (unlimited preview in Pro version)."
-msgstr ""
+msgstr "Показаны все %d совпадений (неограниченный предпросмотр в Pro версии)."
 
 #: includes/class-ure-admin.php:651
 msgid "Location"
-msgstr ""
+msgstr "Местоположение"
 
 #: includes/class-ure-admin.php:652
 msgid "Before"
-msgstr ""
+msgstr "До"
 
 #: includes/class-ure-admin.php:653
 msgid "After"
-msgstr ""
+msgstr "После"
 
 #. translators: 1: post type, 2: post ID
 #: includes/class-ure-admin.php:666
 msgid "%1$s (ID: %2$d)"
-msgstr ""
+msgstr "%1$s (ID: %2$d)"
 
 #: includes/class-ure-admin.php:679
 msgid "Search only"
-msgstr ""
+msgstr "Только поиск"
 
 #. translators: %d: history limit
 #: includes/class-ure-admin.php:698
 msgid "History (Last %d Operations)"
-msgstr ""
+msgstr "История (Последние %d операций)"
 
 #: includes/class-ure-admin.php:702
 msgid "History (Last 5 Operations)"
-msgstr ""
+msgstr "История (Последние 5 операций)"
 
 #: includes/class-ure-admin.php:729
 msgid "Unlock Pro Features"
-msgstr ""
+msgstr "Разблокировать Pro функции"
 
 #: includes/class-ure-admin.php:731
 msgid "Search and replace in postmeta, options, and term meta"
-msgstr ""
+msgstr "Поиск и замена в postmeta, настройках и мета терминов"
 
 #: includes/class-ure-admin.php:732
 msgid "Elementor page builder support"
-msgstr ""
+msgstr "Поддержка конструктора страниц Elementor"
 
 #: includes/class-ure-admin.php:733
 msgid "ACF custom fields support"
-msgstr ""
+msgstr "Поддержка произвольных полей ACF"
 
 #: includes/class-ure-admin.php:734
 msgid "Unlimited preview results"
-msgstr ""
+msgstr "Неограниченные результаты предпросмотра"
 
 #: includes/class-ure-admin.php:735
 msgid "Full regex mode"
-msgstr ""
+msgstr "Полный режим регулярных выражений"
 
 #: includes/class-ure-admin.php:736
 msgid "WP-CLI commands"
-msgstr ""
+msgstr "WP-CLI команды"
 
 #: includes/class-ure-admin.php:737
 msgid "Multisite support"
-msgstr ""
+msgstr "Поддержка мультисайта"
 
 #: includes/class-ure-admin.php:825
 msgid "No operations recorded yet."
-msgstr ""
+msgstr "Операции еще не записаны."
 
 #: includes/class-ure-admin.php:833
 msgid "Date/Time"
-msgstr ""
+msgstr "Дата/Время"
 
 #: includes/class-ure-admin.php:834
 #: templates/admin-backup.php:116
 msgid "User"
-msgstr ""
+msgstr "Пользователь"
 
 #: includes/class-ure-admin.php:835
 msgid "Summary"
-msgstr ""
+msgstr "Сводка"
 
 #: includes/class-ure-admin.php:836
 #: templates/admin-backup.php:120
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: includes/class-ure-admin.php:854
 msgid "Are you sure you want to undo this operation?"

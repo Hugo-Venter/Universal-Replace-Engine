@@ -24,22 +24,22 @@ msgstr "通用替换引擎"
 #. Plugin URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com/universal-replace-engine"
-msgstr ""
+msgstr "https://yoursite.com/universal-replace-engine"
 
 #. Description of the plugin
 #: universal-replace-engine.php
 msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr ""
+msgstr "企业级的WordPress搜索和替换工具。支持内容和数据库操作、SQL备份、多站点、GUID保护、配置文件保存和专业版正则表达式模式。"
 
 #. Author of the plugin
 #: universal-replace-engine.php
 msgid "Your Name"
-msgstr ""
+msgstr "Your Name"
 
 #. Author URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com"
-msgstr ""
+msgstr "https://yoursite.com"
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -47,11 +47,11 @@ msgstr "安全检查失败。"
 
 #: includes/class-ure-admin.php:117
 msgid "You do not have permission to perform this action."
-msgstr ""
+msgstr "您没有执行此操作的权限。"
 
 #: includes/class-ure-admin.php:194
 msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr ""
+msgstr "高级范围（文章元数据、Elementor、所有位置）需要专业版。已回退到文章内容。"
 
 #: includes/class-ure-admin.php:203
 #: includes/class-ure-admin.php:1007
@@ -65,21 +65,21 @@ msgstr "未找到匹配项。"
 #. translators: %d: number of matches
 #: includes/class-ure-admin.php:255
 msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr ""
+msgstr "找到 %d 个匹配项。请在下方查看并点击"应用更改"继续。"
 
 #: includes/class-ure-admin.php:280
 #: includes/class-ure-admin.php:1096
 msgid "Preview data expired. Please run preview again."
-msgstr ""
+msgstr "预览数据已过期。请重新运行预览。"
 
 #. translators: %d: number of posts modified
 #: includes/class-ure-admin.php:311
 msgid "Successfully modified %d post(s)."
-msgstr ""
+msgstr "成功修改了 %d 篇文章。"
 
 #: includes/class-ure-admin.php:339
 msgid "Invalid log ID."
-msgstr ""
+msgstr "无效的日志ID。"
 
 #: includes/class-ure-admin.php:401
 msgid "Search & Replace"
@@ -103,7 +103,7 @@ msgstr "帮助"
 
 #: includes/class-ure-admin.php:430
 msgid "Search and Replace"
-msgstr ""
+msgstr "搜索和替换"
 
 #: includes/class-ure-admin.php:438
 msgid "Search for"
@@ -111,7 +111,7 @@ msgstr "搜索"
 
 #: includes/class-ure-admin.php:456
 msgid "Enter the text you want to search for."
-msgstr ""
+msgstr "输入您要搜索的文本。"
 
 #: includes/class-ure-admin.php:463
 msgid "Replace with"
@@ -119,84 +119,84 @@ msgstr "替换为"
 
 #: includes/class-ure-admin.php:480
 msgid "Enter the replacement text (leave empty to only search)."
-msgstr ""
+msgstr "输入替换文本（留空则仅搜索）。"
 
 #: includes/class-ure-admin.php:487
 msgid "Search Scope"
-msgstr ""
+msgstr "搜索范围"
 
 #: includes/class-ure-admin.php:500
 msgid "Post Content"
-msgstr ""
+msgstr "文章内容"
 
 #: includes/class-ure-admin.php:501
 msgid "(post_content field only)"
-msgstr ""
+msgstr "（仅post_content字段）"
 
 #: includes/class-ure-admin.php:508
 msgid "Post Meta"
-msgstr ""
+msgstr "文章元数据"
 
 #: includes/class-ure-admin.php:509
 msgid "(custom fields, excluding Elementor)"
-msgstr ""
+msgstr "（自定义字段，不包括Elementor）"
 
 #: includes/class-ure-admin.php:521
 msgid "Elementor Data"
-msgstr ""
+msgstr "Elementor数据"
 
 #: includes/class-ure-admin.php:522
 msgid "(_elementor_data JSON field)"
-msgstr ""
+msgstr "（_elementor_data JSON字段）"
 
 #: includes/class-ure-admin.php:534
 msgid "All Locations"
-msgstr ""
+msgstr "所有位置"
 
 #: includes/class-ure-admin.php:535
 msgid "(content + postmeta + Elementor)"
-msgstr ""
+msgstr "（内容 + 文章元数据 + Elementor）"
 
 #: includes/class-ure-admin.php:544
 msgid "Choose where to search and replace."
-msgstr ""
+msgstr "选择搜索和替换的位置。"
 
 #: includes/class-ure-admin.php:548
 msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr ""
+msgstr "升级到专业版以解锁文章元数据、Elementor数据和所有位置范围。"
 
 #: includes/class-ure-admin.php:557
 #: templates/admin-profiles.php:65
 msgid "Post Types"
-msgstr ""
+msgstr "文章类型"
 
 #: includes/class-ure-admin.php:562
 msgid "Select which post types to search in."
-msgstr ""
+msgstr "选择要搜索的文章类型。"
 
 #: includes/class-ure-admin.php:569
 #: templates/admin-db-search.php:112
 #: templates/admin-profiles.php:66
 msgid "Options"
-msgstr ""
+msgstr "选项"
 
 #: includes/class-ure-admin.php:578
 #: templates/admin-db-search.php:115
 msgid "Case sensitive"
-msgstr ""
+msgstr "区分大小写"
 
 #: includes/class-ure-admin.php:589
 #: templates/admin-db-search.php:124
 msgid "Regex mode"
-msgstr ""
+msgstr "正则表达式模式"
 
 #: includes/class-ure-admin.php:592
 msgid "Regex mode (Pro feature)"
-msgstr ""
+msgstr "正则表达式模式（专业版功能）"
 
 #: includes/class-ure-admin.php:603
 msgid "Run Preview"
-msgstr ""
+msgstr "运行预览"
 
 #: includes/class-ure-admin.php:608
 msgid "Apply Changes"
@@ -204,105 +204,105 @@ msgstr "应用更改"
 
 #: includes/class-ure-admin.php:618
 msgid "Preview Results"
-msgstr ""
+msgstr "预览结果"
 
 #. translators: 1: shown count, 2: total count
 #: includes/class-ure-admin.php:626
 msgid "Showing %1$d of %2$d matches (Free version limit)."
-msgstr ""
+msgstr "显示 %2$d 个匹配项中的 %1$d 个（免费版限制）。"
 
 #. translators: %d: total matches
 #: includes/class-ure-admin.php:640
 msgid "Showing all %d matches (unlimited preview in Pro version)."
-msgstr ""
+msgstr "显示所有 %d 个匹配项（专业版无限制预览）。"
 
 #: includes/class-ure-admin.php:651
 msgid "Location"
-msgstr ""
+msgstr "位置"
 
 #: includes/class-ure-admin.php:652
 msgid "Before"
-msgstr ""
+msgstr "之前"
 
 #: includes/class-ure-admin.php:653
 msgid "After"
-msgstr ""
+msgstr "之后"
 
 #. translators: 1: post type, 2: post ID
 #: includes/class-ure-admin.php:666
 msgid "%1$s (ID: %2$d)"
-msgstr ""
+msgstr "%1$s（ID：%2$d）"
 
 #: includes/class-ure-admin.php:679
 msgid "Search only"
-msgstr ""
+msgstr "仅搜索"
 
 #. translators: %d: history limit
 #: includes/class-ure-admin.php:698
 msgid "History (Last %d Operations)"
-msgstr ""
+msgstr "历史记录（最近 %d 次操作）"
 
 #: includes/class-ure-admin.php:702
 msgid "History (Last 5 Operations)"
-msgstr ""
+msgstr "历史记录（最近5次操作）"
 
 #: includes/class-ure-admin.php:729
 msgid "Unlock Pro Features"
-msgstr ""
+msgstr "解锁专业版功能"
 
 #: includes/class-ure-admin.php:731
 msgid "Search and replace in postmeta, options, and term meta"
-msgstr ""
+msgstr "在文章元数据、选项和术语元数据中搜索和替换"
 
 #: includes/class-ure-admin.php:732
 msgid "Elementor page builder support"
-msgstr ""
+msgstr "支持Elementor页面构建器"
 
 #: includes/class-ure-admin.php:733
 msgid "ACF custom fields support"
-msgstr ""
+msgstr "支持ACF自定义字段"
 
 #: includes/class-ure-admin.php:734
 msgid "Unlimited preview results"
-msgstr ""
+msgstr "无限制预览结果"
 
 #: includes/class-ure-admin.php:735
 msgid "Full regex mode"
-msgstr ""
+msgstr "完整正则表达式模式"
 
 #: includes/class-ure-admin.php:736
 msgid "WP-CLI commands"
-msgstr ""
+msgstr "WP-CLI命令"
 
 #: includes/class-ure-admin.php:737
 msgid "Multisite support"
-msgstr ""
+msgstr "多站点支持"
 
 #: includes/class-ure-admin.php:825
 msgid "No operations recorded yet."
-msgstr ""
+msgstr "尚未记录任何操作。"
 
 #: includes/class-ure-admin.php:833
 msgid "Date/Time"
-msgstr ""
+msgstr "日期/时间"
 
 #: includes/class-ure-admin.php:834
 #: templates/admin-backup.php:116
 msgid "User"
-msgstr ""
+msgstr "用户"
 
 #: includes/class-ure-admin.php:835
 msgid "Summary"
-msgstr ""
+msgstr "摘要"
 
 #: includes/class-ure-admin.php:836
 #: templates/admin-backup.php:120
 msgid "Actions"
-msgstr ""
+msgstr "操作"
 
 #: includes/class-ure-admin.php:854
 msgid "Are you sure you want to undo this operation?"
-msgstr ""
+msgstr "您确定要撤消此操作吗？"
 
 #: includes/class-ure-admin.php:855
 msgid "Undo"
@@ -310,417 +310,417 @@ msgstr "撤消"
 
 #: includes/class-ure-admin.php:859
 msgid "N/A"
-msgstr ""
+msgstr "不适用"
 
 #: includes/class-ure-admin.php:883
 msgid "Please select at least one table to backup."
-msgstr ""
+msgstr "请至少选择一个要备份的数据表。"
 
 #. translators: 1: table count, 2: file size
 #: includes/class-ure-admin.php:897
 msgid "Backup created successfully! %1$d tables backed up (%2$.2f MB)."
-msgstr ""
+msgstr "备份创建成功！已备份 %1$d 个数据表（%2$.2f MB）。"
 
 #: includes/class-ure-admin.php:926
 #: includes/class-ure-admin.php:964
 msgid "Invalid backup filename."
-msgstr ""
+msgstr "无效的备份文件名。"
 
 #: includes/class-ure-admin.php:1017
 msgid "Please select at least one table."
-msgstr ""
+msgstr "请至少选择一个数据表。"
 
 #. translators: 1: changes count, 2: tables count
 #: includes/class-ure-admin.php:1066
 msgid "Found %1$d potential changes across %2$d tables. Review below."
-msgstr ""
+msgstr "在 %2$d 个数据表中找到 %1$d 个潜在更改。请在下方查看。"
 
 #: includes/class-ure-admin.php:1076
 msgid "No matches found in selected tables."
-msgstr ""
+msgstr "在所选数据表中未找到匹配项。"
 
 #. translators: 1: search, 2: replace, 3: updates count, 4: tables count
 #: includes/class-ure-admin.php:1135
 msgid "Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d tables."
-msgstr ""
+msgstr "数据库操作：在 %4$d 个数据表的 %3$d 行中将"%1$s"替换为"%2$s"。"
 
 #. translators: 1: updates count, 2: tables count
 #: includes/class-ure-admin.php:1165
 msgid "Successfully updated %1$d rows across %2$d tables."
-msgstr ""
+msgstr "成功更新了 %2$d 个数据表中的 %1$d 行。"
 
 #: includes/class-ure-admin.php:1175
 msgid "No changes were made."
-msgstr ""
+msgstr "未进行任何更改。"
 
 #: includes/class-ure-admin.php:1191
 msgid "No settings data received."
-msgstr ""
+msgstr "未收到设置数据。"
 
 #: includes/class-ure-admin.php:1205
 msgid "Settings saved successfully."
-msgstr ""
+msgstr "设置保存成功。"
 
 #: includes/class-ure-admin.php:1212
 msgid "Failed to save settings. Please try again."
-msgstr ""
+msgstr "保存设置失败。请重试。"
 
 #: includes/class-ure-admin.php:1226
 msgid "Settings have been reset to defaults."
-msgstr ""
+msgstr "设置已重置为默认值。"
 
 #: includes/class-ure-admin.php:1233
 msgid "Failed to reset settings. Please try again."
-msgstr ""
+msgstr "重置设置失败。请重试。"
 
 #: includes/class-ure-admin.php:1249
 msgid "Please enter a profile name."
-msgstr ""
+msgstr "请输入配置文件名称。"
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1271
 msgid "Profile \"%s\" saved successfully."
-msgstr ""
+msgstr "配置文件"%s"保存成功。"
 
 #: includes/class-ure-admin.php:1280
 msgid "Failed to save profile. Please try again."
-msgstr ""
+msgstr "保存配置文件失败。请重试。"
 
 #: includes/class-ure-admin.php:1296
 msgid "Please select a profile to load."
-msgstr ""
+msgstr "请选择要加载的配置文件。"
 
 #: includes/class-ure-admin.php:1308
 msgid "Profile not found."
-msgstr ""
+msgstr "未找到配置文件。"
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1322
 msgid "Profile \"%s\" loaded successfully. Review the settings below and click Preview or Apply."
-msgstr ""
+msgstr "配置文件"%s"加载成功。请查看下面的设置并点击预览或应用。"
 
 #: includes/class-ure-admin.php:1339
 msgid "Please select a profile to delete."
-msgstr ""
+msgstr "请选择要删除的配置文件。"
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1351
 msgid "Profile \"%s\" deleted successfully."
-msgstr ""
+msgstr "配置文件"%s"删除成功。"
 
 #: includes/class-ure-admin.php:1360
 msgid "Failed to delete profile. Please try again."
-msgstr ""
+msgstr "删除配置文件失败。请重试。"
 
 #: includes/class-ure-admin.php:1372
 #: templates/admin-db-search.php:44
 msgid "Database Search & Replace"
-msgstr ""
+msgstr "数据库搜索和替换"
 
 #: includes/class-ure-admin.php:1385
 msgid "Backup & Restore"
-msgstr ""
+msgstr "备份和恢复"
 
 #: includes/class-ure-admin.php:1398
 msgid "URE Settings"
-msgstr ""
+msgstr "URE设置"
 
 #: includes/class-ure-admin.php:1411
 msgid "URE Help"
-msgstr ""
+msgstr "URE帮助"
 
 #: includes/class-ure-ajax.php:58
 #: includes/class-ure-ajax.php:113
 #: includes/class-ure-ajax.php:180
 msgid "Insufficient permissions."
-msgstr ""
+msgstr "权限不足。"
 
 #: includes/class-ure-ajax.php:69
 #: includes/class-ure-ajax.php:124
 msgid "Search term is required."
-msgstr ""
+msgstr "需要搜索词。"
 
 #. translators: 1: search, 2: replace, 3: updates count
 #: includes/class-ure-ajax.php:149
 msgid "Replaced \"%1$s\" with \"%2$s\" in %3$d posts."
-msgstr ""
+msgstr "在 %3$d 篇文章中将"%1$s"替换为"%2$s"。"
 
 #: includes/class-ure-ajax.php:186
 msgid "Operation ID is required."
-msgstr ""
+msgstr "需要操作ID。"
 
 #: includes/class-ure-ajax.php:192
 msgid "Operation not found or expired."
-msgstr ""
+msgstr "未找到操作或已过期。"
 
 #: includes/class-ure-backup-manager.php:100
 msgid "No tables specified for backup."
-msgstr ""
+msgstr "未指定要备份的数据表。"
 
 #: includes/class-ure-backup-manager.php:117
 msgid "Could not create backup file."
-msgstr ""
+msgstr "无法创建备份文件。"
 
 #: includes/class-ure-backup-manager.php:149
 msgid "Backup created successfully."
-msgstr ""
+msgstr "备份创建成功。"
 
 #: includes/class-ure-backup-manager.php:373
 #: includes/class-ure-logger.php:123
 #: includes/class-ure-logger.php:157
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #: includes/class-ure-backup-manager.php:399
 msgid "Backup not found in metadata."
-msgstr ""
+msgstr "在元数据中未找到备份。"
 
 #: includes/class-ure-backup-manager.php:408
 msgid "Backup file not found or not readable."
-msgstr ""
+msgstr "未找到备份文件或无法读取。"
 
 #: includes/class-ure-backup-manager.php:436
 msgid "Could not read backup file."
-msgstr ""
+msgstr "无法读取备份文件。"
 
 #. translators: %d: number of queries
 #: includes/class-ure-backup-manager.php:467
 msgid "Executed %d queries successfully."
-msgstr ""
+msgstr "成功执行了 %d 个查询。"
 
 #: includes/class-ure-backup-manager.php:504
 msgid "Backup not found."
-msgstr ""
+msgstr "未找到备份。"
 
 #: includes/class-ure-backup-manager.php:520
 msgid "Backup deleted successfully."
-msgstr ""
+msgstr "备份删除成功。"
 
 #: includes/class-ure-database-manager.php:234
 msgid "Table does not exist."
-msgstr ""
+msgstr "数据表不存在。"
 
 #: includes/class-ure-database-manager.php:246
 msgid "Table has no primary key."
-msgstr ""
+msgstr "数据表没有主键。"
 
 #. translators: %d: row number
 #: includes/class-ure-database-manager.php:345
 msgid "Error updating row %d"
-msgstr ""
+msgstr "更新第 %d 行时出错"
 
 #: includes/class-ure-logger.php:175
 msgid "Log entry not found."
-msgstr ""
+msgstr "未找到日志条目。"
 
 #: includes/class-ure-logger.php:184
 msgid "No rollback data available."
-msgstr ""
+msgstr "没有可用的回滚数据。"
 
 #. translators: 1: number of posts, 2: original log ID
 #: includes/class-ure-logger.php:245
 msgid "Rolled back %1$d post(s) from operation #%2$d."
-msgstr ""
+msgstr "从操作 #%2$d 回滚了 %1$d 篇文章。"
 
 #. translators: %d: number of posts
 #: includes/class-ure-logger.php:265
 msgid "Successfully rolled back %d post(s)."
-msgstr ""
+msgstr "成功回滚了 %d 篇文章。"
 
 #: includes/class-ure-search-replace.php:79
 #: includes/class-ure-search-replace.php:471
 msgid "No valid post types selected."
-msgstr ""
+msgstr "未选择有效的文章类型。"
 
 #: includes/class-ure-search-replace.php:478
 msgid "Search term cannot be empty."
-msgstr ""
+msgstr "搜索词不能为空。"
 
 #. translators: 1: number of posts, 2: search term, 3: replace term
 #: includes/class-ure-search-replace.php:615
 msgid "Replaced \"%2$s\" with \"%3$s\" in %1$d post(s)."
-msgstr ""
+msgstr "在 %1$d 篇文章中将"%2$s"替换为"%3$s"。"
 
 #: includes/class-ure-search-replace.php:645
 msgid "Invalid regex pattern."
-msgstr ""
+msgstr "无效的正则表达式模式。"
 
 #. translators: %s: error message
 #: includes/class-ure-search-replace.php:651
 msgid "Regex error: %s"
-msgstr ""
+msgstr "正则表达式错误：%s"
 
 #: templates/admin-backup.php:29
 msgid "Backup & Restore - Use With Caution!"
-msgstr ""
+msgstr "备份和恢复 - 请谨慎使用！"
 
 #: templates/admin-backup.php:32
 msgid "Creating backups and restoring your database are critical operations. Always ensure you have a recent working backup before making major changes."
-msgstr ""
+msgstr "创建备份和恢复数据库是关键操作。在进行重大更改之前，请务必确保您有最近的可用备份。"
 
 #: templates/admin-backup.php:39
 #: templates/admin-db-search.php:35
 msgid "ALWAYS create a backup before proceeding"
-msgstr ""
+msgstr "继续之前务必创建备份"
 
 #: templates/admin-backup.php:40
 #: templates/admin-db-search.php:36
 msgid "Test on a staging site first"
-msgstr ""
+msgstr "先在测试站点上测试"
 
 #: templates/admin-backup.php:41
 msgid "Understand what you're restoring"
-msgstr ""
+msgstr "了解您要恢复的内容"
 
 #: templates/admin-backup.php:47
 msgid "Create Backup (Recommended)"
-msgstr ""
+msgstr "创建备份（推荐）"
 
 #: templates/admin-backup.php:54
 msgid "Tables to Backup"
-msgstr ""
+msgstr "要备份的数据表"
 
 #: templates/admin-backup.php:57
 #: templates/admin-db-search.php:80
 msgid "Select All"
-msgstr ""
+msgstr "全选"
 
 #: templates/admin-backup.php:58
 #: templates/admin-db-search.php:81
 msgid "Deselect All"
-msgstr ""
+msgstr "取消全选"
 
 #: templates/admin-backup.php:59
 msgid "Core Tables Only"
-msgstr ""
+msgstr "仅核心数据表"
 
 #: templates/admin-backup.php:74
 #: templates/admin-db-search.php:95
 msgid "Protected"
-msgstr ""
+msgstr "受保护"
 
 #: templates/admin-backup.php:91
 msgid "Comment (Optional)"
-msgstr ""
+msgstr "备注（可选）"
 
 #: templates/admin-backup.php:97
 msgid "E.g., Before domain migration"
-msgstr ""
+msgstr "例如：域名迁移前"
 
 #: templates/admin-backup.php:103
 msgid "Create Backup"
-msgstr ""
+msgstr "创建备份"
 
 #: templates/admin-backup.php:111
 msgid "Available Backups"
-msgstr ""
+msgstr "可用备份"
 
 #: templates/admin-backup.php:115
 msgid "Created"
-msgstr ""
+msgstr "创建时间"
 
 #: templates/admin-backup.php:117
 msgid "Tables"
-msgstr ""
+msgstr "数据表"
 
 #: templates/admin-backup.php:118
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 #: templates/admin-backup.php:119
 msgid "Comment"
-msgstr ""
+msgstr "备注"
 
 #: templates/admin-backup.php:148
 msgid "Are you sure you want to restore this backup? This will overwrite current data!"
-msgstr ""
+msgstr "您确定要恢复此备份吗？这将覆盖当前数据！"
 
 #: templates/admin-backup.php:150
 msgid "Restore"
-msgstr ""
+msgstr "恢复"
 
 #: templates/admin-backup.php:161
 msgid "Are you sure you want to delete this backup?"
-msgstr ""
+msgstr "您确定要删除此备份吗？"
 
 #: templates/admin-backup.php:163
 #: templates/admin-profiles.php:51
 msgid "Delete"
-msgstr ""
+msgstr "删除"
 
 #: templates/admin-db-search.php:25
 msgid "Advanced Mode - Use With Caution!"
-msgstr ""
+msgstr "高级模式 - 请谨慎使用！"
 
 #: templates/admin-db-search.php:28
 msgid "Advanced mode allows you to search and replace across any database table, including wp_options, usermeta, and custom plugin tables. This is powerful but potentially dangerous."
-msgstr ""
+msgstr "高级模式允许您在任何数据表中搜索和替换，包括wp_options、usermeta和自定义插件数据表。这很强大但可能很危险。"
 
 #: templates/admin-db-search.php:37
 msgid "Be very specific with your search terms"
-msgstr ""
+msgstr "搜索词要非常具体"
 
 #: templates/admin-db-search.php:38
 msgid "Understand what you're changing"
-msgstr ""
+msgstr "了解您要更改的内容"
 
 #: templates/admin-db-search.php:52
 msgid "Search For"
-msgstr ""
+msgstr "搜索"
 
 #: templates/admin-db-search.php:61
 msgid "Text to search for..."
-msgstr ""
+msgstr "要搜索的文本..."
 
 #: templates/admin-db-search.php:66
 msgid "Replace With"
-msgstr ""
+msgstr "替换为"
 
 #: templates/admin-db-search.php:72
 msgid "Replacement text..."
-msgstr ""
+msgstr "替换文本..."
 
 #: templates/admin-db-search.php:77
 msgid "Select Tables"
-msgstr ""
+msgstr "选择数据表"
 
 #: templates/admin-db-search.php:119
 msgid "Skip GUIDs (recommended)"
-msgstr ""
+msgstr "跳过GUID（推荐）"
 
 #: templates/admin-db-search.php:132
 msgid "Preview Changes"
-msgstr ""
+msgstr "预览更改"
 
 #: templates/admin-help.php:20
 msgid "Universal Replace Engine - Help & Documentation"
-msgstr ""
+msgstr "通用替换引擎 - 帮助和文档"
 
 #: templates/admin-help.php:23
 #: templates/admin-help.php:33
 msgid "Getting Started"
-msgstr ""
+msgstr "入门指南"
 
 #: templates/admin-help.php:24
 msgid "Features"
-msgstr ""
+msgstr "功能"
 
 #: templates/admin-help.php:25
 msgid "Profiles"
-msgstr ""
+msgstr "配置文件"
 
 #: templates/admin-help.php:26
 msgid "Advanced Mode"
-msgstr ""
+msgstr "高级模式"
 
 #: templates/admin-help.php:27
 #: templates/admin-help.php:139
 msgid "Troubleshooting"
-msgstr ""
+msgstr "故障排除"
 
 #: templates/admin-help.php:28
 msgid "FAQ"
-msgstr ""
+msgstr "常见问题"
 
 #: templates/admin-help.php:35
 msgid "Basic Search & Replace"

@@ -24,22 +24,22 @@ msgstr "Universelle Ersetzungsmaschine"
 #. Plugin URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com/universal-replace-engine"
-msgstr ""
+msgstr "https://yoursite.com/universal-replace-engine"
 
 #. Description of the plugin
 #: universal-replace-engine.php
 msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr ""
+msgstr "Professionelles Suchen und Ersetzen für WordPress. Inhalts- und Datenbankoperationen, SQL-Backups, Multisite-Unterstützung, GUID-Schutz, gespeicherte Profile und Pro-Regex-Modus."
 
 #. Author of the plugin
 #: universal-replace-engine.php
 msgid "Your Name"
-msgstr ""
+msgstr "Your Name"
 
 #. Author URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com"
-msgstr ""
+msgstr "https://yoursite.com"
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -47,11 +47,11 @@ msgstr "Sicherheitsprüfung fehlgeschlagen."
 
 #: includes/class-ure-admin.php:117
 msgid "You do not have permission to perform this action."
-msgstr ""
+msgstr "Sie haben keine Berechtigung, diese Aktion auszuführen."
 
 #: includes/class-ure-admin.php:194
 msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr ""
+msgstr "Erweiterte Bereiche (Post-Meta, Elementor, Alle Orte) erfordern die Pro-Version. Es wird auf Beitragsinhalt zurückgegriffen."
 
 #: includes/class-ure-admin.php:203
 #: includes/class-ure-admin.php:1007
@@ -65,21 +65,21 @@ msgstr "Keine Übereinstimmungen gefunden."
 #. translators: %d: number of matches
 #: includes/class-ure-admin.php:255
 msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr ""
+msgstr "%d Übereinstimmung(en) gefunden. Überprüfen Sie die Ergebnisse unten und klicken Sie auf \"Änderungen anwenden\", um fortzufahren."
 
 #: includes/class-ure-admin.php:280
 #: includes/class-ure-admin.php:1096
 msgid "Preview data expired. Please run preview again."
-msgstr ""
+msgstr "Vorschaudaten abgelaufen. Bitte führen Sie die Vorschau erneut aus."
 
 #. translators: %d: number of posts modified
 #: includes/class-ure-admin.php:311
 msgid "Successfully modified %d post(s)."
-msgstr ""
+msgstr "%d Beitrag/Beiträge erfolgreich geändert."
 
 #: includes/class-ure-admin.php:339
 msgid "Invalid log ID."
-msgstr ""
+msgstr "Ungültige Protokoll-ID."
 
 #: includes/class-ure-admin.php:401
 msgid "Search & Replace"
@@ -103,7 +103,7 @@ msgstr "Hilfe"
 
 #: includes/class-ure-admin.php:430
 msgid "Search and Replace"
-msgstr ""
+msgstr "Suchen und Ersetzen"
 
 #: includes/class-ure-admin.php:438
 msgid "Search for"
@@ -111,7 +111,7 @@ msgstr "Suchen nach"
 
 #: includes/class-ure-admin.php:456
 msgid "Enter the text you want to search for."
-msgstr ""
+msgstr "Geben Sie den Text ein, nach dem Sie suchen möchten."
 
 #: includes/class-ure-admin.php:463
 msgid "Replace with"
@@ -119,84 +119,84 @@ msgstr "Ersetzen durch"
 
 #: includes/class-ure-admin.php:480
 msgid "Enter the replacement text (leave empty to only search)."
-msgstr ""
+msgstr "Geben Sie den Ersatztext ein (leer lassen, um nur zu suchen)."
 
 #: includes/class-ure-admin.php:487
 msgid "Search Scope"
-msgstr ""
+msgstr "Suchbereich"
 
 #: includes/class-ure-admin.php:500
 msgid "Post Content"
-msgstr ""
+msgstr "Beitragsinhalt"
 
 #: includes/class-ure-admin.php:501
 msgid "(post_content field only)"
-msgstr ""
+msgstr "(nur post_content Feld)"
 
 #: includes/class-ure-admin.php:508
 msgid "Post Meta"
-msgstr ""
+msgstr "Beitrags-Metadaten"
 
 #: includes/class-ure-admin.php:509
 msgid "(custom fields, excluding Elementor)"
-msgstr ""
+msgstr "(benutzerdefinierte Felder, außer Elementor)"
 
 #: includes/class-ure-admin.php:521
 msgid "Elementor Data"
-msgstr ""
+msgstr "Elementor-Daten"
 
 #: includes/class-ure-admin.php:522
 msgid "(_elementor_data JSON field)"
-msgstr ""
+msgstr "(_elementor_data JSON-Feld)"
 
 #: includes/class-ure-admin.php:534
 msgid "All Locations"
-msgstr ""
+msgstr "Alle Orte"
 
 #: includes/class-ure-admin.php:535
 msgid "(content + postmeta + Elementor)"
-msgstr ""
+msgstr "(Inhalt + Postmeta + Elementor)"
 
 #: includes/class-ure-admin.php:544
 msgid "Choose where to search and replace."
-msgstr ""
+msgstr "Wählen Sie aus, wo gesucht und ersetzt werden soll."
 
 #: includes/class-ure-admin.php:548
 msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr ""
+msgstr "Upgraden Sie auf Pro, um Beitrags-Metadaten, Elementor-Daten und Alle-Orte-Bereiche freizuschalten."
 
 #: includes/class-ure-admin.php:557
 #: templates/admin-profiles.php:65
 msgid "Post Types"
-msgstr ""
+msgstr "Beitragstypen"
 
 #: includes/class-ure-admin.php:562
 msgid "Select which post types to search in."
-msgstr ""
+msgstr "Wählen Sie aus, in welchen Beitragstypen gesucht werden soll."
 
 #: includes/class-ure-admin.php:569
 #: templates/admin-db-search.php:112
 #: templates/admin-profiles.php:66
 msgid "Options"
-msgstr ""
+msgstr "Optionen"
 
 #: includes/class-ure-admin.php:578
 #: templates/admin-db-search.php:115
 msgid "Case sensitive"
-msgstr ""
+msgstr "Groß-/Kleinschreibung beachten"
 
 #: includes/class-ure-admin.php:589
 #: templates/admin-db-search.php:124
 msgid "Regex mode"
-msgstr ""
+msgstr "Regex-Modus"
 
 #: includes/class-ure-admin.php:592
 msgid "Regex mode (Pro feature)"
-msgstr ""
+msgstr "Regex-Modus (Pro-Funktion)"
 
 #: includes/class-ure-admin.php:603
 msgid "Run Preview"
-msgstr ""
+msgstr "Vorschau ausführen"
 
 #: includes/class-ure-admin.php:608
 msgid "Apply Changes"
@@ -204,105 +204,105 @@ msgstr "Änderungen Anwenden"
 
 #: includes/class-ure-admin.php:618
 msgid "Preview Results"
-msgstr ""
+msgstr "Vorschau-Ergebnisse"
 
 #. translators: 1: shown count, 2: total count
 #: includes/class-ure-admin.php:626
 msgid "Showing %1$d of %2$d matches (Free version limit)."
-msgstr ""
+msgstr "Zeige %1$d von %2$d Übereinstimmungen (Limit der kostenlosen Version)."
 
 #. translators: %d: total matches
 #: includes/class-ure-admin.php:640
 msgid "Showing all %d matches (unlimited preview in Pro version)."
-msgstr ""
+msgstr "Zeige alle %d Übereinstimmungen (unbegrenzte Vorschau in der Pro-Version)."
 
 #: includes/class-ure-admin.php:651
 msgid "Location"
-msgstr ""
+msgstr "Ort"
 
 #: includes/class-ure-admin.php:652
 msgid "Before"
-msgstr ""
+msgstr "Vorher"
 
 #: includes/class-ure-admin.php:653
 msgid "After"
-msgstr ""
+msgstr "Nachher"
 
 #. translators: 1: post type, 2: post ID
 #: includes/class-ure-admin.php:666
 msgid "%1$s (ID: %2$d)"
-msgstr ""
+msgstr "%1$s (ID: %2$d)"
 
 #: includes/class-ure-admin.php:679
 msgid "Search only"
-msgstr ""
+msgstr "Nur suchen"
 
 #. translators: %d: history limit
 #: includes/class-ure-admin.php:698
 msgid "History (Last %d Operations)"
-msgstr ""
+msgstr "Verlauf (Letzte %d Operationen)"
 
 #: includes/class-ure-admin.php:702
 msgid "History (Last 5 Operations)"
-msgstr ""
+msgstr "Verlauf (Letzte 5 Operationen)"
 
 #: includes/class-ure-admin.php:729
 msgid "Unlock Pro Features"
-msgstr ""
+msgstr "Pro-Funktionen freischalten"
 
 #: includes/class-ure-admin.php:731
 msgid "Search and replace in postmeta, options, and term meta"
-msgstr ""
+msgstr "Suchen und Ersetzen in Postmeta, Optionen und Term-Meta"
 
 #: includes/class-ure-admin.php:732
 msgid "Elementor page builder support"
-msgstr ""
+msgstr "Elementor Page Builder-Unterstützung"
 
 #: includes/class-ure-admin.php:733
 msgid "ACF custom fields support"
-msgstr ""
+msgstr "ACF benutzerdefinierte Felder-Unterstützung"
 
 #: includes/class-ure-admin.php:734
 msgid "Unlimited preview results"
-msgstr ""
+msgstr "Unbegrenzte Vorschau-Ergebnisse"
 
 #: includes/class-ure-admin.php:735
 msgid "Full regex mode"
-msgstr ""
+msgstr "Vollständiger Regex-Modus"
 
 #: includes/class-ure-admin.php:736
 msgid "WP-CLI commands"
-msgstr ""
+msgstr "WP-CLI-Befehle"
 
 #: includes/class-ure-admin.php:737
 msgid "Multisite support"
-msgstr ""
+msgstr "Multisite-Unterstützung"
 
 #: includes/class-ure-admin.php:825
 msgid "No operations recorded yet."
-msgstr ""
+msgstr "Noch keine Operationen aufgezeichnet."
 
 #: includes/class-ure-admin.php:833
 msgid "Date/Time"
-msgstr ""
+msgstr "Datum/Uhrzeit"
 
 #: includes/class-ure-admin.php:834
 #: templates/admin-backup.php:116
 msgid "User"
-msgstr ""
+msgstr "Benutzer"
 
 #: includes/class-ure-admin.php:835
 msgid "Summary"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #: includes/class-ure-admin.php:836
 #: templates/admin-backup.php:120
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: includes/class-ure-admin.php:854
 msgid "Are you sure you want to undo this operation?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie diese Operation rückgängig machen möchten?"
 
 #: includes/class-ure-admin.php:855
 msgid "Undo"
@@ -310,1026 +310,1026 @@ msgstr "Rückgängig"
 
 #: includes/class-ure-admin.php:859
 msgid "N/A"
-msgstr ""
+msgstr "N/V"
 
 #: includes/class-ure-admin.php:883
 msgid "Please select at least one table to backup."
-msgstr ""
+msgstr "Bitte wählen Sie mindestens eine Tabelle für die Sicherung aus."
 
 #. translators: 1: table count, 2: file size
 #: includes/class-ure-admin.php:897
 msgid "Backup created successfully! %1$d tables backed up (%2$.2f MB)."
-msgstr ""
+msgstr "Sicherung erfolgreich erstellt! %1$d Tabellen gesichert (%2$.2f MB)."
 
 #: includes/class-ure-admin.php:926
 #: includes/class-ure-admin.php:964
 msgid "Invalid backup filename."
-msgstr ""
+msgstr "Ungültiger Sicherungsdateiname."
 
 #: includes/class-ure-admin.php:1017
 msgid "Please select at least one table."
-msgstr ""
+msgstr "Bitte wählen Sie mindestens eine Tabelle aus."
 
 #. translators: 1: changes count, 2: tables count
 #: includes/class-ure-admin.php:1066
 msgid "Found %1$d potential changes across %2$d tables. Review below."
-msgstr ""
+msgstr "%1$d potenzielle Änderungen in %2$d Tabellen gefunden. Überprüfen Sie diese unten."
 
 #: includes/class-ure-admin.php:1076
 msgid "No matches found in selected tables."
-msgstr ""
+msgstr "Keine Übereinstimmungen in den ausgewählten Tabellen gefunden."
 
 #. translators: 1: search, 2: replace, 3: updates count, 4: tables count
 #: includes/class-ure-admin.php:1135
 msgid "Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d tables."
-msgstr ""
+msgstr "Datenbankoperation: \"%1$s\" wurde durch \"%2$s\" in %3$d Zeilen über %4$d Tabellen ersetzt."
 
 #. translators: 1: updates count, 2: tables count
 #: includes/class-ure-admin.php:1165
 msgid "Successfully updated %1$d rows across %2$d tables."
-msgstr ""
+msgstr "%1$d Zeilen in %2$d Tabellen erfolgreich aktualisiert."
 
 #: includes/class-ure-admin.php:1175
 msgid "No changes were made."
-msgstr ""
+msgstr "Es wurden keine Änderungen vorgenommen."
 
 #: includes/class-ure-admin.php:1191
 msgid "No settings data received."
-msgstr ""
+msgstr "Keine Einstellungsdaten empfangen."
 
 #: includes/class-ure-admin.php:1205
 msgid "Settings saved successfully."
-msgstr ""
+msgstr "Einstellungen erfolgreich gespeichert."
 
 #: includes/class-ure-admin.php:1212
 msgid "Failed to save settings. Please try again."
-msgstr ""
+msgstr "Fehler beim Speichern der Einstellungen. Bitte versuchen Sie es erneut."
 
 #: includes/class-ure-admin.php:1226
 msgid "Settings have been reset to defaults."
-msgstr ""
+msgstr "Die Einstellungen wurden auf Standardwerte zurückgesetzt."
 
 #: includes/class-ure-admin.php:1233
 msgid "Failed to reset settings. Please try again."
-msgstr ""
+msgstr "Fehler beim Zurücksetzen der Einstellungen. Bitte versuchen Sie es erneut."
 
 #: includes/class-ure-admin.php:1249
 msgid "Please enter a profile name."
-msgstr ""
+msgstr "Bitte geben Sie einen Profilnamen ein."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1271
 msgid "Profile \"%s\" saved successfully."
-msgstr ""
+msgstr "Profil \"%s\" erfolgreich gespeichert."
 
 #: includes/class-ure-admin.php:1280
 msgid "Failed to save profile. Please try again."
-msgstr ""
+msgstr "Fehler beim Speichern des Profils. Bitte versuchen Sie es erneut."
 
 #: includes/class-ure-admin.php:1296
 msgid "Please select a profile to load."
-msgstr ""
+msgstr "Bitte wählen Sie ein Profil zum Laden aus."
 
 #: includes/class-ure-admin.php:1308
 msgid "Profile not found."
-msgstr ""
+msgstr "Profil nicht gefunden."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1322
 msgid "Profile \"%s\" loaded successfully. Review the settings below and click Preview or Apply."
-msgstr ""
+msgstr "Profil \"%s\" erfolgreich geladen. Überprüfen Sie die Einstellungen unten und klicken Sie auf Vorschau oder Anwenden."
 
 #: includes/class-ure-admin.php:1339
 msgid "Please select a profile to delete."
-msgstr ""
+msgstr "Bitte wählen Sie ein Profil zum Löschen aus."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1351
 msgid "Profile \"%s\" deleted successfully."
-msgstr ""
+msgstr "Profil \"%s\" erfolgreich gelöscht."
 
 #: includes/class-ure-admin.php:1360
 msgid "Failed to delete profile. Please try again."
-msgstr ""
+msgstr "Fehler beim Löschen des Profils. Bitte versuchen Sie es erneut."
 
 #: includes/class-ure-admin.php:1372
 #: templates/admin-db-search.php:44
 msgid "Database Search & Replace"
-msgstr ""
+msgstr "Datenbank Suchen & Ersetzen"
 
 #: includes/class-ure-admin.php:1385
 msgid "Backup & Restore"
-msgstr ""
+msgstr "Sicherung & Wiederherstellung"
 
 #: includes/class-ure-admin.php:1398
 msgid "URE Settings"
-msgstr ""
+msgstr "URE-Einstellungen"
 
 #: includes/class-ure-admin.php:1411
 msgid "URE Help"
-msgstr ""
+msgstr "URE-Hilfe"
 
 #: includes/class-ure-ajax.php:58
 #: includes/class-ure-ajax.php:113
 #: includes/class-ure-ajax.php:180
 msgid "Insufficient permissions."
-msgstr ""
+msgstr "Unzureichende Berechtigungen."
 
 #: includes/class-ure-ajax.php:69
 #: includes/class-ure-ajax.php:124
 msgid "Search term is required."
-msgstr ""
+msgstr "Suchbegriff ist erforderlich."
 
 #. translators: 1: search, 2: replace, 3: updates count
 #: includes/class-ure-ajax.php:149
 msgid "Replaced \"%1$s\" with \"%2$s\" in %3$d posts."
-msgstr ""
+msgstr "\"%1$s\" wurde durch \"%2$s\" in %3$d Beiträgen ersetzt."
 
 #: includes/class-ure-ajax.php:186
 msgid "Operation ID is required."
-msgstr ""
+msgstr "Operations-ID ist erforderlich."
 
 #: includes/class-ure-ajax.php:192
 msgid "Operation not found or expired."
-msgstr ""
+msgstr "Operation nicht gefunden oder abgelaufen."
 
 #: includes/class-ure-backup-manager.php:100
 msgid "No tables specified for backup."
-msgstr ""
+msgstr "Keine Tabellen für die Sicherung angegeben."
 
 #: includes/class-ure-backup-manager.php:117
 msgid "Could not create backup file."
-msgstr ""
+msgstr "Sicherungsdatei konnte nicht erstellt werden."
 
 #: includes/class-ure-backup-manager.php:149
 msgid "Backup created successfully."
-msgstr ""
+msgstr "Sicherung erfolgreich erstellt."
 
 #: includes/class-ure-backup-manager.php:373
 #: includes/class-ure-logger.php:123
 #: includes/class-ure-logger.php:157
 msgid "Unknown"
-msgstr ""
+msgstr "Unbekannt"
 
 #: includes/class-ure-backup-manager.php:399
 msgid "Backup not found in metadata."
-msgstr ""
+msgstr "Sicherung in Metadaten nicht gefunden."
 
 #: includes/class-ure-backup-manager.php:408
 msgid "Backup file not found or not readable."
-msgstr ""
+msgstr "Sicherungsdatei nicht gefunden oder nicht lesbar."
 
 #: includes/class-ure-backup-manager.php:436
 msgid "Could not read backup file."
-msgstr ""
+msgstr "Sicherungsdatei konnte nicht gelesen werden."
 
 #. translators: %d: number of queries
 #: includes/class-ure-backup-manager.php:467
 msgid "Executed %d queries successfully."
-msgstr ""
+msgstr "%d Abfragen erfolgreich ausgeführt."
 
 #: includes/class-ure-backup-manager.php:504
 msgid "Backup not found."
-msgstr ""
+msgstr "Sicherung nicht gefunden."
 
 #: includes/class-ure-backup-manager.php:520
 msgid "Backup deleted successfully."
-msgstr ""
+msgstr "Sicherung erfolgreich gelöscht."
 
 #: includes/class-ure-database-manager.php:234
 msgid "Table does not exist."
-msgstr ""
+msgstr "Tabelle existiert nicht."
 
 #: includes/class-ure-database-manager.php:246
 msgid "Table has no primary key."
-msgstr ""
+msgstr "Tabelle hat keinen Primärschlüssel."
 
 #. translators: %d: row number
 #: includes/class-ure-database-manager.php:345
 msgid "Error updating row %d"
-msgstr ""
+msgstr "Fehler beim Aktualisieren der Zeile %d"
 
 #: includes/class-ure-logger.php:175
 msgid "Log entry not found."
-msgstr ""
+msgstr "Protokolleintrag nicht gefunden."
 
 #: includes/class-ure-logger.php:184
 msgid "No rollback data available."
-msgstr ""
+msgstr "Keine Rollback-Daten verfügbar."
 
 #. translators: 1: number of posts, 2: original log ID
 #: includes/class-ure-logger.php:245
 msgid "Rolled back %1$d post(s) from operation #%2$d."
-msgstr ""
+msgstr "%1$d Beitrag/Beiträge aus Operation #%2$d rückgängig gemacht."
 
 #. translators: %d: number of posts
 #: includes/class-ure-logger.php:265
 msgid "Successfully rolled back %d post(s)."
-msgstr ""
+msgstr "%d Beitrag/Beiträge erfolgreich rückgängig gemacht."
 
 #: includes/class-ure-search-replace.php:79
 #: includes/class-ure-search-replace.php:471
 msgid "No valid post types selected."
-msgstr ""
+msgstr "Keine gültigen Beitragstypen ausgewählt."
 
 #: includes/class-ure-search-replace.php:478
 msgid "Search term cannot be empty."
-msgstr ""
+msgstr "Suchbegriff darf nicht leer sein."
 
 #. translators: 1: number of posts, 2: search term, 3: replace term
 #: includes/class-ure-search-replace.php:615
 msgid "Replaced \"%2$s\" with \"%3$s\" in %1$d post(s)."
-msgstr ""
+msgstr "\"%2$s\" wurde durch \"%3$s\" in %1$d Beitrag/Beiträgen ersetzt."
 
 #: includes/class-ure-search-replace.php:645
 msgid "Invalid regex pattern."
-msgstr ""
+msgstr "Ungültiges Regex-Muster."
 
 #. translators: %s: error message
 #: includes/class-ure-search-replace.php:651
 msgid "Regex error: %s"
-msgstr ""
+msgstr "Regex-Fehler: %s"
 
 #: templates/admin-backup.php:29
 msgid "Backup & Restore - Use With Caution!"
-msgstr ""
+msgstr "Sicherung & Wiederherstellung - Mit Vorsicht verwenden!"
 
 #: templates/admin-backup.php:32
 msgid "Creating backups and restoring your database are critical operations. Always ensure you have a recent working backup before making major changes."
-msgstr ""
+msgstr "Das Erstellen von Sicherungen und das Wiederherstellen Ihrer Datenbank sind kritische Operationen. Stellen Sie immer sicher, dass Sie eine aktuelle funktionierende Sicherung haben, bevor Sie größere Änderungen vornehmen."
 
 #: templates/admin-backup.php:39
 #: templates/admin-db-search.php:35
 msgid "ALWAYS create a backup before proceeding"
-msgstr ""
+msgstr "Erstellen Sie IMMER eine Sicherung, bevor Sie fortfahren"
 
 #: templates/admin-backup.php:40
 #: templates/admin-db-search.php:36
 msgid "Test on a staging site first"
-msgstr ""
+msgstr "Testen Sie zuerst auf einer Staging-Seite"
 
 #: templates/admin-backup.php:41
 msgid "Understand what you're restoring"
-msgstr ""
+msgstr "Verstehen Sie, was Sie wiederherstellen"
 
 #: templates/admin-backup.php:47
 msgid "Create Backup (Recommended)"
-msgstr ""
+msgstr "Sicherung erstellen (Empfohlen)"
 
 #: templates/admin-backup.php:54
 msgid "Tables to Backup"
-msgstr ""
+msgstr "Zu sichernde Tabellen"
 
 #: templates/admin-backup.php:57
 #: templates/admin-db-search.php:80
 msgid "Select All"
-msgstr ""
+msgstr "Alle auswählen"
 
 #: templates/admin-backup.php:58
 #: templates/admin-db-search.php:81
 msgid "Deselect All"
-msgstr ""
+msgstr "Alle abwählen"
 
 #: templates/admin-backup.php:59
 msgid "Core Tables Only"
-msgstr ""
+msgstr "Nur Kern-Tabellen"
 
 #: templates/admin-backup.php:74
 #: templates/admin-db-search.php:95
 msgid "Protected"
-msgstr ""
+msgstr "Geschützt"
 
 #: templates/admin-backup.php:91
 msgid "Comment (Optional)"
-msgstr ""
+msgstr "Kommentar (Optional)"
 
 #: templates/admin-backup.php:97
 msgid "E.g., Before domain migration"
-msgstr ""
+msgstr "Z.B. Vor Domain-Migration"
 
 #: templates/admin-backup.php:103
 msgid "Create Backup"
-msgstr ""
+msgstr "Sicherung erstellen"
 
 #: templates/admin-backup.php:111
 msgid "Available Backups"
-msgstr ""
+msgstr "Verfügbare Sicherungen"
 
 #: templates/admin-backup.php:115
 msgid "Created"
-msgstr ""
+msgstr "Erstellt"
 
 #: templates/admin-backup.php:117
 msgid "Tables"
-msgstr ""
+msgstr "Tabellen"
 
 #: templates/admin-backup.php:118
 msgid "Size"
-msgstr ""
+msgstr "Größe"
 
 #: templates/admin-backup.php:119
 msgid "Comment"
-msgstr ""
+msgstr "Kommentar"
 
 #: templates/admin-backup.php:148
 msgid "Are you sure you want to restore this backup? This will overwrite current data!"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie diese Sicherung wiederherstellen möchten? Dies überschreibt aktuelle Daten!"
 
 #: templates/admin-backup.php:150
 msgid "Restore"
-msgstr ""
+msgstr "Wiederherstellen"
 
 #: templates/admin-backup.php:161
 msgid "Are you sure you want to delete this backup?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie diese Sicherung löschen möchten?"
 
 #: templates/admin-backup.php:163
 #: templates/admin-profiles.php:51
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: templates/admin-db-search.php:25
 msgid "Advanced Mode - Use With Caution!"
-msgstr ""
+msgstr "Erweiterter Modus - Mit Vorsicht verwenden!"
 
 #: templates/admin-db-search.php:28
 msgid "Advanced mode allows you to search and replace across any database table, including wp_options, usermeta, and custom plugin tables. This is powerful but potentially dangerous."
-msgstr ""
+msgstr "Der erweiterte Modus ermöglicht das Suchen und Ersetzen in jeder Datenbanktabelle, einschließlich wp_options, usermeta und benutzerdefinierten Plugin-Tabellen. Dies ist leistungsstark, aber potenziell gefährlich."
 
 #: templates/admin-db-search.php:37
 msgid "Be very specific with your search terms"
-msgstr ""
+msgstr "Seien Sie sehr spezifisch mit Ihren Suchbegriffen"
 
 #: templates/admin-db-search.php:38
 msgid "Understand what you're changing"
-msgstr ""
+msgstr "Verstehen Sie, was Sie ändern"
 
 #: templates/admin-db-search.php:52
 msgid "Search For"
-msgstr ""
+msgstr "Suchen nach"
 
 #: templates/admin-db-search.php:61
 msgid "Text to search for..."
-msgstr ""
+msgstr "Text zum Suchen..."
 
 #: templates/admin-db-search.php:66
 msgid "Replace With"
-msgstr ""
+msgstr "Ersetzen durch"
 
 #: templates/admin-db-search.php:72
 msgid "Replacement text..."
-msgstr ""
+msgstr "Ersatztext..."
 
 #: templates/admin-db-search.php:77
 msgid "Select Tables"
-msgstr ""
+msgstr "Tabellen auswählen"
 
 #: templates/admin-db-search.php:119
 msgid "Skip GUIDs (recommended)"
-msgstr ""
+msgstr "GUIDs überspringen (empfohlen)"
 
 #: templates/admin-db-search.php:132
 msgid "Preview Changes"
-msgstr ""
+msgstr "Vorschau der Änderungen"
 
 #: templates/admin-help.php:20
 msgid "Universal Replace Engine - Help & Documentation"
-msgstr ""
+msgstr "Universelle Ersetzungsmaschine - Hilfe & Dokumentation"
 
 #: templates/admin-help.php:23
 #: templates/admin-help.php:33
 msgid "Getting Started"
-msgstr ""
+msgstr "Erste Schritte"
 
 #: templates/admin-help.php:24
 msgid "Features"
-msgstr ""
+msgstr "Funktionen"
 
 #: templates/admin-help.php:25
 msgid "Profiles"
-msgstr ""
+msgstr "Profile"
 
 #: templates/admin-help.php:26
 msgid "Advanced Mode"
-msgstr ""
+msgstr "Erweiterter Modus"
 
 #: templates/admin-help.php:27
 #: templates/admin-help.php:139
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Fehlerbehebung"
 
 #: templates/admin-help.php:28
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: templates/admin-help.php:35
 msgid "Basic Search & Replace"
-msgstr ""
+msgstr "Grundlegendes Suchen & Ersetzen"
 
 #: templates/admin-help.php:37
 msgid "Navigate to Tools → Universal Replace Engine"
-msgstr ""
+msgstr "Navigieren Sie zu Werkzeuge → Universelle Ersetzungsmaschine"
 
 #: templates/admin-help.php:38
 msgid "Enter your search term in the \"Search For\" field"
-msgstr ""
+msgstr "Geben Sie Ihren Suchbegriff in das Feld \"Suchen nach\" ein"
 
 #: templates/admin-help.php:39
 msgid "Enter the replacement text in the \"Replace With\" field (leave empty to just search)"
-msgstr ""
+msgstr "Geben Sie den Ersatztext in das Feld \"Ersetzen durch\" ein (leer lassen, um nur zu suchen)"
 
 #: templates/admin-help.php:40
 msgid "Select which post types to search in"
-msgstr ""
+msgstr "Wählen Sie aus, in welchen Beitragstypen gesucht werden soll"
 
 #: templates/admin-help.php:41
 msgid "Click \"Run Preview\" to see what will change"
-msgstr ""
+msgstr "Klicken Sie auf \"Vorschau ausführen\", um zu sehen, was sich ändern wird"
 
 #: templates/admin-help.php:42
 msgid "Review the preview carefully"
-msgstr ""
+msgstr "Überprüfen Sie die Vorschau sorgfältig"
 
 #: templates/admin-help.php:43
 msgid "Click \"Apply Changes\" to make the replacements"
-msgstr ""
+msgstr "Klicken Sie auf \"Änderungen anwenden\", um die Ersetzungen vorzunehmen"
 
 #: templates/admin-help.php:47
 msgid "Pro Tip:"
-msgstr ""
+msgstr "Profi-Tipp:"
 
 #: templates/admin-help.php:47
 msgid "Always run a preview first to avoid unexpected changes!"
-msgstr ""
+msgstr "Führen Sie immer zuerst eine Vorschau aus, um unerwartete Änderungen zu vermeiden!"
 
 #: templates/admin-help.php:53
 msgid "Features Overview"
-msgstr ""
+msgstr "Funktionsübersicht"
 
 #: templates/admin-help.php:55
 msgid "Content Operations"
-msgstr ""
+msgstr "Inhalts-Operationen"
 
 #: templates/admin-help.php:57
 msgid "Post Content:"
-msgstr ""
+msgstr "Beitragsinhalt:"
 
 #: templates/admin-help.php:57
 msgid "Search and replace in post/page content"
-msgstr ""
+msgstr "Suchen und Ersetzen in Beitrags-/Seiteninhalten"
 
 #: templates/admin-help.php:58
 msgid "Custom Post Types:"
-msgstr ""
+msgstr "Benutzerdefinierte Beitragstypen:"
 
 #: templates/admin-help.php:58
 msgid "Works with any post type (products, portfolios, etc.)"
-msgstr ""
+msgstr "Funktioniert mit jedem Beitragstyp (Produkte, Portfolios, etc.)"
 
 #: templates/admin-help.php:59
 msgid "Preview:"
-msgstr ""
+msgstr "Vorschau:"
 
 #: templates/admin-help.php:59
 msgid "See changes before applying them"
-msgstr ""
+msgstr "Änderungen vor dem Anwenden ansehen"
 
 #: templates/admin-help.php:60
 msgid "Undo/Rollback:"
-msgstr ""
+msgstr "Rückgängig/Rollback:"
 
 #: templates/admin-help.php:60
 msgid "Reverse changes with one click"
-msgstr ""
+msgstr "Änderungen mit einem Klick rückgängig machen"
 
 #: templates/admin-help.php:63
 msgid "Database Operations (Advanced Mode)"
-msgstr ""
+msgstr "Datenbankoperationen (Erweiterter Modus)"
 
 #: templates/admin-help.php:65
 msgid "All Tables:"
-msgstr ""
+msgstr "Alle Tabellen:"
 
 #: templates/admin-help.php:65
 msgid "Search any WordPress table"
-msgstr ""
+msgstr "Jede WordPress-Tabelle durchsuchen"
 
 #: templates/admin-help.php:66
 msgid "Backup:"
-msgstr ""
+msgstr "Sicherung:"
 
 #: templates/admin-help.php:66
 msgid "Create SQL backups before changes"
-msgstr ""
+msgstr "SQL-Sicherungen vor Änderungen erstellen"
 
 #: templates/admin-help.php:67
 msgid "Restore:"
-msgstr ""
+msgstr "Wiederherstellen:"
 
 #: templates/admin-help.php:67
 msgid "Restore from backup if needed"
-msgstr ""
+msgstr "Bei Bedarf aus Sicherung wiederherstellen"
 
 #: templates/admin-help.php:68
 msgid "GUID Protection:"
-msgstr ""
+msgstr "GUID-Schutz:"
 
 #: templates/admin-help.php:68
 msgid "Automatically skips WordPress GUIDs"
-msgstr ""
+msgstr "Überspringt automatisch WordPress-GUIDs"
 
 #: templates/admin-help.php:72
 msgid "Pro Features"
-msgstr ""
+msgstr "Pro-Funktionen"
 
 #: templates/admin-help.php:74
 msgid "Regex Mode:"
-msgstr ""
+msgstr "Regex-Modus:"
 
 #: templates/admin-help.php:74
 msgid "Use regular expressions for powerful pattern matching"
-msgstr ""
+msgstr "Verwenden Sie reguläre Ausdrücke für leistungsstarkes Musterabgleich"
 
 #: templates/admin-help.php:75
 msgid "Unlimited Preview:"
-msgstr ""
+msgstr "Unbegrenzte Vorschau:"
 
 #: templates/admin-help.php:75
 msgid "No limit on preview results"
-msgstr ""
+msgstr "Keine Begrenzung der Vorschau-Ergebnisse"
 
 #: templates/admin-help.php:76
 msgid "Extended History:"
-msgstr ""
+msgstr "Erweiterter Verlauf:"
 
 #: templates/admin-help.php:76
 msgid "Keep up to 50 operations for rollback"
-msgstr ""
+msgstr "Bis zu 50 Operationen für Rollback speichern"
 
 #: templates/admin-help.php:83
 msgid "Using Saved Profiles"
-msgstr ""
+msgstr "Gespeicherte Profile verwenden"
 
 #: templates/admin-help.php:84
 msgid "Profiles let you save common search/replace configurations for quick reuse."
-msgstr ""
+msgstr "Profile ermöglichen es Ihnen, häufige Such-/Ersetzungskonfigurationen für schnelle Wiederverwendung zu speichern."
 
 #: templates/admin-help.php:86
 msgid "Saving a Profile"
-msgstr ""
+msgstr "Ein Profil speichern"
 
 #: templates/admin-help.php:88
 msgid "Configure your search/replace settings"
-msgstr ""
+msgstr "Konfigurieren Sie Ihre Such-/Ersetzungseinstellungen"
 
 #: templates/admin-help.php:89
 msgid "Scroll to \"Save Current Settings\""
-msgstr ""
+msgstr "Scrollen Sie zu \"Aktuelle Einstellungen speichern\""
 
 #: templates/admin-help.php:90
 msgid "Enter a descriptive name (e.g., \"Domain Migration\")"
-msgstr ""
+msgstr "Geben Sie einen aussagekräftigen Namen ein (z.B. \"Domain-Migration\")"
 
 #: templates/admin-help.php:91
 msgid "Click \"Save Current Settings as Profile\""
-msgstr ""
+msgstr "Klicken Sie auf \"Aktuelle Einstellungen als Profil speichern\""
 
 #: templates/admin-help.php:94
 msgid "Loading a Profile"
-msgstr ""
+msgstr "Ein Profil laden"
 
 #: templates/admin-help.php:96
 msgid "Select a profile from the dropdown"
-msgstr ""
+msgstr "Wählen Sie ein Profil aus dem Dropdown-Menü"
 
 #: templates/admin-help.php:97
 msgid "Click \"Load\""
-msgstr ""
+msgstr "Klicken Sie auf \"Laden\""
 
 #: templates/admin-help.php:98
 msgid "Review the loaded settings"
-msgstr ""
+msgstr "Überprüfen Sie die geladenen Einstellungen"
 
 #: templates/admin-help.php:99
 msgid "Run Preview or Apply"
-msgstr ""
+msgstr "Vorschau ausführen oder Anwenden"
 
 #: templates/admin-help.php:102
 msgid "Common Profile Examples"
-msgstr ""
+msgstr "Häufige Profil-Beispiele"
 
 #: templates/admin-help.php:104
 msgid "Domain Migration:"
-msgstr ""
+msgstr "Domain-Migration:"
 
 #: templates/admin-help.php:105
 msgid "HTTPS Migration:"
-msgstr ""
+msgstr "HTTPS-Migration:"
 
 #: templates/admin-help.php:106
 msgid "Fix Typos:"
-msgstr ""
+msgstr "Tippfehler beheben:"
 
 #: templates/admin-help.php:107
 msgid "Update Company Name:"
-msgstr ""
+msgstr "Firmennamen aktualisieren:"
 
 #: templates/admin-help.php:113
 msgid "Advanced Database Mode"
-msgstr ""
+msgstr "Erweiterter Datenbankmodus"
 
 #: templates/admin-help.php:116
 msgid "Warning:"
-msgstr ""
+msgstr "Warnung:"
 
 #: templates/admin-help.php:116
 msgid "Advanced mode can modify any database table. Always create a backup first!"
-msgstr ""
+msgstr "Der erweiterte Modus kann jede Datenbanktabelle ändern. Erstellen Sie immer zuerst eine Sicherung!"
 
 #: templates/admin-help.php:119
 msgid "When to Use Advanced Mode"
-msgstr ""
+msgstr "Wann der erweiterte Modus verwendet werden sollte"
 
 #: templates/admin-help.php:121
 msgid "Domain migrations (update siteurl, home options)"
-msgstr ""
+msgstr "Domain-Migrationen (siteurl, home-Optionen aktualisieren)"
 
 #: templates/admin-help.php:122
 msgid "Fix serialized data in post meta"
-msgstr ""
+msgstr "Serialisierte Daten in Beitrags-Metadaten reparieren"
 
 #: templates/admin-help.php:123
 msgid "Update user metadata"
-msgstr ""
+msgstr "Benutzer-Metadaten aktualisieren"
 
 #: templates/admin-help.php:124
 msgid "Fix plugin settings after migration"
-msgstr ""
+msgstr "Plugin-Einstellungen nach Migration reparieren"
 
 #: templates/admin-help.php:127
 msgid "Safe Usage"
-msgstr ""
+msgstr "Sichere Verwendung"
 
 #: templates/admin-help.php:129
 msgid "Create a backup first"
-msgstr ""
+msgstr "Erstellen Sie zuerst eine Sicherung"
 
 #: templates/admin-help.php:130
 msgid "Select only the tables you need to modify"
-msgstr ""
+msgstr "Wählen Sie nur die Tabellen aus, die Sie ändern müssen"
 
 #: templates/admin-help.php:131
 msgid "Use very specific search terms"
-msgstr ""
+msgstr "Verwenden Sie sehr spezifische Suchbegriffe"
 
 #: templates/admin-help.php:132
 msgid "Run a preview first"
-msgstr ""
+msgstr "Führen Sie zuerst eine Vorschau aus"
 
 #: templates/admin-help.php:133
 msgid "Test on a staging site before production"
-msgstr ""
+msgstr "Testen Sie auf einer Staging-Seite vor der Produktion"
 
 #: templates/admin-help.php:141
 msgid "Operation Times Out"
-msgstr ""
+msgstr "Operation läuft in Zeitüberschreitung"
 
 #: templates/admin-help.php:143
 msgid "Go to Settings and reduce the batch size"
-msgstr ""
+msgstr "Gehen Sie zu Einstellungen und reduzieren Sie die Stapelgröße"
 
 #: templates/admin-help.php:144
 msgid "Try Content Batch Size: 50 or Database Batch Size: 2500"
-msgstr ""
+msgstr "Versuchen Sie Inhalts-Stapelgröße: 50 oder Datenbank-Stapelgröße: 2500"
 
 #: templates/admin-help.php:145
 msgid "Contact your host to increase PHP max_execution_time"
-msgstr ""
+msgstr "Kontaktieren Sie Ihren Hoster, um PHP max_execution_time zu erhöhen"
 
 #: templates/admin-help.php:148
 msgid "Memory Limit Errors"
-msgstr ""
+msgstr "Speicherlimit-Fehler"
 
 #: templates/admin-help.php:150
 msgid "Reduce batch sizes in Settings"
-msgstr ""
+msgstr "Reduzieren Sie die Stapelgrößen in den Einstellungen"
 
 #: templates/admin-help.php:151
 msgid "Process fewer post types at once"
-msgstr ""
+msgstr "Verarbeiten Sie weniger Beitragstypen gleichzeitig"
 
 #: templates/admin-help.php:152
 msgid "Ask your host to increase PHP memory_limit"
-msgstr ""
+msgstr "Bitten Sie Ihren Hoster, PHP memory_limit zu erhöhen"
 
 #: templates/admin-help.php:155
 msgid "Changes Not Visible"
-msgstr ""
+msgstr "Änderungen nicht sichtbar"
 
 #: templates/admin-help.php:157
 msgid "Clear all caches (WordPress, plugin, CDN, browser)"
-msgstr ""
+msgstr "Leeren Sie alle Caches (WordPress, Plugin, CDN, Browser)"
 
 #: templates/admin-help.php:158
 msgid "For Elementor pages: Regenerate CSS in Elementor settings"
-msgstr ""
+msgstr "Für Elementor-Seiten: CSS in Elementor-Einstellungen neu generieren"
 
 #: templates/admin-help.php:159
 msgid "Check the Operation History to verify changes were applied"
-msgstr ""
+msgstr "Überprüfen Sie den Operations-Verlauf, um zu verifizieren, dass Änderungen angewendet wurden"
 
 #: templates/admin-help.php:165
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Häufig gestellte Fragen"
 
 #: templates/admin-help.php:167
 msgid "Q: Can I undo changes after applying them?"
-msgstr ""
+msgstr "F: Kann ich Änderungen nach dem Anwenden rückgängig machen?"
 
 #: templates/admin-help.php:168
 msgid "A: Yes! Click \"Operation History\" and use the \"Undo\" button to rollback. The plugin keeps your last 5 operations (free) or 50 operations (Pro)."
-msgstr ""
+msgstr "A: Ja! Klicken Sie auf \"Operations-Verlauf\" und verwenden Sie die Schaltfläche \"Rückgängig\", um zurückzurollen. Das Plugin speichert Ihre letzten 5 Operationen (kostenlos) oder 50 Operationen (Pro)."
 
 #: templates/admin-help.php:170
 msgid "Q: Does this work with Elementor/Gutenberg?"
-msgstr ""
+msgstr "F: Funktioniert dies mit Elementor/Gutenberg?"
 
 #: templates/admin-help.php:171
 msgid "A: Yes! The plugin handles serialized data and JSON correctly. For Elementor, caches are automatically cleared after changes."
-msgstr ""
+msgstr "A: Ja! Das Plugin verarbeitet serialisierte Daten und JSON korrekt. Für Elementor werden Caches nach Änderungen automatisch geleert."
 
 #: templates/admin-help.php:173
 msgid "Q: Will this break my site?"
-msgstr ""
+msgstr "F: Wird dies meine Website beschädigen?"
 
 #: templates/admin-help.php:174
 msgid "A: Not if you use it correctly! Always preview changes first, be specific with search terms, and test on staging before production. The undo feature provides additional safety."
-msgstr ""
+msgstr "A: Nicht, wenn Sie es korrekt verwenden! Zeigen Sie immer zuerst eine Vorschau der Änderungen an, seien Sie spezifisch mit Suchbegriffen und testen Sie auf Staging vor der Produktion. Die Rückgängig-Funktion bietet zusätzliche Sicherheit."
 
 #: templates/admin-help.php:176
 msgid "Q: What's the difference between Content and Advanced mode?"
-msgstr ""
+msgstr "F: Was ist der Unterschied zwischen Inhalts- und Erweitertem Modus?"
 
 #: templates/admin-help.php:177
 msgid "A: Content mode searches only post/page content. Advanced mode searches any database table (wp_options, postmeta, usermeta, etc.). Advanced mode requires more caution."
-msgstr ""
+msgstr "A: Der Inhaltsmodus durchsucht nur Beitrags-/Seiteninhalte. Der erweiterte Modus durchsucht jede Datenbanktabelle (wp_options, postmeta, usermeta, etc.). Der erweiterte Modus erfordert mehr Vorsicht."
 
 #: templates/admin-help.php:179
 msgid "Q: Can I use this for domain migrations?"
-msgstr ""
+msgstr "F: Kann ich dies für Domain-Migrationen verwenden?"
 
 #: templates/admin-help.php:180
 msgid "A: Yes! Use Advanced mode, create a backup first, then replace old URLs with new ones across wp_options and wp_posts tables. Save this as a profile for future use."
-msgstr ""
+msgstr "A: Ja! Verwenden Sie den erweiterten Modus, erstellen Sie zuerst eine Sicherung, und ersetzen Sie dann alte URLs durch neue in den Tabellen wp_options und wp_posts. Speichern Sie dies als Profil für zukünftige Verwendung."
 
 #: templates/admin-help.php:182
 msgid "Q: How do I upgrade to Pro?"
-msgstr ""
+msgstr "F: Wie kann ich auf Pro upgraden?"
 
 #: templates/admin-help.php:183
 msgid "A: Contact the plugin developer for Pro licensing. Pro includes regex mode, unlimited previews, and extended history."
-msgstr ""
+msgstr "A: Kontaktieren Sie den Plugin-Entwickler für Pro-Lizenzierung. Pro umfasst Regex-Modus, unbegrenzte Vorschauen und erweiterten Verlauf."
 
 #: templates/admin-help.php:188
 msgid "↑ Back to Top"
-msgstr ""
+msgstr "↑ Zurück nach oben"
 
 #: templates/admin-profiles.php:22
 msgid "Saved Profiles"
-msgstr ""
+msgstr "Gespeicherte Profile"
 
 #: templates/admin-profiles.php:33
 msgid "Load Profile:"
-msgstr ""
+msgstr "Profil laden:"
 
 #: templates/admin-profiles.php:36
 msgid "-- Select Profile --"
-msgstr ""
+msgstr "-- Profil auswählen --"
 
 #: templates/admin-profiles.php:48
 msgid "Load"
-msgstr ""
+msgstr "Laden"
 
 #: templates/admin-profiles.php:50
 msgid "Are you sure you want to delete this profile?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie dieses Profil löschen möchten?"
 
 #: templates/admin-profiles.php:58
 msgid "View All Profiles"
-msgstr ""
+msgstr "Alle Profile anzeigen"
 
 #: templates/admin-profiles.php:62
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: templates/admin-profiles.php:63
 msgid "Search"
-msgstr ""
+msgstr "Suchen"
 
 #: templates/admin-profiles.php:64
 msgid "Replace"
-msgstr ""
+msgstr "Ersetzen"
 
 #: templates/admin-profiles.php:67
 msgid "Updated"
-msgstr ""
+msgstr "Aktualisiert"
 
 #: templates/admin-profiles.php:79
 msgid "Case Sensitive"
-msgstr ""
+msgstr "Groß-/Kleinschreibung beachten"
 
 #: templates/admin-profiles.php:82
 msgid "Regex Mode"
-msgstr ""
+msgstr "Regex-Modus"
 
 #: templates/admin-profiles.php:93
 msgid "No saved profiles yet. Complete a search below and click \"Save Profile\" to save it for future use."
-msgstr ""
+msgstr "Noch keine gespeicherten Profile. Führen Sie unten eine Suche durch und klicken Sie auf \"Profil speichern\", um es für zukünftige Verwendung zu speichern."
 
 #: templates/admin-profiles.php:99
 msgid "Save Current Settings"
-msgstr ""
+msgstr "Aktuelle Einstellungen speichern"
 
 #: templates/admin-profiles.php:107
 msgid "Profile name (e.g., \"Domain Migration\")"
-msgstr ""
+msgstr "Profilname (z.B. \"Domain-Migration\")"
 
 #: templates/admin-profiles.php:111
 msgid "Save Current Settings as Profile"
-msgstr ""
+msgstr "Aktuelle Einstellungen als Profil speichern"
 
 #: templates/admin-settings.php:21
 msgid "Universal Replace Engine - Settings"
-msgstr ""
+msgstr "Universelle Ersetzungsmaschine - Einstellungen"
 
 #: templates/admin-settings.php:31
 msgid "Performance Settings"
-msgstr ""
+msgstr "Leistungseinstellungen"
 
 #: templates/admin-settings.php:33
 msgid "Configure batch sizes to optimize performance for your server. Lower values use less memory but take longer."
-msgstr ""
+msgstr "Konfigurieren Sie Stapelgrößen, um die Leistung für Ihren Server zu optimieren. Niedrigere Werte verwenden weniger Speicher, dauern aber länger."
 
 #: templates/admin-settings.php:42
 msgid "Content Batch Size"
-msgstr ""
+msgstr "Inhalts-Stapelgröße"
 
 #: templates/admin-settings.php:57
 msgid "Number of posts to process per batch for content operations (10-1000). Default: 100"
-msgstr ""
+msgstr "Anzahl der Beiträge, die pro Stapel für Inhaltsoperationen verarbeitet werden (10-1000). Standard: 100"
 
 #: templates/admin-settings.php:66
 msgid "Database Batch Size"
-msgstr ""
+msgstr "Datenbank-Stapelgröße"
 
 #: templates/admin-settings.php:81
 msgid "Number of rows to process per batch for database operations (100-10000). Default: 5000"
-msgstr ""
+msgstr "Anzahl der Zeilen, die pro Stapel für Datenbankoperationen verarbeitet werden (100-10000). Standard: 5000"
 
 #: templates/admin-settings.php:90
 msgid "Backup Batch Size"
-msgstr ""
+msgstr "Sicherungs-Stapelgröße"
 
 #: templates/admin-settings.php:105
 msgid "Number of rows to backup per batch (100-5000). Default: 1000"
-msgstr ""
+msgstr "Anzahl der Zeilen, die pro Stapel gesichert werden (100-5000). Standard: 1000"
 
 #: templates/admin-settings.php:115
 msgid "Preview & History Settings"
-msgstr ""
+msgstr "Vorschau- & Verlaufseinstellungen"
 
 #: templates/admin-settings.php:123
 msgid "Max Preview Results"
-msgstr ""
+msgstr "Max. Vorschau-Ergebnisse"
 
 #: templates/admin-settings.php:125
 msgid "Pro: Unlimited"
-msgstr ""
+msgstr "Pro: Unbegrenzt"
 
 #: templates/admin-settings.php:142
 msgid "Maximum number of results to show in preview (1-100)."
-msgstr ""
+msgstr "Maximale Anzahl von Ergebnissen, die in der Vorschau angezeigt werden (1-100)."
 
 #: templates/admin-settings.php:144
 msgid "Maximum number of results to show in preview (1-50). Pro version removes this limit."
-msgstr ""
+msgstr "Maximale Anzahl von Ergebnissen, die in der Vorschau angezeigt werden (1-50). Die Pro-Version entfernt dieses Limit."
 
 #: templates/admin-settings.php:155
 msgid "Operation History Limit"
-msgstr ""
+msgstr "Operations-Verlaufslimit"
 
 #: templates/admin-settings.php:157
 msgid "Pro: 50"
-msgstr ""
+msgstr "Pro: 50"
 
 #: templates/admin-settings.php:174
 msgid "Number of operations to keep in history for rollback (1-50)."
-msgstr ""
+msgstr "Anzahl der Operationen, die im Verlauf für Rollback gespeichert werden (1-50)."
 
 #: templates/admin-settings.php:176
 msgid "Number of operations to keep in history for rollback (1-10). Pro version keeps up to 50."
-msgstr ""
+msgstr "Anzahl der Operationen, die im Verlauf für Rollback gespeichert werden (1-10). Die Pro-Version speichert bis zu 50."
 
 #: templates/admin-settings.php:188
 msgid "Backup Settings"
-msgstr ""
+msgstr "Sicherungseinstellungen"
 
 #: templates/admin-settings.php:196
 msgid "Backup Retention"
-msgstr ""
+msgstr "Sicherungsaufbewahrung"
 
 #: templates/admin-settings.php:209
 msgid "days"
-msgstr ""
+msgstr "Tage"
 
 #: templates/admin-settings.php:211
 msgid "Automatically delete backups older than this many days (1-30). Default: 7"
-msgstr ""
+msgstr "Sicherungen automatisch löschen, die älter als diese Anzahl von Tagen sind (1-30). Standard: 7"
 
 #: templates/admin-settings.php:221
 msgid "Feature Toggles"
-msgstr ""
+msgstr "Funktions-Schalter"
 
 #: templates/admin-settings.php:228
 msgid "Operation Logging"
-msgstr ""
+msgstr "Operations-Protokollierung"
 
 #: templates/admin-settings.php:238
 msgid "Enable detailed logging for all operations"
-msgstr ""
+msgstr "Detaillierte Protokollierung für alle Operationen aktivieren"
 
 #: templates/admin-settings.php:241
 msgid "Logs are stored in the database and can be viewed in the History tab."
-msgstr ""
+msgstr "Protokolle werden in der Datenbank gespeichert und können in der Registerkarte Verlauf angezeigt werden."
 
 #: templates/admin-settings.php:249
 msgid "AJAX Progress Bar"
-msgstr ""
+msgstr "AJAX-Fortschrittsbalken"
 
 #: templates/admin-settings.php:259
 msgid "Enable real-time progress updates (recommended)"
-msgstr ""
+msgstr "Echtzeit-Fortschrittsaktualisierungen aktivieren (empfohlen)"
 
 #: templates/admin-settings.php:262
 msgid "Shows a live progress bar during long operations. Disable if you experience issues."
-msgstr ""
+msgstr "Zeigt einen Live-Fortschrittsbalken während langer Operationen an. Deaktivieren Sie dies, wenn Sie Probleme haben."
 
 #: templates/admin-settings.php:270
 msgid "Safety Warnings"
-msgstr ""
+msgstr "Sicherheitswarnungen"
 
 #: templates/admin-settings.php:280
 msgid "Show safety warnings and confirmations"
-msgstr ""
+msgstr "Sicherheitswarnungen und Bestätigungen anzeigen"
 
 #: templates/admin-settings.php:283
 msgid "Recommended to keep enabled to prevent accidental data loss."
-msgstr ""
+msgstr "Es wird empfohlen, dies aktiviert zu lassen, um versehentlichen Datenverlust zu verhindern."
 
 #: templates/admin-settings.php:293
 msgid "Save Settings"
-msgstr ""
+msgstr "Einstellungen speichern"
 
 #: templates/admin-settings.php:294
 msgid "Are you sure you want to reset all settings to defaults?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie alle Einstellungen auf Standardwerte zurücksetzen möchten?"
 
 #: templates/admin-settings.php:295
 msgid "Reset to Defaults"
-msgstr ""
+msgstr "Auf Standardwerte zurücksetzen"
 
 #: templates/admin-settings.php:302
 msgid "System Information"
-msgstr ""
+msgstr "Systeminformationen"
 
 #: templates/admin-settings.php:306
 msgid "Plugin Version"
-msgstr ""
+msgstr "Plugin-Version"
 
 #: templates/admin-settings.php:310
 msgid "WordPress Version"
-msgstr ""
+msgstr "WordPress-Version"
 
 #: templates/admin-settings.php:314
 msgid "PHP Version"
-msgstr ""
+msgstr "PHP-Version"
 
 #: templates/admin-settings.php:318
 msgid "Memory Limit"
-msgstr ""
+msgstr "Speicherlimit"
 
 #: templates/admin-settings.php:322
 msgid "Max Execution Time"
-msgstr ""
+msgstr "Maximale Ausführungszeit"
 
 #: templates/admin-settings.php:326
 msgid "Pro Status"
-msgstr ""
+msgstr "Pro-Status"
 
 #: templates/admin-settings.php:329
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #: templates/admin-settings.php:331
 msgid "Free Version"
-msgstr ""
+msgstr "Kostenlose Version"

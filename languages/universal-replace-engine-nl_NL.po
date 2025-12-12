@@ -24,22 +24,22 @@ msgstr "Universele Vervangingsmotor"
 #. Plugin URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com/universal-replace-engine"
-msgstr ""
+msgstr "https://yoursite.com/universal-replace-engine"
 
 #. Description of the plugin
 #: universal-replace-engine.php
 msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr ""
+msgstr "Professioneel zoeken en vervangen voor WordPress. Inhoud- en databasebewerkingen, SQL-backups, multisite-ondersteuning, GUID-bescherming, opgeslagen profielen en Pro regex-modus."
 
 #. Author of the plugin
 #: universal-replace-engine.php
 msgid "Your Name"
-msgstr ""
+msgstr "Your Name"
 
 #. Author URI of the plugin
 #: universal-replace-engine.php
 msgid "https://yoursite.com"
-msgstr ""
+msgstr "https://yoursite.com"
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -47,11 +47,11 @@ msgstr "Beveiligingscontrole mislukt."
 
 #: includes/class-ure-admin.php:117
 msgid "You do not have permission to perform this action."
-msgstr ""
+msgstr "U heeft geen toestemming om deze actie uit te voeren."
 
 #: includes/class-ure-admin.php:194
 msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr ""
+msgstr "Geavanceerde bereiken (Post Meta, Elementor, Alle Locaties) vereisen de Pro-versie. Terugvallen op Berichtinhoud."
 
 #: includes/class-ure-admin.php:203
 #: includes/class-ure-admin.php:1007
@@ -65,21 +65,21 @@ msgstr "Geen overeenkomsten gevonden."
 #. translators: %d: number of matches
 #: includes/class-ure-admin.php:255
 msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr ""
+msgstr "%d overeenkomst(en) gevonden. Controleer hieronder en klik op \"Wijzigingen Toepassen\" om door te gaan."
 
 #: includes/class-ure-admin.php:280
 #: includes/class-ure-admin.php:1096
 msgid "Preview data expired. Please run preview again."
-msgstr ""
+msgstr "Voorbeeldgegevens verlopen. Voer het voorbeeld opnieuw uit."
 
 #. translators: %d: number of posts modified
 #: includes/class-ure-admin.php:311
 msgid "Successfully modified %d post(s)."
-msgstr ""
+msgstr "%d bericht(en) succesvol gewijzigd."
 
 #: includes/class-ure-admin.php:339
 msgid "Invalid log ID."
-msgstr ""
+msgstr "Ongeldig log-ID."
 
 #: includes/class-ure-admin.php:401
 msgid "Search & Replace"
@@ -103,7 +103,7 @@ msgstr "Help"
 
 #: includes/class-ure-admin.php:430
 msgid "Search and Replace"
-msgstr ""
+msgstr "Zoeken en Vervangen"
 
 #: includes/class-ure-admin.php:438
 msgid "Search for"
@@ -111,7 +111,7 @@ msgstr "Zoeken naar"
 
 #: includes/class-ure-admin.php:456
 msgid "Enter the text you want to search for."
-msgstr ""
+msgstr "Voer de tekst in waarnaar u wilt zoeken."
 
 #: includes/class-ure-admin.php:463
 msgid "Replace with"
@@ -119,84 +119,84 @@ msgstr "Vervangen door"
 
 #: includes/class-ure-admin.php:480
 msgid "Enter the replacement text (leave empty to only search)."
-msgstr ""
+msgstr "Voer de vervangende tekst in (laat leeg om alleen te zoeken)."
 
 #: includes/class-ure-admin.php:487
 msgid "Search Scope"
-msgstr ""
+msgstr "Zoekbereik"
 
 #: includes/class-ure-admin.php:500
 msgid "Post Content"
-msgstr ""
+msgstr "Berichtinhoud"
 
 #: includes/class-ure-admin.php:501
 msgid "(post_content field only)"
-msgstr ""
+msgstr "(alleen post_content veld)"
 
 #: includes/class-ure-admin.php:508
 msgid "Post Meta"
-msgstr ""
+msgstr "Bericht Meta"
 
 #: includes/class-ure-admin.php:509
 msgid "(custom fields, excluding Elementor)"
-msgstr ""
+msgstr "(aangepaste velden, exclusief Elementor)"
 
 #: includes/class-ure-admin.php:521
 msgid "Elementor Data"
-msgstr ""
+msgstr "Elementor Gegevens"
 
 #: includes/class-ure-admin.php:522
 msgid "(_elementor_data JSON field)"
-msgstr ""
+msgstr "(_elementor_data JSON veld)"
 
 #: includes/class-ure-admin.php:534
 msgid "All Locations"
-msgstr ""
+msgstr "Alle Locaties"
 
 #: includes/class-ure-admin.php:535
 msgid "(content + postmeta + Elementor)"
-msgstr ""
+msgstr "(inhoud + postmeta + Elementor)"
 
 #: includes/class-ure-admin.php:544
 msgid "Choose where to search and replace."
-msgstr ""
+msgstr "Kies waar u wilt zoeken en vervangen."
 
 #: includes/class-ure-admin.php:548
 msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr ""
+msgstr "Upgrade naar Pro om Bericht Meta, Elementor Gegevens en Alle Locaties bereiken te ontgrendelen."
 
 #: includes/class-ure-admin.php:557
 #: templates/admin-profiles.php:65
 msgid "Post Types"
-msgstr ""
+msgstr "Berichttypen"
 
 #: includes/class-ure-admin.php:562
 msgid "Select which post types to search in."
-msgstr ""
+msgstr "Selecteer in welke berichttypen u wilt zoeken."
 
 #: includes/class-ure-admin.php:569
 #: templates/admin-db-search.php:112
 #: templates/admin-profiles.php:66
 msgid "Options"
-msgstr ""
+msgstr "Opties"
 
 #: includes/class-ure-admin.php:578
 #: templates/admin-db-search.php:115
 msgid "Case sensitive"
-msgstr ""
+msgstr "Hoofdlettergevoelig"
 
 #: includes/class-ure-admin.php:589
 #: templates/admin-db-search.php:124
 msgid "Regex mode"
-msgstr ""
+msgstr "Regex-modus"
 
 #: includes/class-ure-admin.php:592
 msgid "Regex mode (Pro feature)"
-msgstr ""
+msgstr "Regex-modus (Pro-functie)"
 
 #: includes/class-ure-admin.php:603
 msgid "Run Preview"
-msgstr ""
+msgstr "Voorbeeld Uitvoeren"
 
 #: includes/class-ure-admin.php:608
 msgid "Apply Changes"
@@ -204,105 +204,105 @@ msgstr "Wijzigingen Toepassen"
 
 #: includes/class-ure-admin.php:618
 msgid "Preview Results"
-msgstr ""
+msgstr "Voorbeeldresultaten"
 
 #. translators: 1: shown count, 2: total count
 #: includes/class-ure-admin.php:626
 msgid "Showing %1$d of %2$d matches (Free version limit)."
-msgstr ""
+msgstr "%1$d van %2$d overeenkomsten weergegeven (gratis versielimiet)."
 
 #. translators: %d: total matches
 #: includes/class-ure-admin.php:640
 msgid "Showing all %d matches (unlimited preview in Pro version)."
-msgstr ""
+msgstr "Alle %d overeenkomsten weergegeven (onbeperkt voorbeeld in Pro-versie)."
 
 #: includes/class-ure-admin.php:651
 msgid "Location"
-msgstr ""
+msgstr "Locatie"
 
 #: includes/class-ure-admin.php:652
 msgid "Before"
-msgstr ""
+msgstr "Voor"
 
 #: includes/class-ure-admin.php:653
 msgid "After"
-msgstr ""
+msgstr "Na"
 
 #. translators: 1: post type, 2: post ID
 #: includes/class-ure-admin.php:666
 msgid "%1$s (ID: %2$d)"
-msgstr ""
+msgstr "%1$s (ID: %2$d)"
 
 #: includes/class-ure-admin.php:679
 msgid "Search only"
-msgstr ""
+msgstr "Alleen zoeken"
 
 #. translators: %d: history limit
 #: includes/class-ure-admin.php:698
 msgid "History (Last %d Operations)"
-msgstr ""
+msgstr "Geschiedenis (Laatste %d Bewerkingen)"
 
 #: includes/class-ure-admin.php:702
 msgid "History (Last 5 Operations)"
-msgstr ""
+msgstr "Geschiedenis (Laatste 5 Bewerkingen)"
 
 #: includes/class-ure-admin.php:729
 msgid "Unlock Pro Features"
-msgstr ""
+msgstr "Ontgrendel Pro-functies"
 
 #: includes/class-ure-admin.php:731
 msgid "Search and replace in postmeta, options, and term meta"
-msgstr ""
+msgstr "Zoek en vervang in postmeta, opties en term meta"
 
 #: includes/class-ure-admin.php:732
 msgid "Elementor page builder support"
-msgstr ""
+msgstr "Elementor page builder ondersteuning"
 
 #: includes/class-ure-admin.php:733
 msgid "ACF custom fields support"
-msgstr ""
+msgstr "ACF aangepaste velden ondersteuning"
 
 #: includes/class-ure-admin.php:734
 msgid "Unlimited preview results"
-msgstr ""
+msgstr "Onbeperkte voorbeeldresultaten"
 
 #: includes/class-ure-admin.php:735
 msgid "Full regex mode"
-msgstr ""
+msgstr "Volledige regex-modus"
 
 #: includes/class-ure-admin.php:736
 msgid "WP-CLI commands"
-msgstr ""
+msgstr "WP-CLI commando's"
 
 #: includes/class-ure-admin.php:737
 msgid "Multisite support"
-msgstr ""
+msgstr "Multisite-ondersteuning"
 
 #: includes/class-ure-admin.php:825
 msgid "No operations recorded yet."
-msgstr ""
+msgstr "Nog geen bewerkingen vastgelegd."
 
 #: includes/class-ure-admin.php:833
 msgid "Date/Time"
-msgstr ""
+msgstr "Datum/Tijd"
 
 #: includes/class-ure-admin.php:834
 #: templates/admin-backup.php:116
 msgid "User"
-msgstr ""
+msgstr "Gebruiker"
 
 #: includes/class-ure-admin.php:835
 msgid "Summary"
-msgstr ""
+msgstr "Samenvatting"
 
 #: includes/class-ure-admin.php:836
 #: templates/admin-backup.php:120
 msgid "Actions"
-msgstr ""
+msgstr "Acties"
 
 #: includes/class-ure-admin.php:854
 msgid "Are you sure you want to undo this operation?"
-msgstr ""
+msgstr "Weet u zeker dat u deze bewerking ongedaan wilt maken?"
 
 #: includes/class-ure-admin.php:855
 msgid "Undo"
@@ -310,1026 +310,1026 @@ msgstr "Ongedaan maken"
 
 #: includes/class-ure-admin.php:859
 msgid "N/A"
-msgstr ""
+msgstr "N.v.t."
 
 #: includes/class-ure-admin.php:883
 msgid "Please select at least one table to backup."
-msgstr ""
+msgstr "Selecteer minimaal één tabel voor een back-up."
 
 #. translators: 1: table count, 2: file size
 #: includes/class-ure-admin.php:897
 msgid "Backup created successfully! %1$d tables backed up (%2$.2f MB)."
-msgstr ""
+msgstr "Back-up succesvol aangemaakt! %1$d tabellen geback-upt (%2$.2f MB)."
 
 #: includes/class-ure-admin.php:926
 #: includes/class-ure-admin.php:964
 msgid "Invalid backup filename."
-msgstr ""
+msgstr "Ongeldige back-up bestandsnaam."
 
 #: includes/class-ure-admin.php:1017
 msgid "Please select at least one table."
-msgstr ""
+msgstr "Selecteer minimaal één tabel."
 
 #. translators: 1: changes count, 2: tables count
 #: includes/class-ure-admin.php:1066
 msgid "Found %1$d potential changes across %2$d tables. Review below."
-msgstr ""
+msgstr "%1$d mogelijke wijzigingen gevonden in %2$d tabellen. Controleer hieronder."
 
 #: includes/class-ure-admin.php:1076
 msgid "No matches found in selected tables."
-msgstr ""
+msgstr "Geen overeenkomsten gevonden in geselecteerde tabellen."
 
 #. translators: 1: search, 2: replace, 3: updates count, 4: tables count
 #: includes/class-ure-admin.php:1135
 msgid "Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d tables."
-msgstr ""
+msgstr "Databasebewerking: \"%1$s\" vervangen door \"%2$s\" in %3$d rijen over %4$d tabellen."
 
 #. translators: 1: updates count, 2: tables count
 #: includes/class-ure-admin.php:1165
 msgid "Successfully updated %1$d rows across %2$d tables."
-msgstr ""
+msgstr "%1$d rijen succesvol bijgewerkt over %2$d tabellen."
 
 #: includes/class-ure-admin.php:1175
 msgid "No changes were made."
-msgstr ""
+msgstr "Er zijn geen wijzigingen aangebracht."
 
 #: includes/class-ure-admin.php:1191
 msgid "No settings data received."
-msgstr ""
+msgstr "Geen instellingsgegevens ontvangen."
 
 #: includes/class-ure-admin.php:1205
 msgid "Settings saved successfully."
-msgstr ""
+msgstr "Instellingen succesvol opgeslagen."
 
 #: includes/class-ure-admin.php:1212
 msgid "Failed to save settings. Please try again."
-msgstr ""
+msgstr "Kan instellingen niet opslaan. Probeer het opnieuw."
 
 #: includes/class-ure-admin.php:1226
 msgid "Settings have been reset to defaults."
-msgstr ""
+msgstr "Instellingen zijn teruggezet naar standaardwaarden."
 
 #: includes/class-ure-admin.php:1233
 msgid "Failed to reset settings. Please try again."
-msgstr ""
+msgstr "Kan instellingen niet resetten. Probeer het opnieuw."
 
 #: includes/class-ure-admin.php:1249
 msgid "Please enter a profile name."
-msgstr ""
+msgstr "Voer een profielnaam in."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1271
 msgid "Profile \"%s\" saved successfully."
-msgstr ""
+msgstr "Profiel \"%s\" succesvol opgeslagen."
 
 #: includes/class-ure-admin.php:1280
 msgid "Failed to save profile. Please try again."
-msgstr ""
+msgstr "Kan profiel niet opslaan. Probeer het opnieuw."
 
 #: includes/class-ure-admin.php:1296
 msgid "Please select a profile to load."
-msgstr ""
+msgstr "Selecteer een profiel om te laden."
 
 #: includes/class-ure-admin.php:1308
 msgid "Profile not found."
-msgstr ""
+msgstr "Profiel niet gevonden."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1322
 msgid "Profile \"%s\" loaded successfully. Review the settings below and click Preview or Apply."
-msgstr ""
+msgstr "Profiel \"%s\" succesvol geladen. Controleer de onderstaande instellingen en klik op Voorbeeld of Toepassen."
 
 #: includes/class-ure-admin.php:1339
 msgid "Please select a profile to delete."
-msgstr ""
+msgstr "Selecteer een profiel om te verwijderen."
 
 #. translators: %s: profile name
 #: includes/class-ure-admin.php:1351
 msgid "Profile \"%s\" deleted successfully."
-msgstr ""
+msgstr "Profiel \"%s\" succesvol verwijderd."
 
 #: includes/class-ure-admin.php:1360
 msgid "Failed to delete profile. Please try again."
-msgstr ""
+msgstr "Kan profiel niet verwijderen. Probeer het opnieuw."
 
 #: includes/class-ure-admin.php:1372
 #: templates/admin-db-search.php:44
 msgid "Database Search & Replace"
-msgstr ""
+msgstr "Database Zoeken en Vervangen"
 
 #: includes/class-ure-admin.php:1385
 msgid "Backup & Restore"
-msgstr ""
+msgstr "Back-up en Herstellen"
 
 #: includes/class-ure-admin.php:1398
 msgid "URE Settings"
-msgstr ""
+msgstr "URE Instellingen"
 
 #: includes/class-ure-admin.php:1411
 msgid "URE Help"
-msgstr ""
+msgstr "URE Hulp"
 
 #: includes/class-ure-ajax.php:58
 #: includes/class-ure-ajax.php:113
 #: includes/class-ure-ajax.php:180
 msgid "Insufficient permissions."
-msgstr ""
+msgstr "Onvoldoende rechten."
 
 #: includes/class-ure-ajax.php:69
 #: includes/class-ure-ajax.php:124
 msgid "Search term is required."
-msgstr ""
+msgstr "Zoekterm is verplicht."
 
 #. translators: 1: search, 2: replace, 3: updates count
 #: includes/class-ure-ajax.php:149
 msgid "Replaced \"%1$s\" with \"%2$s\" in %3$d posts."
-msgstr ""
+msgstr "\"%1$s\" vervangen door \"%2$s\" in %3$d berichten."
 
 #: includes/class-ure-ajax.php:186
 msgid "Operation ID is required."
-msgstr ""
+msgstr "Bewerkings-ID is verplicht."
 
 #: includes/class-ure-ajax.php:192
 msgid "Operation not found or expired."
-msgstr ""
+msgstr "Bewerking niet gevonden of verlopen."
 
 #: includes/class-ure-backup-manager.php:100
 msgid "No tables specified for backup."
-msgstr ""
+msgstr "Geen tabellen opgegeven voor back-up."
 
 #: includes/class-ure-backup-manager.php:117
 msgid "Could not create backup file."
-msgstr ""
+msgstr "Kan back-upbestand niet aanmaken."
 
 #: includes/class-ure-backup-manager.php:149
 msgid "Backup created successfully."
-msgstr ""
+msgstr "Back-up succesvol aangemaakt."
 
 #: includes/class-ure-backup-manager.php:373
 #: includes/class-ure-logger.php:123
 #: includes/class-ure-logger.php:157
 msgid "Unknown"
-msgstr ""
+msgstr "Onbekend"
 
 #: includes/class-ure-backup-manager.php:399
 msgid "Backup not found in metadata."
-msgstr ""
+msgstr "Back-up niet gevonden in metadata."
 
 #: includes/class-ure-backup-manager.php:408
 msgid "Backup file not found or not readable."
-msgstr ""
+msgstr "Back-upbestand niet gevonden of niet leesbaar."
 
 #: includes/class-ure-backup-manager.php:436
 msgid "Could not read backup file."
-msgstr ""
+msgstr "Kan back-upbestand niet lezen."
 
 #. translators: %d: number of queries
 #: includes/class-ure-backup-manager.php:467
 msgid "Executed %d queries successfully."
-msgstr ""
+msgstr "%d query's succesvol uitgevoerd."
 
 #: includes/class-ure-backup-manager.php:504
 msgid "Backup not found."
-msgstr ""
+msgstr "Back-up niet gevonden."
 
 #: includes/class-ure-backup-manager.php:520
 msgid "Backup deleted successfully."
-msgstr ""
+msgstr "Back-up succesvol verwijderd."
 
 #: includes/class-ure-database-manager.php:234
 msgid "Table does not exist."
-msgstr ""
+msgstr "Tabel bestaat niet."
 
 #: includes/class-ure-database-manager.php:246
 msgid "Table has no primary key."
-msgstr ""
+msgstr "Tabel heeft geen primaire sleutel."
 
 #. translators: %d: row number
 #: includes/class-ure-database-manager.php:345
 msgid "Error updating row %d"
-msgstr ""
+msgstr "Fout bij het bijwerken van rij %d"
 
 #: includes/class-ure-logger.php:175
 msgid "Log entry not found."
-msgstr ""
+msgstr "Logboekinvoer niet gevonden."
 
 #: includes/class-ure-logger.php:184
 msgid "No rollback data available."
-msgstr ""
+msgstr "Geen terugdraaigegevens beschikbaar."
 
 #. translators: 1: number of posts, 2: original log ID
 #: includes/class-ure-logger.php:245
 msgid "Rolled back %1$d post(s) from operation #%2$d."
-msgstr ""
+msgstr "%1$d bericht(en) teruggedraaid van bewerking #%2$d."
 
 #. translators: %d: number of posts
 #: includes/class-ure-logger.php:265
 msgid "Successfully rolled back %d post(s)."
-msgstr ""
+msgstr "%d bericht(en) succesvol teruggedraaid."
 
 #: includes/class-ure-search-replace.php:79
 #: includes/class-ure-search-replace.php:471
 msgid "No valid post types selected."
-msgstr ""
+msgstr "Geen geldige berichttypen geselecteerd."
 
 #: includes/class-ure-search-replace.php:478
 msgid "Search term cannot be empty."
-msgstr ""
+msgstr "Zoekterm mag niet leeg zijn."
 
 #. translators: 1: number of posts, 2: search term, 3: replace term
 #: includes/class-ure-search-replace.php:615
 msgid "Replaced \"%2$s\" with \"%3$s\" in %1$d post(s)."
-msgstr ""
+msgstr "\"%2$s\" vervangen door \"%3$s\" in %1$d bericht(en)."
 
 #: includes/class-ure-search-replace.php:645
 msgid "Invalid regex pattern."
-msgstr ""
+msgstr "Ongeldig regex-patroon."
 
 #. translators: %s: error message
 #: includes/class-ure-search-replace.php:651
 msgid "Regex error: %s"
-msgstr ""
+msgstr "Regex-fout: %s"
 
 #: templates/admin-backup.php:29
 msgid "Backup & Restore - Use With Caution!"
-msgstr ""
+msgstr "Back-up en Herstellen - Gebruik Met Voorzichtigheid!"
 
 #: templates/admin-backup.php:32
 msgid "Creating backups and restoring your database are critical operations. Always ensure you have a recent working backup before making major changes."
-msgstr ""
+msgstr "Het maken van back-ups en het herstellen van uw database zijn kritieke bewerkingen. Zorg er altijd voor dat u een recente werkende back-up heeft voordat u grote wijzigingen aanbrengt."
 
 #: templates/admin-backup.php:39
 #: templates/admin-db-search.php:35
 msgid "ALWAYS create a backup before proceeding"
-msgstr ""
+msgstr "Maak ALTIJD een back-up voordat u doorgaat"
 
 #: templates/admin-backup.php:40
 #: templates/admin-db-search.php:36
 msgid "Test on a staging site first"
-msgstr ""
+msgstr "Test eerst op een staging-site"
 
 #: templates/admin-backup.php:41
 msgid "Understand what you're restoring"
-msgstr ""
+msgstr "Begrijp wat u herstelt"
 
 #: templates/admin-backup.php:47
 msgid "Create Backup (Recommended)"
-msgstr ""
+msgstr "Back-up Maken (Aanbevolen)"
 
 #: templates/admin-backup.php:54
 msgid "Tables to Backup"
-msgstr ""
+msgstr "Tabellen voor Back-up"
 
 #: templates/admin-backup.php:57
 #: templates/admin-db-search.php:80
 msgid "Select All"
-msgstr ""
+msgstr "Alles Selecteren"
 
 #: templates/admin-backup.php:58
 #: templates/admin-db-search.php:81
 msgid "Deselect All"
-msgstr ""
+msgstr "Alles Deselecteren"
 
 #: templates/admin-backup.php:59
 msgid "Core Tables Only"
-msgstr ""
+msgstr "Alleen Kerntabellen"
 
 #: templates/admin-backup.php:74
 #: templates/admin-db-search.php:95
 msgid "Protected"
-msgstr ""
+msgstr "Beschermd"
 
 #: templates/admin-backup.php:91
 msgid "Comment (Optional)"
-msgstr ""
+msgstr "Opmerking (Optioneel)"
 
 #: templates/admin-backup.php:97
 msgid "E.g., Before domain migration"
-msgstr ""
+msgstr "Bijv., Voor domeinmigratie"
 
 #: templates/admin-backup.php:103
 msgid "Create Backup"
-msgstr ""
+msgstr "Back-up Maken"
 
 #: templates/admin-backup.php:111
 msgid "Available Backups"
-msgstr ""
+msgstr "Beschikbare Back-ups"
 
 #: templates/admin-backup.php:115
 msgid "Created"
-msgstr ""
+msgstr "Aangemaakt"
 
 #: templates/admin-backup.php:117
 msgid "Tables"
-msgstr ""
+msgstr "Tabellen"
 
 #: templates/admin-backup.php:118
 msgid "Size"
-msgstr ""
+msgstr "Grootte"
 
 #: templates/admin-backup.php:119
 msgid "Comment"
-msgstr ""
+msgstr "Opmerking"
 
 #: templates/admin-backup.php:148
 msgid "Are you sure you want to restore this backup? This will overwrite current data!"
-msgstr ""
+msgstr "Weet u zeker dat u deze back-up wilt herstellen? Dit overschrijft huidige gegevens!"
 
 #: templates/admin-backup.php:150
 msgid "Restore"
-msgstr ""
+msgstr "Herstellen"
 
 #: templates/admin-backup.php:161
 msgid "Are you sure you want to delete this backup?"
-msgstr ""
+msgstr "Weet u zeker dat u deze back-up wilt verwijderen?"
 
 #: templates/admin-backup.php:163
 #: templates/admin-profiles.php:51
 msgid "Delete"
-msgstr ""
+msgstr "Verwijderen"
 
 #: templates/admin-db-search.php:25
 msgid "Advanced Mode - Use With Caution!"
-msgstr ""
+msgstr "Geavanceerde Modus - Gebruik Met Voorzichtigheid!"
 
 #: templates/admin-db-search.php:28
 msgid "Advanced mode allows you to search and replace across any database table, including wp_options, usermeta, and custom plugin tables. This is powerful but potentially dangerous."
-msgstr ""
+msgstr "Geavanceerde modus stelt u in staat om te zoeken en te vervangen in elke databasetabel, inclusief wp_options, usermeta en aangepaste plugin-tabellen. Dit is krachtig maar potentieel gevaarlijk."
 
 #: templates/admin-db-search.php:37
 msgid "Be very specific with your search terms"
-msgstr ""
+msgstr "Wees zeer specifiek met uw zoektermen"
 
 #: templates/admin-db-search.php:38
 msgid "Understand what you're changing"
-msgstr ""
+msgstr "Begrijp wat u wijzigt"
 
 #: templates/admin-db-search.php:52
 msgid "Search For"
-msgstr ""
+msgstr "Zoeken Naar"
 
 #: templates/admin-db-search.php:61
 msgid "Text to search for..."
-msgstr ""
+msgstr "Tekst om naar te zoeken..."
 
 #: templates/admin-db-search.php:66
 msgid "Replace With"
-msgstr ""
+msgstr "Vervangen Door"
 
 #: templates/admin-db-search.php:72
 msgid "Replacement text..."
-msgstr ""
+msgstr "Vervangende tekst..."
 
 #: templates/admin-db-search.php:77
 msgid "Select Tables"
-msgstr ""
+msgstr "Selecteer Tabellen"
 
 #: templates/admin-db-search.php:119
 msgid "Skip GUIDs (recommended)"
-msgstr ""
+msgstr "GUID's overslaan (aanbevolen)"
 
 #: templates/admin-db-search.php:132
 msgid "Preview Changes"
-msgstr ""
+msgstr "Bekijk Wijzigingen"
 
 #: templates/admin-help.php:20
 msgid "Universal Replace Engine - Help & Documentation"
-msgstr ""
+msgstr "Universal Replace Engine - Hulp en Documentatie"
 
 #: templates/admin-help.php:23
 #: templates/admin-help.php:33
 msgid "Getting Started"
-msgstr ""
+msgstr "Aan de Slag"
 
 #: templates/admin-help.php:24
 msgid "Features"
-msgstr ""
+msgstr "Functies"
 
 #: templates/admin-help.php:25
 msgid "Profiles"
-msgstr ""
+msgstr "Profielen"
 
 #: templates/admin-help.php:26
 msgid "Advanced Mode"
-msgstr ""
+msgstr "Geavanceerde Modus"
 
 #: templates/admin-help.php:27
 #: templates/admin-help.php:139
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Probleemoplossing"
 
 #: templates/admin-help.php:28
 msgid "FAQ"
-msgstr ""
+msgstr "Veelgestelde Vragen"
 
 #: templates/admin-help.php:35
 msgid "Basic Search & Replace"
-msgstr ""
+msgstr "Basis Zoeken en Vervangen"
 
 #: templates/admin-help.php:37
 msgid "Navigate to Tools → Universal Replace Engine"
-msgstr ""
+msgstr "Ga naar Extra → Universal Replace Engine"
 
 #: templates/admin-help.php:38
 msgid "Enter your search term in the \"Search For\" field"
-msgstr ""
+msgstr "Voer uw zoekterm in het veld \"Zoeken Naar\" in"
 
 #: templates/admin-help.php:39
 msgid "Enter the replacement text in the \"Replace With\" field (leave empty to just search)"
-msgstr ""
+msgstr "Voer de vervangende tekst in het veld \"Vervangen Door\" in (laat leeg om alleen te zoeken)"
 
 #: templates/admin-help.php:40
 msgid "Select which post types to search in"
-msgstr ""
+msgstr "Selecteer in welke berichttypen u wilt zoeken"
 
 #: templates/admin-help.php:41
 msgid "Click \"Run Preview\" to see what will change"
-msgstr ""
+msgstr "Klik op \"Voorbeeld Uitvoeren\" om te zien wat er zal veranderen"
 
 #: templates/admin-help.php:42
 msgid "Review the preview carefully"
-msgstr ""
+msgstr "Controleer het voorbeeld zorgvuldig"
 
 #: templates/admin-help.php:43
 msgid "Click \"Apply Changes\" to make the replacements"
-msgstr ""
+msgstr "Klik op \"Wijzigingen Toepassen\" om de vervangingen door te voeren"
 
 #: templates/admin-help.php:47
 msgid "Pro Tip:"
-msgstr ""
+msgstr "Pro-tip:"
 
 #: templates/admin-help.php:47
 msgid "Always run a preview first to avoid unexpected changes!"
-msgstr ""
+msgstr "Voer altijd eerst een voorbeeld uit om onverwachte wijzigingen te voorkomen!"
 
 #: templates/admin-help.php:53
 msgid "Features Overview"
-msgstr ""
+msgstr "Functieoverzicht"
 
 #: templates/admin-help.php:55
 msgid "Content Operations"
-msgstr ""
+msgstr "Inhoudsbewerkingen"
 
 #: templates/admin-help.php:57
 msgid "Post Content:"
-msgstr ""
+msgstr "Berichtinhoud:"
 
 #: templates/admin-help.php:57
 msgid "Search and replace in post/page content"
-msgstr ""
+msgstr "Zoek en vervang in bericht-/pagina-inhoud"
 
 #: templates/admin-help.php:58
 msgid "Custom Post Types:"
-msgstr ""
+msgstr "Aangepaste Berichttypen:"
 
 #: templates/admin-help.php:58
 msgid "Works with any post type (products, portfolios, etc.)"
-msgstr ""
+msgstr "Werkt met elk berichttype (producten, portfolio's, enz.)"
 
 #: templates/admin-help.php:59
 msgid "Preview:"
-msgstr ""
+msgstr "Voorbeeld:"
 
 #: templates/admin-help.php:59
 msgid "See changes before applying them"
-msgstr ""
+msgstr "Zie wijzigingen voordat u ze toepast"
 
 #: templates/admin-help.php:60
 msgid "Undo/Rollback:"
-msgstr ""
+msgstr "Ongedaan maken/Terugdraaien:"
 
 #: templates/admin-help.php:60
 msgid "Reverse changes with one click"
-msgstr ""
+msgstr "Draai wijzigingen terug met één klik"
 
 #: templates/admin-help.php:63
 msgid "Database Operations (Advanced Mode)"
-msgstr ""
+msgstr "Databasebewerkingen (Geavanceerde Modus)"
 
 #: templates/admin-help.php:65
 msgid "All Tables:"
-msgstr ""
+msgstr "Alle Tabellen:"
 
 #: templates/admin-help.php:65
 msgid "Search any WordPress table"
-msgstr ""
+msgstr "Doorzoek elke WordPress-tabel"
 
 #: templates/admin-help.php:66
 msgid "Backup:"
-msgstr ""
+msgstr "Back-up:"
 
 #: templates/admin-help.php:66
 msgid "Create SQL backups before changes"
-msgstr ""
+msgstr "Maak SQL-back-ups vóór wijzigingen"
 
 #: templates/admin-help.php:67
 msgid "Restore:"
-msgstr ""
+msgstr "Herstellen:"
 
 #: templates/admin-help.php:67
 msgid "Restore from backup if needed"
-msgstr ""
+msgstr "Herstel vanuit back-up indien nodig"
 
 #: templates/admin-help.php:68
 msgid "GUID Protection:"
-msgstr ""
+msgstr "GUID-bescherming:"
 
 #: templates/admin-help.php:68
 msgid "Automatically skips WordPress GUIDs"
-msgstr ""
+msgstr "Slaat automatisch WordPress GUID's over"
 
 #: templates/admin-help.php:72
 msgid "Pro Features"
-msgstr ""
+msgstr "Pro-functies"
 
 #: templates/admin-help.php:74
 msgid "Regex Mode:"
-msgstr ""
+msgstr "Regex-modus:"
 
 #: templates/admin-help.php:74
 msgid "Use regular expressions for powerful pattern matching"
-msgstr ""
+msgstr "Gebruik reguliere expressies voor krachtige patroonherkenning"
 
 #: templates/admin-help.php:75
 msgid "Unlimited Preview:"
-msgstr ""
+msgstr "Onbeperkt Voorbeeld:"
 
 #: templates/admin-help.php:75
 msgid "No limit on preview results"
-msgstr ""
+msgstr "Geen limiet op voorbeeldresultaten"
 
 #: templates/admin-help.php:76
 msgid "Extended History:"
-msgstr ""
+msgstr "Uitgebreide Geschiedenis:"
 
 #: templates/admin-help.php:76
 msgid "Keep up to 50 operations for rollback"
-msgstr ""
+msgstr "Bewaar tot 50 bewerkingen voor terugdraaien"
 
 #: templates/admin-help.php:83
 msgid "Using Saved Profiles"
-msgstr ""
+msgstr "Opgeslagen Profielen Gebruiken"
 
 #: templates/admin-help.php:84
 msgid "Profiles let you save common search/replace configurations for quick reuse."
-msgstr ""
+msgstr "Met profielen kunt u veelgebruikte zoek-/vervangconfiguraties opslaan voor snel hergebruik."
 
 #: templates/admin-help.php:86
 msgid "Saving a Profile"
-msgstr ""
+msgstr "Een Profiel Opslaan"
 
 #: templates/admin-help.php:88
 msgid "Configure your search/replace settings"
-msgstr ""
+msgstr "Configureer uw zoek-/vervanginstellingen"
 
 #: templates/admin-help.php:89
 msgid "Scroll to \"Save Current Settings\""
-msgstr ""
+msgstr "Scroll naar \"Huidige Instellingen Opslaan\""
 
 #: templates/admin-help.php:90
 msgid "Enter a descriptive name (e.g., \"Domain Migration\")"
-msgstr ""
+msgstr "Voer een beschrijvende naam in (bijv. \"Domeinmigratie\")"
 
 #: templates/admin-help.php:91
 msgid "Click \"Save Current Settings as Profile\""
-msgstr ""
+msgstr "Klik op \"Huidige Instellingen Opslaan als Profiel\""
 
 #: templates/admin-help.php:94
 msgid "Loading a Profile"
-msgstr ""
+msgstr "Een Profiel Laden"
 
 #: templates/admin-help.php:96
 msgid "Select a profile from the dropdown"
-msgstr ""
+msgstr "Selecteer een profiel uit het vervolgkeuzemenu"
 
 #: templates/admin-help.php:97
 msgid "Click \"Load\""
-msgstr ""
+msgstr "Klik op \"Laden\""
 
 #: templates/admin-help.php:98
 msgid "Review the loaded settings"
-msgstr ""
+msgstr "Controleer de geladen instellingen"
 
 #: templates/admin-help.php:99
 msgid "Run Preview or Apply"
-msgstr ""
+msgstr "Voer Voorbeeld of Toepassen uit"
 
 #: templates/admin-help.php:102
 msgid "Common Profile Examples"
-msgstr ""
+msgstr "Veelvoorkomende Profielvoorbeelden"
 
 #: templates/admin-help.php:104
 msgid "Domain Migration:"
-msgstr ""
+msgstr "Domeinmigratie:"
 
 #: templates/admin-help.php:105
 msgid "HTTPS Migration:"
-msgstr ""
+msgstr "HTTPS-migratie:"
 
 #: templates/admin-help.php:106
 msgid "Fix Typos:"
-msgstr ""
+msgstr "Typefouten Corrigeren:"
 
 #: templates/admin-help.php:107
 msgid "Update Company Name:"
-msgstr ""
+msgstr "Bedrijfsnaam Bijwerken:"
 
 #: templates/admin-help.php:113
 msgid "Advanced Database Mode"
-msgstr ""
+msgstr "Geavanceerde Databasemodus"
 
 #: templates/admin-help.php:116
 msgid "Warning:"
-msgstr ""
+msgstr "Waarschuwing:"
 
 #: templates/admin-help.php:116
 msgid "Advanced mode can modify any database table. Always create a backup first!"
-msgstr ""
+msgstr "Geavanceerde modus kan elke databasetabel wijzigen. Maak altijd eerst een back-up!"
 
 #: templates/admin-help.php:119
 msgid "When to Use Advanced Mode"
-msgstr ""
+msgstr "Wanneer Geavanceerde Modus Te Gebruiken"
 
 #: templates/admin-help.php:121
 msgid "Domain migrations (update siteurl, home options)"
-msgstr ""
+msgstr "Domeinmigraties (siteurl, home-opties bijwerken)"
 
 #: templates/admin-help.php:122
 msgid "Fix serialized data in post meta"
-msgstr ""
+msgstr "Geserialiseerde gegevens in post meta corrigeren"
 
 #: templates/admin-help.php:123
 msgid "Update user metadata"
-msgstr ""
+msgstr "Gebruikersmetadata bijwerken"
 
 #: templates/admin-help.php:124
 msgid "Fix plugin settings after migration"
-msgstr ""
+msgstr "Plugin-instellingen corrigeren na migratie"
 
 #: templates/admin-help.php:127
 msgid "Safe Usage"
-msgstr ""
+msgstr "Veilig Gebruik"
 
 #: templates/admin-help.php:129
 msgid "Create a backup first"
-msgstr ""
+msgstr "Maak eerst een back-up"
 
 #: templates/admin-help.php:130
 msgid "Select only the tables you need to modify"
-msgstr ""
+msgstr "Selecteer alleen de tabellen die u moet wijzigen"
 
 #: templates/admin-help.php:131
 msgid "Use very specific search terms"
-msgstr ""
+msgstr "Gebruik zeer specifieke zoektermen"
 
 #: templates/admin-help.php:132
 msgid "Run a preview first"
-msgstr ""
+msgstr "Voer eerst een voorbeeld uit"
 
 #: templates/admin-help.php:133
 msgid "Test on a staging site before production"
-msgstr ""
+msgstr "Test op een staging-site vóór productie"
 
 #: templates/admin-help.php:141
 msgid "Operation Times Out"
-msgstr ""
+msgstr "Bewerking Verloopt"
 
 #: templates/admin-help.php:143
 msgid "Go to Settings and reduce the batch size"
-msgstr ""
+msgstr "Ga naar Instellingen en verklein de batchgrootte"
 
 #: templates/admin-help.php:144
 msgid "Try Content Batch Size: 50 or Database Batch Size: 2500"
-msgstr ""
+msgstr "Probeer Inhoud Batchgrootte: 50 of Database Batchgrootte: 2500"
 
 #: templates/admin-help.php:145
 msgid "Contact your host to increase PHP max_execution_time"
-msgstr ""
+msgstr "Neem contact op met uw host om PHP max_execution_time te verhogen"
 
 #: templates/admin-help.php:148
 msgid "Memory Limit Errors"
-msgstr ""
+msgstr "Geheugenlimiet Fouten"
 
 #: templates/admin-help.php:150
 msgid "Reduce batch sizes in Settings"
-msgstr ""
+msgstr "Verklein batchgroottes in Instellingen"
 
 #: templates/admin-help.php:151
 msgid "Process fewer post types at once"
-msgstr ""
+msgstr "Verwerk minder berichttypen tegelijk"
 
 #: templates/admin-help.php:152
 msgid "Ask your host to increase PHP memory_limit"
-msgstr ""
+msgstr "Vraag uw host om PHP memory_limit te verhogen"
 
 #: templates/admin-help.php:155
 msgid "Changes Not Visible"
-msgstr ""
+msgstr "Wijzigingen Niet Zichtbaar"
 
 #: templates/admin-help.php:157
 msgid "Clear all caches (WordPress, plugin, CDN, browser)"
-msgstr ""
+msgstr "Wis alle caches (WordPress, plugin, CDN, browser)"
 
 #: templates/admin-help.php:158
 msgid "For Elementor pages: Regenerate CSS in Elementor settings"
-msgstr ""
+msgstr "Voor Elementor-pagina's: Genereer CSS opnieuw in Elementor-instellingen"
 
 #: templates/admin-help.php:159
 msgid "Check the Operation History to verify changes were applied"
-msgstr ""
+msgstr "Controleer de Bewerkingsgeschiedenis om te verifiëren dat wijzigingen zijn toegepast"
 
 #: templates/admin-help.php:165
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Veelgestelde Vragen"
 
 #: templates/admin-help.php:167
 msgid "Q: Can I undo changes after applying them?"
-msgstr ""
+msgstr "V: Kan ik wijzigingen ongedaan maken nadat ik ze heb toegepast?"
 
 #: templates/admin-help.php:168
 msgid "A: Yes! Click \"Operation History\" and use the \"Undo\" button to rollback. The plugin keeps your last 5 operations (free) or 50 operations (Pro)."
-msgstr ""
+msgstr "A: Ja! Klik op \"Bewerkingsgeschiedenis\" en gebruik de knop \"Ongedaan maken\" om terug te draaien. De plugin bewaart uw laatste 5 bewerkingen (gratis) of 50 bewerkingen (Pro)."
 
 #: templates/admin-help.php:170
 msgid "Q: Does this work with Elementor/Gutenberg?"
-msgstr ""
+msgstr "V: Werkt dit met Elementor/Gutenberg?"
 
 #: templates/admin-help.php:171
 msgid "A: Yes! The plugin handles serialized data and JSON correctly. For Elementor, caches are automatically cleared after changes."
-msgstr ""
+msgstr "A: Ja! De plugin verwerkt geserialiseerde gegevens en JSON correct. Voor Elementor worden caches automatisch gewist na wijzigingen."
 
 #: templates/admin-help.php:173
 msgid "Q: Will this break my site?"
-msgstr ""
+msgstr "V: Zal dit mijn site kapot maken?"
 
 #: templates/admin-help.php:174
 msgid "A: Not if you use it correctly! Always preview changes first, be specific with search terms, and test on staging before production. The undo feature provides additional safety."
-msgstr ""
+msgstr "A: Niet als u het correct gebruikt! Bekijk altijd eerst wijzigingen, wees specifiek met zoektermen en test op staging vóór productie. De ongedaan maken-functie biedt extra veiligheid."
 
 #: templates/admin-help.php:176
 msgid "Q: What's the difference between Content and Advanced mode?"
-msgstr ""
+msgstr "V: Wat is het verschil tussen Inhoud en Geavanceerde modus?"
 
 #: templates/admin-help.php:177
 msgid "A: Content mode searches only post/page content. Advanced mode searches any database table (wp_options, postmeta, usermeta, etc.). Advanced mode requires more caution."
-msgstr ""
+msgstr "A: Inhoudmodus doorzoekt alleen bericht-/pagina-inhoud. Geavanceerde modus doorzoekt elke databasetabel (wp_options, postmeta, usermeta, enz.). Geavanceerde modus vereist meer voorzichtigheid."
 
 #: templates/admin-help.php:179
 msgid "Q: Can I use this for domain migrations?"
-msgstr ""
+msgstr "V: Kan ik dit gebruiken voor domeinmigraties?"
 
 #: templates/admin-help.php:180
 msgid "A: Yes! Use Advanced mode, create a backup first, then replace old URLs with new ones across wp_options and wp_posts tables. Save this as a profile for future use."
-msgstr ""
+msgstr "A: Ja! Gebruik Geavanceerde modus, maak eerst een back-up en vervang vervolgens oude URL's met nieuwe in wp_options en wp_posts tabellen. Sla dit op als profiel voor toekomstig gebruik."
 
 #: templates/admin-help.php:182
 msgid "Q: How do I upgrade to Pro?"
-msgstr ""
+msgstr "V: Hoe kan ik upgraden naar Pro?"
 
 #: templates/admin-help.php:183
 msgid "A: Contact the plugin developer for Pro licensing. Pro includes regex mode, unlimited previews, and extended history."
-msgstr ""
+msgstr "A: Neem contact op met de plugin-ontwikkelaar voor Pro-licenties. Pro omvat regex-modus, onbeperkte voorbeelden en uitgebreide geschiedenis."
 
 #: templates/admin-help.php:188
 msgid "↑ Back to Top"
-msgstr ""
+msgstr "↑ Terug naar Boven"
 
 #: templates/admin-profiles.php:22
 msgid "Saved Profiles"
-msgstr ""
+msgstr "Opgeslagen Profielen"
 
 #: templates/admin-profiles.php:33
 msgid "Load Profile:"
-msgstr ""
+msgstr "Profiel Laden:"
 
 #: templates/admin-profiles.php:36
 msgid "-- Select Profile --"
-msgstr ""
+msgstr "-- Selecteer Profiel --"
 
 #: templates/admin-profiles.php:48
 msgid "Load"
-msgstr ""
+msgstr "Laden"
 
 #: templates/admin-profiles.php:50
 msgid "Are you sure you want to delete this profile?"
-msgstr ""
+msgstr "Weet u zeker dat u dit profiel wilt verwijderen?"
 
 #: templates/admin-profiles.php:58
 msgid "View All Profiles"
-msgstr ""
+msgstr "Alle Profielen Bekijken"
 
 #: templates/admin-profiles.php:62
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: templates/admin-profiles.php:63
 msgid "Search"
-msgstr ""
+msgstr "Zoeken"
 
 #: templates/admin-profiles.php:64
 msgid "Replace"
-msgstr ""
+msgstr "Vervangen"
 
 #: templates/admin-profiles.php:67
 msgid "Updated"
-msgstr ""
+msgstr "Bijgewerkt"
 
 #: templates/admin-profiles.php:79
 msgid "Case Sensitive"
-msgstr ""
+msgstr "Hoofdlettergevoelig"
 
 #: templates/admin-profiles.php:82
 msgid "Regex Mode"
-msgstr ""
+msgstr "Regex-modus"
 
 #: templates/admin-profiles.php:93
 msgid "No saved profiles yet. Complete a search below and click \"Save Profile\" to save it for future use."
-msgstr ""
+msgstr "Nog geen opgeslagen profielen. Voltooi een zoekopdracht hieronder en klik op \"Profiel Opslaan\" om het op te slaan voor toekomstig gebruik."
 
 #: templates/admin-profiles.php:99
 msgid "Save Current Settings"
-msgstr ""
+msgstr "Huidige Instellingen Opslaan"
 
 #: templates/admin-profiles.php:107
 msgid "Profile name (e.g., \"Domain Migration\")"
-msgstr ""
+msgstr "Profielnaam (bijv. \"Domeinmigratie\")"
 
 #: templates/admin-profiles.php:111
 msgid "Save Current Settings as Profile"
-msgstr ""
+msgstr "Huidige Instellingen Opslaan als Profiel"
 
 #: templates/admin-settings.php:21
 msgid "Universal Replace Engine - Settings"
-msgstr ""
+msgstr "Universal Replace Engine - Instellingen"
 
 #: templates/admin-settings.php:31
 msgid "Performance Settings"
-msgstr ""
+msgstr "Prestatie-instellingen"
 
 #: templates/admin-settings.php:33
 msgid "Configure batch sizes to optimize performance for your server. Lower values use less memory but take longer."
-msgstr ""
+msgstr "Configureer batchgroottes om de prestaties voor uw server te optimaliseren. Lagere waarden gebruiken minder geheugen maar duren langer."
 
 #: templates/admin-settings.php:42
 msgid "Content Batch Size"
-msgstr ""
+msgstr "Inhoud Batchgrootte"
 
 #: templates/admin-settings.php:57
 msgid "Number of posts to process per batch for content operations (10-1000). Default: 100"
-msgstr ""
+msgstr "Aantal berichten om per batch te verwerken voor inhoudsbewerkingen (10-1000). Standaard: 100"
 
 #: templates/admin-settings.php:66
 msgid "Database Batch Size"
-msgstr ""
+msgstr "Database Batchgrootte"
 
 #: templates/admin-settings.php:81
 msgid "Number of rows to process per batch for database operations (100-10000). Default: 5000"
-msgstr ""
+msgstr "Aantal rijen om per batch te verwerken voor databasebewerkingen (100-10000). Standaard: 5000"
 
 #: templates/admin-settings.php:90
 msgid "Backup Batch Size"
-msgstr ""
+msgstr "Back-up Batchgrootte"
 
 #: templates/admin-settings.php:105
 msgid "Number of rows to backup per batch (100-5000). Default: 1000"
-msgstr ""
+msgstr "Aantal rijen om per batch een back-up van te maken (100-5000). Standaard: 1000"
 
 #: templates/admin-settings.php:115
 msgid "Preview & History Settings"
-msgstr ""
+msgstr "Voorbeeld- en Geschiedenisinstellingen"
 
 #: templates/admin-settings.php:123
 msgid "Max Preview Results"
-msgstr ""
+msgstr "Max. Voorbeeldresultaten"
 
 #: templates/admin-settings.php:125
 msgid "Pro: Unlimited"
-msgstr ""
+msgstr "Pro: Onbeperkt"
 
 #: templates/admin-settings.php:142
 msgid "Maximum number of results to show in preview (1-100)."
-msgstr ""
+msgstr "Maximaal aantal resultaten om in voorbeeld te tonen (1-100)."
 
 #: templates/admin-settings.php:144
 msgid "Maximum number of results to show in preview (1-50). Pro version removes this limit."
-msgstr ""
+msgstr "Maximaal aantal resultaten om in voorbeeld te tonen (1-50). Pro-versie verwijdert deze limiet."
 
 #: templates/admin-settings.php:155
 msgid "Operation History Limit"
-msgstr ""
+msgstr "Bewerkingsgeschiedenislimiet"
 
 #: templates/admin-settings.php:157
 msgid "Pro: 50"
-msgstr ""
+msgstr "Pro: 50"
 
 #: templates/admin-settings.php:174
 msgid "Number of operations to keep in history for rollback (1-50)."
-msgstr ""
+msgstr "Aantal bewerkingen om in geschiedenis te bewaren voor terugdraaien (1-50)."
 
 #: templates/admin-settings.php:176
 msgid "Number of operations to keep in history for rollback (1-10). Pro version keeps up to 50."
-msgstr ""
+msgstr "Aantal bewerkingen om in geschiedenis te bewaren voor terugdraaien (1-10). Pro-versie bewaart tot 50."
 
 #: templates/admin-settings.php:188
 msgid "Backup Settings"
-msgstr ""
+msgstr "Back-upinstellingen"
 
 #: templates/admin-settings.php:196
 msgid "Backup Retention"
-msgstr ""
+msgstr "Back-upbewaarperiode"
 
 #: templates/admin-settings.php:209
 msgid "days"
-msgstr ""
+msgstr "dagen"
 
 #: templates/admin-settings.php:211
 msgid "Automatically delete backups older than this many days (1-30). Default: 7"
-msgstr ""
+msgstr "Verwijder automatisch back-ups ouder dan dit aantal dagen (1-30). Standaard: 7"
 
 #: templates/admin-settings.php:221
 msgid "Feature Toggles"
-msgstr ""
+msgstr "Functieschakelaars"
 
 #: templates/admin-settings.php:228
 msgid "Operation Logging"
-msgstr ""
+msgstr "Bewerkingslogboek"
 
 #: templates/admin-settings.php:238
 msgid "Enable detailed logging for all operations"
-msgstr ""
+msgstr "Schakel gedetailleerde logboekregistratie in voor alle bewerkingen"
 
 #: templates/admin-settings.php:241
 msgid "Logs are stored in the database and can be viewed in the History tab."
-msgstr ""
+msgstr "Logboeken worden opgeslagen in de database en kunnen worden bekeken in het tabblad Geschiedenis."
 
 #: templates/admin-settings.php:249
 msgid "AJAX Progress Bar"
-msgstr ""
+msgstr "AJAX Voortgangsbalk"
 
 #: templates/admin-settings.php:259
 msgid "Enable real-time progress updates (recommended)"
-msgstr ""
+msgstr "Schakel real-time voortgangsupdates in (aanbevolen)"
 
 #: templates/admin-settings.php:262
 msgid "Shows a live progress bar during long operations. Disable if you experience issues."
-msgstr ""
+msgstr "Toont een live voortgangsbalk tijdens lange bewerkingen. Schakel uit als u problemen ondervindt."
 
 #: templates/admin-settings.php:270
 msgid "Safety Warnings"
-msgstr ""
+msgstr "Veiligheidswaarschuwingen"
 
 #: templates/admin-settings.php:280
 msgid "Show safety warnings and confirmations"
-msgstr ""
+msgstr "Toon veiligheidswaarschuwingen en bevestigingen"
 
 #: templates/admin-settings.php:283
 msgid "Recommended to keep enabled to prevent accidental data loss."
-msgstr ""
+msgstr "Aanbevolen om ingeschakeld te houden om onbedoeld gegevensverlies te voorkomen."
 
 #: templates/admin-settings.php:293
 msgid "Save Settings"
-msgstr ""
+msgstr "Instellingen Opslaan"
 
 #: templates/admin-settings.php:294
 msgid "Are you sure you want to reset all settings to defaults?"
-msgstr ""
+msgstr "Weet u zeker dat u alle instellingen wilt resetten naar standaardwaarden?"
 
 #: templates/admin-settings.php:295
 msgid "Reset to Defaults"
-msgstr ""
+msgstr "Resetten naar Standaardwaarden"
 
 #: templates/admin-settings.php:302
 msgid "System Information"
-msgstr ""
+msgstr "Systeeminformatie"
 
 #: templates/admin-settings.php:306
 msgid "Plugin Version"
-msgstr ""
+msgstr "Plugin-versie"
 
 #: templates/admin-settings.php:310
 msgid "WordPress Version"
-msgstr ""
+msgstr "WordPress-versie"
 
 #: templates/admin-settings.php:314
 msgid "PHP Version"
-msgstr ""
+msgstr "PHP-versie"
 
 #: templates/admin-settings.php:318
 msgid "Memory Limit"
-msgstr ""
+msgstr "Geheugenlimiet"
 
 #: templates/admin-settings.php:322
 msgid "Max Execution Time"
-msgstr ""
+msgstr "Max. Uitvoertijd"
 
 #: templates/admin-settings.php:326
 msgid "Pro Status"
-msgstr ""
+msgstr "Pro-status"
 
 #: templates/admin-settings.php:329
 msgid "Active"
-msgstr ""
+msgstr "Actief"
 
 #: templates/admin-settings.php:331
 msgid "Free Version"
-msgstr ""
+msgstr "Gratis Versie"
