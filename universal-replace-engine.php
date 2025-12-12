@@ -4,7 +4,7 @@
  * Plugin URI: https://xtech.red/
  * Description: Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode.
  * Version: 1.4.0
- * Author: Your Name
+ * Author: Xtech Red
  * Author URI: https://xtech.red/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html

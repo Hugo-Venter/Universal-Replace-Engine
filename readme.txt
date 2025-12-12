@@ -275,10 +275,10 @@ This plugin:
 
 For support, please:
 
-* Check the built-in Help documentation (Tools → URE Help)
+* Check the built-in Help documentation (Tools → URE → Help)
 * Read the comprehensive README.md file
-* Submit issues on GitHub: [your-github-repo]
-* Contact support: [your-support-email]
+* Submit issues on GitHub: https://github.com/Hugo-Venter/Universal-Replace-Engine
+* Contact support: support@xtech.red
 
 == Credits ==
 
