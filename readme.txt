@@ -1,5 +1,5 @@
 === Universal Replace Engine ===
-Contributors: (your-username-here)
+Contributors: Hugo Venter, Matthew Jones
 Donate link: https://xtech.red/
 Tags: search, replace, database, migration, content
 Requires at least: 5.9
@@ -57,8 +57,6 @@ This plugin has undergone a comprehensive security audit and is **certified safe
 * Capability checks (requires Administrator role)
 * No dangerous PHP functions (eval, exec, etc.)
 * Security Score: 98/100
-
-Full security audit report included in plugin files.
 
 = Multilingual =
 
@@ -149,7 +147,7 @@ Yes, with the Pro version! Pro includes full regex mode with pattern validation,
 
 = What about database tables? =
 
-The Advanced Database Mode (included in free version) provides direct access to any database table with preview, GUID protection, and case-sensitive search.
+The Advanced Database Mode provides direct access to any database table with preview, GUID protection, and case-sensitive search (Pro Version).
 
 = Can I save my search/replace settings? =
 
@@ -163,17 +161,6 @@ Yes! The plugin is fully multisite compatible. Network admins can perform operat
 
 No! The plugin only loads on admin pages and uses efficient batch processing. It has zero impact on frontend performance.
 
-== Screenshots ==
-
-1. Main search and replace interface with preview
-2. Side-by-side before/after preview results
-3. Operation history with one-click rollback
-4. Saved profiles for quick reuse
-5. Settings page for performance tuning
-6. Advanced database mode with table selection
-7. Help documentation built into the plugin
-8. Multilingual support - 10 languages available
-
 == Changelog ==
 
 = 1.4.0 - 2024-12-10 =
@@ -182,7 +169,7 @@ No! The plugin only loads on admin pages and uses efficient batch processing. It
 * Added: Comprehensive help & documentation tab
 * Added: Multilingual support for 10 languages
 * Added: AJAX progress bar foundation
-* Added: Security audit certification
+* Added: Security audit
 * Improved: Advanced Database Mode UI with collapsible section
 * Improved: Form pre-fill when loading profiles
 * Fixed: Profile integration visibility
@@ -225,7 +212,7 @@ No! The plugin only loads on admin pages and uses efficient batch processing. It
 == Upgrade Notice ==
 
 = 1.4.0 =
-Major update with Saved Profiles, Settings management, multilingual support (10 languages), and security certification. Highly recommended upgrade!
+Major update with Saved Profiles, Settings management, multilingual support (10 languages), and security. Highly recommended upgrade!
 
 = 1.3.0 =
 Enterprise features added: Advanced Database Mode, SQL backups, multisite support. Recommended for all users.
@@ -243,7 +230,7 @@ Initial release of Universal Replace Engine.
 
 This plugin takes security seriously:
 
-* **Security Audit Completed:** December 10, 2024
+* **Security Audit Completed:** December 10, 2025
 * **Security Rating:** 98/100
 * **Vulnerabilities Found:** 0
 * **WordPress Standards:** 100% Compliant
@@ -258,8 +245,6 @@ Security measures implemented:
 * No dangerous PHP functions (eval, exec, system, etc.)
 * Direct file access prevention
 * Transient-based user data isolation
-
-Full security audit report included: `SECURITY-AUDIT-REPORT.md`
 
 == Privacy ==
 
