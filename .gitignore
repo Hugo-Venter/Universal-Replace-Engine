@@ -51,3 +51,7 @@ wp-config.php
 
 # Plugin-specific temporary data
 *.cache
+
+# Documentation and development files
+UNIVERSAL-REPLACE-ENGINE.md
+OLDMD/
