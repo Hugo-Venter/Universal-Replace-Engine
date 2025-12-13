@@ -362,10 +362,9 @@ class URE_Database_Manager {
 
 		// Process in batches.
 		$page  = 0;
-		$total_rows = $this->wpdb->get_var(
-			// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
-			$this->wpdb->prepare( 'SELECT COUNT(*) FROM `%s`', $table_name )
-		);
+		// Table name is already validated above, safe to interpolate.
+		// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+		$total_rows = $this->wpdb->get_var( "SELECT COUNT(*) FROM `{$table_name}`" );
 		$pages = ceil( $total_rows / $this->page_size );
 
 		while ( $page < $pages ) {
