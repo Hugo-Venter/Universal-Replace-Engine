@@ -392,17 +392,20 @@ class URE_Admin {
 		 */
 		public function render_admin_page() {
 			// Check if we have preview data from form submission.
+			$saved_form_data = null;
 			if ( null === $this->preview_data ) {
 				$transient_key = 'ure_preview_data_' . get_current_user_id();
 				$transient_data = get_transient( $transient_key );
 				if ( $transient_data && isset( $transient_data['preview_data'] ) ) {
 					$this->preview_data = $transient_data['preview_data'];
+					// Also save the form data for repopulating form fields
+					$saved_form_data = $transient_data;
 				}
 			}
-	
+
 			// Check if Pro is active.
 			$is_pro = apply_filters( 'ure_is_pro', false );
-	
+
 			// Determine active tab.
 			$active_tab = isset( $_GET['tab'] ) ? sanitize_key( $_GET['tab'] ) : 'main';
 	
@@ -482,6 +485,8 @@ class URE_Admin {
 													$search_value = $loaded_profile['search'];
 												} elseif ( isset( $_POST['ure_search'] ) ) {
 													$search_value = wp_unslash( $_POST['ure_search'] );
+												} elseif ( $saved_form_data && isset( $saved_form_data['search'] ) ) {
+													$search_value = $saved_form_data['search'];
 												}
 												?>
 												<input type="text"
@@ -507,6 +512,8 @@ class URE_Admin {
 													$replace_value = $loaded_profile['replace'];
 												} elseif ( isset( $_POST['ure_replace'] ) ) {
 													$replace_value = wp_unslash( $_POST['ure_replace'] );
+												} elseif ( $saved_form_data && isset( $saved_form_data['replace'] ) ) {
+													$replace_value = $saved_form_data['replace'];
 												}
 												?>
 												<input type="text"
@@ -531,6 +538,8 @@ class URE_Admin {
 													$selected_scope = $loaded_profile['scope'];
 												} elseif ( isset( $_POST['ure_scope'] ) ) {
 													$selected_scope = sanitize_key( $_POST['ure_scope'] );
+												} elseif ( $saved_form_data && isset( $saved_form_data['scope'] ) ) {
+													$selected_scope = $saved_form_data['scope'];
 												}
 												// Force post_content if not Pro.
 												if ( ! $is_pro && 'post_content' !== $selected_scope ) {
@@ -600,7 +609,7 @@ class URE_Admin {
 												<?php esc_html_e( 'Post Types', 'universal-replace-engine' ); ?>
 											</th>
 											<td>
-												<?php $this->render_post_type_checkboxes( $loaded_profile ); ?>
+												<?php $this->render_post_type_checkboxes( $loaded_profile, $saved_form_data ); ?>
 												<p class="description">
 													<?php esc_html_e( 'Select which post types to search in.', 'universal-replace-engine' ); ?>
 												</p>
@@ -623,6 +632,8 @@ class URE_Admin {
 																   $is_case_sensitive = $loaded_profile['case_sensitive'];
 															   } elseif ( isset( $_POST['ure_case_sensitive'] ) ) {
 																   $is_case_sensitive = true;
+															   } elseif ( $saved_form_data && isset( $saved_form_data['case_sensitive'] ) ) {
+																   $is_case_sensitive = $saved_form_data['case_sensitive'];
 															   }
 															   checked( $is_case_sensitive );
 															   ?>>
@@ -639,6 +650,8 @@ class URE_Admin {
 																   $is_regex_mode = $loaded_profile['regex_mode'];
 															   } elseif ( isset( $_POST['ure_regex_mode'] ) ) {
 																   $is_regex_mode = true;
+															   } elseif ( $saved_form_data && isset( $saved_form_data['regex_mode'] ) ) {
+																   $is_regex_mode = $saved_form_data['regex_mode'];
 															   }
 															   checked( $is_regex_mode );
 															   ?>
@@ -1049,7 +1062,7 @@ class URE_Admin {
 	/**
 	 * Render post type checkboxes.
 	 */
-	private function render_post_type_checkboxes( $loaded_profile = null ) {
+	private function render_post_type_checkboxes( $loaded_profile = null, $saved_form_data = null ) {
 		$post_types = get_post_types(
 			array(
 				'public' => true,
@@ -1062,6 +1075,8 @@ class URE_Admin {
 			$selected = $loaded_profile['post_types'];
 		} elseif ( isset( $_POST['ure_post_types'] ) ) {
 			$selected = (array) $_POST['ure_post_types'];
+		} elseif ( $saved_form_data && isset( $saved_form_data['post_types'] ) ) {
+			$selected = $saved_form_data['post_types'];
 		}
 
 		foreach ( $post_types as $post_type ) {
