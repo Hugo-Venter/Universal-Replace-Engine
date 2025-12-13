@@ -73,6 +73,10 @@ function ure_get_table_type_label( $type ) {
 			);
 			?>
 		</p>
+		<p style="background: #fff3cd; border-left: 4px solid #ff9800; padding: 10px; margin: 15px 0;">
+			<strong style="color: #d63638;">⚠️ <?php esc_html_e( 'IMPORTANT: Database operations CANNOT be rolled back!', 'universal-replace-engine' ); ?></strong><br>
+			<?php esc_html_e( 'Unlike post content changes, database-level operations cannot be undone through the History section. You must create a backup before applying changes.', 'universal-replace-engine' ); ?>
+		</p>
 		<ul>
 			<li><strong><?php esc_html_e( 'ALWAYS create a backup before proceeding', 'universal-replace-engine' ); ?></strong></li>
 			<li><?php esc_html_e( 'Test on a staging site first', 'universal-replace-engine' ); ?></li>
@@ -194,6 +198,206 @@ function ure_get_table_type_label( $type ) {
 			</div>
 		</form>
 	</div>
+
+	<?php
+	// Check for preview data from database search
+	$db_preview_data = get_transient( 'ure_db_preview_' . get_current_user_id() );
+
+	if ( $db_preview_data && isset( $db_preview_data['results'] ) && ! empty( $db_preview_data['results'] ) ) :
+		?>
+		<!-- Database Preview Results -->
+		<div class="ure-card">
+			<h2><?php esc_html_e( 'Preview Results', 'universal-replace-engine' ); ?></h2>
+
+			<div class="ure-notice ure-notice-warning">
+				<p>
+					<strong><?php esc_html_e( 'Review the changes below carefully before applying.', 'universal-replace-engine' ); ?></strong>
+				</p>
+			</div>
+
+			<!-- Summary Table -->
+			<h3><?php esc_html_e( 'Summary', 'universal-replace-engine' ); ?></h3>
+			<table class="wp-list-table widefat fixed striped" style="margin-bottom: 30px;">
+				<thead>
+					<tr>
+						<th style="width: 40%;"><?php esc_html_e( 'Table', 'universal-replace-engine' ); ?></th>
+						<th style="width: 20%;"><?php esc_html_e( 'Rows Scanned', 'universal-replace-engine' ); ?></th>
+						<th style="width: 20%;"><?php esc_html_e( 'Changes Found', 'universal-replace-engine' ); ?></th>
+						<th style="width: 20%;"><?php esc_html_e( 'Time', 'universal-replace-engine' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					$total_changes = 0;
+					$total_previews = 0;
+					foreach ( $db_preview_data['results'] as $result ) :
+						if ( isset( $result['changes'] ) && $result['changes'] > 0 ) :
+							$total_changes += $result['changes'];
+							if ( isset( $result['previews'] ) ) {
+								$total_previews += count( $result['previews'] );
+							}
+							?>
+							<tr>
+								<td><strong><?php echo esc_html( $result['table'] ); ?></strong></td>
+								<td><?php echo esc_html( number_format_i18n( $result['rows'] ) ); ?></td>
+								<td><strong style="color: #d63638;"><?php echo esc_html( number_format_i18n( $result['changes'] ) ); ?></strong></td>
+								<td><?php echo esc_html( isset( $result['time_elapsed'] ) ? $result['time_elapsed'] . 's' : 'N/A' ); ?></td>
+							</tr>
+						<?php
+						endif;
+					endforeach;
+					?>
+				</tbody>
+			</table>
+
+			<!-- Detailed Preview of Changes -->
+			<h3>
+				<?php esc_html_e( 'Preview of Changes', 'universal-replace-engine' ); ?>
+				<small style="font-weight: normal; color: #666;">
+					<?php
+					printf(
+						/* translators: 1: number shown, 2: total changes */
+						esc_html__( '(Showing up to 20 examples out of %d total changes)', 'universal-replace-engine' ),
+						number_format_i18n( $total_changes )
+					);
+					?>
+				</small>
+			</h3>
+			<table class="wp-list-table widefat fixed striped ure-preview-table">
+				<thead>
+					<tr>
+						<th style="width: 20%;"><?php esc_html_e( 'Location', 'universal-replace-engine' ); ?></th>
+						<th style="width: 40%;"><?php esc_html_e( 'Before', 'universal-replace-engine' ); ?></th>
+						<th style="width: 40%;"><?php esc_html_e( 'After', 'universal-replace-engine' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					$preview_count = 0;
+					$max_previews = 20;
+
+					foreach ( $db_preview_data['results'] as $result ) :
+						if ( ! isset( $result['previews'] ) || empty( $result['previews'] ) ) {
+							continue;
+						}
+
+						foreach ( $result['previews'] as $preview ) :
+							if ( $preview_count >= $max_previews ) {
+								break 2; // Break out of both loops
+							}
+
+							$preview_count++;
+							?>
+							<tr>
+								<td>
+									<strong><?php echo esc_html( $result['table'] ); ?></strong>
+									<br>
+									<small style="color: #666;">
+										<?php
+										printf(
+											/* translators: 1: column name, 2: primary key value */
+											esc_html__( 'Column: %1$s (ID: %2$s)', 'universal-replace-engine' ),
+											esc_html( $preview['column'] ),
+											esc_html( $preview['pk_value'] )
+										);
+										?>
+									</small>
+								</td>
+								<td>
+									<code style="display: block; background: #f9f9f9; padding: 8px; border-radius: 3px; word-break: break-all; font-size: 12px;">
+										<?php
+										$before = $preview['before'];
+										$search = $db_preview_data['search'];
+
+										// Highlight search term
+										if ( ! empty( $search ) ) {
+											$case_sensitive = isset( $db_preview_data['case_sensitive'] ) && $db_preview_data['case_sensitive'];
+											if ( $case_sensitive ) {
+												$before = str_replace(
+													$search,
+													'<mark style="background: #ffff00; padding: 2px 4px; border-radius: 2px;">' . esc_html( $search ) . '</mark>',
+													esc_html( $before )
+												);
+											} else {
+												$before = preg_replace(
+													'/' . preg_quote( $search, '/' ) . '/i',
+													'<mark style="background: #ffff00; padding: 2px 4px; border-radius: 2px;">$0</mark>',
+													esc_html( $before )
+												);
+											}
+											echo wp_kses( $before, array( 'mark' => array( 'style' => array() ) ) );
+										} else {
+											echo esc_html( $before );
+										}
+										?>
+									</code>
+								</td>
+								<td>
+									<code style="display: block; background: #f0f6fc; padding: 8px; border-radius: 3px; word-break: break-all; font-size: 12px;">
+										<?php
+										$after = $preview['after'];
+										$replace = $db_preview_data['replace'];
+
+										// Highlight replacement term
+										if ( ! empty( $replace ) ) {
+											$case_sensitive = isset( $db_preview_data['case_sensitive'] ) && $db_preview_data['case_sensitive'];
+											if ( $case_sensitive ) {
+												$after = str_replace(
+													$replace,
+													'<mark style="background: #4ade80; padding: 2px 4px; border-radius: 2px;">' . esc_html( $replace ) . '</mark>',
+													esc_html( $after )
+												);
+											} else {
+												$after = preg_replace(
+													'/' . preg_quote( $replace, '/' ) . '/i',
+													'<mark style="background: #4ade80; padding: 2px 4px; border-radius: 2px;">$0</mark>',
+													esc_html( $after )
+												);
+											}
+											echo wp_kses( $after, array( 'mark' => array( 'style' => array() ) ) );
+										} else {
+											echo esc_html( $after );
+										}
+										?>
+									</code>
+								</td>
+							</tr>
+						<?php
+						endforeach;
+					endforeach;
+
+					if ( $preview_count === 0 ) :
+						?>
+						<tr>
+							<td colspan="3" style="text-align: center; padding: 20px; color: #666;">
+								<?php esc_html_e( 'No preview examples available. Changes will be applied based on the summary above.', 'universal-replace-engine' ); ?>
+							</td>
+						</tr>
+					<?php endif; ?>
+				</tbody>
+			</table>
+
+			<form method="post" action="" style="margin-top: 20px;">
+				<?php wp_nonce_field( 'ure_action', 'ure_nonce' ); ?>
+				<input type="hidden" name="ure_action" value="database_apply" />
+
+				<p class="submit">
+					<button type="submit" class="button button-primary button-large" onclick="return confirm('<?php echo esc_js( __( 'Are you sure you want to apply these changes to the database? This action cannot be easily undone. Make sure you have a backup!', 'universal-replace-engine' ) ); ?>');">
+						<?php
+						printf(
+							/* translators: %d: number of changes */
+							esc_html__( 'Apply %d Changes', 'universal-replace-engine' ),
+							$total_changes
+						);
+						?>
+					</button>
+					<a href="<?php echo esc_url( admin_url( 'admin.php?page=universal-replace-engine&tab=database' ) ); ?>" class="button button-secondary">
+						<?php esc_html_e( 'Cancel', 'universal-replace-engine' ); ?>
+					</a>
+				</p>
+			</form>
+		</div>
+	<?php endif; ?>
 </div>
 
 <style>
