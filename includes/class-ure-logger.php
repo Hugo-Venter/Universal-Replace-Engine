@@ -52,6 +52,11 @@ class URE_Logger {
 	 * @return int|false Log ID on success, false on failure.
 	 */
 	public function log_operation( $user_id, $summary, $details = array() ) {
+		// Check if logging is enabled.
+		if ( ! URE_Settings::get( 'enable_logging', true ) ) {
+			return false;
+		}
+
 		global $wpdb;
 
 		$table = $this->get_table_name();
@@ -97,7 +102,7 @@ class URE_Logger {
 			 * @since 1.0.0
 			 * @param int $limit History limit.
 			 */
-			$limit = apply_filters( 'ure_history_limit', self::FREE_LOG_LIMIT );
+			$limit = apply_filters( 'ure_history_limit', URE_Settings::get( 'history_limit', self::FREE_LOG_LIMIT ) );
 		}
 
 		$table = $this->get_table_name();
@@ -277,7 +282,7 @@ class URE_Logger {
 		$table = $this->get_table_name();
 
 		// Get limit (allow Pro version to override).
-		$log_limit = apply_filters( 'ure_history_limit', self::FREE_LOG_LIMIT );
+		$log_limit = apply_filters( 'ure_history_limit', URE_Settings::get( 'history_limit', self::FREE_LOG_LIMIT ) );
 
 		// Get the ID of the nth most recent log.
 		$keep_from_id = $wpdb->get_var(

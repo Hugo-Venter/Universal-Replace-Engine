@@ -32,14 +32,26 @@ function ure_uninstall_cleanup() {
 	delete_option( 'ure_db_version' );
 
 	// Delete all user meta (saved profiles).
-	$wpdb->query( "DELETE FROM {$wpdb->usermeta} WHERE meta_key = 'ure_profiles'" );
+	$wpdb->query(
+		$wpdb->prepare(
+			"DELETE FROM {$wpdb->usermeta} WHERE meta_key = %s",
+			'ure_profiles'
+		)
+	);
 
 	// Drop custom database table.
 	$table_name = $wpdb->prefix . 'ure_logs';
-	$wpdb->query( "DROP TABLE IF EXISTS {$table_name}" ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
+	// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared -- Table name uses WordPress prefix, safe.
+	$wpdb->query( "DROP TABLE IF EXISTS `{$table_name}`" );
 
 	// Delete all transients.
-	$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE '_transient_ure_%' OR option_name LIKE '_transient_timeout_ure_%'" );
+	$wpdb->query(
+		$wpdb->prepare(
+			"DELETE FROM {$wpdb->options} WHERE option_name LIKE %s OR option_name LIKE %s",
+			$wpdb->esc_like( '_transient_ure_' ) . '%',
+			$wpdb->esc_like( '_transient_timeout_ure_' ) . '%'
+		)
+	);
 
 	// For multisite, clean up site options if on main site.
 	if ( is_multisite() ) {

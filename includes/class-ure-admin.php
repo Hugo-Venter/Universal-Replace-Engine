@@ -141,7 +141,11 @@ class URE_Admin {
 				case 'delete_backup':
 					$this->handle_delete_backup();
 					break;
-	
+
+				case 'download_backup':
+					$this->handle_download_backup();
+					break;
+
 				case 'database_preview':
 					$this->handle_database_preview();
 					break;
@@ -188,7 +192,7 @@ class URE_Admin {
 		$is_pro = apply_filters( 'ure_is_pro', false );
 		if ( ! $is_pro && 'post_content' !== $scope ) {
 			$scope = 'post_content';
-			add_settings_error(
+			$this->add_notice(
 				'ure_messages',
 				'ure_warning',
 				__( 'Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content.', 'universal-replace-engine' ),
@@ -753,6 +757,15 @@ class URE_Admin {
 													$this->preview_data['total']
 												);
 												?>
+												<br>
+												<strong><?php esc_html_e( 'Note:', 'universal-replace-engine' ); ?></strong>
+												<?php
+												printf(
+													/* translators: %d: total matches */
+													esc_html__( 'Clicking "Apply Changes" will replace all %d matches found, not just the ones shown in this preview.', 'universal-replace-engine' ),
+													$this->preview_data['total']
+												);
+												?>
 											</p>
 										</div>
 									<?php elseif ( $is_pro && $this->preview_data['total'] > 20 ) : ?>
@@ -927,7 +940,6 @@ class URE_Admin {
 									<li><?php esc_html_e( 'Unlimited preview results', 'universal-replace-engine' ); ?></li>
 									<li><?php esc_html_e( 'Full regex mode', 'universal-replace-engine' ); ?></li>
 									<li><?php esc_html_e( 'WP-CLI commands', 'universal-replace-engine' ); ?></li>
-									<li><?php esc_html_e( 'Multisite support', 'universal-replace-engine' ); ?></li>
 								</ul>
 								<?php
 								/**
@@ -1251,6 +1263,37 @@ class URE_Admin {
 	}
 
 	/**
+	 * Handle backup download.
+	 */
+	private function handle_download_backup() {
+		$plugin         = URE_Plugin::get_instance();
+		$backup_manager = $plugin->backup_manager;
+
+		$filename = isset( $_POST['ure_backup_file'] ) ? sanitize_file_name( $_POST['ure_backup_file'] ) : '';
+
+		if ( empty( $filename ) ) {
+			add_settings_error(
+				'ure_messages',
+				'ure_error',
+				__( 'Invalid backup filename.', 'universal-replace-engine' ),
+				'error'
+			);
+			return;
+		}
+
+		// Download the backup file (this will exit).
+		$backup_manager->download_backup( $filename );
+
+		// If we get here, download failed.
+		add_settings_error(
+			'ure_messages',
+			'ure_error',
+			__( 'Failed to download backup file.', 'universal-replace-engine' ),
+			'error'
+		);
+	}
+
+	/**
 	 * Handle database preview (advanced mode).
 	 */
 	private function handle_database_preview() {
@@ -1433,7 +1476,7 @@ class URE_Admin {
 				'success'
 			);
 		} else {
-			add_settings_error(
+			$this->add_notice(
 				'ure_messages',
 				'ure_warning',
 				__( 'No changes were made.', 'universal-replace-engine' ),
@@ -1688,5 +1731,22 @@ class URE_Admin {
 			<?php require_once URE_PLUGIN_DIR . 'templates/admin-help.php'; ?>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Add a settings error/notice with optional warning suppression.
+	 *
+	 * @param string $setting Setting slug.
+	 * @param string $code    Error code.
+	 * @param string $message Error message.
+	 * @param string $type    Message type (error, success, warning, info).
+	 */
+	private function add_notice( $setting, $code, $message, $type = 'error' ) {
+		// If type is 'warning' and show_warnings is disabled, don't show it.
+		if ( 'warning' === $type && ! URE_Settings::get( 'show_warnings', true ) ) {
+			return;
+		}
+
+		add_settings_error( $setting, $code, $message, $type );
 	}
 }

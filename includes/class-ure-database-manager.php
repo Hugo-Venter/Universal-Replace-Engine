@@ -38,7 +38,7 @@ class URE_Database_Manager {
 	 *
 	 * @var int
 	 */
-	private $page_size = 5000;
+	private $page_size;
 
 	/**
 	 * Protected tables that should be handled with care.
@@ -54,8 +54,9 @@ class URE_Database_Manager {
 	 */
 	public function __construct( $logger ) {
 		global $wpdb;
-		$this->wpdb   = $wpdb;
-		$this->logger = $logger;
+		$this->wpdb      = $wpdb;
+		$this->logger    = $logger;
+		$this->page_size = URE_Settings::get( 'database_batch_size', 5000 );
 	}
 
 	/**
@@ -295,8 +296,18 @@ class URE_Database_Manager {
 	 * @return array Array with 'primary_key' and 'columns' keys.
 	 */
 	public function get_table_columns( $table_name ) {
+		// Validate table exists first for security.
+		$all_tables = $this->wpdb->get_col( 'SHOW TABLES' );
+		if ( ! in_array( $table_name, $all_tables, true ) ) {
+			return array(
+				'primary_key' => null,
+				'columns'     => array(),
+			);
+		}
+
+		// Safe to use table name after validation.
 		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
-		$fields = $this->wpdb->get_results( 'DESCRIBE ' . esc_sql( $table_name ) );
+		$fields = $this->wpdb->get_results( "DESCRIBE `{$table_name}`" );
 
 		$primary_key = null;
 		$columns     = array();
@@ -329,14 +340,18 @@ class URE_Database_Manager {
 	 * @return array Results with changes, updates, errors.
 	 */
 	public function table_search_replace( $table_name, $search, $replace, $case_sensitive = false, $regex_mode = false, $dry_run = true, $skip_guids = true ) {
-		// Validate table exists.
-		$tables = $this->wpdb->get_col( 'SHOW TABLES' );
-		if ( ! in_array( $table_name, $tables, true ) ) {
+		// Validate table exists by checking against all tables.
+		$all_tables = $this->wpdb->get_col( 'SHOW TABLES' );
+		if ( ! in_array( $table_name, $all_tables, true ) ) {
 			return array(
 				'success' => false,
 				'error'   => __( 'Table does not exist.', 'universal-replace-engine' ),
 			);
 		}
+
+		// Sanitize table name with backticks for safe SQL usage.
+		// Table name is validated against existing tables above.
+		$safe_table_name = '`' . str_replace( '`', '``', $table_name ) . '`';
 
 		// Get table structure.
 		$table_info  = $this->get_table_columns( $table_name );
@@ -362,19 +377,19 @@ class URE_Database_Manager {
 
 		// Process in batches.
 		$page  = 0;
-		// Table name is already validated above, safe to interpolate.
+		// Safe to use: table name validated and sanitized above.
 		// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
-		$total_rows = $this->wpdb->get_var( "SELECT COUNT(*) FROM `{$table_name}`" );
+		$total_rows = $this->wpdb->get_var( "SELECT COUNT(*) FROM {$safe_table_name}" );
 		$pages = ceil( $total_rows / $this->page_size );
 
 		while ( $page < $pages ) {
 			$offset = $page * $this->page_size;
 
-			// Get batch of rows.
+			// Get batch of rows. Safe to use: table validated and sanitized.
 			// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 			$rows = $this->wpdb->get_results(
 				$this->wpdb->prepare(
-					"SELECT * FROM `{$table_name}` LIMIT %d OFFSET %d",
+					"SELECT * FROM {$safe_table_name} LIMIT %d OFFSET %d",
 					$this->page_size,
 					$offset
 				),
@@ -419,7 +434,8 @@ class URE_Database_Manager {
 						$update_data[ $column ] = $new_value;
 
 						// Store preview (limited).
-						if ( count( $results['previews'] ) < 20 ) {
+						$preview_limit = URE_Settings::get( 'max_preview_results', 20 );
+						if ( count( $results['previews'] ) < $preview_limit ) {
 							$results['previews'][] = array(
 								'row'      => $results['rows'],
 								'column'   => $column,
@@ -697,7 +713,8 @@ class URE_Database_Manager {
 					$results['changes']++;
 
 					// Store preview.
-					if ( count( $results['previews'] ) < 20 ) {
+					$preview_limit = URE_Settings::get( 'max_preview_results', 20 );
+					if ( count( $results['previews'] ) < $preview_limit ) {
 						$results['previews'][] = array(
 							'option_name' => $option_name,
 							'before'      => $this->truncate_for_preview( $option_value ),

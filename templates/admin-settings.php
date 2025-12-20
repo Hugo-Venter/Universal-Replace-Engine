@@ -133,7 +133,7 @@ $is_pro   = apply_filters( 'ure_is_pro', false );
 								name="ure_settings[max_preview_results]"
 								value="<?php echo esc_attr( $settings['max_preview_results'] ); ?>"
 								min="1"
-								max="<?php echo $is_pro ? '100' : '50'; ?>"
+								max="<?php echo esc_attr( $is_pro ? '100' : '50' ); ?>"
 								class="small-text"
 							/>
 							<p class="description">
@@ -165,7 +165,7 @@ $is_pro   = apply_filters( 'ure_is_pro', false );
 								name="ure_settings[history_limit]"
 								value="<?php echo esc_attr( $settings['history_limit'] ); ?>"
 								min="1"
-								max="<?php echo $is_pro ? '50' : '10'; ?>"
+								max="<?php echo esc_attr( $is_pro ? '50' : '10' ); ?>"
 								class="small-text"
 							/>
 							<p class="description">

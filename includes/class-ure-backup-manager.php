@@ -38,14 +38,14 @@ class URE_Backup_Manager {
 	 *
 	 * @var int
 	 */
-	private $max_backup_age = 7;
+	private $max_backup_age;
 
 	/**
 	 * Rows per batch for backup.
 	 *
 	 * @var int
 	 */
-	private $batch_size = 1000;
+	private $batch_size;
 
 	/**
 	 * Constructor.
@@ -53,6 +53,10 @@ class URE_Backup_Manager {
 	public function __construct() {
 		global $wpdb;
 		$this->wpdb = $wpdb;
+
+		// Load settings.
+		$this->batch_size      = URE_Settings::get( 'backup_batch_size', 1000 );
+		$this->max_backup_age  = URE_Settings::get( 'backup_retention_days', 7 );
 
 		// Set backup directory (in uploads, protected).
 		$upload_dir       = wp_upload_dir();
@@ -546,5 +550,50 @@ class URE_Backup_Manager {
 	 */
 	public function get_backup_directory() {
 		return $this->backup_dir;
+	}
+
+	/**
+	 * Download a backup file.
+	 *
+	 * @param string $filename Backup filename.
+	 * @return bool True on success, false on failure.
+	 */
+	public function download_backup( $filename ) {
+		$backups = get_option( 'ure_backups', array() );
+
+		if ( ! isset( $backups[ $filename ] ) ) {
+			return false;
+		}
+
+		$file_path = $backups[ $filename ]['file_path'];
+
+		if ( ! file_exists( $file_path ) || ! is_readable( $file_path ) ) {
+			return false;
+		}
+
+		// Security check - verify file is in backup directory.
+		$real_path   = realpath( $file_path );
+		$backup_dir  = realpath( $this->backup_dir );
+
+		if ( strpos( $real_path, $backup_dir ) !== 0 ) {
+			return false;
+		}
+
+		// Clear output buffers.
+		if ( ob_get_level() ) {
+			ob_end_clean();
+		}
+
+		// Set headers for file download.
+		header( 'Content-Type: application/sql' );
+		header( 'Content-Disposition: attachment; filename="' . basename( $filename ) . '"' );
+		header( 'Content-Length: ' . filesize( $file_path ) );
+		header( 'Cache-Control: no-cache, must-revalidate' );
+		header( 'Expires: 0' );
+
+		// Output file content.
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_readfile
+		readfile( $file_path );
+		exit;
 	}
 }

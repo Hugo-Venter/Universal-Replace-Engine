@@ -134,10 +134,33 @@ $backups = $backup_manager->get_backups();
 									?>
 								</td>
 								<td><?php echo esc_html( $backup['user_name'] ); ?></td>
-								<td><?php echo esc_html( $backup['table_count'] . ' tables' ); ?></td>
+								<td class="ure-backup-tables-cell">
+									<span class="ure-tables-count" data-tables="<?php echo esc_attr( wp_json_encode( $backup['tables'] ) ); ?>">
+										<?php echo esc_html( $backup['table_count'] . ' tables' ); ?>
+										<span class="dashicons dashicons-info-outline"></span>
+									</span>
+									<div class="ure-tables-tooltip" style="display: none;">
+										<strong><?php esc_html_e( 'Tables in this backup:', 'universal-replace-engine' ); ?></strong>
+										<ul>
+											<?php foreach ( $backup['tables'] as $table ) : ?>
+												<li><?php echo esc_html( $table ); ?></li>
+											<?php endforeach; ?>
+										</ul>
+									</div>
+								</td>
 								<td><?php echo esc_html( $backup['file_size_mb'] . ' MB' ); ?></td>
 								<td><?php echo esc_html( $backup['comment'] ); ?></td>
 								<td>
+									<form method="post" action="" style="display: inline;">
+										<?php wp_nonce_field( 'ure_action', 'ure_nonce' ); ?>
+										<input type="hidden" name="ure_action" value="download_backup" />
+										<input type="hidden" name="ure_backup_file" value="<?php echo esc_attr( $backup['filename'] ); ?>" />
+										<button type="submit" class="button button-small" title="<?php esc_attr_e( 'Download backup file', 'universal-replace-engine' ); ?>">
+											<span class="dashicons dashicons-download" style="margin-top: 3px;"></span>
+											<?php esc_html_e( 'Download', 'universal-replace-engine' ); ?>
+										</button>
+									</form>
+
 									<form method="post" action="" style="display: inline;">
 										<?php wp_nonce_field( 'ure_action', 'ure_nonce' ); ?>
 										<input type="hidden" name="ure_action" value="restore_backup" />
@@ -311,6 +334,62 @@ $backups = $backup_manager->get_backups();
 .required {
 	color: #d63638;
 }
+
+.ure-backup-tables-cell {
+	position: relative;
+}
+
+.ure-tables-count {
+	cursor: help;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.ure-tables-count .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	color: #2271b1;
+}
+
+.ure-tables-tooltip {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: 5px;
+	background: #fff;
+	border: 1px solid #2271b1;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	padding: 12px;
+	border-radius: 4px;
+	z-index: 10000;
+	min-width: 250px;
+	max-width: 400px;
+}
+
+.ure-tables-tooltip strong {
+	display: block;
+	margin-bottom: 8px;
+	color: #1d2327;
+}
+
+.ure-tables-tooltip ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.ure-tables-tooltip li {
+	padding: 4px 8px;
+	margin: 2px 0;
+	background: #f0f0f1;
+	border-radius: 3px;
+	font-family: monospace;
+	font-size: 12px;
+}
 </style>
 
 <script>
@@ -327,6 +406,15 @@ jQuery(document).ready(function($) {
 	$('.ure-select-core').on('click', function() {
 		$('input[name="ure_backup_tables[]"]').prop('checked', false);
 		$('.ure-table-item[data-type="core"] input').prop('checked', true);
+	});
+
+	// Tables tooltip on hover
+	$('.ure-tables-count').on('mouseenter', function() {
+		$(this).siblings('.ure-tables-tooltip').fadeIn(200);
+	});
+
+	$('.ure-backup-tables-cell').on('mouseleave', function() {
+		$(this).find('.ure-tables-tooltip').fadeOut(200);
 	});
 });
 </script>

@@ -173,8 +173,9 @@ class URE_Plugin {
 			'ure-admin-js',
 			'ureData',
 			array(
-				'ajaxUrl' => admin_url( 'admin-ajax.php' ),
-				'nonce'   => wp_create_nonce( 'ure_ajax_nonce' ),
+				'ajaxUrl'        => admin_url( 'admin-ajax.php' ),
+				'nonce'          => wp_create_nonce( 'ure_ajax_nonce' ),
+				'ajaxProcessing' => URE_Settings::get( 'ajax_processing', true ),
 			)
 		);
 	}

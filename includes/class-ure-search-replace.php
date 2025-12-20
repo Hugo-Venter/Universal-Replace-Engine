@@ -109,7 +109,7 @@ class URE_Search_Replace {
 		 * @since 1.0.0
 		 * @param int $limit Preview result limit.
 		 */
-		$preview_limit = apply_filters( 'ure_preview_limit', self::FREE_PREVIEW_LIMIT );
+		$preview_limit = apply_filters( 'ure_preview_limit', URE_Settings::get( 'max_preview_results', self::FREE_PREVIEW_LIMIT ) );
 
 		// Batch processing for preview to prevent memory exhaustion.
 		$batch_size = 100;

@@ -1,28 +1,26 @@
 === Universal Replace Engine ===
-Contributors: Hugo Venter, Matthew Jones
-Donate link: https://xtech.red/
-Tags: search, replace, database, migration, content
+Contributors: hugoxtechred
+Tags: search, replace, database, migration, content, backup, restore, regex, cli
 Requires at least: 5.9
 Tested up to: 6.7
-Stable tag: 1.5.0
-Requires PHP: 7.4
+Stable tag: 1.5.1
+Requires PHP: 7.4 or higher
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Enterprise-grade search and replace for WordPress. Safe content operations with preview, rollback, saved profiles, and database backup/restore.
+Enterprise-grade search and replace for WordPress. Safe content operations with preview, rollback, and saved profiles.
 
 == Description ==
 
-**Universal Replace Engine** is a powerful yet safe search and replace plugin for WordPress. Perfect for domain migrations, content updates, fixing typos across your site, and managing database-level operations.
+**Universal Replace Engine** is a powerful yet safe search and replace plugin for WordPress. Perfect for domain migrations, content updates, and fixing typos across your site with preview-before-apply functionality.
 
 = Key Features =
 
 * **Preview Before Apply** - See exactly what will change before committing
-* **Operation History & Rollback** - One-click undo for the last 5 operations
+* **Operation History & Rollback** - One-click undo with configurable history (up to 10 operations)
 * **Saved Profiles** - Save and reuse common search/replace configurations
 * **Settings Management** - Configure batch sizes, limits, and features
-* **Advanced Database Mode** - Direct table-level access with safety features
-* **Multilingual Support** - Available in 10 languages
+* **Multilingual Support** - Available in 11 languages
 * **Safe & Secure** - WordPress nonces, capability checks, prepared statements
 * **Batch Processing** - Handles large sites without timeout errors
 * **WP-CLI Support** - Full command-line interface for automation and scripting
@@ -32,36 +30,20 @@ Enterprise-grade search and replace for WordPress. Safe content operations with 
 * **Domain Migration** - Change URLs when moving from staging to production
 * **Content Updates** - Update product names, company info across all posts
 * **Typo Fixes** - Correct spelling mistakes site-wide
-* **Database Cleanup** - Fix serialized data, clean up options
 * **URL Fixes** - Update image paths, link URLs, embedded content
 
 = Pro Features =
 
-Upgrade to Pro for:
-
+* **Advanced Database Mode** - Direct table-level search and replace in any database table
 * **Full Regex Mode** - Use regular expressions for advanced pattern matching
-* **Unlimited Preview** - No 20-match limit
-* **Extended History** - Keep 50 operations instead of 5
 * **Advanced Scopes** - Search in postmeta, Elementor data, and all locations
 * **Priority Support** - Get help from our expert team
 
 [Learn more about Pro](https://xtech.red/)
 
-= Security =
-
-This plugin has undergone a comprehensive security audit and is **certified safe** for production use:
-
-* All inputs sanitized and validated
-* All outputs properly escaped
-* SQL injection prevention with prepared statements
-* CSRF protection with WordPress nonces
-* Capability checks (requires Administrator role)
-* No dangerous PHP functions (eval, exec, etc.)
-* Security Score: 98/100
-
 = Multilingual =
 
-Available in 10 languages:
+Available in 11 languages:
 
 * English (default)
 * Spanish (Español)
@@ -114,6 +96,14 @@ Universal Replace Engine includes full WP-CLI support for command-line operation
 
 For complete WP-CLI documentation, see **Tools → URE Help → WP-CLI** in your WordPress admin.
 
+= Contributing & Bug Reports =
+
+This plugin is open source and hosted on [GitHub](https://github.com/Hugo-Venter/Universal-Replace-Engine). We welcome:
+
+* **Bug reports** - Found an issue? [Report it on GitHub](https://github.com/Hugo-Venter/Universal-Replace-Engine/issues)
+* **Feature requests** - Have an idea? [Submit a feature request](https://github.com/Hugo-Venter/Universal-Replace-Engine/issues)
+* **Contributions** - Pull requests are welcome!
+
 == Installation ==
 
 = Automatic Installation =
@@ -145,19 +135,19 @@ For complete WP-CLI documentation, see **Tools → URE Help → WP-CLI** in your
 
 = Is it safe to use on a production site? =
 
-Yes! The plugin includes preview mode so you can see exactly what will change before applying. It also includes rollback functionality to undo changes if needed. However, we always recommend:
+Yes! The plugin includes preview mode so you can see exactly what will change before applying. 
+We always recommend:
 
 1. Taking a full site backup before major operations
 2. Testing on a staging site first
-3. Using the built-in backup feature for database operations
 
 = Will this work on large sites? =
 
-Yes! The plugin uses batch processing to handle sites of any size without timeout errors. Processing is done in small chunks to prevent memory exhaustion.
+Yes! The plugin uses batch processing to handle sites of any size without timeout errors. Processing is done in small chunks to prevent memory exhaustion. The free version has no limits on the number of replacements it can perform.
 
 = Can I undo changes after applying? =
 
-Yes! The plugin keeps a history of your last 5 operations (50 in Pro version). Each operation can be rolled back with one click, restoring the previous content.
+Yes! The plugin keeps a history of the last 10 operations. Each operation can be rolled back with one click, restoring the previous content.
 
 = Does it handle serialized data? =
 
@@ -177,15 +167,11 @@ Yes, with the Pro version! Pro includes full regex mode with pattern validation,
 
 = What about database tables? =
 
-The Advanced Database Mode provides direct access to any database table with preview, GUID protection, and case-sensitive search (Pro Version).
+The Advanced Database Mode provides direct access to any database table with preview, GUID protection, and case-sensitive search. This powerful feature is available in the Pro version for advanced users who need table-level operations.
 
 = Can I save my search/replace settings? =
 
 Yes! Use Saved Profiles to save common configurations and reload them with one click. Perfect for recurring tasks like domain migrations.
-
-= Does it work with multisite? =
-
-Yes! The plugin is fully multisite compatible. Network admins can perform operations across the entire network.
 
 = Will it slow down my site? =
 
@@ -202,9 +188,30 @@ Yes! Universal Replace Engine includes comprehensive WP-CLI support for all majo
 
 Perfect for automation, scripting, and server management. See the WP-CLI section above for examples.
 
+== Screenshots ==
+
+1. Main search and replace interface with preview before apply
+2. Saved Profiles for recurring search/replace operations
+3. Operation History with one-click rollback functionality
+4. Settings page - configure performance and limits
+
 == Changelog ==
 
-= 1.5.0 - 2024-12-20 =
+= 1.5.1 - 2025-12-20 =
+* Fixed: All plugin settings now actually work (critical bug fix)
+* Fixed: database_batch_size setting now properly controls database operations
+* Fixed: backup_batch_size setting now properly controls backup operations
+* Fixed: max_preview_results setting now properly limits preview results
+* Fixed: history_limit setting now properly controls operation history retention
+* Fixed: backup_retention_days setting now properly triggers automatic cleanup
+* Fixed: enable_logging toggle now actually enables/disables operation logging
+* Fixed: ajax_processing toggle now controls AJAX batch processing mode
+* Fixed: show_warnings toggle now controls display of warning messages
+* Improved: Preview now clearly explains that "Apply Changes" affects ALL matches, not just previewed ones
+* Security: Added index.php files to all directories (assets, includes, languages, templates) to prevent directory browsing
+* Important: Settings page was non-functional in 1.5.0 - all settings were stored but ignored
+
+= 1.5.0 - 2025-12-20 =
 * Added: Complete WP-CLI support for all major functions
 * Added: `wp ure search` - Search for text via command line
 * Added: `wp ure replace` - Replace text with dry-run and confirmation options
@@ -216,80 +223,17 @@ Perfect for automation, scripting, and server management. See the WP-CLI section
 * Improved: Help documentation with complete WP-CLI reference
 * Improved: Automation and scripting capabilities for DevOps workflows
 
-= 1.4.0 - 2024-12-10 =
-* Added: Saved Profiles feature for reusable configurations
-* Added: Settings management page with performance controls
-* Added: Comprehensive help & documentation tab
-* Added: Multilingual support for 10 languages
-* Added: AJAX progress bar foundation
-* Added: Security audit
-* Improved: Advanced Database Mode UI with collapsible section
-* Improved: Form pre-fill when loading profiles
-* Fixed: Profile integration visibility
-* Updated: All documentation with security info
-
-= 1.3.0 - 2024-12-09 =
-* Added: Advanced Database Mode for table-level operations
-* Added: SQL Backup & Restore system
-* Added: Multisite support
-* Added: GUID protection
-* Added: Batch processing for large datasets
-* Added: Table type detection (core/plugin/custom)
-* Improved: Memory management and timeout prevention
-* Updated: Documentation with enterprise features
-
-= 1.2.0 - 2024-12-08 =
-* Added: Batch processing for content operations
-* Added: Timeout protection
-* Added: Elementor cache clearing after operations
-* Improved: Performance on large sites
-* Fixed: Memory exhaustion on bulk operations
-
-= 1.1.0 - 2024-12-07 =
-* Added: Pro regex mode (Pro version)
-* Added: Unlimited preview (Pro version)
-* Added: Extended operation history (Pro version)
-* Added: Pro version hooks and filters
-* Improved: Error handling
-* Updated: Documentation
-
-= 1.0.0 - 2024-12-06 =
-* Initial release
-* Search and replace in post content
-* Preview before apply
-* Operation history and rollback
-* Safe serialized data handling
-* Case-sensitive search option
-* Post type filtering
-
 == Upgrade Notice ==
+
+= 1.5.1 =
+CRITICAL BUG FIX: All plugin settings now work properly. Version 1.5.0 had non-functional settings that were stored but ignored. Upgrade immediately to ensure your settings take effect.
 
 = 1.5.0 =
 Complete WP-CLI support added! Automate search/replace operations, manage backups, profiles, and settings from command line. Perfect for DevOps workflows and server management.
 
-= 1.4.0 =
-Major update with Saved Profiles, Settings management, multilingual support (10 languages), and security. Highly recommended upgrade!
-
-= 1.3.0 =
-Enterprise features added: Advanced Database Mode, SQL backups, multisite support. Recommended for all users.
-
-= 1.2.0 =
-Performance improvements for large sites. Batch processing and timeout protection added.
-
-= 1.1.0 =
-Pro version support added with regex mode and unlimited preview.
-
-= 1.0.0 =
-Initial release of Universal Replace Engine.
-
 == Security ==
 
-This plugin takes security seriously:
-
-* **Security Audit Completed:** December 10, 2025
-* **Security Rating:** 98/100
-* **Vulnerabilities Found:** 0
-* **WordPress Standards:** 100% Compliant
+This plugin takes security seriously and follows WordPress coding standards:
 
 Security measures implemented:
 
@@ -314,12 +258,13 @@ This plugin:
 
 == Support ==
 
-For support, please:
+**Need help or found a bug?**
 
-* Check the built-in Help documentation (Tools → URE → Help)
-* Read the comprehensive README.md file
-* Submit issues on GitHub: https://github.com/Hugo-Venter/Universal-Replace-Engine
-* Contact support: support@xtech.red
+* **Report bugs & request features:** [Submit an issue on GitHub](https://github.com/Hugo-Venter/Universal-Replace-Engine/issues)
+* **Documentation:** Check the built-in Help (Tools → URE → Help)
+* **Email support:** support@xtech.red
+
+We actively monitor GitHub issues and appreciate your feedback!
 
 == Credits ==
 

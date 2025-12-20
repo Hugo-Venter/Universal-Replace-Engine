@@ -168,11 +168,10 @@ class URE_Settings {
 		}
 
 		// Validate boolean settings.
+		// Note: Checkboxes send no data when unchecked, so we must explicitly set false if missing.
 		$boolean_settings = array( 'enable_logging', 'ajax_processing', 'show_warnings' );
 		foreach ( $boolean_settings as $key ) {
-			if ( isset( $settings[ $key ] ) ) {
-				$validated[ $key ] = (bool) $settings[ $key ];
-			}
+			$validated[ $key ] = isset( $settings[ $key ] ) ? (bool) $settings[ $key ] : false;
 		}
 
 		return $validated;

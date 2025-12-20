@@ -263,6 +263,22 @@ function ure_get_table_type_label( $type ) {
 					?>
 				</small>
 			</h3>
+
+			<?php if ( $total_changes > 20 ) : ?>
+				<div class="notice notice-info inline">
+					<p>
+						<strong><?php esc_html_e( 'Note:', 'universal-replace-engine' ); ?></strong>
+						<?php
+						printf(
+							/* translators: %d: total changes */
+							esc_html__( 'This preview shows only 20 examples. Clicking "Apply Changes" will replace all %d matches found in the selected tables.', 'universal-replace-engine' ),
+							number_format_i18n( $total_changes )
+						);
+						?>
+					</p>
+				</div>
+			<?php endif; ?>
+
 			<table class="wp-list-table widefat fixed striped ure-preview-table">
 				<thead>
 					<tr>
