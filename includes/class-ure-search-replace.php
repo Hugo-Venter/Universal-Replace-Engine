@@ -168,7 +168,7 @@ class URE_Search_Replace {
 									'after'      => $replace ? $this->get_snippet(
 										$this->replace_in_content( $content, $search, $replace, $case_sensitive, $regex_mode ),
 										$match['position'],
-										$regex_mode ? strlen( $replace ) : $match_length,
+										strlen( $replace ),
 										true
 									) : '',
 									'match_text' => $match['text'],
@@ -901,7 +901,7 @@ class URE_Search_Replace {
 								'after'      => $replace ? $this->get_snippet(
 									$this->replace_in_content( $meta_value_string, $search, $replace, $case_sensitive, $regex_mode ),
 									$match['position'],
-									$regex_mode ? strlen( $replace ) : $match_length,
+									strlen( $replace ),
 									true
 								) : '',
 								'match_text' => $match['text'],
@@ -973,7 +973,7 @@ class URE_Search_Replace {
 						'after'      => $replace ? $this->get_snippet(
 							$this->replace_in_content( $elementor_string, $search, $replace, $case_sensitive, $regex_mode ),
 							$match['position'],
-							$regex_mode ? strlen( $replace ) : $match_length,
+							strlen( $replace ),
 							true
 						) : '',
 						'match_text' => $match['text'],

@@ -207,6 +207,7 @@ Perfect for automation, scripting, and server management. See the WP-CLI section
 * Fixed: enable_logging toggle now actually enables/disables operation logging
 * Fixed: ajax_processing toggle now controls AJAX batch processing mode
 * Fixed: show_warnings toggle now controls display of warning messages
+* Fixed: Preview highlighting now correctly highlights replacement text when lengths differ (e.g., http: → https:)
 * Improved: Preview now clearly explains that "Apply Changes" affects ALL matches, not just previewed ones
 * Security: Added index.php files to all directories (assets, includes, languages, templates) to prevent directory browsing
 * Important: Settings page was non-functional in 1.5.0 - all settings were stored but ignored
