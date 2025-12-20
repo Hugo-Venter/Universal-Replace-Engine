@@ -159,6 +159,15 @@ class URE_Search_Replace {
 							if ( count( $results ) < $preview_limit ) {
 								$match_length = strlen( $match['text'] );
 
+								// For the "after" preview, manually replace just this specific match
+								// to avoid position shifting from other matches.
+								$after_content = '';
+								if ( $replace ) {
+									$after_content = substr( $content, 0, $match['position'] ) .
+													$replace .
+													substr( $content, $match['position'] + $match_length );
+								}
+
 								$results[] = array(
 									'post_id'    => $post_id,
 									'post_type'  => $post->post_type,
@@ -166,7 +175,7 @@ class URE_Search_Replace {
 									'location'   => 'post_content',
 									'before'     => $this->get_snippet( $content, $match['position'], $match_length, false ),
 									'after'      => $replace ? $this->get_snippet(
-										$this->replace_in_content( $content, $search, $replace, $case_sensitive, $regex_mode ),
+										$after_content,
 										$match['position'],
 										strlen( $replace ),
 										true
@@ -891,6 +900,14 @@ class URE_Search_Replace {
 						if ( count( $results ) < $limit ) {
 							$match_length = strlen( $match['text'] );
 
+							// For the "after" preview, manually replace just this specific match.
+							$after_content = '';
+							if ( $replace ) {
+								$after_content = substr( $meta_value_string, 0, $match['position'] ) .
+												$replace .
+												substr( $meta_value_string, $match['position'] + $match_length );
+							}
+
 							$results[] = array(
 								'post_id'    => $post_id,
 								'post_type'  => $post->post_type,
@@ -899,7 +916,7 @@ class URE_Search_Replace {
 								'meta_key'   => $meta_key,
 								'before'     => $this->get_snippet( $meta_value_string, $match['position'], $match_length, false ),
 								'after'      => $replace ? $this->get_snippet(
-									$this->replace_in_content( $meta_value_string, $search, $replace, $case_sensitive, $regex_mode ),
+									$after_content,
 									$match['position'],
 									strlen( $replace ),
 									true
@@ -963,6 +980,14 @@ class URE_Search_Replace {
 				if ( count( $results ) < $limit ) {
 					$match_length = strlen( $match['text'] );
 
+					// For the "after" preview, manually replace just this specific match.
+					$after_content = '';
+					if ( $replace ) {
+						$after_content = substr( $elementor_string, 0, $match['position'] ) .
+										$replace .
+										substr( $elementor_string, $match['position'] + $match_length );
+					}
+
 					$results[] = array(
 						'post_id'    => $post_id,
 						'post_type'  => $post->post_type,
@@ -971,7 +996,7 @@ class URE_Search_Replace {
 						'meta_key'   => '_elementor_data',
 						'before'     => $this->get_snippet( $elementor_string, $match['position'], $match_length, false ),
 						'after'      => $replace ? $this->get_snippet(
-							$this->replace_in_content( $elementor_string, $search, $replace, $case_sensitive, $regex_mode ),
+							$after_content,
 							$match['position'],
 							strlen( $replace ),
 							true
