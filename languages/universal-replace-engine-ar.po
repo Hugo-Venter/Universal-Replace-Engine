@@ -3,43 +3,46 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Universal Replace Engine 1.4.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/universal-replace-engine\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/universal-replace-"
+"engine\n"
+"POT-Creation-Date: 2025-12-14T09:18:48+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-12-10T19:54:19+02:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: universal-replace-engine\n"
 
 #. Plugin Name of the plugin
-#: universal-replace-engine.php
-#: includes/class-ure-admin.php:65
+#: universal-replace-engine.php includes/class-ure-admin.php:65
 #: includes/class-ure-admin.php:66
 msgid "Universal Replace Engine"
 msgstr "محرك الاستبدال الشامل"
 
 #. Plugin URI of the plugin
+#. Author URI of the plugin
 #: universal-replace-engine.php
-msgid "https://yoursite.com/universal-replace-engine"
-msgstr "https://yoursite.com/universal-replace-engine"
+msgid "https://xtech.red/"
+msgstr ""
 
 #. Description of the plugin
 #: universal-replace-engine.php
-msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr "أداة بحث واستبدال احترافية لووردبريس. عمليات المحتوى وقاعدة البيانات، نسخ احتياطية SQL، دعم المواقع المتعددة، حماية GUID، ملفات التعريف المحفوظة، ووضع Regex الاحترافي."
+msgid ""
+"Enterprise-grade search and replace for WordPress. Content & database "
+"operations, SQL backups, multisite support, GUID protection, saved profiles, "
+"and Pro regex mode."
+msgstr ""
+"أداة بحث واستبدال احترافية لووردبريس. عمليات المحتوى وقاعدة البيانات، نسخ "
+"احتياطية SQL، دعم المواقع المتعددة، حماية GUID، ملفات التعريف المحفوظة، ووضع "
+"Regex الاحترافي."
 
 #. Author of the plugin
 #: universal-replace-engine.php
-msgid "Your Name"
-msgstr "Your Name"
-
-#. Author URI of the plugin
-#: universal-replace-engine.php
-msgid "https://yoursite.com"
-msgstr "https://yoursite.com"
+msgid "Xtech Red"
+msgstr ""
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -50,393 +53,469 @@ msgid "You do not have permission to perform this action."
 msgstr "ليس لديك صلاحية لتنفيذ هذا الإجراء."
 
 #: includes/class-ure-admin.php:194
-msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr "النطاقات المتقدمة (حقول المنشورات، Elementor، جميع المواقع) تتطلب النسخة الاحترافية. سيتم التراجع إلى محتوى المنشور."
+msgid ""
+"Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. "
+"Falling back to Post Content."
+msgstr ""
+"النطاقات المتقدمة (حقول المنشورات، Elementor، جميع المواقع) تتطلب النسخة "
+"الاحترافية. سيتم التراجع إلى محتوى المنشور."
 
-#: includes/class-ure-admin.php:203
-#: includes/class-ure-admin.php:1007
+#: includes/class-ure-admin.php:203 includes/class-ure-admin.php:1271
 msgid "Please enter a search term."
 msgstr "الرجاء إدخال مصطلح البحث."
 
-#: includes/class-ure-admin.php:249
+#: includes/class-ure-admin.php:272
 msgid "No matches found."
 msgstr "لم يتم العثور على تطابقات."
 
 #. translators: %d: number of matches
-#: includes/class-ure-admin.php:255
-msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr "تم العثور على %d تطابق. راجع أدناه وانقر على \"تطبيق التغييرات\" للمتابعة."
+#: includes/class-ure-admin.php:278
+msgid ""
+"Found %d match(es). Review below and click \"Apply Changes\" to proceed."
+msgstr ""
+"تم العثور على %d تطابق. راجع أدناه وانقر على \"تطبيق التغييرات\" للمتابعة."
 
-#: includes/class-ure-admin.php:280
-#: includes/class-ure-admin.php:1096
+#: includes/class-ure-admin.php:303 includes/class-ure-admin.php:1360
 msgid "Preview data expired. Please run preview again."
 msgstr "انتهت صلاحية بيانات المعاينة. يرجى تشغيل المعاينة مرة أخرى."
 
 #. translators: %d: number of posts modified
-#: includes/class-ure-admin.php:311
+#: includes/class-ure-admin.php:334
 msgid "Successfully modified %d post(s)."
 msgstr "تم تعديل %d منشور بنجاح."
 
-#: includes/class-ure-admin.php:339
+#: includes/class-ure-admin.php:362
 msgid "Invalid log ID."
 msgstr "معرف السجل غير صالح."
 
-#: includes/class-ure-admin.php:401
+#: includes/class-ure-admin.php:424
 msgid "Search & Replace"
 msgstr "بحث واستبدال"
 
-#: includes/class-ure-admin.php:404
+#: includes/class-ure-admin.php:428 includes/class-ure-admin.php:437
 msgid "Database Search"
 msgstr "البحث في قاعدة البيانات"
 
-#: includes/class-ure-admin.php:407
+#: includes/class-ure-admin.php:432 includes/class-ure-admin.php:441
 msgid "Backup"
 msgstr "نسخ احتياطي"
 
-#: includes/class-ure-admin.php:410
+#: includes/class-ure-admin.php:446
 msgid "Settings"
 msgstr "الإعدادات"
 
-#: includes/class-ure-admin.php:413
+#: includes/class-ure-admin.php:449
 msgid "Help"
 msgstr "مساعدة"
 
-#: includes/class-ure-admin.php:430
+#: includes/class-ure-admin.php:468
 msgid "Search and Replace"
 msgstr "بحث واستبدال"
 
-#: includes/class-ure-admin.php:438
+#: includes/class-ure-admin.php:476
 msgid "Search for"
 msgstr "بحث عن"
 
-#: includes/class-ure-admin.php:456
+#: includes/class-ure-admin.php:494
 msgid "Enter the text you want to search for."
 msgstr "أدخل النص الذي تريد البحث عنه."
 
-#: includes/class-ure-admin.php:463
+#: includes/class-ure-admin.php:501
 msgid "Replace with"
 msgstr "استبدال بـ"
 
-#: includes/class-ure-admin.php:480
+#: includes/class-ure-admin.php:518
 msgid "Enter the replacement text (leave empty to only search)."
 msgstr "أدخل نص الاستبدال (اتركه فارغاً للبحث فقط)."
 
-#: includes/class-ure-admin.php:487
+#: includes/class-ure-admin.php:525
 msgid "Search Scope"
 msgstr "نطاق البحث"
 
-#: includes/class-ure-admin.php:500
+#: includes/class-ure-admin.php:543
 msgid "Post Content"
 msgstr "محتوى المنشور"
 
-#: includes/class-ure-admin.php:501
+#: includes/class-ure-admin.php:544
 msgid "(post_content field only)"
 msgstr "(حقل post_content فقط)"
 
-#: includes/class-ure-admin.php:508
+#: includes/class-ure-admin.php:551
 msgid "Post Meta"
 msgstr "حقول المنشور"
 
-#: includes/class-ure-admin.php:509
+#: includes/class-ure-admin.php:552
 msgid "(custom fields, excluding Elementor)"
 msgstr "(الحقول المخصصة، باستثناء Elementor)"
 
-#: includes/class-ure-admin.php:521
+#: includes/class-ure-admin.php:564 includes/class-ure-admin.php:1042
 msgid "Elementor Data"
 msgstr "بيانات Elementor"
 
-#: includes/class-ure-admin.php:522
+#: includes/class-ure-admin.php:565
 msgid "(_elementor_data JSON field)"
 msgstr "(حقل _elementor_data JSON)"
 
-#: includes/class-ure-admin.php:534
+#: includes/class-ure-admin.php:577 includes/class-ure-admin.php:1043
 msgid "All Locations"
 msgstr "جميع المواقع"
 
-#: includes/class-ure-admin.php:535
+#: includes/class-ure-admin.php:578
 msgid "(content + postmeta + Elementor)"
 msgstr "(المحتوى + حقول المنشور + Elementor)"
 
-#: includes/class-ure-admin.php:544
+#: includes/class-ure-admin.php:587
 msgid "Choose where to search and replace."
 msgstr "اختر أين تريد البحث والاستبدال."
 
-#: includes/class-ure-admin.php:548
-msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr "قم بالترقية إلى النسخة الاحترافية لفتح نطاقات حقول المنشور وبيانات Elementor وجميع المواقع."
+#: includes/class-ure-admin.php:591
+msgid ""
+"Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
+msgstr ""
+"قم بالترقية إلى النسخة الاحترافية لفتح نطاقات حقول المنشور وبيانات Elementor "
+"وجميع المواقع."
 
-#: includes/class-ure-admin.php:557
-#: templates/admin-profiles.php:65
+#: includes/class-ure-admin.php:600 templates/admin-profiles.php:65
 msgid "Post Types"
 msgstr "أنواع المنشورات"
 
-#: includes/class-ure-admin.php:562
+#: includes/class-ure-admin.php:605
 msgid "Select which post types to search in."
 msgstr "اختر أنواع المنشورات التي تريد البحث فيها."
 
-#: includes/class-ure-admin.php:569
-#: templates/admin-db-search.php:112
+#: includes/class-ure-admin.php:612 templates/admin-db-search.php:176
 #: templates/admin-profiles.php:66
 msgid "Options"
 msgstr "خيارات"
 
-#: includes/class-ure-admin.php:578
-#: templates/admin-db-search.php:115
+#: includes/class-ure-admin.php:629 templates/admin-db-search.php:179
 msgid "Case sensitive"
 msgstr "حساس لحالة الأحرف"
 
-#: includes/class-ure-admin.php:589
-#: templates/admin-db-search.php:124
+#: includes/class-ure-admin.php:648 templates/admin-db-search.php:188
 msgid "Regex mode"
 msgstr "وضع Regex"
 
-#: includes/class-ure-admin.php:592
+#: includes/class-ure-admin.php:651
 msgid "Regex mode (Pro feature)"
 msgstr "وضع Regex (ميزة احترافية)"
 
-#: includes/class-ure-admin.php:603
+#: includes/class-ure-admin.php:663
 msgid "Run Preview"
 msgstr "تشغيل المعاينة"
 
-#: includes/class-ure-admin.php:608
+#: includes/class-ure-admin.php:668
 msgid "Apply Changes"
 msgstr "تطبيق التغييرات"
 
-#: includes/class-ure-admin.php:618
+#: includes/class-ure-admin.php:678 templates/admin-db-search.php:210
 msgid "Preview Results"
 msgstr "نتائج المعاينة"
 
+#: includes/class-ure-admin.php:725
+msgid "Important: Page Builder / Structured Data Detected"
+msgstr ""
+
+#. translators: %s: list of detected builders/plugins
+#: includes/class-ure-admin.php:731
+msgid ""
+"One or more pages use structured data storage (%s). Changes made with the "
+"Free version only affect the rendered HTML content and may be LOST if you re-"
+"edit these pages with their builder."
+msgstr ""
+
+#: includes/class-ure-admin.php:737
+msgid "Pro version updates the source data permanently"
+msgstr ""
+
+#: includes/class-ure-admin.php:738
+msgid ""
+"- changes persist even after editing with page builders, and affect custom "
+"fields, widget settings, and structured content."
+msgstr ""
+
 #. translators: 1: shown count, 2: total count
-#: includes/class-ure-admin.php:626
+#: includes/class-ure-admin.php:751
 msgid "Showing %1$d of %2$d matches (Free version limit)."
 msgstr "عرض %1$d من %2$d تطابق (حد النسخة المجانية)."
 
 #. translators: %d: total matches
-#: includes/class-ure-admin.php:640
+#: includes/class-ure-admin.php:765
 msgid "Showing all %d matches (unlimited preview in Pro version)."
 msgstr "عرض جميع %d تطابق (معاينة غير محدودة في النسخة الاحترافية)."
 
-#: includes/class-ure-admin.php:651
+#: includes/class-ure-admin.php:776 templates/admin-db-search.php:269
 msgid "Location"
 msgstr "الموقع"
 
-#: includes/class-ure-admin.php:652
+#: includes/class-ure-admin.php:777 templates/admin-db-search.php:270
 msgid "Before"
 msgstr "قبل"
 
-#: includes/class-ure-admin.php:653
+#: includes/class-ure-admin.php:778 templates/admin-db-search.php:271
 msgid "After"
 msgstr "بعد"
 
 #. translators: 1: post type, 2: post ID
-#: includes/class-ure-admin.php:666
+#: includes/class-ure-admin.php:791
 msgid "%1$s (ID: %2$d)"
 msgstr "%1$s (المعرف: %2$d)"
 
-#: includes/class-ure-admin.php:679
+#: includes/class-ure-admin.php:804
 msgid "Search only"
 msgstr "بحث فقط"
 
+#: includes/class-ure-admin.php:829
+msgid "Additional Matches Found (Pro Only)"
+msgstr ""
+
+#: includes/class-ure-admin.php:829
+msgid "Pro Locations Searched"
+msgstr ""
+
+#: includes/class-ure-admin.php:834
+msgid "Your search term was also found in these Pro-only locations:"
+msgstr ""
+
+#: includes/class-ure-admin.php:836
+msgid "We also searched these Pro-only locations:"
+msgstr ""
+
+#. translators: %d: number of matches
+#: includes/class-ure-admin.php:853
+msgid "Found %d match(es)"
+msgstr ""
+
+#: includes/class-ure-admin.php:857
+#, fuzzy
+msgid "No matches found"
+msgstr "لم يتم العثور على تطابقات."
+
+#: includes/class-ure-admin.php:868
+msgid "Upgrade to Pro to Search & Replace These"
+msgstr ""
+
+#: includes/class-ure-admin.php:873
+#, fuzzy
+msgid ""
+"Upgrade to Pro to unlock search & replace in Post Meta, Elementor Data, and "
+"more."
+msgstr ""
+"قم بالترقية إلى النسخة الاحترافية لفتح نطاقات حقول المنشور وبيانات Elementor "
+"وجميع المواقع."
+
+#: includes/class-ure-admin.php:876
+msgid "Learn More"
+msgstr ""
+
 #. translators: %d: history limit
-#: includes/class-ure-admin.php:698
+#: includes/class-ure-admin.php:891
 msgid "History (Last %d Operations)"
 msgstr "السجل (آخر %d عملية)"
 
-#: includes/class-ure-admin.php:702
+#: includes/class-ure-admin.php:895
 msgid "History (Last 5 Operations)"
 msgstr "السجل (آخر 5 عمليات)"
 
-#: includes/class-ure-admin.php:729
+#: includes/class-ure-admin.php:922
 msgid "Unlock Pro Features"
 msgstr "فتح الميزات الاحترافية"
 
-#: includes/class-ure-admin.php:731
+#: includes/class-ure-admin.php:924
 msgid "Search and replace in postmeta, options, and term meta"
 msgstr "البحث والاستبدال في حقول المنشورات والخيارات وحقول التصنيفات"
 
-#: includes/class-ure-admin.php:732
+#: includes/class-ure-admin.php:925
 msgid "Elementor page builder support"
 msgstr "دعم منشئ الصفحات Elementor"
 
-#: includes/class-ure-admin.php:733
+#: includes/class-ure-admin.php:926
 msgid "ACF custom fields support"
 msgstr "دعم حقول ACF المخصصة"
 
-#: includes/class-ure-admin.php:734
+#: includes/class-ure-admin.php:927
 msgid "Unlimited preview results"
 msgstr "نتائج معاينة غير محدودة"
 
-#: includes/class-ure-admin.php:735
+#: includes/class-ure-admin.php:928
 msgid "Full regex mode"
 msgstr "وضع Regex الكامل"
 
-#: includes/class-ure-admin.php:736
+#: includes/class-ure-admin.php:929
 msgid "WP-CLI commands"
 msgstr "أوامر WP-CLI"
 
-#: includes/class-ure-admin.php:737
+#: includes/class-ure-admin.php:930
 msgid "Multisite support"
 msgstr "دعم المواقع المتعددة"
 
-#: includes/class-ure-admin.php:825
+#: includes/class-ure-admin.php:1041
+msgid "Post Meta (Custom Fields)"
+msgstr ""
+
+#: includes/class-ure-admin.php:1089
 msgid "No operations recorded yet."
 msgstr "لم يتم تسجيل أي عمليات بعد."
 
-#: includes/class-ure-admin.php:833
+#: includes/class-ure-admin.php:1097
 msgid "Date/Time"
 msgstr "التاريخ/الوقت"
 
-#: includes/class-ure-admin.php:834
-#: templates/admin-backup.php:116
+#: includes/class-ure-admin.php:1098 templates/admin-backup.php:116
 msgid "User"
 msgstr "المستخدم"
 
-#: includes/class-ure-admin.php:835
+#: includes/class-ure-admin.php:1099 templates/admin-db-search.php:219
 msgid "Summary"
 msgstr "الملخص"
 
-#: includes/class-ure-admin.php:836
-#: templates/admin-backup.php:120
+#: includes/class-ure-admin.php:1100 templates/admin-backup.php:120
 msgid "Actions"
 msgstr "الإجراءات"
 
-#: includes/class-ure-admin.php:854
+#: includes/class-ure-admin.php:1118
 msgid "Are you sure you want to undo this operation?"
 msgstr "هل أنت متأكد من أنك تريد التراجع عن هذه العملية؟"
 
-#: includes/class-ure-admin.php:855
+#: includes/class-ure-admin.php:1119
 msgid "Undo"
 msgstr "تراجع"
 
-#: includes/class-ure-admin.php:859
+#: includes/class-ure-admin.php:1123
 msgid "N/A"
 msgstr "غير متوفر"
 
-#: includes/class-ure-admin.php:883
+#: includes/class-ure-admin.php:1147
 msgid "Please select at least one table to backup."
 msgstr "يرجى اختيار جدول واحد على الأقل للنسخ الاحتياطي."
 
 #. translators: 1: table count, 2: file size
-#: includes/class-ure-admin.php:897
+#: includes/class-ure-admin.php:1161
 msgid "Backup created successfully! %1$d tables backed up (%2$.2f MB)."
-msgstr "تم إنشاء النسخة الاحتياطية بنجاح! تم نسخ %1$d جدول احتياطياً (%2$.2f ميجابايت)."
+msgstr ""
+"تم إنشاء النسخة الاحتياطية بنجاح! تم نسخ %1$d جدول احتياطياً (%2$.2f "
+"ميجابايت)."
 
-#: includes/class-ure-admin.php:926
-#: includes/class-ure-admin.php:964
+#: includes/class-ure-admin.php:1190 includes/class-ure-admin.php:1228
 msgid "Invalid backup filename."
 msgstr "اسم ملف النسخة الاحتياطية غير صالح."
 
-#: includes/class-ure-admin.php:1017
+#: includes/class-ure-admin.php:1281
 msgid "Please select at least one table."
 msgstr "يرجى اختيار جدول واحد على الأقل."
 
 #. translators: 1: changes count, 2: tables count
-#: includes/class-ure-admin.php:1066
+#: includes/class-ure-admin.php:1330
 msgid "Found %1$d potential changes across %2$d tables. Review below."
 msgstr "تم العثور على %1$d تغيير محتمل عبر %2$d جدول. راجع أدناه."
 
-#: includes/class-ure-admin.php:1076
+#: includes/class-ure-admin.php:1340
 msgid "No matches found in selected tables."
 msgstr "لم يتم العثور على تطابقات في الجداول المحددة."
 
 #. translators: 1: search, 2: replace, 3: updates count, 4: tables count
-#: includes/class-ure-admin.php:1135
-msgid "Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d tables."
-msgstr "عملية قاعدة البيانات: تم استبدال \"%1$s\" بـ \"%2$s\" في %3$d صف عبر %4$d جدول."
+#: includes/class-ure-admin.php:1399
+msgid ""
+"Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d "
+"tables."
+msgstr ""
+"عملية قاعدة البيانات: تم استبدال \"%1$s\" بـ \"%2$s\" في %3$d صف عبر %4$d "
+"جدول."
 
 #. translators: 1: updates count, 2: tables count
-#: includes/class-ure-admin.php:1165
+#: includes/class-ure-admin.php:1429
 msgid "Successfully updated %1$d rows across %2$d tables."
 msgstr "تم تحديث %1$d صف بنجاح عبر %2$d جدول."
 
-#: includes/class-ure-admin.php:1175
+#: includes/class-ure-admin.php:1439
 msgid "No changes were made."
 msgstr "لم يتم إجراء أي تغييرات."
 
-#: includes/class-ure-admin.php:1191
+#: includes/class-ure-admin.php:1455
 msgid "No settings data received."
 msgstr "لم يتم استلام بيانات الإعدادات."
 
-#: includes/class-ure-admin.php:1205
+#: includes/class-ure-admin.php:1469
 msgid "Settings saved successfully."
 msgstr "تم حفظ الإعدادات بنجاح."
 
-#: includes/class-ure-admin.php:1212
+#: includes/class-ure-admin.php:1476
 msgid "Failed to save settings. Please try again."
 msgstr "فشل حفظ الإعدادات. يرجى المحاولة مرة أخرى."
 
-#: includes/class-ure-admin.php:1226
+#: includes/class-ure-admin.php:1490
 msgid "Settings have been reset to defaults."
 msgstr "تم إعادة تعيين الإعدادات إلى القيم الافتراضية."
 
-#: includes/class-ure-admin.php:1233
+#: includes/class-ure-admin.php:1497
 msgid "Failed to reset settings. Please try again."
 msgstr "فشلت إعادة تعيين الإعدادات. يرجى المحاولة مرة أخرى."
 
-#: includes/class-ure-admin.php:1249
+#: includes/class-ure-admin.php:1517
 msgid "Please enter a profile name."
 msgstr "يرجى إدخال اسم ملف التعريف."
 
 #. translators: %s: profile name
-#: includes/class-ure-admin.php:1271
+#: includes/class-ure-admin.php:1544
 msgid "Profile \"%s\" saved successfully."
 msgstr "تم حفظ ملف التعريف \"%s\" بنجاح."
 
-#: includes/class-ure-admin.php:1280
+#: includes/class-ure-admin.php:1553
 msgid "Failed to save profile. Please try again."
 msgstr "فشل حفظ ملف التعريف. يرجى المحاولة مرة أخرى."
 
-#: includes/class-ure-admin.php:1296
+#: includes/class-ure-admin.php:1570
 msgid "Please select a profile to load."
 msgstr "يرجى تحديد ملف تعريف لتحميله."
 
-#: includes/class-ure-admin.php:1308
+#: includes/class-ure-admin.php:1583
 msgid "Profile not found."
 msgstr "لم يتم العثور على ملف التعريف."
 
 #. translators: %s: profile name
-#: includes/class-ure-admin.php:1322
-msgid "Profile \"%s\" loaded successfully. Review the settings below and click Preview or Apply."
-msgstr "تم تحميل ملف التعريف \"%s\" بنجاح. راجع الإعدادات أدناه وانقر على المعاينة أو التطبيق."
+#: includes/class-ure-admin.php:1598
+msgid ""
+"Profile \"%s\" loaded successfully. Review the settings below and click "
+"Preview or Apply."
+msgstr ""
+"تم تحميل ملف التعريف \"%s\" بنجاح. راجع الإعدادات أدناه وانقر على المعاينة "
+"أو التطبيق."
 
-#: includes/class-ure-admin.php:1339
+#: includes/class-ure-admin.php:1615
 msgid "Please select a profile to delete."
 msgstr "يرجى تحديد ملف تعريف لحذفه."
 
 #. translators: %s: profile name
-#: includes/class-ure-admin.php:1351
+#: includes/class-ure-admin.php:1627
 msgid "Profile \"%s\" deleted successfully."
 msgstr "تم حذف ملف التعريف \"%s\" بنجاح."
 
-#: includes/class-ure-admin.php:1360
+#: includes/class-ure-admin.php:1636
 msgid "Failed to delete profile. Please try again."
 msgstr "فشل حذف ملف التعريف. يرجى المحاولة مرة أخرى."
 
-#: includes/class-ure-admin.php:1372
-#: templates/admin-db-search.php:44
+#: includes/class-ure-admin.php:1648 templates/admin-db-search.php:90
 msgid "Database Search & Replace"
 msgstr "البحث والاستبدال في قاعدة البيانات"
 
-#: includes/class-ure-admin.php:1385
+#: includes/class-ure-admin.php:1661
 msgid "Backup & Restore"
 msgstr "النسخ الاحتياطي والاستعادة"
 
-#: includes/class-ure-admin.php:1398
+#: includes/class-ure-admin.php:1674
 msgid "URE Settings"
 msgstr "إعدادات URE"
 
-#: includes/class-ure-admin.php:1411
+#: includes/class-ure-admin.php:1687
 msgid "URE Help"
 msgstr "مساعدة URE"
 
-#: includes/class-ure-ajax.php:58
-#: includes/class-ure-ajax.php:113
+#: includes/class-ure-ajax.php:58 includes/class-ure-ajax.php:113
 #: includes/class-ure-ajax.php:180
 msgid "Insufficient permissions."
 msgstr "صلاحيات غير كافية."
 
-#: includes/class-ure-ajax.php:69
-#: includes/class-ure-ajax.php:124
+#: includes/class-ure-ajax.php:69 includes/class-ure-ajax.php:124
 msgid "Search term is required."
 msgstr "مصطلح البحث مطلوب."
 
@@ -465,8 +544,7 @@ msgstr "تعذر إنشاء ملف النسخة الاحتياطية."
 msgid "Backup created successfully."
 msgstr "تم إنشاء النسخة الاحتياطية بنجاح."
 
-#: includes/class-ure-backup-manager.php:373
-#: includes/class-ure-logger.php:123
+#: includes/class-ure-backup-manager.php:373 includes/class-ure-logger.php:123
 #: includes/class-ure-logger.php:157
 msgid "Unknown"
 msgstr "غير معروف"
@@ -496,16 +574,16 @@ msgstr "لم يتم العثور على النسخة الاحتياطية."
 msgid "Backup deleted successfully."
 msgstr "تم حذف النسخة الاحتياطية بنجاح."
 
-#: includes/class-ure-database-manager.php:234
+#: includes/class-ure-database-manager.php:337
 msgid "Table does not exist."
 msgstr "الجدول غير موجود."
 
-#: includes/class-ure-database-manager.php:246
+#: includes/class-ure-database-manager.php:349
 msgid "Table has no primary key."
 msgstr "الجدول ليس لديه مفتاح أساسي."
 
 #. translators: %d: row number
-#: includes/class-ure-database-manager.php:345
+#: includes/class-ure-database-manager.php:447
 msgid "Error updating row %d"
 msgstr "خطأ في تحديث الصف %d"
 
@@ -555,16 +633,18 @@ msgid "Backup & Restore - Use With Caution!"
 msgstr "النسخ الاحتياطي والاستعادة - استخدم بحذر!"
 
 #: templates/admin-backup.php:32
-msgid "Creating backups and restoring your database are critical operations. Always ensure you have a recent working backup before making major changes."
-msgstr "إنشاء النسخ الاحتياطية واستعادة قاعدة البيانات عمليات حرجة. تأكد دائماً من أن لديك نسخة احتياطية حديثة قبل إجراء تغييرات كبيرة."
+msgid ""
+"Creating backups and restoring your database are critical operations. Always "
+"ensure you have a recent working backup before making major changes."
+msgstr ""
+"إنشاء النسخ الاحتياطية واستعادة قاعدة البيانات عمليات حرجة. تأكد دائماً من أن "
+"لديك نسخة احتياطية حديثة قبل إجراء تغييرات كبيرة."
 
-#: templates/admin-backup.php:39
-#: templates/admin-db-search.php:35
+#: templates/admin-backup.php:39 templates/admin-db-search.php:81
 msgid "ALWAYS create a backup before proceeding"
 msgstr "قم دائماً بإنشاء نسخة احتياطية قبل المتابعة"
 
-#: templates/admin-backup.php:40
-#: templates/admin-db-search.php:36
+#: templates/admin-backup.php:40 templates/admin-db-search.php:82
 msgid "Test on a staging site first"
 msgstr "اختبر على موقع تجريبي أولاً"
 
@@ -580,13 +660,11 @@ msgstr "إنشاء نسخة احتياطية (موصى به)"
 msgid "Tables to Backup"
 msgstr "الجداول المراد نسخها احتياطياً"
 
-#: templates/admin-backup.php:57
-#: templates/admin-db-search.php:80
+#: templates/admin-backup.php:57 templates/admin-db-search.php:126
 msgid "Select All"
 msgstr "تحديد الكل"
 
-#: templates/admin-backup.php:58
-#: templates/admin-db-search.php:81
+#: templates/admin-backup.php:58 templates/admin-db-search.php:127
 msgid "Deselect All"
 msgstr "إلغاء تحديد الكل"
 
@@ -594,8 +672,7 @@ msgstr "إلغاء تحديد الكل"
 msgid "Core Tables Only"
 msgstr "الجداول الأساسية فقط"
 
-#: templates/admin-backup.php:74
-#: templates/admin-db-search.php:95
+#: templates/admin-backup.php:74 templates/admin-db-search.php:157
 msgid "Protected"
 msgstr "محمي"
 
@@ -623,7 +700,7 @@ msgstr "تاريخ الإنشاء"
 msgid "Tables"
 msgstr "الجداول"
 
-#: templates/admin-backup.php:118
+#: templates/admin-backup.php:118 templates/admin-db-search.php:140
 msgid "Size"
 msgstr "الحجم"
 
@@ -632,8 +709,12 @@ msgid "Comment"
 msgstr "تعليق"
 
 #: templates/admin-backup.php:148
-msgid "Are you sure you want to restore this backup? This will overwrite current data!"
-msgstr "هل أنت متأكد من أنك تريد استعادة هذه النسخة الاحتياطية؟ سيؤدي هذا إلى الكتابة فوق البيانات الحالية!"
+msgid ""
+"Are you sure you want to restore this backup? This will overwrite current "
+"data!"
+msgstr ""
+"هل أنت متأكد من أنك تريد استعادة هذه النسخة الاحتياطية؟ سيؤدي هذا إلى "
+"الكتابة فوق البيانات الحالية!"
 
 #: templates/admin-backup.php:150
 msgid "Restore"
@@ -643,61 +724,268 @@ msgstr "استعادة"
 msgid "Are you sure you want to delete this backup?"
 msgstr "هل أنت متأكد من أنك تريد حذف هذه النسخة الاحتياطية؟"
 
-#: templates/admin-backup.php:163
-#: templates/admin-profiles.php:51
+#: templates/admin-backup.php:163 templates/admin-profiles.php:51
 msgid "Delete"
 msgstr "حذف"
 
-#: templates/admin-db-search.php:25
+#: templates/admin-db-search.php:30
+msgid "Core"
+msgstr ""
+
+#: templates/admin-db-search.php:31
+msgid "WooCommerce"
+msgstr ""
+
+#: templates/admin-db-search.php:32
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: templates/admin-db-search.php:33
+msgid "Yoast SEO"
+msgstr ""
+
+#: templates/admin-db-search.php:34
+msgid "All in One SEO"
+msgstr ""
+
+#: templates/admin-db-search.php:35
+msgid "Rank Math"
+msgstr ""
+
+#: templates/admin-db-search.php:36
+#, fuzzy
+msgid "Elementor"
+msgstr "بيانات Elementor"
+
+#: templates/admin-db-search.php:37
+msgid "Divi"
+msgstr ""
+
+#: templates/admin-db-search.php:38
+msgid "Gravity Forms"
+msgstr ""
+
+#: templates/admin-db-search.php:39
+msgid "Contact Form 7"
+msgstr ""
+
+#: templates/admin-db-search.php:40
+msgid "Formidable Forms"
+msgstr ""
+
+#: templates/admin-db-search.php:41
+msgid "WPForms"
+msgstr ""
+
+#: templates/admin-db-search.php:42
+#, fuzzy
+msgid "Advanced Custom Fields"
+msgstr "الوضع المتقدم"
+
+#: templates/admin-db-search.php:43
+msgid "WPML"
+msgstr ""
+
+#: templates/admin-db-search.php:44
+msgid "Wordfence"
+msgstr ""
+
+#: templates/admin-db-search.php:45
+msgid "WP Rocket"
+msgstr ""
+
+#: templates/admin-db-search.php:46
+msgid "Akismet"
+msgstr ""
+
+#: templates/admin-db-search.php:47
+msgid "MemberPress"
+msgstr ""
+
+#: templates/admin-db-search.php:48
+msgid "LearnDash"
+msgstr ""
+
+#: templates/admin-db-search.php:49
+msgid "LifterLMS"
+msgstr ""
+
+#: templates/admin-db-search.php:50
+msgid "bbPress"
+msgstr ""
+
+#: templates/admin-db-search.php:51
+msgid "BuddyPress"
+msgstr ""
+
+#: templates/admin-db-search.php:52
+msgid "Jetpack"
+msgstr ""
+
+#: templates/admin-db-search.php:53
+msgid "WP All Import"
+msgstr ""
+
+#: templates/admin-db-search.php:54
+msgid "Redirection"
+msgstr ""
+
+#: templates/admin-db-search.php:55
+msgid "WP Staging"
+msgstr ""
+
+#: templates/admin-db-search.php:56
+msgid "Duplicator"
+msgstr ""
+
+#: templates/admin-db-search.php:57
+#, fuzzy
+msgid "Plugin"
+msgstr "إصدار الإضافة"
+
+#: templates/admin-db-search.php:58
+msgid "Custom"
+msgstr ""
+
+#: templates/admin-db-search.php:67
 msgid "Advanced Mode - Use With Caution!"
 msgstr "الوضع المتقدم - استخدم بحذر!"
 
-#: templates/admin-db-search.php:28
-msgid "Advanced mode allows you to search and replace across any database table, including wp_options, usermeta, and custom plugin tables. This is powerful but potentially dangerous."
-msgstr "يتيح لك الوضع المتقدم البحث والاستبدال عبر أي جدول في قاعدة البيانات، بما في ذلك wp_options وusermeta وجداول الإضافات المخصصة. هذا قوي ولكنه خطير."
+#: templates/admin-db-search.php:70
+msgid ""
+"Advanced mode allows you to search and replace across any database table, "
+"including wp_options, usermeta, and custom plugin tables. This is powerful "
+"but potentially dangerous."
+msgstr ""
+"يتيح لك الوضع المتقدم البحث والاستبدال عبر أي جدول في قاعدة البيانات، بما في "
+"ذلك wp_options وusermeta وجداول الإضافات المخصصة. هذا قوي ولكنه خطير."
 
-#: templates/admin-db-search.php:37
+#: templates/admin-db-search.php:77
+msgid "IMPORTANT: Database operations CANNOT be rolled back!"
+msgstr ""
+
+#: templates/admin-db-search.php:78
+msgid ""
+"Unlike post content changes, database-level operations cannot be undone "
+"through the History section. You must create a backup before applying "
+"changes."
+msgstr ""
+
+#: templates/admin-db-search.php:83
 msgid "Be very specific with your search terms"
 msgstr "كن محدداً جداً مع مصطلحات البحث"
 
-#: templates/admin-db-search.php:38
+#: templates/admin-db-search.php:84
 msgid "Understand what you're changing"
 msgstr "افهم ما تقوم بتغييره"
 
-#: templates/admin-db-search.php:52
+#: templates/admin-db-search.php:98
 msgid "Search For"
 msgstr "البحث عن"
 
-#: templates/admin-db-search.php:61
+#: templates/admin-db-search.php:107
 msgid "Text to search for..."
 msgstr "النص المراد البحث عنه..."
 
-#: templates/admin-db-search.php:66
+#: templates/admin-db-search.php:112
 msgid "Replace With"
 msgstr "استبدال بـ"
 
-#: templates/admin-db-search.php:72
+#: templates/admin-db-search.php:118
 msgid "Replacement text..."
 msgstr "نص الاستبدال..."
 
-#: templates/admin-db-search.php:77
+#: templates/admin-db-search.php:123
 msgid "Select Tables"
 msgstr "تحديد الجداول"
 
-#: templates/admin-db-search.php:119
+#: templates/admin-db-search.php:137
+#, fuzzy
+msgid "Table Name"
+msgstr "الجداول"
+
+#: templates/admin-db-search.php:138
+msgid "Type"
+msgstr ""
+
+#: templates/admin-db-search.php:139
+msgid "Rows"
+msgstr ""
+
+#: templates/admin-db-search.php:183
 msgid "Skip GUIDs (recommended)"
 msgstr "تخطي GUIDs (موصى به)"
 
-#: templates/admin-db-search.php:132
+#: templates/admin-db-search.php:196
 msgid "Preview Changes"
 msgstr "معاينة التغييرات"
+
+#: templates/admin-db-search.php:214
+#, fuzzy
+msgid "Review the changes below carefully before applying."
+msgstr "شاهد التغييرات قبل تطبيقها"
+
+#: templates/admin-db-search.php:223
+#, fuzzy
+msgid "Table"
+msgstr "الجداول"
+
+#: templates/admin-db-search.php:224
+msgid "Rows Scanned"
+msgstr ""
+
+#: templates/admin-db-search.php:225
+msgid "Changes Found"
+msgstr ""
+
+#: templates/admin-db-search.php:226
+#, fuzzy
+msgid "Time"
+msgstr "التاريخ/الوقت"
+
+#: templates/admin-db-search.php:255
+#, fuzzy
+msgid "Preview of Changes"
+msgstr "معاينة التغييرات"
+
+#. translators: 1: number shown, 2: total changes
+#: templates/admin-db-search.php:260
+msgid "(Showing up to 20 examples out of %d total changes)"
+msgstr ""
+
+#. translators: 1: column name, 2: primary key value
+#: templates/admin-db-search.php:299
+#, fuzzy
+msgid "Column: %1$s (ID: %2$s)"
+msgstr "%1$s (المعرف: %2$d)"
+
+#: templates/admin-db-search.php:373
+msgid ""
+"No preview examples available. Changes will be applied based on the summary "
+"above."
+msgstr ""
+
+#: templates/admin-db-search.php:385
+msgid ""
+"Are you sure you want to apply these changes to the database? This action "
+"cannot be easily undone. Make sure you have a backup!"
+msgstr ""
+
+#. translators: %d: number of changes
+#: templates/admin-db-search.php:389
+#, fuzzy
+msgid "Apply %d Changes"
+msgstr "تطبيق التغييرات"
+
+#: templates/admin-db-search.php:395
+msgid "Cancel"
+msgstr ""
 
 #: templates/admin-help.php:20
 msgid "Universal Replace Engine - Help & Documentation"
 msgstr "محرك الاستبدال الشامل - المساعدة والتوثيق"
 
-#: templates/admin-help.php:23
-#: templates/admin-help.php:33
+#: templates/admin-help.php:23 templates/admin-help.php:36
 msgid "Getting Started"
 msgstr "البدء"
 
@@ -710,397 +998,1370 @@ msgid "Profiles"
 msgstr "ملفات التعريف"
 
 #: templates/admin-help.php:26
+msgid "WP-CLI"
+msgstr ""
+
+#: templates/admin-help.php:27 templates/admin-profiles.php:82
+msgid "Regex Mode"
+msgstr "وضع Regex"
+
+#: templates/admin-help.php:28
 msgid "Advanced Mode"
 msgstr "الوضع المتقدم"
 
-#: templates/admin-help.php:27
-#: templates/admin-help.php:139
+#: templates/admin-help.php:29 templates/admin-help.php:673
 msgid "Troubleshooting"
 msgstr "استكشاف الأخطاء وإصلاحها"
 
-#: templates/admin-help.php:28
+#: templates/admin-help.php:30
 msgid "FAQ"
 msgstr "الأسئلة الشائعة"
 
-#: templates/admin-help.php:35
+#: templates/admin-help.php:31
+msgid "Support"
+msgstr ""
+
+#: templates/admin-help.php:38
 msgid "Basic Search & Replace"
 msgstr "البحث والاستبدال الأساسي"
 
-#: templates/admin-help.php:37
+#: templates/admin-help.php:40
 msgid "Navigate to Tools → Universal Replace Engine"
 msgstr "انتقل إلى الأدوات ← محرك الاستبدال الشامل"
 
-#: templates/admin-help.php:38
+#: templates/admin-help.php:41
 msgid "Enter your search term in the \"Search For\" field"
 msgstr "أدخل مصطلح البحث في حقل \"البحث عن\""
 
-#: templates/admin-help.php:39
-msgid "Enter the replacement text in the \"Replace With\" field (leave empty to just search)"
+#: templates/admin-help.php:42
+msgid ""
+"Enter the replacement text in the \"Replace With\" field (leave empty to "
+"just search)"
 msgstr "أدخل نص الاستبدال في حقل \"استبدال بـ\" (اتركه فارغاً للبحث فقط)"
 
-#: templates/admin-help.php:40
+#: templates/admin-help.php:43
 msgid "Select which post types to search in"
 msgstr "اختر أنواع المنشورات التي تريد البحث فيها"
 
-#: templates/admin-help.php:41
+#: templates/admin-help.php:44
 msgid "Click \"Run Preview\" to see what will change"
 msgstr "انقر على \"تشغيل المعاينة\" لرؤية ما سيتغير"
 
-#: templates/admin-help.php:42
+#: templates/admin-help.php:45
 msgid "Review the preview carefully"
 msgstr "راجع المعاينة بعناية"
 
-#: templates/admin-help.php:43
+#: templates/admin-help.php:46
 msgid "Click \"Apply Changes\" to make the replacements"
 msgstr "انقر على \"تطبيق التغييرات\" لإجراء الاستبدالات"
 
-#: templates/admin-help.php:47
+#: templates/admin-help.php:50
 msgid "Pro Tip:"
 msgstr "نصيحة احترافية:"
 
-#: templates/admin-help.php:47
-msgid "Always run a preview first to avoid unexpected changes!"
-msgstr "قم دائماً بتشغيل المعاينة أولاً لتجنب التغييرات غير المتوقعة!"
+#: templates/admin-help.php:50
+msgid ""
+"Use the rollback feature to undo changes if needed. Keep your last 5 "
+"operations safe!"
+msgstr ""
 
-#: templates/admin-help.php:53
+#: templates/admin-help.php:56
 msgid "Features Overview"
 msgstr "نظرة عامة على الميزات"
 
-#: templates/admin-help.php:55
+#: templates/admin-help.php:58
 msgid "Content Operations"
 msgstr "عمليات المحتوى"
 
-#: templates/admin-help.php:57
+#: templates/admin-help.php:60
 msgid "Post Content:"
 msgstr "محتوى المنشور:"
 
-#: templates/admin-help.php:57
+#: templates/admin-help.php:60
 msgid "Search and replace in post/page content"
 msgstr "البحث والاستبدال في محتوى المنشورات/الصفحات"
 
-#: templates/admin-help.php:58
+#: templates/admin-help.php:61
 msgid "Custom Post Types:"
 msgstr "أنواع المنشورات المخصصة:"
 
-#: templates/admin-help.php:58
+#: templates/admin-help.php:61
 msgid "Works with any post type (products, portfolios, etc.)"
 msgstr "يعمل مع أي نوع منشور (منتجات، معارض أعمال، إلخ)"
 
-#: templates/admin-help.php:59
+#: templates/admin-help.php:62
 msgid "Preview:"
 msgstr "المعاينة:"
 
-#: templates/admin-help.php:59
+#: templates/admin-help.php:62
 msgid "See changes before applying them"
 msgstr "شاهد التغييرات قبل تطبيقها"
 
-#: templates/admin-help.php:60
+#: templates/admin-help.php:63
 msgid "Undo/Rollback:"
 msgstr "التراجع/الاستعادة:"
 
-#: templates/admin-help.php:60
+#: templates/admin-help.php:63
 msgid "Reverse changes with one click"
 msgstr "عكس التغييرات بنقرة واحدة"
 
-#: templates/admin-help.php:63
+#: templates/admin-help.php:66
 msgid "Database Operations (Advanced Mode)"
 msgstr "عمليات قاعدة البيانات (الوضع المتقدم)"
 
-#: templates/admin-help.php:65
+#: templates/admin-help.php:68
 msgid "All Tables:"
 msgstr "جميع الجداول:"
 
-#: templates/admin-help.php:65
+#: templates/admin-help.php:68
 msgid "Search any WordPress table"
 msgstr "البحث في أي جدول ووردبريس"
 
-#: templates/admin-help.php:66
+#: templates/admin-help.php:69
 msgid "Backup:"
 msgstr "النسخ الاحتياطي:"
 
-#: templates/admin-help.php:66
+#: templates/admin-help.php:69
 msgid "Create SQL backups before changes"
 msgstr "إنشاء نسخ احتياطية SQL قبل التغييرات"
 
-#: templates/admin-help.php:67
+#: templates/admin-help.php:70
 msgid "Restore:"
 msgstr "الاستعادة:"
 
-#: templates/admin-help.php:67
+#: templates/admin-help.php:70
 msgid "Restore from backup if needed"
 msgstr "الاستعادة من النسخة الاحتياطية عند الحاجة"
 
-#: templates/admin-help.php:68
+#: templates/admin-help.php:71
 msgid "GUID Protection:"
 msgstr "حماية GUID:"
 
-#: templates/admin-help.php:68
+#: templates/admin-help.php:71
 msgid "Automatically skips WordPress GUIDs"
 msgstr "يتخطى تلقائياً GUIDs ووردبريس"
 
-#: templates/admin-help.php:72
+#: templates/admin-help.php:75
 msgid "Pro Features"
 msgstr "الميزات الاحترافية"
 
-#: templates/admin-help.php:74
+#: templates/admin-help.php:77
 msgid "Regex Mode:"
 msgstr "وضع Regex:"
 
-#: templates/admin-help.php:74
+#: templates/admin-help.php:77
 msgid "Use regular expressions for powerful pattern matching"
 msgstr "استخدم التعبيرات النمطية لمطابقة الأنماط القوية"
 
-#: templates/admin-help.php:75
+#: templates/admin-help.php:78
 msgid "Unlimited Preview:"
 msgstr "معاينة غير محدودة:"
 
-#: templates/admin-help.php:75
+#: templates/admin-help.php:78
 msgid "No limit on preview results"
 msgstr "لا يوجد حد لنتائج المعاينة"
 
-#: templates/admin-help.php:76
+#: templates/admin-help.php:79
 msgid "Extended History:"
 msgstr "سجل موسع:"
 
-#: templates/admin-help.php:76
+#: templates/admin-help.php:79
 msgid "Keep up to 50 operations for rollback"
 msgstr "احتفظ بما يصل إلى 50 عملية للتراجع"
 
-#: templates/admin-help.php:83
+#: templates/admin-help.php:86
 msgid "Using Saved Profiles"
 msgstr "استخدام ملفات التعريف المحفوظة"
 
-#: templates/admin-help.php:84
-msgid "Profiles let you save common search/replace configurations for quick reuse."
-msgstr "تتيح لك ملفات التعريف حفظ تكوينات البحث/الاستبدال الشائعة لإعادة الاستخدام السريع."
+#: templates/admin-help.php:87
+msgid ""
+"Profiles let you save common search/replace configurations for quick reuse."
+msgstr ""
+"تتيح لك ملفات التعريف حفظ تكوينات البحث/الاستبدال الشائعة لإعادة الاستخدام "
+"السريع."
 
-#: templates/admin-help.php:86
+#: templates/admin-help.php:89
 msgid "Saving a Profile"
 msgstr "حفظ ملف تعريف"
 
-#: templates/admin-help.php:88
+#: templates/admin-help.php:91
 msgid "Configure your search/replace settings"
 msgstr "قم بتكوين إعدادات البحث/الاستبدال"
 
-#: templates/admin-help.php:89
+#: templates/admin-help.php:92
 msgid "Scroll to \"Save Current Settings\""
 msgstr "قم بالتمرير إلى \"حفظ الإعدادات الحالية\""
 
-#: templates/admin-help.php:90
+#: templates/admin-help.php:93
 msgid "Enter a descriptive name (e.g., \"Domain Migration\")"
 msgstr "أدخل اسماً وصفياً (مثلاً، \"نقل النطاق\")"
 
-#: templates/admin-help.php:91
+#: templates/admin-help.php:94
 msgid "Click \"Save Current Settings as Profile\""
 msgstr "انقر على \"حفظ الإعدادات الحالية كملف تعريف\""
 
-#: templates/admin-help.php:94
+#: templates/admin-help.php:97
 msgid "Loading a Profile"
 msgstr "تحميل ملف تعريف"
 
-#: templates/admin-help.php:96
+#: templates/admin-help.php:99
 msgid "Select a profile from the dropdown"
 msgstr "اختر ملف تعريف من القائمة المنسدلة"
 
-#: templates/admin-help.php:97
+#: templates/admin-help.php:100
 msgid "Click \"Load\""
 msgstr "انقر على \"تحميل\""
 
-#: templates/admin-help.php:98
+#: templates/admin-help.php:101
 msgid "Review the loaded settings"
 msgstr "راجع الإعدادات المحملة"
 
-#: templates/admin-help.php:99
+#: templates/admin-help.php:102
 msgid "Run Preview or Apply"
 msgstr "قم بتشغيل المعاينة أو التطبيق"
 
-#: templates/admin-help.php:102
+#: templates/admin-help.php:105
 msgid "Common Profile Examples"
 msgstr "أمثلة ملفات التعريف الشائعة"
 
-#: templates/admin-help.php:104
+#: templates/admin-help.php:107
 msgid "Domain Migration:"
 msgstr "نقل النطاق:"
 
-#: templates/admin-help.php:105
+#: templates/admin-help.php:108
 msgid "HTTPS Migration:"
 msgstr "الترحيل إلى HTTPS:"
 
-#: templates/admin-help.php:106
+#: templates/admin-help.php:109
 msgid "Fix Typos:"
 msgstr "إصلاح الأخطاء الإملائية:"
 
-#: templates/admin-help.php:107
+#: templates/admin-help.php:110
 msgid "Update Company Name:"
 msgstr "تحديث اسم الشركة:"
 
-#: templates/admin-help.php:113
+#: templates/admin-help.php:116
+#, fuzzy
+msgid "WP-CLI Commands"
+msgstr "أوامر WP-CLI"
+
+#: templates/admin-help.php:117
+msgid ""
+"Universal Replace Engine includes comprehensive WP-CLI support for command-"
+"line operations. Perfect for automation, scripting, and server management."
+msgstr ""
+
+#: templates/admin-help.php:120
+msgid "Prerequisites:"
+msgstr ""
+
+#: templates/admin-help.php:122
+msgid "WP-CLI must be installed on your server"
+msgstr ""
+
+#: templates/admin-help.php:123
+msgid "Run commands from your WordPress root directory"
+msgstr ""
+
+#: templates/admin-help.php:124
+msgid "Commands require appropriate server permissions"
+msgstr ""
+
+#: templates/admin-help.php:128
+#, fuzzy
+msgid "Available Commands"
+msgstr "النسخ الاحتياطية المتاحة"
+
+#: templates/admin-help.php:130
+#, fuzzy
+msgid "1. Search for Text"
+msgstr "بحث عن"
+
+#: templates/admin-help.php:131
+msgid "Search for text in post content without making changes."
+msgstr ""
+
+#: templates/admin-help.php:134
+#, fuzzy
+msgid "Basic Search:"
+msgstr "البحث والاستبدال الأساسي"
+
+#: templates/admin-help.php:138 templates/admin-help.php:171
+#, fuzzy
+msgid "Specific Post Types:"
+msgstr "أنواع المنشورات"
+
+#: templates/admin-help.php:142 templates/admin-help.php:175
+#, fuzzy
+msgid "Case Sensitive:"
+msgstr "حساس لحالة الأحرف"
+
+#: templates/admin-help.php:146
+msgid "With Limit:"
+msgstr ""
+
+#: templates/admin-help.php:150
+#, fuzzy
+msgid "Regex (Pro):"
+msgstr "وضع Regex:"
+
+#: templates/admin-help.php:155
+#, fuzzy
+msgid "2. Replace Text"
+msgstr "استبدال بـ"
+
+#: templates/admin-help.php:156
+#, fuzzy
+msgid "Search and replace text in post content."
+msgstr "البحث والاستبدال في محتوى المنشورات/الصفحات"
+
+#: templates/admin-help.php:159
+#, fuzzy
+msgid "Dry Run (Preview):"
+msgstr "تشغيل المعاينة"
+
+#: templates/admin-help.php:163
+#, fuzzy
+msgid "Apply Changes:"
+msgstr "تطبيق التغييرات"
+
+#: templates/admin-help.php:167 templates/admin-help.php:259
+#, fuzzy
+msgid "Skip Confirmation:"
+msgstr "معلومات النظام"
+
+#: templates/admin-help.php:180
+#, fuzzy
+msgid "3. Backup Management"
+msgstr "الاحتفاظ بالنسخ الاحتياطية"
+
+#: templates/admin-help.php:181
+#, fuzzy
+msgid "Create, list, and restore database backups."
+msgstr "يرجى اختيار جدول واحد على الأقل للنسخ الاحتياطي."
+
+#: templates/admin-help.php:184
+#, fuzzy
+msgid "Create Backup (All):"
+msgstr "إنشاء نسخة احتياطية"
+
+#: templates/admin-help.php:188
+#, fuzzy
+msgid "Specific Tables:"
+msgstr "تحديد الجداول"
+
+#: templates/admin-help.php:192
+#, fuzzy
+msgid "With Comment:"
+msgstr "تعليق"
+
+#: templates/admin-help.php:196
+#, fuzzy
+msgid "List Backups:"
+msgstr "النسخ الاحتياطي:"
+
+#: templates/admin-help.php:200
+#, fuzzy
+msgid "Restore Backup:"
+msgstr "إنشاء نسخة احتياطية"
+
+#: templates/admin-help.php:205
+msgid "4. Profile Management"
+msgstr ""
+
+#: templates/admin-help.php:206
+msgid "Manage saved search/replace profiles from the command line."
+msgstr ""
+
+#: templates/admin-help.php:209
+#, fuzzy
+msgid "List Profiles:"
+msgstr "تحميل ملف التعريف:"
+
+#: templates/admin-help.php:213 templates/admin-profiles.php:33
+msgid "Load Profile:"
+msgstr "تحميل ملف التعريف:"
+
+#: templates/admin-help.php:217
+#, fuzzy
+msgid "Delete Profile:"
+msgstr "-- اختر ملف التعريف --"
+
+#: templates/admin-help.php:221
+msgid "Specific User:"
+msgstr ""
+
+#: templates/admin-help.php:226
+msgid "5. Settings Management"
+msgstr ""
+
+#: templates/admin-help.php:227
+msgid "View and modify plugin settings."
+msgstr ""
+
+#: templates/admin-help.php:230
+#, fuzzy
+msgid "View All Settings:"
+msgstr "حفظ الإعدادات"
+
+#: templates/admin-help.php:234
+#, fuzzy
+msgid "View One Setting:"
+msgstr "حفظ الإعدادات"
+
+#: templates/admin-help.php:238
+#, fuzzy
+msgid "Update Setting:"
+msgstr "حفظ الإعدادات"
+
+#: templates/admin-help.php:243
+#, fuzzy
+msgid "6. Operation History"
+msgstr "حد سجل العمليات"
+
+#: templates/admin-help.php:244
+msgid "View and rollback previous operations."
+msgstr ""
+
+#: templates/admin-help.php:247
+#, fuzzy
+msgid "View History:"
+msgstr "سجل موسع:"
+
+#: templates/admin-help.php:251
+msgid "More Entries:"
+msgstr ""
+
+#: templates/admin-help.php:255
+msgid "Rollback Operation:"
+msgstr ""
+
+#: templates/admin-help.php:264
+#, fuzzy
+msgid "Common Use Cases"
+msgstr "أمثلة ملفات التعريف الشائعة"
+
+#: templates/admin-help.php:266
+#, fuzzy
+msgid "Domain Migration Workflow"
+msgstr "نقل النطاق:"
+
+#: templates/admin-help.php:270
+#, fuzzy
+msgid "Create a backup:"
+msgstr "إنشاء نسخة احتياطية"
+
+#: templates/admin-help.php:274
+#, fuzzy
+msgid "Preview changes:"
+msgstr "معاينة التغييرات"
+
+#: templates/admin-help.php:278
+#, fuzzy
+msgid "Apply changes:"
+msgstr "تطبيق التغييرات"
+
+#: templates/admin-help.php:282
+#, fuzzy
+msgid "Verify results:"
+msgstr "نتائج المعاينة"
+
+#: templates/admin-help.php:288
+msgid "Automated Backup Script"
+msgstr ""
+
+#: templates/admin-help.php:290
+msgid "Create a cron job or script for automated backups:"
+msgstr ""
+
+#: templates/admin-help.php:297
+msgid "Bulk Text Updates"
+msgstr ""
+
+#: templates/admin-help.php:299
+msgid "Update multiple terms in sequence:"
+msgstr ""
+
+#: templates/admin-help.php:307
+msgid "Tips for WP-CLI Usage"
+msgstr ""
+
+#: templates/admin-help.php:310
+msgid "Always use --dry-run first:"
+msgstr ""
+
+#: templates/admin-help.php:310
+#, fuzzy
+msgid "Preview changes before applying them"
+msgstr "شاهد التغييرات قبل تطبيقها"
+
+#: templates/admin-help.php:311
+#, fuzzy
+msgid "Create backups:"
+msgstr "إنشاء نسخة احتياطية"
+
+#: templates/admin-help.php:311
+msgid "Always backup before major operations"
+msgstr ""
+
+#: templates/admin-help.php:312
+msgid "Use --yes for scripts:"
+msgstr ""
+
+#: templates/admin-help.php:312
+msgid "Skip confirmations in automated workflows"
+msgstr ""
+
+#: templates/admin-help.php:313
+#, fuzzy
+msgid "Quote your search terms:"
+msgstr "كن محدداً جداً مع مصطلحات البحث"
+
+#: templates/admin-help.php:313
+msgid "Use quotes to prevent shell interpretation"
+msgstr ""
+
+#: templates/admin-help.php:314
+#, fuzzy
+msgid "Test on staging first:"
+msgstr "اختبر على موقع تجريبي أولاً"
+
+#: templates/admin-help.php:314
+msgid "Never test commands on production first"
+msgstr ""
+
+#: templates/admin-help.php:315
+msgid "Check the history:"
+msgstr ""
+
+#: templates/admin-help.php:315
+msgid "Use wp ure history to verify operations"
+msgstr ""
+
+#: templates/admin-help.php:319
+#, fuzzy
+msgid "Getting Help"
+msgstr "البدء"
+
+#: templates/admin-help.php:320
+msgid "Get help for any command using the --help flag:"
+msgstr ""
+
+#: templates/admin-help.php:323
+msgid "General Help:"
+msgstr ""
+
+#: templates/admin-help.php:327
+msgid "Command Help:"
+msgstr ""
+
+#: templates/admin-help.php:331
+#, fuzzy
+msgid "Replace Help:"
+msgstr "استبدال"
+
+#: templates/admin-help.php:339
+#, fuzzy
+msgid "Regex Mode (Pro)"
+msgstr "وضع Regex"
+
+#: templates/admin-help.php:343
+#, fuzzy
+msgid "Pro Feature"
+msgstr "الميزات الاحترافية"
+
+#: templates/admin-help.php:344
+msgid ""
+"Regular expressions (regex) mode is available in the Pro version. Upgrade to "
+"unlock advanced pattern matching capabilities."
+msgstr ""
+
+#: templates/admin-help.php:345 templates/admin-help.php:775
+#: templates/admin-help.php:778
+#, fuzzy
+msgid "Upgrade to Pro"
+msgstr "س: كيف يمكنني الترقية إلى النسخة الاحترافية؟"
+
+#: templates/admin-help.php:349
+#, fuzzy
+msgid "What is Regex Mode?"
+msgstr "وضع Regex"
+
+#: templates/admin-help.php:350
+msgid ""
+"Regular expressions (regex) allow you to search for complex patterns instead "
+"of exact text matches. This is powerful for finding and replacing text that "
+"follows a specific format."
+msgstr ""
+
+#: templates/admin-help.php:352
+#, fuzzy
+msgid "When to Use Regex"
+msgstr "متى تستخدم الوضع المتقدم"
+
+#: templates/admin-help.php:354
+msgid "Finding phone numbers in various formats"
+msgstr ""
+
+#: templates/admin-help.php:355
+msgid "Matching email addresses"
+msgstr ""
+
+#: templates/admin-help.php:356
+msgid "Finding URLs with specific patterns"
+msgstr ""
+
+#: templates/admin-help.php:357
+msgid "Replacing dates in different formats"
+msgstr ""
+
+#: templates/admin-help.php:358
+msgid "Extracting or modifying HTML tags"
+msgstr ""
+
+#: templates/admin-help.php:359
+msgid "Finding repeated words or patterns"
+msgstr ""
+
+#: templates/admin-help.php:362
+#, fuzzy
+msgid "Common Regex Patterns & Examples"
+msgstr "أمثلة ملفات التعريف الشائعة"
+
+#: templates/admin-help.php:365
+msgid "1. Phone Numbers"
+msgstr ""
+
+#: templates/admin-help.php:368 templates/admin-help.php:384
+#: templates/admin-help.php:400 templates/admin-help.php:416
+#: templates/admin-help.php:432 templates/admin-help.php:448
+#: templates/admin-help.php:464 templates/admin-help.php:480
+#, fuzzy
+msgid "Search:"
+msgstr "بحث"
+
+#: templates/admin-help.php:372 templates/admin-help.php:388
+#: templates/admin-help.php:404 templates/admin-help.php:420
+#: templates/admin-help.php:436 templates/admin-help.php:452
+#: templates/admin-help.php:468 templates/admin-help.php:484
+msgid "Matches:"
+msgstr ""
+
+#: templates/admin-help.php:376 templates/admin-help.php:392
+#: templates/admin-help.php:408 templates/admin-help.php:424
+#: templates/admin-help.php:440 templates/admin-help.php:456
+#: templates/admin-help.php:472 templates/admin-help.php:488
+#, fuzzy
+msgid "Replace:"
+msgstr "استبدال"
+
+#: templates/admin-help.php:381
+msgid "2. Email Addresses"
+msgstr ""
+
+#: templates/admin-help.php:397
+msgid "3. URLs with Specific Domain"
+msgstr ""
+
+#: templates/admin-help.php:409
+msgid "(preserves path with $1)"
+msgstr ""
+
+#: templates/admin-help.php:413
+msgid "4. Dates (MM/DD/YYYY to DD-MM-YYYY)"
+msgstr ""
+
+#: templates/admin-help.php:425
+msgid "(becomes 25-12-2024)"
+msgstr ""
+
+#: templates/admin-help.php:429
+msgid "5. HTML Image Tags"
+msgstr ""
+
+#: templates/admin-help.php:445
+msgid "6. Shortcodes with Parameters"
+msgstr ""
+
+#: templates/admin-help.php:461
+msgid "7. Remove Extra Whitespace"
+msgstr ""
+
+#: templates/admin-help.php:469
+msgid "Multiple consecutive spaces/newlines"
+msgstr ""
+
+#: templates/admin-help.php:473
+msgid "(single space)"
+msgstr ""
+
+#: templates/admin-help.php:477
+msgid "8. Find Price Ranges"
+msgstr ""
+
+#: templates/admin-help.php:489
+msgid "(convert to Euro format)"
+msgstr ""
+
+#: templates/admin-help.php:494
+msgid "Capture Groups & Backreferences"
+msgstr ""
+
+#: templates/admin-help.php:495
+msgid ""
+"Use parentheses () to capture parts of your match, then reference them in "
+"the replacement with $1, $2, $3, etc."
+msgstr ""
+
+#: templates/admin-help.php:498
+msgid "Pattern"
+msgstr ""
+
+#: templates/admin-help.php:499
+msgid "Description"
+msgstr ""
+
+#: templates/admin-help.php:503
+msgid "First capture group"
+msgstr ""
+
+#: templates/admin-help.php:507
+msgid "Second capture group"
+msgstr ""
+
+#: templates/admin-help.php:511
+msgid "Third capture group (and so on...)"
+msgstr ""
+
+#: templates/admin-help.php:515
+msgid "Common Regex Symbols"
+msgstr ""
+
+#: templates/admin-help.php:518
+msgid "Symbol"
+msgstr ""
+
+#: templates/admin-help.php:519
+#, fuzzy
+msgid "Meaning"
+msgstr "تحذير:"
+
+#: templates/admin-help.php:520
+msgid "Example"
+msgstr ""
+
+#: templates/admin-help.php:524
+msgid "Any character"
+msgstr ""
+
+#: templates/admin-help.php:525
+msgid "matches abc, a1c, a*c"
+msgstr ""
+
+#: templates/admin-help.php:529
+msgid "Any digit (0-9)"
+msgstr ""
+
+#: templates/admin-help.php:530
+msgid "matches 123, 999"
+msgstr ""
+
+#: templates/admin-help.php:534
+msgid "Word character (a-z, A-Z, 0-9, _)"
+msgstr ""
+
+#: templates/admin-help.php:535
+msgid "matches word, name_123"
+msgstr ""
+
+#: templates/admin-help.php:539
+msgid "Whitespace (space, tab, newline)"
+msgstr ""
+
+#: templates/admin-help.php:540
+msgid "matches one or more spaces"
+msgstr ""
+
+#: templates/admin-help.php:544
+msgid "Zero or more times"
+msgstr ""
+
+#: templates/admin-help.php:545
+msgid "matches \"\", \"a\", \"aaa\""
+msgstr ""
+
+#: templates/admin-help.php:549
+msgid "One or more times"
+msgstr ""
+
+#: templates/admin-help.php:550
+msgid "matches \"a\", \"aaa\""
+msgstr ""
+
+#: templates/admin-help.php:554
+msgid "Zero or one time (optional)"
+msgstr ""
+
+#: templates/admin-help.php:555
+msgid "matches http, https"
+msgstr ""
+
+#: templates/admin-help.php:559
+msgid "Start of line"
+msgstr ""
+
+#: templates/admin-help.php:560
+msgid "matches lines starting with Hello"
+msgstr ""
+
+#: templates/admin-help.php:564
+msgid "End of line"
+msgstr ""
+
+#: templates/admin-help.php:565
+msgid "matches lines ending with end"
+msgstr ""
+
+#: templates/admin-help.php:569
+msgid "Character class"
+msgstr ""
+
+#: templates/admin-help.php:570
+msgid "matches any vowel"
+msgstr ""
+
+#: templates/admin-help.php:574
+msgid "OR operator"
+msgstr ""
+
+#: templates/admin-help.php:575
+msgid "matches cat or dog"
+msgstr ""
+
+#: templates/admin-help.php:579
+msgid "Safety Tips for Regex"
+msgstr ""
+
+#: templates/admin-help.php:582
+msgid "Always test first:"
+msgstr ""
+
+#: templates/admin-help.php:582
+#, fuzzy
+msgid "Run a preview to see what will be matched"
+msgstr "انقر على \"تشغيل المعاينة\" لرؤية ما سيتغير"
+
+#: templates/admin-help.php:583
+msgid "Start simple:"
+msgstr ""
+
+#: templates/admin-help.php:583
+msgid "Build your pattern gradually and test each addition"
+msgstr ""
+
+#: templates/admin-help.php:584
+msgid "Escape special characters:"
+msgstr ""
+
+#: templates/admin-help.php:584
+msgid "Use backslash \\ before . $ ^ * + ? ( ) [ ] { } |"
+msgstr ""
+
+#: templates/admin-help.php:585
+#, fuzzy
+msgid "Use specific patterns:"
+msgstr "استخدم مصطلحات بحث محددة جداً"
+
+#: templates/admin-help.php:585
+msgid "Avoid overly broad patterns like .* that match too much"
+msgstr ""
+
+#: templates/admin-help.php:586
+#, fuzzy
+msgid "Test on staging:"
+msgstr "اختبر على موقع تجريبي أولاً"
+
+#: templates/admin-help.php:586
+msgid "Never test complex regex on production first"
+msgstr ""
+
+#: templates/admin-help.php:590
+msgid "Testing Your Regex"
+msgstr ""
+
+#: templates/admin-help.php:591
+msgid ""
+"Before using regex in Universal Replace Engine, you can test your patterns "
+"at:"
+msgstr ""
+
+#: templates/admin-help.php:593
+msgid "- Interactive regex tester with explanations"
+msgstr ""
+
+#: templates/admin-help.php:594
+msgid "- Another excellent regex testing tool"
+msgstr ""
+
+#: templates/admin-help.php:600
 msgid "Advanced Database Mode"
 msgstr "وضع قاعدة البيانات المتقدم"
 
-#: templates/admin-help.php:116
+#: templates/admin-help.php:603
 msgid "Warning:"
 msgstr "تحذير:"
 
-#: templates/admin-help.php:116
-msgid "Advanced mode can modify any database table. Always create a backup first!"
-msgstr "يمكن للوضع المتقدم تعديل أي جدول في قاعدة البيانات. قم دائماً بإنشاء نسخة احتياطية أولاً!"
+#: templates/admin-help.php:603
+msgid ""
+"Advanced mode can modify any database table. Always create a backup first!"
+msgstr ""
+"يمكن للوضع المتقدم تعديل أي جدول في قاعدة البيانات. قم دائماً بإنشاء نسخة "
+"احتياطية أولاً!"
 
-#: templates/admin-help.php:119
+#: templates/admin-help.php:606
 msgid "When to Use Advanced Mode"
 msgstr "متى تستخدم الوضع المتقدم"
 
-#: templates/admin-help.php:121
+#: templates/admin-help.php:608
 msgid "Domain migrations (update siteurl, home options)"
 msgstr "نقل النطاق (تحديث siteurl، خيارات home)"
 
-#: templates/admin-help.php:122
+#: templates/admin-help.php:609
 msgid "Fix serialized data in post meta"
 msgstr "إصلاح البيانات المتسلسلة في حقول المنشورات"
 
-#: templates/admin-help.php:123
+#: templates/admin-help.php:610
 msgid "Update user metadata"
 msgstr "تحديث بيانات المستخدم الوصفية"
 
-#: templates/admin-help.php:124
+#: templates/admin-help.php:611
 msgid "Fix plugin settings after migration"
 msgstr "إصلاح إعدادات الإضافات بعد الترحيل"
 
-#: templates/admin-help.php:127
+#: templates/admin-help.php:614
 msgid "Safe Usage"
 msgstr "الاستخدام الآمن"
 
-#: templates/admin-help.php:129
+#: templates/admin-help.php:616
 msgid "Create a backup first"
 msgstr "قم بإنشاء نسخة احتياطية أولاً"
 
-#: templates/admin-help.php:130
+#: templates/admin-help.php:617
 msgid "Select only the tables you need to modify"
 msgstr "اختر فقط الجداول التي تحتاج إلى تعديلها"
 
-#: templates/admin-help.php:131
+#: templates/admin-help.php:618 templates/admin-help.php:649
 msgid "Use very specific search terms"
 msgstr "استخدم مصطلحات بحث محددة جداً"
 
-#: templates/admin-help.php:132
+#: templates/admin-help.php:619 templates/admin-help.php:650
 msgid "Run a preview first"
 msgstr "قم بتشغيل المعاينة أولاً"
 
-#: templates/admin-help.php:133
+#: templates/admin-help.php:620
 msgid "Test on a staging site before production"
 msgstr "اختبر على موقع تجريبي قبل الإنتاج"
 
-#: templates/admin-help.php:141
+#: templates/admin-help.php:623
+msgid "Understanding the \"Protected\" Badge"
+msgstr ""
+
+#: templates/admin-help.php:624
+msgid ""
+"In the database table selector, some tables are marked with a \"Protected\" "
+"badge. This is a visual warning to indicate critical WordPress core tables."
+msgstr ""
+
+#: templates/admin-help.php:626
+#, fuzzy
+msgid "Protected Tables:"
+msgstr "محمي"
+
+#: templates/admin-help.php:628
+msgid "Contains all user account information"
+msgstr ""
+
+#: templates/admin-help.php:629
+msgid "Stores user metadata (preferences, capabilities, roles)"
+msgstr ""
+
+#: templates/admin-help.php:630
+#, fuzzy
+msgid "Contains site settings and configuration"
+msgstr "إظهار تحذيرات وتأكيدات السلامة"
+
+#: templates/admin-help.php:633
+msgid "Why Are They Protected?"
+msgstr ""
+
+#: templates/admin-help.php:634
+msgid "These tables contain critical data. Modifying them incorrectly can:"
+msgstr ""
+
+#: templates/admin-help.php:636
+msgid "Lock you out of your admin account"
+msgstr ""
+
+#: templates/admin-help.php:637
+msgid "Break site functionality and features"
+msgstr ""
+
+#: templates/admin-help.php:638
+msgid "Corrupt user permissions and roles"
+msgstr ""
+
+#: templates/admin-help.php:639
+msgid "Break plugin and theme settings"
+msgstr ""
+
+#: templates/admin-help.php:642
+msgid "Can I Still Modify Protected Tables?"
+msgstr ""
+
+#: templates/admin-help.php:643
+msgid ""
+"Yes! The \"Protected\" badge is just a warning, not a restriction. You can "
+"still select and modify these tables. The badge reminds you to be extra "
+"careful when working with critical data."
+msgstr ""
+
+#: templates/admin-help.php:646
+msgid "Best Practices for Protected Tables:"
+msgstr ""
+
+#: templates/admin-help.php:648
+#, fuzzy
+msgid "Always create a backup first"
+msgstr "قم بإنشاء نسخة احتياطية أولاً"
+
+#: templates/admin-help.php:648
+msgid "Especially important for these tables"
+msgstr ""
+
+#: templates/admin-help.php:649
+msgid "Avoid broad patterns that might match too much"
+msgstr ""
+
+#: templates/admin-help.php:650
+msgid "Verify exactly what will change"
+msgstr ""
+
+#: templates/admin-help.php:651
+#, fuzzy
+msgid "Test on staging"
+msgstr "اختبر على موقع تجريبي أولاً"
+
+#: templates/admin-help.php:651
+msgid "Never test on production first"
+msgstr ""
+
+#: templates/admin-help.php:652
+#, fuzzy
+msgid "Know what you're changing"
+msgstr "افهم ما تقوم بتغييره"
+
+#: templates/admin-help.php:652
+#, fuzzy
+msgid "Understand the data structure before modifying"
+msgstr "افهم ما تقوم باستعادته"
+
+#: templates/admin-help.php:656
+msgid "Common Safe Operations on Protected Tables:"
+msgstr ""
+
+#: templates/admin-help.php:657
+#, fuzzy
+msgid "table:"
+msgstr "الجداول"
+
+#: templates/admin-help.php:659
+msgid "Changing site URLs during migration (siteurl, home)"
+msgstr ""
+
+#: templates/admin-help.php:660
+msgid "Updating email addresses"
+msgstr ""
+
+#: templates/admin-help.php:661
+#, fuzzy
+msgid "Fixing plugin settings after domain change"
+msgstr "إصلاح إعدادات الإضافات بعد الترحيل"
+
+#: templates/admin-help.php:664
+#, fuzzy
+msgid "tables:"
+msgstr "الجداول"
+
+#: templates/admin-help.php:666
+msgid "Updating email domains after company rebranding"
+msgstr ""
+
+#: templates/admin-help.php:667
+#, fuzzy
+msgid "Fixing user URLs after site migration"
+msgstr "إصلاح إعدادات الإضافات بعد الترحيل"
+
+#: templates/admin-help.php:675
 msgid "Operation Times Out"
 msgstr "انتهاء مهلة العملية"
 
-#: templates/admin-help.php:143
+#: templates/admin-help.php:677
 msgid "Go to Settings and reduce the batch size"
 msgstr "انتقل إلى الإعدادات وقلل حجم الدفعة"
 
-#: templates/admin-help.php:144
+#: templates/admin-help.php:678
 msgid "Try Content Batch Size: 50 or Database Batch Size: 2500"
 msgstr "جرب حجم دفعة المحتوى: 50 أو حجم دفعة قاعدة البيانات: 2500"
 
-#: templates/admin-help.php:145
+#: templates/admin-help.php:679
 msgid "Contact your host to increase PHP max_execution_time"
 msgstr "اتصل بمزود الاستضافة لزيادة max_execution_time لـ PHP"
 
-#: templates/admin-help.php:148
+#: templates/admin-help.php:682
 msgid "Memory Limit Errors"
 msgstr "أخطاء حد الذاكرة"
 
-#: templates/admin-help.php:150
+#: templates/admin-help.php:684
 msgid "Reduce batch sizes in Settings"
 msgstr "قلل أحجام الدفعات في الإعدادات"
 
-#: templates/admin-help.php:151
+#: templates/admin-help.php:685
 msgid "Process fewer post types at once"
 msgstr "عالج عدد أقل من أنواع المنشورات في وقت واحد"
 
-#: templates/admin-help.php:152
+#: templates/admin-help.php:686
 msgid "Ask your host to increase PHP memory_limit"
 msgstr "اطلب من مزود الاستضافة زيادة memory_limit لـ PHP"
 
-#: templates/admin-help.php:155
+#: templates/admin-help.php:689
 msgid "Changes Not Visible"
 msgstr "التغييرات غير مرئية"
 
-#: templates/admin-help.php:157
+#: templates/admin-help.php:691
 msgid "Clear all caches (WordPress, plugin, CDN, browser)"
 msgstr "امسح جميع ذاكرة التخزين المؤقت (ووردبريس، الإضافة، CDN، المتصفح)"
 
-#: templates/admin-help.php:158
+#: templates/admin-help.php:692
 msgid "For Elementor pages: Regenerate CSS in Elementor settings"
 msgstr "لصفحات Elementor: أعد إنشاء CSS في إعدادات Elementor"
 
-#: templates/admin-help.php:159
+#: templates/admin-help.php:693
 msgid "Check the Operation History to verify changes were applied"
 msgstr "تحقق من سجل العمليات للتأكد من تطبيق التغييرات"
 
-#: templates/admin-help.php:165
+#: templates/admin-help.php:699
 msgid "Frequently Asked Questions"
 msgstr "الأسئلة الشائعة"
 
-#: templates/admin-help.php:167
+#: templates/admin-help.php:701
 msgid "Q: Can I undo changes after applying them?"
 msgstr "س: هل يمكنني التراجع عن التغييرات بعد تطبيقها؟"
 
-#: templates/admin-help.php:168
-msgid "A: Yes! Click \"Operation History\" and use the \"Undo\" button to rollback. The plugin keeps your last 5 operations (free) or 50 operations (Pro)."
-msgstr "ج: نعم! انقر على \"سجل العمليات\" واستخدم زر \"التراجع\" للاستعادة. تحتفظ الإضافة بآخر 5 عمليات (مجاني) أو 50 عملية (احترافي)."
+#: templates/admin-help.php:702
+msgid ""
+"A: Yes! Click \"Operation History\" and use the \"Undo\" button to rollback. "
+"The plugin keeps your last 5 operations (free) or 50 operations (Pro)."
+msgstr ""
+"ج: نعم! انقر على \"سجل العمليات\" واستخدم زر \"التراجع\" للاستعادة. تحتفظ "
+"الإضافة بآخر 5 عمليات (مجاني) أو 50 عملية (احترافي)."
 
-#: templates/admin-help.php:170
+#: templates/admin-help.php:704
 msgid "Q: Does this work with Elementor/Gutenberg?"
 msgstr "س: هل يعمل هذا مع Elementor/Gutenberg؟"
 
-#: templates/admin-help.php:171
-msgid "A: Yes! The plugin handles serialized data and JSON correctly. For Elementor, caches are automatically cleared after changes."
-msgstr "ج: نعم! تتعامل الإضافة مع البيانات المتسلسلة وJSON بشكل صحيح. بالنسبة لـ Elementor، يتم مسح ذاكرة التخزين المؤقت تلقائياً بعد التغييرات."
+#: templates/admin-help.php:705
+msgid ""
+"A: Yes! The plugin handles serialized data and JSON correctly. For "
+"Elementor, caches are automatically cleared after changes."
+msgstr ""
+"ج: نعم! تتعامل الإضافة مع البيانات المتسلسلة وJSON بشكل صحيح. بالنسبة لـ "
+"Elementor، يتم مسح ذاكرة التخزين المؤقت تلقائياً بعد التغييرات."
 
-#: templates/admin-help.php:173
+#: templates/admin-help.php:707
 msgid "Q: Will this break my site?"
 msgstr "س: هل سيؤدي هذا إلى تعطيل موقعي؟"
 
-#: templates/admin-help.php:174
-msgid "A: Not if you use it correctly! Always preview changes first, be specific with search terms, and test on staging before production. The undo feature provides additional safety."
-msgstr "ج: ليس إذا استخدمته بشكل صحيح! قم دائماً بمعاينة التغييرات أولاً، كن محدداً مع مصطلحات البحث، واختبر على موقع تجريبي قبل الإنتاج. توفر ميزة التراجع أماناً إضافياً."
+#: templates/admin-help.php:708
+msgid ""
+"A: Not if you use it correctly! Always preview changes first, be specific "
+"with search terms, and test on staging before production. The undo feature "
+"provides additional safety."
+msgstr ""
+"ج: ليس إذا استخدمته بشكل صحيح! قم دائماً بمعاينة التغييرات أولاً، كن محدداً مع "
+"مصطلحات البحث، واختبر على موقع تجريبي قبل الإنتاج. توفر ميزة التراجع أماناً "
+"إضافياً."
 
-#: templates/admin-help.php:176
+#: templates/admin-help.php:710
 msgid "Q: What's the difference between Content and Advanced mode?"
 msgstr "س: ما الفرق بين وضع المحتوى والوضع المتقدم؟"
 
-#: templates/admin-help.php:177
-msgid "A: Content mode searches only post/page content. Advanced mode searches any database table (wp_options, postmeta, usermeta, etc.). Advanced mode requires more caution."
-msgstr "ج: يبحث وضع المحتوى في محتوى المنشورات/الصفحات فقط. يبحث الوضع المتقدم في أي جدول قاعدة بيانات (wp_options، postmeta، usermeta، إلخ). يتطلب الوضع المتقدم مزيداً من الحذر."
+#: templates/admin-help.php:711
+msgid ""
+"A: Content mode searches only post/page content. Advanced mode searches any "
+"database table (wp_options, postmeta, usermeta, etc.). Advanced mode "
+"requires more caution."
+msgstr ""
+"ج: يبحث وضع المحتوى في محتوى المنشورات/الصفحات فقط. يبحث الوضع المتقدم في أي "
+"جدول قاعدة بيانات (wp_options، postmeta، usermeta، إلخ). يتطلب الوضع المتقدم "
+"مزيداً من الحذر."
 
-#: templates/admin-help.php:179
+#: templates/admin-help.php:713
 msgid "Q: Can I use this for domain migrations?"
 msgstr "س: هل يمكنني استخدام هذا لنقل النطاق؟"
 
-#: templates/admin-help.php:180
-msgid "A: Yes! Use Advanced mode, create a backup first, then replace old URLs with new ones across wp_options and wp_posts tables. Save this as a profile for future use."
-msgstr "ج: نعم! استخدم الوضع المتقدم، قم بإنشاء نسخة احتياطية أولاً، ثم استبدل عناوين URL القديمة بأخرى جديدة عبر جداول wp_options وwp_posts. احفظ هذا كملف تعريف للاستخدام المستقبلي."
+#: templates/admin-help.php:714
+msgid ""
+"A: Yes! Use Advanced mode, create a backup first, then replace old URLs with "
+"new ones across wp_options and wp_posts tables. Save this as a profile for "
+"future use."
+msgstr ""
+"ج: نعم! استخدم الوضع المتقدم، قم بإنشاء نسخة احتياطية أولاً، ثم استبدل عناوين "
+"URL القديمة بأخرى جديدة عبر جداول wp_options وwp_posts. احفظ هذا كملف تعريف "
+"للاستخدام المستقبلي."
 
-#: templates/admin-help.php:182
+#: templates/admin-help.php:716
 msgid "Q: How do I upgrade to Pro?"
 msgstr "س: كيف يمكنني الترقية إلى النسخة الاحترافية؟"
 
-#: templates/admin-help.php:183
-msgid "A: Contact the plugin developer for Pro licensing. Pro includes regex mode, unlimited previews, and extended history."
-msgstr "ج: اتصل بمطور الإضافة للحصول على الترخيص الاحترافي. تتضمن النسخة الاحترافية وضع regex، ومعاينات غير محدودة، وسجل موسع."
+#: templates/admin-help.php:717
+msgid ""
+"A: Contact the plugin developer for Pro licensing. Pro includes regex mode, "
+"unlimited previews, and extended history."
+msgstr ""
+"ج: اتصل بمطور الإضافة للحصول على الترخيص الاحترافي. تتضمن النسخة الاحترافية "
+"وضع regex، ومعاينات غير محدودة، وسجل موسع."
 
-#: templates/admin-help.php:188
+#: templates/admin-help.php:722
+msgid "Contact Support"
+msgstr ""
+
+#: templates/admin-help.php:726
+msgid "🎉 Priority Support Active"
+msgstr ""
+
+#: templates/admin-help.php:727
+msgid ""
+"As a Pro user, you have access to priority email support with faster "
+"response times."
+msgstr ""
+
+#: templates/admin-help.php:731
+msgid "Email Support"
+msgstr ""
+
+#: templates/admin-help.php:733
+msgid "Need help? Our support team is here to assist you."
+msgstr ""
+
+#: templates/admin-help.php:736
+msgid "Email:"
+msgstr ""
+
+#: templates/admin-help.php:742
+msgid "Important: Include Your Serial Number"
+msgstr ""
+
+#: templates/admin-help.php:743
+msgid ""
+"To ensure priority support, please include your Pro license serial number in "
+"your email. This helps us:"
+msgstr ""
+
+#: templates/admin-help.php:745
+msgid "Verify your Pro license status"
+msgstr ""
+
+#: templates/admin-help.php:746
+msgid "Prioritize your support request"
+msgstr ""
+
+#: templates/admin-help.php:747
+msgid "Provide version-specific assistance"
+msgstr ""
+
+#: templates/admin-help.php:748
+msgid "Fast-track bug fixes and updates"
+msgstr ""
+
+#: templates/admin-help.php:750
+msgid "Response time for Pro users: 24-48 hours"
+msgstr ""
+
+#: templates/admin-help.php:754
+msgid "For Pro Users: Include Your Serial Number"
+msgstr ""
+
+#: templates/admin-help.php:755
+msgid ""
+"If you have a Pro license, please include your serial number in your support "
+"email for priority assistance."
+msgstr ""
+
+#: templates/admin-help.php:756
+msgid "Pro users receive priority support with 24-48 hour response time."
+msgstr ""
+
+#: templates/admin-help.php:757
+msgid ""
+"Free version users: We provide community support on a best-effort basis. "
+"Response time may vary."
+msgstr ""
+
+#: templates/admin-help.php:761
+msgid "Before Contacting Support"
+msgstr ""
+
+#: templates/admin-help.php:762
+msgid "To help us assist you faster, please include:"
+msgstr ""
+
+#: templates/admin-help.php:764
+msgid "Plugin version (check Settings page)"
+msgstr ""
+
+#: templates/admin-help.php:765
+#, fuzzy
+msgid "WordPress version"
+msgstr "إصدار ووردبريس"
+
+#: templates/admin-help.php:766
+#, fuzzy
+msgid "PHP version (check Settings page)"
+msgstr "إعدادات الأداء"
+
+#: templates/admin-help.php:767
+msgid "Description of the issue or question"
+msgstr ""
+
+#: templates/admin-help.php:768
+msgid "Steps to reproduce (if reporting a bug)"
+msgstr ""
+
+#: templates/admin-help.php:769
+msgid "Screenshots (if applicable)"
+msgstr ""
+
+#: templates/admin-help.php:771
+msgid "Your Pro license serial number"
+msgstr ""
+
+#: templates/admin-help.php:777
+msgid "Want priority support and advanced features?"
+msgstr ""
+
+#: templates/admin-help.php:780
+msgid ""
+"Pro includes: Regex mode, unlimited preview, extended history, and priority "
+"email support."
+msgstr ""
+
+#: templates/admin-help.php:785
 msgid "↑ Back to Top"
 msgstr "↑ العودة إلى الأعلى"
 
 #: templates/admin-profiles.php:22
 msgid "Saved Profiles"
 msgstr "ملفات التعريف المحفوظة"
-
-#: templates/admin-profiles.php:33
-msgid "Load Profile:"
-msgstr "تحميل ملف التعريف:"
 
 #: templates/admin-profiles.php:36
 msgid "-- Select Profile --"
@@ -1138,13 +2399,13 @@ msgstr "تم التحديث"
 msgid "Case Sensitive"
 msgstr "حساس لحالة الأحرف"
 
-#: templates/admin-profiles.php:82
-msgid "Regex Mode"
-msgstr "وضع Regex"
-
 #: templates/admin-profiles.php:93
-msgid "No saved profiles yet. Complete a search below and click \"Save Profile\" to save it for future use."
-msgstr "لا توجد ملفات تعريف محفوظة بعد. أكمل البحث أدناه وانقر على \"حفظ ملف التعريف\" لحفظه للاستخدام المستقبلي."
+msgid ""
+"No saved profiles yet. Complete a search below and click \"Save Profile\" to "
+"save it for future use."
+msgstr ""
+"لا توجد ملفات تعريف محفوظة بعد. أكمل البحث أدناه وانقر على \"حفظ ملف التعريف"
+"\" لحفظه للاستخدام المستقبلي."
 
 #: templates/admin-profiles.php:99
 msgid "Save Current Settings"
@@ -1167,24 +2428,36 @@ msgid "Performance Settings"
 msgstr "إعدادات الأداء"
 
 #: templates/admin-settings.php:33
-msgid "Configure batch sizes to optimize performance for your server. Lower values use less memory but take longer."
-msgstr "قم بتكوين أحجام الدفعات لتحسين الأداء لخادمك. القيم المنخفضة تستخدم ذاكرة أقل ولكنها تستغرق وقتاً أطول."
+msgid ""
+"Configure batch sizes to optimize performance for your server. Lower values "
+"use less memory but take longer."
+msgstr ""
+"قم بتكوين أحجام الدفعات لتحسين الأداء لخادمك. القيم المنخفضة تستخدم ذاكرة "
+"أقل ولكنها تستغرق وقتاً أطول."
 
 #: templates/admin-settings.php:42
 msgid "Content Batch Size"
 msgstr "حجم دفعة المحتوى"
 
 #: templates/admin-settings.php:57
-msgid "Number of posts to process per batch for content operations (10-1000). Default: 100"
-msgstr "عدد المنشورات المراد معالجتها لكل دفعة لعمليات المحتوى (10-1000). الافتراضي: 100"
+msgid ""
+"Number of posts to process per batch for content operations (10-1000). "
+"Default: 100"
+msgstr ""
+"عدد المنشورات المراد معالجتها لكل دفعة لعمليات المحتوى (10-1000). الافتراضي: "
+"100"
 
 #: templates/admin-settings.php:66
 msgid "Database Batch Size"
 msgstr "حجم دفعة قاعدة البيانات"
 
 #: templates/admin-settings.php:81
-msgid "Number of rows to process per batch for database operations (100-10000). Default: 5000"
-msgstr "عدد الصفوف المراد معالجتها لكل دفعة لعمليات قاعدة البيانات (100-10000). الافتراضي: 5000"
+msgid ""
+"Number of rows to process per batch for database operations (100-10000). "
+"Default: 5000"
+msgstr ""
+"عدد الصفوف المراد معالجتها لكل دفعة لعمليات قاعدة البيانات (100-10000). "
+"الافتراضي: 5000"
 
 #: templates/admin-settings.php:90
 msgid "Backup Batch Size"
@@ -1211,8 +2484,12 @@ msgid "Maximum number of results to show in preview (1-100)."
 msgstr "الحد الأقصى لعدد النتائج المراد عرضها في المعاينة (1-100)."
 
 #: templates/admin-settings.php:144
-msgid "Maximum number of results to show in preview (1-50). Pro version removes this limit."
-msgstr "الحد الأقصى لعدد النتائج المراد عرضها في المعاينة (1-50). تزيل النسخة الاحترافية هذا الحد."
+msgid ""
+"Maximum number of results to show in preview (1-50). Pro version removes "
+"this limit."
+msgstr ""
+"الحد الأقصى لعدد النتائج المراد عرضها في المعاينة (1-50). تزيل النسخة "
+"الاحترافية هذا الحد."
 
 #: templates/admin-settings.php:155
 msgid "Operation History Limit"
@@ -1227,8 +2504,12 @@ msgid "Number of operations to keep in history for rollback (1-50)."
 msgstr "عدد العمليات المراد الاحتفاظ بها في السجل للتراجع (1-50)."
 
 #: templates/admin-settings.php:176
-msgid "Number of operations to keep in history for rollback (1-10). Pro version keeps up to 50."
-msgstr "عدد العمليات المراد الاحتفاظ بها في السجل للتراجع (1-10). تحتفظ النسخة الاحترافية بما يصل إلى 50."
+msgid ""
+"Number of operations to keep in history for rollback (1-10). Pro version "
+"keeps up to 50."
+msgstr ""
+"عدد العمليات المراد الاحتفاظ بها في السجل للتراجع (1-10). تحتفظ النسخة "
+"الاحترافية بما يصل إلى 50."
 
 #: templates/admin-settings.php:188
 msgid "Backup Settings"
@@ -1243,8 +2524,11 @@ msgid "days"
 msgstr "أيام"
 
 #: templates/admin-settings.php:211
-msgid "Automatically delete backups older than this many days (1-30). Default: 7"
-msgstr "حذف النسخ الاحتياطية الأقدم من هذا العدد من الأيام تلقائياً (1-30). الافتراضي: 7"
+msgid ""
+"Automatically delete backups older than this many days (1-30). Default: 7"
+msgstr ""
+"حذف النسخ الاحتياطية الأقدم من هذا العدد من الأيام تلقائياً (1-30). "
+"الافتراضي: 7"
 
 #: templates/admin-settings.php:221
 msgid "Feature Toggles"
@@ -1271,8 +2555,11 @@ msgid "Enable real-time progress updates (recommended)"
 msgstr "تمكين تحديثات التقدم في الوقت الفعلي (موصى به)"
 
 #: templates/admin-settings.php:262
-msgid "Shows a live progress bar during long operations. Disable if you experience issues."
-msgstr "يعرض شريط تقدم مباشر أثناء العمليات الطويلة. قم بتعطيله إذا واجهت مشاكل."
+msgid ""
+"Shows a live progress bar during long operations. Disable if you experience "
+"issues."
+msgstr ""
+"يعرض شريط تقدم مباشر أثناء العمليات الطويلة. قم بتعطيله إذا واجهت مشاكل."
 
 #: templates/admin-settings.php:270
 msgid "Safety Warnings"
@@ -1292,7 +2579,8 @@ msgstr "حفظ الإعدادات"
 
 #: templates/admin-settings.php:294
 msgid "Are you sure you want to reset all settings to defaults?"
-msgstr "هل أنت متأكد من أنك تريد إعادة تعيين جميع الإعدادات إلى القيم الافتراضية؟"
+msgstr ""
+"هل أنت متأكد من أنك تريد إعادة تعيين جميع الإعدادات إلى القيم الافتراضية؟"
 
 #: templates/admin-settings.php:295
 msgid "Reset to Defaults"
@@ -1333,3 +2621,15 @@ msgstr "نشط"
 #: templates/admin-settings.php:331
 msgid "Free Version"
 msgstr "النسخة المجانية"
+
+#~ msgid "https://yoursite.com/universal-replace-engine"
+#~ msgstr "https://yoursite.com/universal-replace-engine"
+
+#~ msgid "Your Name"
+#~ msgstr "Your Name"
+
+#~ msgid "https://yoursite.com"
+#~ msgstr "https://yoursite.com"
+
+#~ msgid "Always run a preview first to avoid unexpected changes!"
+#~ msgstr "قم دائماً بتشغيل المعاينة أولاً لتجنب التغييرات غير المتوقعة!"

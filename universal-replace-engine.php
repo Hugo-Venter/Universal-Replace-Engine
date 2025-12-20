@@ -3,7 +3,7 @@
  * Plugin Name: Universal Replace Engine
  * Plugin URI: https://xtech.red/
  * Description: Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode.
- * Version: 1.4.0
+ * Version: 1.5.0
  * Author: Xtech Red
  * Author URI: https://xtech.red/
  * License: GPL v2 or later
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants.
-define( 'URE_VERSION', '1.4.0' );
+define( 'URE_VERSION', '1.5.0' );
 define( 'URE_PLUGIN_FILE', __FILE__ );
 define( 'URE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'URE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -62,3 +62,11 @@ function ure_init_plugin() {
 
 // Start the plugin.
 add_action( 'plugins_loaded', 'ure_init_plugin' );
+
+/**
+ * Register WP-CLI commands if WP-CLI is available.
+ */
+if ( defined( 'WP_CLI' ) && WP_CLI ) {
+	require_once URE_PLUGIN_DIR . 'includes/class-ure-cli.php';
+	WP_CLI::add_command( 'ure', 'URE_CLI' );
+}

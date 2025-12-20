@@ -4,7 +4,7 @@ Donate link: https://xtech.red/
 Tags: search, replace, database, migration, content
 Requires at least: 5.9
 Tested up to: 6.7
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,7 @@ Enterprise-grade search and replace for WordPress. Safe content operations with 
 * **Multilingual Support** - Available in 10 languages
 * **Safe & Secure** - WordPress nonces, capability checks, prepared statements
 * **Batch Processing** - Handles large sites without timeout errors
+* **WP-CLI Support** - Full command-line interface for automation and scripting
 
 = Use Cases =
 
@@ -83,6 +84,35 @@ Comprehensive help built into the plugin:
 * Common use cases
 * Troubleshooting tips
 * FAQ section
+* Complete WP-CLI command reference
+
+= WP-CLI Commands =
+
+Universal Replace Engine includes full WP-CLI support for command-line operations:
+
+**Search for text:**
+`wp ure search "old-domain.com"`
+`wp ure search "text" --post-type=post,page --case-sensitive --limit=50`
+
+**Replace text:**
+`wp ure replace "old.com" "new.com" --dry-run`
+`wp ure replace "old.com" "new.com" --yes`
+
+**Backup management:**
+`wp ure backup --comment="Before migration"`
+`wp ure backup_list`
+`wp ure restore backup_2024-01-15_123456.sql`
+
+**Profile management:**
+`wp ure profile list`
+`wp ure profile load "Domain Migration"`
+
+**Settings & history:**
+`wp ure settings`
+`wp ure history --limit=20`
+`wp ure rollback 123`
+
+For complete WP-CLI documentation, see **Tools → URE Help → WP-CLI** in your WordPress admin.
 
 == Installation ==
 
@@ -161,7 +191,30 @@ Yes! The plugin is fully multisite compatible. Network admins can perform operat
 
 No! The plugin only loads on admin pages and uses efficient batch processing. It has zero impact on frontend performance.
 
+= Does it support WP-CLI? =
+
+Yes! Universal Replace Engine includes comprehensive WP-CLI support for all major functions:
+- Search and replace operations with `wp ure search` and `wp ure replace`
+- Backup creation and restoration with `wp ure backup` and `wp ure restore`
+- Profile management with `wp ure profile`
+- Settings configuration with `wp ure settings`
+- Operation history and rollback with `wp ure history` and `wp ure rollback`
+
+Perfect for automation, scripting, and server management. See the WP-CLI section above for examples.
+
 == Changelog ==
+
+= 1.5.0 - 2024-12-20 =
+* Added: Complete WP-CLI support for all major functions
+* Added: `wp ure search` - Search for text via command line
+* Added: `wp ure replace` - Replace text with dry-run and confirmation options
+* Added: `wp ure backup` and `wp ure backup_list` - Backup management commands
+* Added: `wp ure restore` - Restore from backups via CLI
+* Added: `wp ure profile` - Manage saved profiles from command line
+* Added: `wp ure settings` - View and update plugin settings
+* Added: `wp ure history` and `wp ure rollback` - History and rollback commands
+* Improved: Help documentation with complete WP-CLI reference
+* Improved: Automation and scripting capabilities for DevOps workflows
 
 = 1.4.0 - 2024-12-10 =
 * Added: Saved Profiles feature for reusable configurations
@@ -210,6 +263,9 @@ No! The plugin only loads on admin pages and uses efficient batch processing. It
 * Post type filtering
 
 == Upgrade Notice ==
+
+= 1.5.0 =
+Complete WP-CLI support added! Automate search/replace operations, manage backups, profiles, and settings from command line. Perfect for DevOps workflows and server management.
 
 = 1.4.0 =
 Major update with Saved Profiles, Settings management, multilingual support (10 languages), and security. Highly recommended upgrade!

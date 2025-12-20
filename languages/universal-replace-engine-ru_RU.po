@@ -3,43 +3,46 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Universal Replace Engine 1.4.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/universal-replace-engine\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/universal-replace-"
+"engine\n"
+"POT-Creation-Date: 2025-12-14T09:18:48+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-12-10T19:54:19+02:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: universal-replace-engine\n"
 
 #. Plugin Name of the plugin
-#: universal-replace-engine.php
-#: includes/class-ure-admin.php:65
+#: universal-replace-engine.php includes/class-ure-admin.php:65
 #: includes/class-ure-admin.php:66
 msgid "Universal Replace Engine"
 msgstr "Универсальный Движок Замены"
 
 #. Plugin URI of the plugin
+#. Author URI of the plugin
 #: universal-replace-engine.php
-msgid "https://yoursite.com/universal-replace-engine"
-msgstr "https://yoursite.com/universal-replace-engine"
+msgid "https://xtech.red/"
+msgstr ""
 
 #. Description of the plugin
 #: universal-replace-engine.php
-msgid "Enterprise-grade search and replace for WordPress. Content & database operations, SQL backups, multisite support, GUID protection, saved profiles, and Pro regex mode."
-msgstr "Профессиональный поиск и замена для WordPress. Операции с контентом и базой данных, резервное копирование SQL, поддержка мультисайта, защита GUID, сохраненные профили и Pro режим регулярных выражений."
+msgid ""
+"Enterprise-grade search and replace for WordPress. Content & database "
+"operations, SQL backups, multisite support, GUID protection, saved profiles, "
+"and Pro regex mode."
+msgstr ""
+"Профессиональный поиск и замена для WordPress. Операции с контентом и базой "
+"данных, резервное копирование SQL, поддержка мультисайта, защита GUID, "
+"сохраненные профили и Pro режим регулярных выражений."
 
 #. Author of the plugin
 #: universal-replace-engine.php
-msgid "Your Name"
-msgstr "Ваше Имя"
-
-#. Author URI of the plugin
-#: universal-replace-engine.php
-msgid "https://yoursite.com"
-msgstr "https://yoursite.com"
+msgid "Xtech Red"
+msgstr ""
 
 #: includes/class-ure-admin.php:112
 msgid "Security check failed."
@@ -50,393 +53,465 @@ msgid "You do not have permission to perform this action."
 msgstr "У вас нет прав для выполнения этого действия."
 
 #: includes/class-ure-admin.php:194
-msgid "Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content."
-msgstr "Расширенные области (Мета записи, Elementor, Все местоположения) требуют Pro версию. Переключение на Содержимое записи."
+msgid ""
+"Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. "
+"Falling back to Post Content."
+msgstr ""
+"Расширенные области (Мета записи, Elementor, Все местоположения) требуют Pro "
+"версию. Переключение на Содержимое записи."
 
-#: includes/class-ure-admin.php:203
-#: includes/class-ure-admin.php:1007
+#: includes/class-ure-admin.php:203 includes/class-ure-admin.php:1271
 msgid "Please enter a search term."
 msgstr "Пожалуйста, введите поисковый запрос."
 
-#: includes/class-ure-admin.php:249
+#: includes/class-ure-admin.php:272
 msgid "No matches found."
 msgstr "Совпадений не найдено."
 
 #. translators: %d: number of matches
-#: includes/class-ure-admin.php:255
-msgid "Found %d match(es). Review below and click \"Apply Changes\" to proceed."
-msgstr "Найдено совпадений: %d. Просмотрите результаты ниже и нажмите \"Применить изменения\" для продолжения."
+#: includes/class-ure-admin.php:278
+msgid ""
+"Found %d match(es). Review below and click \"Apply Changes\" to proceed."
+msgstr ""
+"Найдено совпадений: %d. Просмотрите результаты ниже и нажмите \"Применить "
+"изменения\" для продолжения."
 
-#: includes/class-ure-admin.php:280
-#: includes/class-ure-admin.php:1096
+#: includes/class-ure-admin.php:303 includes/class-ure-admin.php:1360
 msgid "Preview data expired. Please run preview again."
-msgstr "Данные предпросмотра устарели. Пожалуйста, запустите предпросмотр снова."
+msgstr ""
+"Данные предпросмотра устарели. Пожалуйста, запустите предпросмотр снова."
 
 #. translators: %d: number of posts modified
-#: includes/class-ure-admin.php:311
+#: includes/class-ure-admin.php:334
 msgid "Successfully modified %d post(s)."
 msgstr "Успешно изменено записей: %d."
 
-#: includes/class-ure-admin.php:339
+#: includes/class-ure-admin.php:362
 msgid "Invalid log ID."
 msgstr "Неверный ID журнала."
 
-#: includes/class-ure-admin.php:401
+#: includes/class-ure-admin.php:424
 msgid "Search & Replace"
 msgstr "Поиск и Замена"
 
-#: includes/class-ure-admin.php:404
+#: includes/class-ure-admin.php:428 includes/class-ure-admin.php:437
 msgid "Database Search"
 msgstr "Поиск в Базе Данных"
 
-#: includes/class-ure-admin.php:407
+#: includes/class-ure-admin.php:432 includes/class-ure-admin.php:441
 msgid "Backup"
 msgstr "Резервное Копирование"
 
-#: includes/class-ure-admin.php:410
+#: includes/class-ure-admin.php:446
 msgid "Settings"
 msgstr "Настройки"
 
-#: includes/class-ure-admin.php:413
+#: includes/class-ure-admin.php:449
 msgid "Help"
 msgstr "Помощь"
 
-#: includes/class-ure-admin.php:430
+#: includes/class-ure-admin.php:468
 msgid "Search and Replace"
 msgstr "Поиск и Замена"
 
-#: includes/class-ure-admin.php:438
+#: includes/class-ure-admin.php:476
 msgid "Search for"
 msgstr "Искать"
 
-#: includes/class-ure-admin.php:456
+#: includes/class-ure-admin.php:494
 msgid "Enter the text you want to search for."
 msgstr "Введите текст, который вы хотите найти."
 
-#: includes/class-ure-admin.php:463
+#: includes/class-ure-admin.php:501
 msgid "Replace with"
 msgstr "Заменить на"
 
-#: includes/class-ure-admin.php:480
+#: includes/class-ure-admin.php:518
 msgid "Enter the replacement text (leave empty to only search)."
 msgstr "Введите текст для замены (оставьте пустым для поиска без замены)."
 
-#: includes/class-ure-admin.php:487
+#: includes/class-ure-admin.php:525
 msgid "Search Scope"
 msgstr "Область поиска"
 
-#: includes/class-ure-admin.php:500
+#: includes/class-ure-admin.php:543
 msgid "Post Content"
 msgstr "Содержимое записи"
 
-#: includes/class-ure-admin.php:501
+#: includes/class-ure-admin.php:544
 msgid "(post_content field only)"
 msgstr "(только поле post_content)"
 
-#: includes/class-ure-admin.php:508
+#: includes/class-ure-admin.php:551
 msgid "Post Meta"
 msgstr "Мета записи"
 
-#: includes/class-ure-admin.php:509
+#: includes/class-ure-admin.php:552
 msgid "(custom fields, excluding Elementor)"
 msgstr "(произвольные поля, исключая Elementor)"
 
-#: includes/class-ure-admin.php:521
+#: includes/class-ure-admin.php:564 includes/class-ure-admin.php:1042
 msgid "Elementor Data"
 msgstr "Данные Elementor"
 
-#: includes/class-ure-admin.php:522
+#: includes/class-ure-admin.php:565
 msgid "(_elementor_data JSON field)"
 msgstr "(поле JSON _elementor_data)"
 
-#: includes/class-ure-admin.php:534
+#: includes/class-ure-admin.php:577 includes/class-ure-admin.php:1043
 msgid "All Locations"
 msgstr "Все местоположения"
 
-#: includes/class-ure-admin.php:535
+#: includes/class-ure-admin.php:578
 msgid "(content + postmeta + Elementor)"
 msgstr "(контент + postmeta + Elementor)"
 
-#: includes/class-ure-admin.php:544
+#: includes/class-ure-admin.php:587
 msgid "Choose where to search and replace."
 msgstr "Выберите, где искать и заменять."
 
-#: includes/class-ure-admin.php:548
-msgid "Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
-msgstr "Обновитесь до Pro, чтобы разблокировать области Мета записи, Данные Elementor и Все местоположения."
+#: includes/class-ure-admin.php:591
+msgid ""
+"Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes."
+msgstr ""
+"Обновитесь до Pro, чтобы разблокировать области Мета записи, Данные "
+"Elementor и Все местоположения."
 
-#: includes/class-ure-admin.php:557
-#: templates/admin-profiles.php:65
+#: includes/class-ure-admin.php:600 templates/admin-profiles.php:65
 msgid "Post Types"
 msgstr "Типы записей"
 
-#: includes/class-ure-admin.php:562
+#: includes/class-ure-admin.php:605
 msgid "Select which post types to search in."
 msgstr "Выберите типы записей для поиска."
 
-#: includes/class-ure-admin.php:569
-#: templates/admin-db-search.php:112
+#: includes/class-ure-admin.php:612 templates/admin-db-search.php:176
 #: templates/admin-profiles.php:66
 msgid "Options"
 msgstr "Опции"
 
-#: includes/class-ure-admin.php:578
-#: templates/admin-db-search.php:115
+#: includes/class-ure-admin.php:629 templates/admin-db-search.php:179
 msgid "Case sensitive"
 msgstr "Учитывать регистр"
 
-#: includes/class-ure-admin.php:589
-#: templates/admin-db-search.php:124
+#: includes/class-ure-admin.php:648 templates/admin-db-search.php:188
 msgid "Regex mode"
 msgstr "Режим регулярных выражений"
 
-#: includes/class-ure-admin.php:592
+#: includes/class-ure-admin.php:651
 msgid "Regex mode (Pro feature)"
 msgstr "Режим регулярных выражений (Pro функция)"
 
-#: includes/class-ure-admin.php:603
+#: includes/class-ure-admin.php:663
 msgid "Run Preview"
 msgstr "Запустить предпросмотр"
 
-#: includes/class-ure-admin.php:608
+#: includes/class-ure-admin.php:668
 msgid "Apply Changes"
 msgstr "Применить Изменения"
 
-#: includes/class-ure-admin.php:618
+#: includes/class-ure-admin.php:678 templates/admin-db-search.php:210
 msgid "Preview Results"
 msgstr "Результаты предпросмотра"
 
+#: includes/class-ure-admin.php:725
+msgid "Important: Page Builder / Structured Data Detected"
+msgstr ""
+
+#. translators: %s: list of detected builders/plugins
+#: includes/class-ure-admin.php:731
+msgid ""
+"One or more pages use structured data storage (%s). Changes made with the "
+"Free version only affect the rendered HTML content and may be LOST if you re-"
+"edit these pages with their builder."
+msgstr ""
+
+#: includes/class-ure-admin.php:737
+msgid "Pro version updates the source data permanently"
+msgstr ""
+
+#: includes/class-ure-admin.php:738
+msgid ""
+"- changes persist even after editing with page builders, and affect custom "
+"fields, widget settings, and structured content."
+msgstr ""
+
 #. translators: 1: shown count, 2: total count
-#: includes/class-ure-admin.php:626
+#: includes/class-ure-admin.php:751
 msgid "Showing %1$d of %2$d matches (Free version limit)."
 msgstr "Показано %1$d из %2$d совпадений (ограничение бесплатной версии)."
 
 #. translators: %d: total matches
-#: includes/class-ure-admin.php:640
+#: includes/class-ure-admin.php:765
 msgid "Showing all %d matches (unlimited preview in Pro version)."
 msgstr "Показаны все %d совпадений (неограниченный предпросмотр в Pro версии)."
 
-#: includes/class-ure-admin.php:651
+#: includes/class-ure-admin.php:776 templates/admin-db-search.php:269
 msgid "Location"
 msgstr "Местоположение"
 
-#: includes/class-ure-admin.php:652
+#: includes/class-ure-admin.php:777 templates/admin-db-search.php:270
 msgid "Before"
 msgstr "До"
 
-#: includes/class-ure-admin.php:653
+#: includes/class-ure-admin.php:778 templates/admin-db-search.php:271
 msgid "After"
 msgstr "После"
 
 #. translators: 1: post type, 2: post ID
-#: includes/class-ure-admin.php:666
+#: includes/class-ure-admin.php:791
 msgid "%1$s (ID: %2$d)"
 msgstr "%1$s (ID: %2$d)"
 
-#: includes/class-ure-admin.php:679
+#: includes/class-ure-admin.php:804
 msgid "Search only"
 msgstr "Только поиск"
 
+#: includes/class-ure-admin.php:829
+msgid "Additional Matches Found (Pro Only)"
+msgstr ""
+
+#: includes/class-ure-admin.php:829
+msgid "Pro Locations Searched"
+msgstr ""
+
+#: includes/class-ure-admin.php:834
+msgid "Your search term was also found in these Pro-only locations:"
+msgstr ""
+
+#: includes/class-ure-admin.php:836
+msgid "We also searched these Pro-only locations:"
+msgstr ""
+
+#. translators: %d: number of matches
+#: includes/class-ure-admin.php:853
+msgid "Found %d match(es)"
+msgstr ""
+
+#: includes/class-ure-admin.php:857
+#, fuzzy
+msgid "No matches found"
+msgstr "Совпадений не найдено."
+
+#: includes/class-ure-admin.php:868
+msgid "Upgrade to Pro to Search & Replace These"
+msgstr ""
+
+#: includes/class-ure-admin.php:873
+#, fuzzy
+msgid ""
+"Upgrade to Pro to unlock search & replace in Post Meta, Elementor Data, and "
+"more."
+msgstr ""
+"Обновитесь до Pro, чтобы разблокировать области Мета записи, Данные "
+"Elementor и Все местоположения."
+
+#: includes/class-ure-admin.php:876
+msgid "Learn More"
+msgstr ""
+
 #. translators: %d: history limit
-#: includes/class-ure-admin.php:698
+#: includes/class-ure-admin.php:891
 msgid "History (Last %d Operations)"
 msgstr "История (Последние %d операций)"
 
-#: includes/class-ure-admin.php:702
+#: includes/class-ure-admin.php:895
 msgid "History (Last 5 Operations)"
 msgstr "История (Последние 5 операций)"
 
-#: includes/class-ure-admin.php:729
+#: includes/class-ure-admin.php:922
 msgid "Unlock Pro Features"
 msgstr "Разблокировать Pro функции"
 
-#: includes/class-ure-admin.php:731
+#: includes/class-ure-admin.php:924
 msgid "Search and replace in postmeta, options, and term meta"
 msgstr "Поиск и замена в postmeta, настройках и мета терминов"
 
-#: includes/class-ure-admin.php:732
+#: includes/class-ure-admin.php:925
 msgid "Elementor page builder support"
 msgstr "Поддержка конструктора страниц Elementor"
 
-#: includes/class-ure-admin.php:733
+#: includes/class-ure-admin.php:926
 msgid "ACF custom fields support"
 msgstr "Поддержка произвольных полей ACF"
 
-#: includes/class-ure-admin.php:734
+#: includes/class-ure-admin.php:927
 msgid "Unlimited preview results"
 msgstr "Неограниченные результаты предпросмотра"
 
-#: includes/class-ure-admin.php:735
+#: includes/class-ure-admin.php:928
 msgid "Full regex mode"
 msgstr "Полный режим регулярных выражений"
 
-#: includes/class-ure-admin.php:736
+#: includes/class-ure-admin.php:929
 msgid "WP-CLI commands"
 msgstr "WP-CLI команды"
 
-#: includes/class-ure-admin.php:737
+#: includes/class-ure-admin.php:930
 msgid "Multisite support"
 msgstr "Поддержка мультисайта"
 
-#: includes/class-ure-admin.php:825
+#: includes/class-ure-admin.php:1041
+msgid "Post Meta (Custom Fields)"
+msgstr ""
+
+#: includes/class-ure-admin.php:1089
 msgid "No operations recorded yet."
 msgstr "Операции еще не записаны."
 
-#: includes/class-ure-admin.php:833
+#: includes/class-ure-admin.php:1097
 msgid "Date/Time"
 msgstr "Дата/Время"
 
-#: includes/class-ure-admin.php:834
-#: templates/admin-backup.php:116
+#: includes/class-ure-admin.php:1098 templates/admin-backup.php:116
 msgid "User"
 msgstr "Пользователь"
 
-#: includes/class-ure-admin.php:835
+#: includes/class-ure-admin.php:1099 templates/admin-db-search.php:219
 msgid "Summary"
 msgstr "Сводка"
 
-#: includes/class-ure-admin.php:836
-#: templates/admin-backup.php:120
+#: includes/class-ure-admin.php:1100 templates/admin-backup.php:120
 msgid "Actions"
 msgstr "Действия"
 
-#: includes/class-ure-admin.php:854
+#: includes/class-ure-admin.php:1118
 msgid "Are you sure you want to undo this operation?"
 msgstr ""
 
-#: includes/class-ure-admin.php:855
+#: includes/class-ure-admin.php:1119
 msgid "Undo"
 msgstr "Отменить"
 
-#: includes/class-ure-admin.php:859
+#: includes/class-ure-admin.php:1123
 msgid "N/A"
 msgstr ""
 
-#: includes/class-ure-admin.php:883
+#: includes/class-ure-admin.php:1147
 msgid "Please select at least one table to backup."
 msgstr ""
 
 #. translators: 1: table count, 2: file size
-#: includes/class-ure-admin.php:897
+#: includes/class-ure-admin.php:1161
 msgid "Backup created successfully! %1$d tables backed up (%2$.2f MB)."
 msgstr ""
 
-#: includes/class-ure-admin.php:926
-#: includes/class-ure-admin.php:964
+#: includes/class-ure-admin.php:1190 includes/class-ure-admin.php:1228
 msgid "Invalid backup filename."
 msgstr ""
 
-#: includes/class-ure-admin.php:1017
+#: includes/class-ure-admin.php:1281
 msgid "Please select at least one table."
 msgstr ""
 
 #. translators: 1: changes count, 2: tables count
-#: includes/class-ure-admin.php:1066
+#: includes/class-ure-admin.php:1330
 msgid "Found %1$d potential changes across %2$d tables. Review below."
 msgstr ""
 
-#: includes/class-ure-admin.php:1076
+#: includes/class-ure-admin.php:1340
 msgid "No matches found in selected tables."
 msgstr ""
 
 #. translators: 1: search, 2: replace, 3: updates count, 4: tables count
-#: includes/class-ure-admin.php:1135
-msgid "Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d tables."
+#: includes/class-ure-admin.php:1399
+msgid ""
+"Database operation: Replaced \"%1$s\" with \"%2$s\" in %3$d rows across %4$d "
+"tables."
 msgstr ""
 
 #. translators: 1: updates count, 2: tables count
-#: includes/class-ure-admin.php:1165
+#: includes/class-ure-admin.php:1429
 msgid "Successfully updated %1$d rows across %2$d tables."
 msgstr ""
 
-#: includes/class-ure-admin.php:1175
+#: includes/class-ure-admin.php:1439
 msgid "No changes were made."
 msgstr ""
 
-#: includes/class-ure-admin.php:1191
+#: includes/class-ure-admin.php:1455
 msgid "No settings data received."
 msgstr ""
 
-#: includes/class-ure-admin.php:1205
+#: includes/class-ure-admin.php:1469
 msgid "Settings saved successfully."
 msgstr ""
 
-#: includes/class-ure-admin.php:1212
+#: includes/class-ure-admin.php:1476
 msgid "Failed to save settings. Please try again."
 msgstr ""
 
-#: includes/class-ure-admin.php:1226
+#: includes/class-ure-admin.php:1490
 msgid "Settings have been reset to defaults."
 msgstr ""
 
-#: includes/class-ure-admin.php:1233
+#: includes/class-ure-admin.php:1497
 msgid "Failed to reset settings. Please try again."
 msgstr ""
 
-#: includes/class-ure-admin.php:1249
+#: includes/class-ure-admin.php:1517
 msgid "Please enter a profile name."
 msgstr ""
 
 #. translators: %s: profile name
-#: includes/class-ure-admin.php:1271
+#: includes/class-ure-admin.php:1544
 msgid "Profile \"%s\" saved successfully."
 msgstr ""
 
-#: includes/class-ure-admin.php:1280
+#: includes/class-ure-admin.php:1553
 msgid "Failed to save profile. Please try again."
 msgstr ""
 
-#: includes/class-ure-admin.php:1296
+#: includes/class-ure-admin.php:1570
 msgid "Please select a profile to load."
 msgstr ""
 
-#: includes/class-ure-admin.php:1308
+#: includes/class-ure-admin.php:1583
 msgid "Profile not found."
 msgstr ""
 
 #. translators: %s: profile name
-#: includes/class-ure-admin.php:1322
-msgid "Profile \"%s\" loaded successfully. Review the settings below and click Preview or Apply."
+#: includes/class-ure-admin.php:1598
+msgid ""
+"Profile \"%s\" loaded successfully. Review the settings below and click "
+"Preview or Apply."
 msgstr ""
 
-#: includes/class-ure-admin.php:1339
+#: includes/class-ure-admin.php:1615
 msgid "Please select a profile to delete."
 msgstr ""
 
 #. translators: %s: profile name
-#: includes/class-ure-admin.php:1351
+#: includes/class-ure-admin.php:1627
 msgid "Profile \"%s\" deleted successfully."
 msgstr ""
 
-#: includes/class-ure-admin.php:1360
+#: includes/class-ure-admin.php:1636
 msgid "Failed to delete profile. Please try again."
 msgstr ""
 
-#: includes/class-ure-admin.php:1372
-#: templates/admin-db-search.php:44
+#: includes/class-ure-admin.php:1648 templates/admin-db-search.php:90
 msgid "Database Search & Replace"
 msgstr ""
 
-#: includes/class-ure-admin.php:1385
+#: includes/class-ure-admin.php:1661
 msgid "Backup & Restore"
 msgstr ""
 
-#: includes/class-ure-admin.php:1398
+#: includes/class-ure-admin.php:1674
 msgid "URE Settings"
 msgstr ""
 
-#: includes/class-ure-admin.php:1411
+#: includes/class-ure-admin.php:1687
 msgid "URE Help"
 msgstr ""
 
-#: includes/class-ure-ajax.php:58
-#: includes/class-ure-ajax.php:113
+#: includes/class-ure-ajax.php:58 includes/class-ure-ajax.php:113
 #: includes/class-ure-ajax.php:180
 msgid "Insufficient permissions."
 msgstr ""
 
-#: includes/class-ure-ajax.php:69
-#: includes/class-ure-ajax.php:124
+#: includes/class-ure-ajax.php:69 includes/class-ure-ajax.php:124
 msgid "Search term is required."
 msgstr ""
 
@@ -465,8 +540,7 @@ msgstr ""
 msgid "Backup created successfully."
 msgstr ""
 
-#: includes/class-ure-backup-manager.php:373
-#: includes/class-ure-logger.php:123
+#: includes/class-ure-backup-manager.php:373 includes/class-ure-logger.php:123
 #: includes/class-ure-logger.php:157
 msgid "Unknown"
 msgstr ""
@@ -496,16 +570,16 @@ msgstr ""
 msgid "Backup deleted successfully."
 msgstr ""
 
-#: includes/class-ure-database-manager.php:234
+#: includes/class-ure-database-manager.php:337
 msgid "Table does not exist."
 msgstr ""
 
-#: includes/class-ure-database-manager.php:246
+#: includes/class-ure-database-manager.php:349
 msgid "Table has no primary key."
 msgstr ""
 
 #. translators: %d: row number
-#: includes/class-ure-database-manager.php:345
+#: includes/class-ure-database-manager.php:447
 msgid "Error updating row %d"
 msgstr ""
 
@@ -555,16 +629,16 @@ msgid "Backup & Restore - Use With Caution!"
 msgstr ""
 
 #: templates/admin-backup.php:32
-msgid "Creating backups and restoring your database are critical operations. Always ensure you have a recent working backup before making major changes."
+msgid ""
+"Creating backups and restoring your database are critical operations. Always "
+"ensure you have a recent working backup before making major changes."
 msgstr ""
 
-#: templates/admin-backup.php:39
-#: templates/admin-db-search.php:35
+#: templates/admin-backup.php:39 templates/admin-db-search.php:81
 msgid "ALWAYS create a backup before proceeding"
 msgstr ""
 
-#: templates/admin-backup.php:40
-#: templates/admin-db-search.php:36
+#: templates/admin-backup.php:40 templates/admin-db-search.php:82
 msgid "Test on a staging site first"
 msgstr ""
 
@@ -580,13 +654,11 @@ msgstr ""
 msgid "Tables to Backup"
 msgstr ""
 
-#: templates/admin-backup.php:57
-#: templates/admin-db-search.php:80
+#: templates/admin-backup.php:57 templates/admin-db-search.php:126
 msgid "Select All"
 msgstr ""
 
-#: templates/admin-backup.php:58
-#: templates/admin-db-search.php:81
+#: templates/admin-backup.php:58 templates/admin-db-search.php:127
 msgid "Deselect All"
 msgstr ""
 
@@ -594,8 +666,7 @@ msgstr ""
 msgid "Core Tables Only"
 msgstr ""
 
-#: templates/admin-backup.php:74
-#: templates/admin-db-search.php:95
+#: templates/admin-backup.php:74 templates/admin-db-search.php:157
 msgid "Protected"
 msgstr ""
 
@@ -623,7 +694,7 @@ msgstr ""
 msgid "Tables"
 msgstr ""
 
-#: templates/admin-backup.php:118
+#: templates/admin-backup.php:118 templates/admin-db-search.php:140
 msgid "Size"
 msgstr ""
 
@@ -632,7 +703,9 @@ msgid "Comment"
 msgstr ""
 
 #: templates/admin-backup.php:148
-msgid "Are you sure you want to restore this backup? This will overwrite current data!"
+msgid ""
+"Are you sure you want to restore this backup? This will overwrite current "
+"data!"
 msgstr ""
 
 #: templates/admin-backup.php:150
@@ -643,61 +716,261 @@ msgstr ""
 msgid "Are you sure you want to delete this backup?"
 msgstr ""
 
-#: templates/admin-backup.php:163
-#: templates/admin-profiles.php:51
+#: templates/admin-backup.php:163 templates/admin-profiles.php:51
 msgid "Delete"
 msgstr ""
 
-#: templates/admin-db-search.php:25
-msgid "Advanced Mode - Use With Caution!"
+#: templates/admin-db-search.php:30
+msgid "Core"
 msgstr ""
 
-#: templates/admin-db-search.php:28
-msgid "Advanced mode allows you to search and replace across any database table, including wp_options, usermeta, and custom plugin tables. This is powerful but potentially dangerous."
+#: templates/admin-db-search.php:31
+msgid "WooCommerce"
 msgstr ""
+
+#: templates/admin-db-search.php:32
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: templates/admin-db-search.php:33
+msgid "Yoast SEO"
+msgstr ""
+
+#: templates/admin-db-search.php:34
+msgid "All in One SEO"
+msgstr ""
+
+#: templates/admin-db-search.php:35
+msgid "Rank Math"
+msgstr ""
+
+#: templates/admin-db-search.php:36
+#, fuzzy
+msgid "Elementor"
+msgstr "Данные Elementor"
 
 #: templates/admin-db-search.php:37
-msgid "Be very specific with your search terms"
+msgid "Divi"
 msgstr ""
 
 #: templates/admin-db-search.php:38
-msgid "Understand what you're changing"
+msgid "Gravity Forms"
+msgstr ""
+
+#: templates/admin-db-search.php:39
+msgid "Contact Form 7"
+msgstr ""
+
+#: templates/admin-db-search.php:40
+msgid "Formidable Forms"
+msgstr ""
+
+#: templates/admin-db-search.php:41
+msgid "WPForms"
+msgstr ""
+
+#: templates/admin-db-search.php:42
+msgid "Advanced Custom Fields"
+msgstr ""
+
+#: templates/admin-db-search.php:43
+msgid "WPML"
+msgstr ""
+
+#: templates/admin-db-search.php:44
+msgid "Wordfence"
+msgstr ""
+
+#: templates/admin-db-search.php:45
+msgid "WP Rocket"
+msgstr ""
+
+#: templates/admin-db-search.php:46
+msgid "Akismet"
+msgstr ""
+
+#: templates/admin-db-search.php:47
+msgid "MemberPress"
+msgstr ""
+
+#: templates/admin-db-search.php:48
+msgid "LearnDash"
+msgstr ""
+
+#: templates/admin-db-search.php:49
+msgid "LifterLMS"
+msgstr ""
+
+#: templates/admin-db-search.php:50
+msgid "bbPress"
+msgstr ""
+
+#: templates/admin-db-search.php:51
+msgid "BuddyPress"
 msgstr ""
 
 #: templates/admin-db-search.php:52
-msgid "Search For"
+msgid "Jetpack"
 msgstr ""
 
-#: templates/admin-db-search.php:61
-msgid "Text to search for..."
+#: templates/admin-db-search.php:53
+msgid "WP All Import"
 msgstr ""
 
-#: templates/admin-db-search.php:66
-msgid "Replace With"
+#: templates/admin-db-search.php:54
+msgid "Redirection"
 msgstr ""
 
-#: templates/admin-db-search.php:72
-msgid "Replacement text..."
+#: templates/admin-db-search.php:55
+msgid "WP Staging"
+msgstr ""
+
+#: templates/admin-db-search.php:56
+msgid "Duplicator"
+msgstr ""
+
+#: templates/admin-db-search.php:57
+msgid "Plugin"
+msgstr ""
+
+#: templates/admin-db-search.php:58
+msgid "Custom"
+msgstr ""
+
+#: templates/admin-db-search.php:67
+msgid "Advanced Mode - Use With Caution!"
+msgstr ""
+
+#: templates/admin-db-search.php:70
+msgid ""
+"Advanced mode allows you to search and replace across any database table, "
+"including wp_options, usermeta, and custom plugin tables. This is powerful "
+"but potentially dangerous."
 msgstr ""
 
 #: templates/admin-db-search.php:77
+msgid "IMPORTANT: Database operations CANNOT be rolled back!"
+msgstr ""
+
+#: templates/admin-db-search.php:78
+msgid ""
+"Unlike post content changes, database-level operations cannot be undone "
+"through the History section. You must create a backup before applying "
+"changes."
+msgstr ""
+
+#: templates/admin-db-search.php:83
+msgid "Be very specific with your search terms"
+msgstr ""
+
+#: templates/admin-db-search.php:84
+msgid "Understand what you're changing"
+msgstr ""
+
+#: templates/admin-db-search.php:98
+msgid "Search For"
+msgstr ""
+
+#: templates/admin-db-search.php:107
+msgid "Text to search for..."
+msgstr ""
+
+#: templates/admin-db-search.php:112
+msgid "Replace With"
+msgstr ""
+
+#: templates/admin-db-search.php:118
+msgid "Replacement text..."
+msgstr ""
+
+#: templates/admin-db-search.php:123
 msgid "Select Tables"
 msgstr ""
 
-#: templates/admin-db-search.php:119
+#: templates/admin-db-search.php:137
+msgid "Table Name"
+msgstr ""
+
+#: templates/admin-db-search.php:138
+msgid "Type"
+msgstr ""
+
+#: templates/admin-db-search.php:139
+msgid "Rows"
+msgstr ""
+
+#: templates/admin-db-search.php:183
 msgid "Skip GUIDs (recommended)"
 msgstr ""
 
-#: templates/admin-db-search.php:132
+#: templates/admin-db-search.php:196
 msgid "Preview Changes"
+msgstr ""
+
+#: templates/admin-db-search.php:214
+msgid "Review the changes below carefully before applying."
+msgstr ""
+
+#: templates/admin-db-search.php:223
+msgid "Table"
+msgstr ""
+
+#: templates/admin-db-search.php:224
+msgid "Rows Scanned"
+msgstr ""
+
+#: templates/admin-db-search.php:225
+msgid "Changes Found"
+msgstr ""
+
+#: templates/admin-db-search.php:226
+#, fuzzy
+msgid "Time"
+msgstr "Дата/Время"
+
+#: templates/admin-db-search.php:255
+#, fuzzy
+msgid "Preview of Changes"
+msgstr "Результаты предпросмотра"
+
+#. translators: 1: number shown, 2: total changes
+#: templates/admin-db-search.php:260
+msgid "(Showing up to 20 examples out of %d total changes)"
+msgstr ""
+
+#. translators: 1: column name, 2: primary key value
+#: templates/admin-db-search.php:299
+#, fuzzy
+msgid "Column: %1$s (ID: %2$s)"
+msgstr "%1$s (ID: %2$d)"
+
+#: templates/admin-db-search.php:373
+msgid ""
+"No preview examples available. Changes will be applied based on the summary "
+"above."
+msgstr ""
+
+#: templates/admin-db-search.php:385
+msgid ""
+"Are you sure you want to apply these changes to the database? This action "
+"cannot be easily undone. Make sure you have a backup!"
+msgstr ""
+
+#. translators: %d: number of changes
+#: templates/admin-db-search.php:389
+#, fuzzy
+msgid "Apply %d Changes"
+msgstr "Применить Изменения"
+
+#: templates/admin-db-search.php:395
+msgid "Cancel"
 msgstr ""
 
 #: templates/admin-help.php:20
 msgid "Universal Replace Engine - Help & Documentation"
 msgstr ""
 
-#: templates/admin-help.php:23
-#: templates/admin-help.php:33
+#: templates/admin-help.php:23 templates/admin-help.php:36
 msgid "Getting Started"
 msgstr ""
 
@@ -710,396 +983,1311 @@ msgid "Profiles"
 msgstr ""
 
 #: templates/admin-help.php:26
-msgid "Advanced Mode"
+msgid "WP-CLI"
 msgstr ""
 
-#: templates/admin-help.php:27
-#: templates/admin-help.php:139
-msgid "Troubleshooting"
+#: templates/admin-help.php:27 templates/admin-profiles.php:82
+msgid "Regex Mode"
 msgstr ""
 
 #: templates/admin-help.php:28
+msgid "Advanced Mode"
+msgstr ""
+
+#: templates/admin-help.php:29 templates/admin-help.php:673
+msgid "Troubleshooting"
+msgstr ""
+
+#: templates/admin-help.php:30
 msgid "FAQ"
 msgstr ""
 
-#: templates/admin-help.php:35
-msgid "Basic Search & Replace"
-msgstr ""
-
-#: templates/admin-help.php:37
-msgid "Navigate to Tools → Universal Replace Engine"
+#: templates/admin-help.php:31
+msgid "Support"
 msgstr ""
 
 #: templates/admin-help.php:38
-msgid "Enter your search term in the \"Search For\" field"
-msgstr ""
-
-#: templates/admin-help.php:39
-msgid "Enter the replacement text in the \"Replace With\" field (leave empty to just search)"
+msgid "Basic Search & Replace"
 msgstr ""
 
 #: templates/admin-help.php:40
-msgid "Select which post types to search in"
+msgid "Navigate to Tools → Universal Replace Engine"
 msgstr ""
 
 #: templates/admin-help.php:41
-msgid "Click \"Run Preview\" to see what will change"
+msgid "Enter your search term in the \"Search For\" field"
 msgstr ""
 
 #: templates/admin-help.php:42
-msgid "Review the preview carefully"
+msgid ""
+"Enter the replacement text in the \"Replace With\" field (leave empty to "
+"just search)"
 msgstr ""
 
 #: templates/admin-help.php:43
+msgid "Select which post types to search in"
+msgstr ""
+
+#: templates/admin-help.php:44
+msgid "Click \"Run Preview\" to see what will change"
+msgstr ""
+
+#: templates/admin-help.php:45
+msgid "Review the preview carefully"
+msgstr ""
+
+#: templates/admin-help.php:46
 msgid "Click \"Apply Changes\" to make the replacements"
 msgstr ""
 
-#: templates/admin-help.php:47
+#: templates/admin-help.php:50
 msgid "Pro Tip:"
 msgstr ""
 
-#: templates/admin-help.php:47
-msgid "Always run a preview first to avoid unexpected changes!"
+#: templates/admin-help.php:50
+msgid ""
+"Use the rollback feature to undo changes if needed. Keep your last 5 "
+"operations safe!"
 msgstr ""
 
-#: templates/admin-help.php:53
+#: templates/admin-help.php:56
 msgid "Features Overview"
 msgstr ""
 
-#: templates/admin-help.php:55
+#: templates/admin-help.php:58
 msgid "Content Operations"
 msgstr ""
 
-#: templates/admin-help.php:57
+#: templates/admin-help.php:60
 msgid "Post Content:"
 msgstr ""
 
-#: templates/admin-help.php:57
+#: templates/admin-help.php:60
 msgid "Search and replace in post/page content"
 msgstr ""
 
-#: templates/admin-help.php:58
+#: templates/admin-help.php:61
 msgid "Custom Post Types:"
 msgstr ""
 
-#: templates/admin-help.php:58
+#: templates/admin-help.php:61
 msgid "Works with any post type (products, portfolios, etc.)"
 msgstr ""
 
-#: templates/admin-help.php:59
+#: templates/admin-help.php:62
 msgid "Preview:"
 msgstr ""
 
-#: templates/admin-help.php:59
+#: templates/admin-help.php:62
 msgid "See changes before applying them"
 msgstr ""
 
-#: templates/admin-help.php:60
+#: templates/admin-help.php:63
 msgid "Undo/Rollback:"
 msgstr ""
 
-#: templates/admin-help.php:60
+#: templates/admin-help.php:63
 msgid "Reverse changes with one click"
 msgstr ""
 
-#: templates/admin-help.php:63
+#: templates/admin-help.php:66
 msgid "Database Operations (Advanced Mode)"
 msgstr ""
 
-#: templates/admin-help.php:65
+#: templates/admin-help.php:68
 msgid "All Tables:"
 msgstr ""
 
-#: templates/admin-help.php:65
+#: templates/admin-help.php:68
 msgid "Search any WordPress table"
 msgstr ""
 
-#: templates/admin-help.php:66
+#: templates/admin-help.php:69
 msgid "Backup:"
 msgstr ""
 
-#: templates/admin-help.php:66
+#: templates/admin-help.php:69
 msgid "Create SQL backups before changes"
 msgstr ""
 
-#: templates/admin-help.php:67
+#: templates/admin-help.php:70
 msgid "Restore:"
 msgstr ""
 
-#: templates/admin-help.php:67
+#: templates/admin-help.php:70
 msgid "Restore from backup if needed"
 msgstr ""
 
-#: templates/admin-help.php:68
+#: templates/admin-help.php:71
 msgid "GUID Protection:"
 msgstr ""
 
-#: templates/admin-help.php:68
+#: templates/admin-help.php:71
 msgid "Automatically skips WordPress GUIDs"
 msgstr ""
 
-#: templates/admin-help.php:72
+#: templates/admin-help.php:75
 msgid "Pro Features"
 msgstr ""
 
-#: templates/admin-help.php:74
+#: templates/admin-help.php:77
 msgid "Regex Mode:"
 msgstr ""
 
-#: templates/admin-help.php:74
+#: templates/admin-help.php:77
 msgid "Use regular expressions for powerful pattern matching"
 msgstr ""
 
-#: templates/admin-help.php:75
+#: templates/admin-help.php:78
 msgid "Unlimited Preview:"
 msgstr ""
 
-#: templates/admin-help.php:75
+#: templates/admin-help.php:78
 msgid "No limit on preview results"
 msgstr ""
 
-#: templates/admin-help.php:76
+#: templates/admin-help.php:79
 msgid "Extended History:"
 msgstr ""
 
-#: templates/admin-help.php:76
+#: templates/admin-help.php:79
 msgid "Keep up to 50 operations for rollback"
 msgstr ""
 
-#: templates/admin-help.php:83
+#: templates/admin-help.php:86
 msgid "Using Saved Profiles"
 msgstr ""
 
-#: templates/admin-help.php:84
-msgid "Profiles let you save common search/replace configurations for quick reuse."
-msgstr ""
-
-#: templates/admin-help.php:86
-msgid "Saving a Profile"
-msgstr ""
-
-#: templates/admin-help.php:88
-msgid "Configure your search/replace settings"
+#: templates/admin-help.php:87
+msgid ""
+"Profiles let you save common search/replace configurations for quick reuse."
 msgstr ""
 
 #: templates/admin-help.php:89
-msgid "Scroll to \"Save Current Settings\""
-msgstr ""
-
-#: templates/admin-help.php:90
-msgid "Enter a descriptive name (e.g., \"Domain Migration\")"
+msgid "Saving a Profile"
 msgstr ""
 
 #: templates/admin-help.php:91
-msgid "Click \"Save Current Settings as Profile\""
+msgid "Configure your search/replace settings"
+msgstr ""
+
+#: templates/admin-help.php:92
+msgid "Scroll to \"Save Current Settings\""
+msgstr ""
+
+#: templates/admin-help.php:93
+msgid "Enter a descriptive name (e.g., \"Domain Migration\")"
 msgstr ""
 
 #: templates/admin-help.php:94
-msgid "Loading a Profile"
-msgstr ""
-
-#: templates/admin-help.php:96
-msgid "Select a profile from the dropdown"
+msgid "Click \"Save Current Settings as Profile\""
 msgstr ""
 
 #: templates/admin-help.php:97
-msgid "Click \"Load\""
-msgstr ""
-
-#: templates/admin-help.php:98
-msgid "Review the loaded settings"
+msgid "Loading a Profile"
 msgstr ""
 
 #: templates/admin-help.php:99
-msgid "Run Preview or Apply"
+msgid "Select a profile from the dropdown"
+msgstr ""
+
+#: templates/admin-help.php:100
+msgid "Click \"Load\""
+msgstr ""
+
+#: templates/admin-help.php:101
+msgid "Review the loaded settings"
 msgstr ""
 
 #: templates/admin-help.php:102
-msgid "Common Profile Examples"
-msgstr ""
-
-#: templates/admin-help.php:104
-msgid "Domain Migration:"
+msgid "Run Preview or Apply"
 msgstr ""
 
 #: templates/admin-help.php:105
-msgid "HTTPS Migration:"
-msgstr ""
-
-#: templates/admin-help.php:106
-msgid "Fix Typos:"
+msgid "Common Profile Examples"
 msgstr ""
 
 #: templates/admin-help.php:107
+msgid "Domain Migration:"
+msgstr ""
+
+#: templates/admin-help.php:108
+msgid "HTTPS Migration:"
+msgstr ""
+
+#: templates/admin-help.php:109
+msgid "Fix Typos:"
+msgstr ""
+
+#: templates/admin-help.php:110
 msgid "Update Company Name:"
 msgstr ""
 
-#: templates/admin-help.php:113
-msgid "Advanced Database Mode"
-msgstr ""
-
 #: templates/admin-help.php:116
-msgid "Warning:"
+#, fuzzy
+msgid "WP-CLI Commands"
+msgstr "WP-CLI команды"
+
+#: templates/admin-help.php:117
+msgid ""
+"Universal Replace Engine includes comprehensive WP-CLI support for command-"
+"line operations. Perfect for automation, scripting, and server management."
 msgstr ""
 
-#: templates/admin-help.php:116
-msgid "Advanced mode can modify any database table. Always create a backup first!"
-msgstr ""
-
-#: templates/admin-help.php:119
-msgid "When to Use Advanced Mode"
-msgstr ""
-
-#: templates/admin-help.php:121
-msgid "Domain migrations (update siteurl, home options)"
+#: templates/admin-help.php:120
+msgid "Prerequisites:"
 msgstr ""
 
 #: templates/admin-help.php:122
-msgid "Fix serialized data in post meta"
+msgid "WP-CLI must be installed on your server"
 msgstr ""
 
 #: templates/admin-help.php:123
-msgid "Update user metadata"
+msgid "Run commands from your WordPress root directory"
 msgstr ""
 
 #: templates/admin-help.php:124
-msgid "Fix plugin settings after migration"
+msgid "Commands require appropriate server permissions"
 msgstr ""
 
-#: templates/admin-help.php:127
-msgid "Safe Usage"
-msgstr ""
-
-#: templates/admin-help.php:129
-msgid "Create a backup first"
+#: templates/admin-help.php:128
+msgid "Available Commands"
 msgstr ""
 
 #: templates/admin-help.php:130
-msgid "Select only the tables you need to modify"
-msgstr ""
+#, fuzzy
+msgid "1. Search for Text"
+msgstr "Искать"
 
 #: templates/admin-help.php:131
-msgid "Use very specific search terms"
+msgid "Search for text in post content without making changes."
 msgstr ""
 
-#: templates/admin-help.php:132
-msgid "Run a preview first"
-msgstr ""
+#: templates/admin-help.php:134
+#, fuzzy
+msgid "Basic Search:"
+msgstr "Поиск в Базе Данных"
 
-#: templates/admin-help.php:133
-msgid "Test on a staging site before production"
-msgstr ""
+#: templates/admin-help.php:138 templates/admin-help.php:171
+#, fuzzy
+msgid "Specific Post Types:"
+msgstr "Типы записей"
 
-#: templates/admin-help.php:141
-msgid "Operation Times Out"
-msgstr ""
+#: templates/admin-help.php:142 templates/admin-help.php:175
+#, fuzzy
+msgid "Case Sensitive:"
+msgstr "Учитывать регистр"
 
-#: templates/admin-help.php:143
-msgid "Go to Settings and reduce the batch size"
-msgstr ""
-
-#: templates/admin-help.php:144
-msgid "Try Content Batch Size: 50 or Database Batch Size: 2500"
-msgstr ""
-
-#: templates/admin-help.php:145
-msgid "Contact your host to increase PHP max_execution_time"
-msgstr ""
-
-#: templates/admin-help.php:148
-msgid "Memory Limit Errors"
+#: templates/admin-help.php:146
+msgid "With Limit:"
 msgstr ""
 
 #: templates/admin-help.php:150
-msgid "Reduce batch sizes in Settings"
-msgstr ""
-
-#: templates/admin-help.php:151
-msgid "Process fewer post types at once"
-msgstr ""
-
-#: templates/admin-help.php:152
-msgid "Ask your host to increase PHP memory_limit"
-msgstr ""
+#, fuzzy
+msgid "Regex (Pro):"
+msgstr "Режим регулярных выражений"
 
 #: templates/admin-help.php:155
-msgid "Changes Not Visible"
-msgstr ""
+#, fuzzy
+msgid "2. Replace Text"
+msgstr "Заменить на"
 
-#: templates/admin-help.php:157
-msgid "Clear all caches (WordPress, plugin, CDN, browser)"
-msgstr ""
-
-#: templates/admin-help.php:158
-msgid "For Elementor pages: Regenerate CSS in Elementor settings"
-msgstr ""
+#: templates/admin-help.php:156
+#, fuzzy
+msgid "Search and replace text in post content."
+msgstr "Поиск и замена в postmeta, настройках и мета терминов"
 
 #: templates/admin-help.php:159
-msgid "Check the Operation History to verify changes were applied"
-msgstr ""
+#, fuzzy
+msgid "Dry Run (Preview):"
+msgstr "Запустить предпросмотр"
 
-#: templates/admin-help.php:165
-msgid "Frequently Asked Questions"
-msgstr ""
+#: templates/admin-help.php:163
+#, fuzzy
+msgid "Apply Changes:"
+msgstr "Применить Изменения"
 
-#: templates/admin-help.php:167
-msgid "Q: Can I undo changes after applying them?"
-msgstr ""
-
-#: templates/admin-help.php:168
-msgid "A: Yes! Click \"Operation History\" and use the \"Undo\" button to rollback. The plugin keeps your last 5 operations (free) or 50 operations (Pro)."
-msgstr ""
-
-#: templates/admin-help.php:170
-msgid "Q: Does this work with Elementor/Gutenberg?"
-msgstr ""
-
-#: templates/admin-help.php:171
-msgid "A: Yes! The plugin handles serialized data and JSON correctly. For Elementor, caches are automatically cleared after changes."
-msgstr ""
-
-#: templates/admin-help.php:173
-msgid "Q: Will this break my site?"
-msgstr ""
-
-#: templates/admin-help.php:174
-msgid "A: Not if you use it correctly! Always preview changes first, be specific with search terms, and test on staging before production. The undo feature provides additional safety."
-msgstr ""
-
-#: templates/admin-help.php:176
-msgid "Q: What's the difference between Content and Advanced mode?"
-msgstr ""
-
-#: templates/admin-help.php:177
-msgid "A: Content mode searches only post/page content. Advanced mode searches any database table (wp_options, postmeta, usermeta, etc.). Advanced mode requires more caution."
-msgstr ""
-
-#: templates/admin-help.php:179
-msgid "Q: Can I use this for domain migrations?"
+#: templates/admin-help.php:167 templates/admin-help.php:259
+msgid "Skip Confirmation:"
 msgstr ""
 
 #: templates/admin-help.php:180
-msgid "A: Yes! Use Advanced mode, create a backup first, then replace old URLs with new ones across wp_options and wp_posts tables. Save this as a profile for future use."
+msgid "3. Backup Management"
 msgstr ""
 
-#: templates/admin-help.php:182
-msgid "Q: How do I upgrade to Pro?"
+#: templates/admin-help.php:181
+msgid "Create, list, and restore database backups."
 msgstr ""
 
-#: templates/admin-help.php:183
-msgid "A: Contact the plugin developer for Pro licensing. Pro includes regex mode, unlimited previews, and extended history."
+#: templates/admin-help.php:184
+msgid "Create Backup (All):"
 msgstr ""
 
 #: templates/admin-help.php:188
+msgid "Specific Tables:"
+msgstr ""
+
+#: templates/admin-help.php:192
+msgid "With Comment:"
+msgstr ""
+
+#: templates/admin-help.php:196
+#, fuzzy
+msgid "List Backups:"
+msgstr "Резервное Копирование"
+
+#: templates/admin-help.php:200
+msgid "Restore Backup:"
+msgstr ""
+
+#: templates/admin-help.php:205
+msgid "4. Profile Management"
+msgstr ""
+
+#: templates/admin-help.php:206
+msgid "Manage saved search/replace profiles from the command line."
+msgstr ""
+
+#: templates/admin-help.php:209
+msgid "List Profiles:"
+msgstr ""
+
+#: templates/admin-help.php:213 templates/admin-profiles.php:33
+msgid "Load Profile:"
+msgstr ""
+
+#: templates/admin-help.php:217
+msgid "Delete Profile:"
+msgstr ""
+
+#: templates/admin-help.php:221
+msgid "Specific User:"
+msgstr ""
+
+#: templates/admin-help.php:226
+msgid "5. Settings Management"
+msgstr ""
+
+#: templates/admin-help.php:227
+msgid "View and modify plugin settings."
+msgstr ""
+
+#: templates/admin-help.php:230
+#, fuzzy
+msgid "View All Settings:"
+msgstr "Настройки"
+
+#: templates/admin-help.php:234
+msgid "View One Setting:"
+msgstr ""
+
+#: templates/admin-help.php:238
+#, fuzzy
+msgid "Update Setting:"
+msgstr "Настройки"
+
+#: templates/admin-help.php:243
+msgid "6. Operation History"
+msgstr ""
+
+#: templates/admin-help.php:244
+msgid "View and rollback previous operations."
+msgstr ""
+
+#: templates/admin-help.php:247
+msgid "View History:"
+msgstr ""
+
+#: templates/admin-help.php:251
+msgid "More Entries:"
+msgstr ""
+
+#: templates/admin-help.php:255
+msgid "Rollback Operation:"
+msgstr ""
+
+#: templates/admin-help.php:264
+msgid "Common Use Cases"
+msgstr ""
+
+#: templates/admin-help.php:266
+msgid "Domain Migration Workflow"
+msgstr ""
+
+#: templates/admin-help.php:270
+msgid "Create a backup:"
+msgstr ""
+
+#: templates/admin-help.php:274
+#, fuzzy
+msgid "Preview changes:"
+msgstr "Результаты предпросмотра"
+
+#: templates/admin-help.php:278
+#, fuzzy
+msgid "Apply changes:"
+msgstr "Применить Изменения"
+
+#: templates/admin-help.php:282
+#, fuzzy
+msgid "Verify results:"
+msgstr "Результаты предпросмотра"
+
+#: templates/admin-help.php:288
+msgid "Automated Backup Script"
+msgstr ""
+
+#: templates/admin-help.php:290
+msgid "Create a cron job or script for automated backups:"
+msgstr ""
+
+#: templates/admin-help.php:297
+msgid "Bulk Text Updates"
+msgstr ""
+
+#: templates/admin-help.php:299
+msgid "Update multiple terms in sequence:"
+msgstr ""
+
+#: templates/admin-help.php:307
+msgid "Tips for WP-CLI Usage"
+msgstr ""
+
+#: templates/admin-help.php:310
+msgid "Always use --dry-run first:"
+msgstr ""
+
+#: templates/admin-help.php:310
+msgid "Preview changes before applying them"
+msgstr ""
+
+#: templates/admin-help.php:311
+msgid "Create backups:"
+msgstr ""
+
+#: templates/admin-help.php:311
+msgid "Always backup before major operations"
+msgstr ""
+
+#: templates/admin-help.php:312
+msgid "Use --yes for scripts:"
+msgstr ""
+
+#: templates/admin-help.php:312
+msgid "Skip confirmations in automated workflows"
+msgstr ""
+
+#: templates/admin-help.php:313
+msgid "Quote your search terms:"
+msgstr ""
+
+#: templates/admin-help.php:313
+msgid "Use quotes to prevent shell interpretation"
+msgstr ""
+
+#: templates/admin-help.php:314
+msgid "Test on staging first:"
+msgstr ""
+
+#: templates/admin-help.php:314
+msgid "Never test commands on production first"
+msgstr ""
+
+#: templates/admin-help.php:315
+msgid "Check the history:"
+msgstr ""
+
+#: templates/admin-help.php:315
+msgid "Use wp ure history to verify operations"
+msgstr ""
+
+#: templates/admin-help.php:319
+#, fuzzy
+msgid "Getting Help"
+msgstr "Настройки"
+
+#: templates/admin-help.php:320
+msgid "Get help for any command using the --help flag:"
+msgstr ""
+
+#: templates/admin-help.php:323
+msgid "General Help:"
+msgstr ""
+
+#: templates/admin-help.php:327
+msgid "Command Help:"
+msgstr ""
+
+#: templates/admin-help.php:331
+#, fuzzy
+msgid "Replace Help:"
+msgstr "Заменить на"
+
+#: templates/admin-help.php:339
+#, fuzzy
+msgid "Regex Mode (Pro)"
+msgstr "Режим регулярных выражений (Pro функция)"
+
+#: templates/admin-help.php:343
+#, fuzzy
+msgid "Pro Feature"
+msgstr "Разблокировать Pro функции"
+
+#: templates/admin-help.php:344
+msgid ""
+"Regular expressions (regex) mode is available in the Pro version. Upgrade to "
+"unlock advanced pattern matching capabilities."
+msgstr ""
+
+#: templates/admin-help.php:345 templates/admin-help.php:775
+#: templates/admin-help.php:778
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: templates/admin-help.php:349
+#, fuzzy
+msgid "What is Regex Mode?"
+msgstr "Режим регулярных выражений"
+
+#: templates/admin-help.php:350
+msgid ""
+"Regular expressions (regex) allow you to search for complex patterns instead "
+"of exact text matches. This is powerful for finding and replacing text that "
+"follows a specific format."
+msgstr ""
+
+#: templates/admin-help.php:352
+msgid "When to Use Regex"
+msgstr ""
+
+#: templates/admin-help.php:354
+msgid "Finding phone numbers in various formats"
+msgstr ""
+
+#: templates/admin-help.php:355
+msgid "Matching email addresses"
+msgstr ""
+
+#: templates/admin-help.php:356
+msgid "Finding URLs with specific patterns"
+msgstr ""
+
+#: templates/admin-help.php:357
+msgid "Replacing dates in different formats"
+msgstr ""
+
+#: templates/admin-help.php:358
+msgid "Extracting or modifying HTML tags"
+msgstr ""
+
+#: templates/admin-help.php:359
+msgid "Finding repeated words or patterns"
+msgstr ""
+
+#: templates/admin-help.php:362
+msgid "Common Regex Patterns & Examples"
+msgstr ""
+
+#: templates/admin-help.php:365
+msgid "1. Phone Numbers"
+msgstr ""
+
+#: templates/admin-help.php:368 templates/admin-help.php:384
+#: templates/admin-help.php:400 templates/admin-help.php:416
+#: templates/admin-help.php:432 templates/admin-help.php:448
+#: templates/admin-help.php:464 templates/admin-help.php:480
+#, fuzzy
+msgid "Search:"
+msgstr "Искать"
+
+#: templates/admin-help.php:372 templates/admin-help.php:388
+#: templates/admin-help.php:404 templates/admin-help.php:420
+#: templates/admin-help.php:436 templates/admin-help.php:452
+#: templates/admin-help.php:468 templates/admin-help.php:484
+msgid "Matches:"
+msgstr ""
+
+#: templates/admin-help.php:376 templates/admin-help.php:392
+#: templates/admin-help.php:408 templates/admin-help.php:424
+#: templates/admin-help.php:440 templates/admin-help.php:456
+#: templates/admin-help.php:472 templates/admin-help.php:488
+#, fuzzy
+msgid "Replace:"
+msgstr "Заменить на"
+
+#: templates/admin-help.php:381
+msgid "2. Email Addresses"
+msgstr ""
+
+#: templates/admin-help.php:397
+msgid "3. URLs with Specific Domain"
+msgstr ""
+
+#: templates/admin-help.php:409
+msgid "(preserves path with $1)"
+msgstr ""
+
+#: templates/admin-help.php:413
+msgid "4. Dates (MM/DD/YYYY to DD-MM-YYYY)"
+msgstr ""
+
+#: templates/admin-help.php:425
+msgid "(becomes 25-12-2024)"
+msgstr ""
+
+#: templates/admin-help.php:429
+msgid "5. HTML Image Tags"
+msgstr ""
+
+#: templates/admin-help.php:445
+msgid "6. Shortcodes with Parameters"
+msgstr ""
+
+#: templates/admin-help.php:461
+msgid "7. Remove Extra Whitespace"
+msgstr ""
+
+#: templates/admin-help.php:469
+msgid "Multiple consecutive spaces/newlines"
+msgstr ""
+
+#: templates/admin-help.php:473
+msgid "(single space)"
+msgstr ""
+
+#: templates/admin-help.php:477
+msgid "8. Find Price Ranges"
+msgstr ""
+
+#: templates/admin-help.php:489
+msgid "(convert to Euro format)"
+msgstr ""
+
+#: templates/admin-help.php:494
+msgid "Capture Groups & Backreferences"
+msgstr ""
+
+#: templates/admin-help.php:495
+msgid ""
+"Use parentheses () to capture parts of your match, then reference them in "
+"the replacement with $1, $2, $3, etc."
+msgstr ""
+
+#: templates/admin-help.php:498
+msgid "Pattern"
+msgstr ""
+
+#: templates/admin-help.php:499
+msgid "Description"
+msgstr ""
+
+#: templates/admin-help.php:503
+msgid "First capture group"
+msgstr ""
+
+#: templates/admin-help.php:507
+msgid "Second capture group"
+msgstr ""
+
+#: templates/admin-help.php:511
+msgid "Third capture group (and so on...)"
+msgstr ""
+
+#: templates/admin-help.php:515
+msgid "Common Regex Symbols"
+msgstr ""
+
+#: templates/admin-help.php:518
+msgid "Symbol"
+msgstr ""
+
+#: templates/admin-help.php:519
+msgid "Meaning"
+msgstr ""
+
+#: templates/admin-help.php:520
+msgid "Example"
+msgstr ""
+
+#: templates/admin-help.php:524
+msgid "Any character"
+msgstr ""
+
+#: templates/admin-help.php:525
+msgid "matches abc, a1c, a*c"
+msgstr ""
+
+#: templates/admin-help.php:529
+msgid "Any digit (0-9)"
+msgstr ""
+
+#: templates/admin-help.php:530
+msgid "matches 123, 999"
+msgstr ""
+
+#: templates/admin-help.php:534
+msgid "Word character (a-z, A-Z, 0-9, _)"
+msgstr ""
+
+#: templates/admin-help.php:535
+msgid "matches word, name_123"
+msgstr ""
+
+#: templates/admin-help.php:539
+msgid "Whitespace (space, tab, newline)"
+msgstr ""
+
+#: templates/admin-help.php:540
+msgid "matches one or more spaces"
+msgstr ""
+
+#: templates/admin-help.php:544
+msgid "Zero or more times"
+msgstr ""
+
+#: templates/admin-help.php:545
+msgid "matches \"\", \"a\", \"aaa\""
+msgstr ""
+
+#: templates/admin-help.php:549
+msgid "One or more times"
+msgstr ""
+
+#: templates/admin-help.php:550
+msgid "matches \"a\", \"aaa\""
+msgstr ""
+
+#: templates/admin-help.php:554
+msgid "Zero or one time (optional)"
+msgstr ""
+
+#: templates/admin-help.php:555
+msgid "matches http, https"
+msgstr ""
+
+#: templates/admin-help.php:559
+msgid "Start of line"
+msgstr ""
+
+#: templates/admin-help.php:560
+msgid "matches lines starting with Hello"
+msgstr ""
+
+#: templates/admin-help.php:564
+msgid "End of line"
+msgstr ""
+
+#: templates/admin-help.php:565
+msgid "matches lines ending with end"
+msgstr ""
+
+#: templates/admin-help.php:569
+msgid "Character class"
+msgstr ""
+
+#: templates/admin-help.php:570
+msgid "matches any vowel"
+msgstr ""
+
+#: templates/admin-help.php:574
+msgid "OR operator"
+msgstr ""
+
+#: templates/admin-help.php:575
+msgid "matches cat or dog"
+msgstr ""
+
+#: templates/admin-help.php:579
+msgid "Safety Tips for Regex"
+msgstr ""
+
+#: templates/admin-help.php:582
+msgid "Always test first:"
+msgstr ""
+
+#: templates/admin-help.php:582
+msgid "Run a preview to see what will be matched"
+msgstr ""
+
+#: templates/admin-help.php:583
+msgid "Start simple:"
+msgstr ""
+
+#: templates/admin-help.php:583
+msgid "Build your pattern gradually and test each addition"
+msgstr ""
+
+#: templates/admin-help.php:584
+msgid "Escape special characters:"
+msgstr ""
+
+#: templates/admin-help.php:584
+msgid "Use backslash \\ before . $ ^ * + ? ( ) [ ] { } |"
+msgstr ""
+
+#: templates/admin-help.php:585
+msgid "Use specific patterns:"
+msgstr ""
+
+#: templates/admin-help.php:585
+msgid "Avoid overly broad patterns like .* that match too much"
+msgstr ""
+
+#: templates/admin-help.php:586
+msgid "Test on staging:"
+msgstr ""
+
+#: templates/admin-help.php:586
+msgid "Never test complex regex on production first"
+msgstr ""
+
+#: templates/admin-help.php:590
+msgid "Testing Your Regex"
+msgstr ""
+
+#: templates/admin-help.php:591
+msgid ""
+"Before using regex in Universal Replace Engine, you can test your patterns "
+"at:"
+msgstr ""
+
+#: templates/admin-help.php:593
+msgid "- Interactive regex tester with explanations"
+msgstr ""
+
+#: templates/admin-help.php:594
+msgid "- Another excellent regex testing tool"
+msgstr ""
+
+#: templates/admin-help.php:600
+msgid "Advanced Database Mode"
+msgstr ""
+
+#: templates/admin-help.php:603
+msgid "Warning:"
+msgstr ""
+
+#: templates/admin-help.php:603
+msgid ""
+"Advanced mode can modify any database table. Always create a backup first!"
+msgstr ""
+
+#: templates/admin-help.php:606
+msgid "When to Use Advanced Mode"
+msgstr ""
+
+#: templates/admin-help.php:608
+msgid "Domain migrations (update siteurl, home options)"
+msgstr ""
+
+#: templates/admin-help.php:609
+msgid "Fix serialized data in post meta"
+msgstr ""
+
+#: templates/admin-help.php:610
+msgid "Update user metadata"
+msgstr ""
+
+#: templates/admin-help.php:611
+msgid "Fix plugin settings after migration"
+msgstr ""
+
+#: templates/admin-help.php:614
+msgid "Safe Usage"
+msgstr ""
+
+#: templates/admin-help.php:616
+msgid "Create a backup first"
+msgstr ""
+
+#: templates/admin-help.php:617
+msgid "Select only the tables you need to modify"
+msgstr ""
+
+#: templates/admin-help.php:618 templates/admin-help.php:649
+msgid "Use very specific search terms"
+msgstr ""
+
+#: templates/admin-help.php:619 templates/admin-help.php:650
+msgid "Run a preview first"
+msgstr ""
+
+#: templates/admin-help.php:620
+msgid "Test on a staging site before production"
+msgstr ""
+
+#: templates/admin-help.php:623
+msgid "Understanding the \"Protected\" Badge"
+msgstr ""
+
+#: templates/admin-help.php:624
+msgid ""
+"In the database table selector, some tables are marked with a \"Protected\" "
+"badge. This is a visual warning to indicate critical WordPress core tables."
+msgstr ""
+
+#: templates/admin-help.php:626
+msgid "Protected Tables:"
+msgstr ""
+
+#: templates/admin-help.php:628
+msgid "Contains all user account information"
+msgstr ""
+
+#: templates/admin-help.php:629
+msgid "Stores user metadata (preferences, capabilities, roles)"
+msgstr ""
+
+#: templates/admin-help.php:630
+msgid "Contains site settings and configuration"
+msgstr ""
+
+#: templates/admin-help.php:633
+msgid "Why Are They Protected?"
+msgstr ""
+
+#: templates/admin-help.php:634
+msgid "These tables contain critical data. Modifying them incorrectly can:"
+msgstr ""
+
+#: templates/admin-help.php:636
+msgid "Lock you out of your admin account"
+msgstr ""
+
+#: templates/admin-help.php:637
+msgid "Break site functionality and features"
+msgstr ""
+
+#: templates/admin-help.php:638
+msgid "Corrupt user permissions and roles"
+msgstr ""
+
+#: templates/admin-help.php:639
+msgid "Break plugin and theme settings"
+msgstr ""
+
+#: templates/admin-help.php:642
+msgid "Can I Still Modify Protected Tables?"
+msgstr ""
+
+#: templates/admin-help.php:643
+msgid ""
+"Yes! The \"Protected\" badge is just a warning, not a restriction. You can "
+"still select and modify these tables. The badge reminds you to be extra "
+"careful when working with critical data."
+msgstr ""
+
+#: templates/admin-help.php:646
+msgid "Best Practices for Protected Tables:"
+msgstr ""
+
+#: templates/admin-help.php:648
+msgid "Always create a backup first"
+msgstr ""
+
+#: templates/admin-help.php:648
+msgid "Especially important for these tables"
+msgstr ""
+
+#: templates/admin-help.php:649
+msgid "Avoid broad patterns that might match too much"
+msgstr ""
+
+#: templates/admin-help.php:650
+msgid "Verify exactly what will change"
+msgstr ""
+
+#: templates/admin-help.php:651
+msgid "Test on staging"
+msgstr ""
+
+#: templates/admin-help.php:651
+msgid "Never test on production first"
+msgstr ""
+
+#: templates/admin-help.php:652
+msgid "Know what you're changing"
+msgstr ""
+
+#: templates/admin-help.php:652
+msgid "Understand the data structure before modifying"
+msgstr ""
+
+#: templates/admin-help.php:656
+msgid "Common Safe Operations on Protected Tables:"
+msgstr ""
+
+#: templates/admin-help.php:657
+msgid "table:"
+msgstr ""
+
+#: templates/admin-help.php:659
+msgid "Changing site URLs during migration (siteurl, home)"
+msgstr ""
+
+#: templates/admin-help.php:660
+msgid "Updating email addresses"
+msgstr ""
+
+#: templates/admin-help.php:661
+msgid "Fixing plugin settings after domain change"
+msgstr ""
+
+#: templates/admin-help.php:664
+msgid "tables:"
+msgstr ""
+
+#: templates/admin-help.php:666
+msgid "Updating email domains after company rebranding"
+msgstr ""
+
+#: templates/admin-help.php:667
+msgid "Fixing user URLs after site migration"
+msgstr ""
+
+#: templates/admin-help.php:675
+msgid "Operation Times Out"
+msgstr ""
+
+#: templates/admin-help.php:677
+msgid "Go to Settings and reduce the batch size"
+msgstr ""
+
+#: templates/admin-help.php:678
+msgid "Try Content Batch Size: 50 or Database Batch Size: 2500"
+msgstr ""
+
+#: templates/admin-help.php:679
+msgid "Contact your host to increase PHP max_execution_time"
+msgstr ""
+
+#: templates/admin-help.php:682
+msgid "Memory Limit Errors"
+msgstr ""
+
+#: templates/admin-help.php:684
+msgid "Reduce batch sizes in Settings"
+msgstr ""
+
+#: templates/admin-help.php:685
+msgid "Process fewer post types at once"
+msgstr ""
+
+#: templates/admin-help.php:686
+msgid "Ask your host to increase PHP memory_limit"
+msgstr ""
+
+#: templates/admin-help.php:689
+msgid "Changes Not Visible"
+msgstr ""
+
+#: templates/admin-help.php:691
+msgid "Clear all caches (WordPress, plugin, CDN, browser)"
+msgstr ""
+
+#: templates/admin-help.php:692
+msgid "For Elementor pages: Regenerate CSS in Elementor settings"
+msgstr ""
+
+#: templates/admin-help.php:693
+msgid "Check the Operation History to verify changes were applied"
+msgstr ""
+
+#: templates/admin-help.php:699
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: templates/admin-help.php:701
+msgid "Q: Can I undo changes after applying them?"
+msgstr ""
+
+#: templates/admin-help.php:702
+msgid ""
+"A: Yes! Click \"Operation History\" and use the \"Undo\" button to rollback. "
+"The plugin keeps your last 5 operations (free) or 50 operations (Pro)."
+msgstr ""
+
+#: templates/admin-help.php:704
+msgid "Q: Does this work with Elementor/Gutenberg?"
+msgstr ""
+
+#: templates/admin-help.php:705
+msgid ""
+"A: Yes! The plugin handles serialized data and JSON correctly. For "
+"Elementor, caches are automatically cleared after changes."
+msgstr ""
+
+#: templates/admin-help.php:707
+msgid "Q: Will this break my site?"
+msgstr ""
+
+#: templates/admin-help.php:708
+msgid ""
+"A: Not if you use it correctly! Always preview changes first, be specific "
+"with search terms, and test on staging before production. The undo feature "
+"provides additional safety."
+msgstr ""
+
+#: templates/admin-help.php:710
+msgid "Q: What's the difference between Content and Advanced mode?"
+msgstr ""
+
+#: templates/admin-help.php:711
+msgid ""
+"A: Content mode searches only post/page content. Advanced mode searches any "
+"database table (wp_options, postmeta, usermeta, etc.). Advanced mode "
+"requires more caution."
+msgstr ""
+
+#: templates/admin-help.php:713
+msgid "Q: Can I use this for domain migrations?"
+msgstr ""
+
+#: templates/admin-help.php:714
+msgid ""
+"A: Yes! Use Advanced mode, create a backup first, then replace old URLs with "
+"new ones across wp_options and wp_posts tables. Save this as a profile for "
+"future use."
+msgstr ""
+
+#: templates/admin-help.php:716
+msgid "Q: How do I upgrade to Pro?"
+msgstr ""
+
+#: templates/admin-help.php:717
+msgid ""
+"A: Contact the plugin developer for Pro licensing. Pro includes regex mode, "
+"unlimited previews, and extended history."
+msgstr ""
+
+#: templates/admin-help.php:722
+msgid "Contact Support"
+msgstr ""
+
+#: templates/admin-help.php:726
+msgid "🎉 Priority Support Active"
+msgstr ""
+
+#: templates/admin-help.php:727
+msgid ""
+"As a Pro user, you have access to priority email support with faster "
+"response times."
+msgstr ""
+
+#: templates/admin-help.php:731
+msgid "Email Support"
+msgstr ""
+
+#: templates/admin-help.php:733
+msgid "Need help? Our support team is here to assist you."
+msgstr ""
+
+#: templates/admin-help.php:736
+msgid "Email:"
+msgstr ""
+
+#: templates/admin-help.php:742
+msgid "Important: Include Your Serial Number"
+msgstr ""
+
+#: templates/admin-help.php:743
+msgid ""
+"To ensure priority support, please include your Pro license serial number in "
+"your email. This helps us:"
+msgstr ""
+
+#: templates/admin-help.php:745
+msgid "Verify your Pro license status"
+msgstr ""
+
+#: templates/admin-help.php:746
+msgid "Prioritize your support request"
+msgstr ""
+
+#: templates/admin-help.php:747
+msgid "Provide version-specific assistance"
+msgstr ""
+
+#: templates/admin-help.php:748
+msgid "Fast-track bug fixes and updates"
+msgstr ""
+
+#: templates/admin-help.php:750
+msgid "Response time for Pro users: 24-48 hours"
+msgstr ""
+
+#: templates/admin-help.php:754
+msgid "For Pro Users: Include Your Serial Number"
+msgstr ""
+
+#: templates/admin-help.php:755
+msgid ""
+"If you have a Pro license, please include your serial number in your support "
+"email for priority assistance."
+msgstr ""
+
+#: templates/admin-help.php:756
+msgid "Pro users receive priority support with 24-48 hour response time."
+msgstr ""
+
+#: templates/admin-help.php:757
+msgid ""
+"Free version users: We provide community support on a best-effort basis. "
+"Response time may vary."
+msgstr ""
+
+#: templates/admin-help.php:761
+msgid "Before Contacting Support"
+msgstr ""
+
+#: templates/admin-help.php:762
+msgid "To help us assist you faster, please include:"
+msgstr ""
+
+#: templates/admin-help.php:764
+msgid "Plugin version (check Settings page)"
+msgstr ""
+
+#: templates/admin-help.php:765
+msgid "WordPress version"
+msgstr ""
+
+#: templates/admin-help.php:766
+msgid "PHP version (check Settings page)"
+msgstr ""
+
+#: templates/admin-help.php:767
+msgid "Description of the issue or question"
+msgstr ""
+
+#: templates/admin-help.php:768
+msgid "Steps to reproduce (if reporting a bug)"
+msgstr ""
+
+#: templates/admin-help.php:769
+msgid "Screenshots (if applicable)"
+msgstr ""
+
+#: templates/admin-help.php:771
+msgid "Your Pro license serial number"
+msgstr ""
+
+#: templates/admin-help.php:777
+msgid "Want priority support and advanced features?"
+msgstr ""
+
+#: templates/admin-help.php:780
+msgid ""
+"Pro includes: Regex mode, unlimited preview, extended history, and priority "
+"email support."
+msgstr ""
+
+#: templates/admin-help.php:785
 msgid "↑ Back to Top"
 msgstr ""
 
 #: templates/admin-profiles.php:22
 msgid "Saved Profiles"
-msgstr ""
-
-#: templates/admin-profiles.php:33
-msgid "Load Profile:"
 msgstr ""
 
 #: templates/admin-profiles.php:36
@@ -1138,12 +2326,10 @@ msgstr ""
 msgid "Case Sensitive"
 msgstr ""
 
-#: templates/admin-profiles.php:82
-msgid "Regex Mode"
-msgstr ""
-
 #: templates/admin-profiles.php:93
-msgid "No saved profiles yet. Complete a search below and click \"Save Profile\" to save it for future use."
+msgid ""
+"No saved profiles yet. Complete a search below and click \"Save Profile\" to "
+"save it for future use."
 msgstr ""
 
 #: templates/admin-profiles.php:99
@@ -1167,7 +2353,9 @@ msgid "Performance Settings"
 msgstr ""
 
 #: templates/admin-settings.php:33
-msgid "Configure batch sizes to optimize performance for your server. Lower values use less memory but take longer."
+msgid ""
+"Configure batch sizes to optimize performance for your server. Lower values "
+"use less memory but take longer."
 msgstr ""
 
 #: templates/admin-settings.php:42
@@ -1175,7 +2363,9 @@ msgid "Content Batch Size"
 msgstr ""
 
 #: templates/admin-settings.php:57
-msgid "Number of posts to process per batch for content operations (10-1000). Default: 100"
+msgid ""
+"Number of posts to process per batch for content operations (10-1000). "
+"Default: 100"
 msgstr ""
 
 #: templates/admin-settings.php:66
@@ -1183,7 +2373,9 @@ msgid "Database Batch Size"
 msgstr ""
 
 #: templates/admin-settings.php:81
-msgid "Number of rows to process per batch for database operations (100-10000). Default: 5000"
+msgid ""
+"Number of rows to process per batch for database operations (100-10000). "
+"Default: 5000"
 msgstr ""
 
 #: templates/admin-settings.php:90
@@ -1211,7 +2403,9 @@ msgid "Maximum number of results to show in preview (1-100)."
 msgstr ""
 
 #: templates/admin-settings.php:144
-msgid "Maximum number of results to show in preview (1-50). Pro version removes this limit."
+msgid ""
+"Maximum number of results to show in preview (1-50). Pro version removes "
+"this limit."
 msgstr ""
 
 #: templates/admin-settings.php:155
@@ -1227,7 +2421,9 @@ msgid "Number of operations to keep in history for rollback (1-50)."
 msgstr ""
 
 #: templates/admin-settings.php:176
-msgid "Number of operations to keep in history for rollback (1-10). Pro version keeps up to 50."
+msgid ""
+"Number of operations to keep in history for rollback (1-10). Pro version "
+"keeps up to 50."
 msgstr ""
 
 #: templates/admin-settings.php:188
@@ -1243,7 +2439,8 @@ msgid "days"
 msgstr ""
 
 #: templates/admin-settings.php:211
-msgid "Automatically delete backups older than this many days (1-30). Default: 7"
+msgid ""
+"Automatically delete backups older than this many days (1-30). Default: 7"
 msgstr ""
 
 #: templates/admin-settings.php:221
@@ -1271,7 +2468,9 @@ msgid "Enable real-time progress updates (recommended)"
 msgstr ""
 
 #: templates/admin-settings.php:262
-msgid "Shows a live progress bar during long operations. Disable if you experience issues."
+msgid ""
+"Shows a live progress bar during long operations. Disable if you experience "
+"issues."
 msgstr ""
 
 #: templates/admin-settings.php:270
@@ -1333,3 +2532,12 @@ msgstr ""
 #: templates/admin-settings.php:331
 msgid "Free Version"
 msgstr ""
+
+#~ msgid "https://yoursite.com/universal-replace-engine"
+#~ msgstr "https://yoursite.com/universal-replace-engine"
+
+#~ msgid "Your Name"
+#~ msgstr "Ваше Имя"
+
+#~ msgid "https://yoursite.com"
+#~ msgstr "https://yoursite.com"

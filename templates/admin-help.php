@@ -23,6 +23,7 @@ $is_pro = apply_filters( 'ure_is_pro', false );
 		<a href="#getting-started" class="ure-help-link"><?php esc_html_e( 'Getting Started', 'universal-replace-engine' ); ?></a>
 		<a href="#features" class="ure-help-link"><?php esc_html_e( 'Features', 'universal-replace-engine' ); ?></a>
 		<a href="#profiles" class="ure-help-link"><?php esc_html_e( 'Profiles', 'universal-replace-engine' ); ?></a>
+		<a href="#cli" class="ure-help-link"><?php esc_html_e( 'WP-CLI', 'universal-replace-engine' ); ?></a>
 		<a href="#regex" class="ure-help-link"><?php esc_html_e( 'Regex Mode', 'universal-replace-engine' ); ?> <?php if ( ! $is_pro ) : ?><span class="ure-badge ure-badge-pro">PRO</span><?php endif; ?></a>
 		<a href="#advanced" class="ure-help-link"><?php esc_html_e( 'Advanced Mode', 'universal-replace-engine' ); ?></a>
 		<a href="#troubleshooting" class="ure-help-link"><?php esc_html_e( 'Troubleshooting', 'universal-replace-engine' ); ?></a>
@@ -108,6 +109,229 @@ $is_pro = apply_filters( 'ure_is_pro', false );
 			<li><strong><?php esc_html_e( 'Fix Typos:', 'universal-replace-engine' ); ?></strong> <code>occured</code> → <code>occurred</code></li>
 			<li><strong><?php esc_html_e( 'Update Company Name:', 'universal-replace-engine' ); ?></strong> <code>Old Company Inc.</code> → <code>New Company LLC</code></li>
 		</ul>
+	</div>
+
+	<!-- WP-CLI Commands -->
+	<div id="cli" class="ure-help-section">
+		<h2><?php esc_html_e( 'WP-CLI Commands', 'universal-replace-engine' ); ?></h2>
+		<p><?php esc_html_e( 'Universal Replace Engine includes comprehensive WP-CLI support for command-line operations. Perfect for automation, scripting, and server management.', 'universal-replace-engine' ); ?></p>
+
+		<div class="ure-notice ure-notice-info">
+			<p><strong><?php esc_html_e( 'Prerequisites:', 'universal-replace-engine' ); ?></strong></p>
+			<ul>
+				<li><?php esc_html_e( 'WP-CLI must be installed on your server', 'universal-replace-engine' ); ?></li>
+				<li><?php esc_html_e( 'Run commands from your WordPress root directory', 'universal-replace-engine' ); ?></li>
+				<li><?php esc_html_e( 'Commands require appropriate server permissions', 'universal-replace-engine' ); ?></li>
+			</ul>
+		</div>
+
+		<h3><?php esc_html_e( 'Available Commands', 'universal-replace-engine' ); ?></h3>
+
+		<h4><?php esc_html_e( '1. Search for Text', 'universal-replace-engine' ); ?></h4>
+		<p><?php esc_html_e( 'Search for text in post content without making changes.', 'universal-replace-engine' ); ?></p>
+		<table class="ure-example-table">
+			<tr>
+				<td><strong><?php esc_html_e( 'Basic Search:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure search "old-domain.com"</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Specific Post Types:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure search "old-domain.com" --post-type=post,page,product</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Case Sensitive:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure search "ExactMatch" --case-sensitive</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'With Limit:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure search "text" --limit=50</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Regex (Pro):', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure search "\d{3}-\d{3}-\d{4}" --regex</code></td>
+			</tr>
+		</table>
+
+		<h4><?php esc_html_e( '2. Replace Text', 'universal-replace-engine' ); ?></h4>
+		<p><?php esc_html_e( 'Search and replace text in post content.', 'universal-replace-engine' ); ?></p>
+		<table class="ure-example-table">
+			<tr>
+				<td><strong><?php esc_html_e( 'Dry Run (Preview):', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure replace "old.com" "new.com" --dry-run</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Apply Changes:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure replace "old.com" "new.com"</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Skip Confirmation:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure replace "old.com" "new.com" --yes</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Specific Post Types:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure replace "http://" "https://" --post-type=page</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Case Sensitive:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure replace "Old" "New" --case-sensitive</code></td>
+			</tr>
+		</table>
+
+		<h4><?php esc_html_e( '3. Backup Management', 'universal-replace-engine' ); ?></h4>
+		<p><?php esc_html_e( 'Create, list, and restore database backups.', 'universal-replace-engine' ); ?></p>
+		<table class="ure-example-table">
+			<tr>
+				<td><strong><?php esc_html_e( 'Create Backup (All):', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure backup</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Specific Tables:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure backup --tables=wp_posts,wp_postmeta</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'With Comment:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure backup --comment="Before migration"</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'List Backups:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure backup list</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Restore Backup:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure restore backup_2024-01-15_123456.sql</code></td>
+			</tr>
+		</table>
+
+		<h4><?php esc_html_e( '4. Profile Management', 'universal-replace-engine' ); ?></h4>
+		<p><?php esc_html_e( 'Manage saved search/replace profiles from the command line.', 'universal-replace-engine' ); ?></p>
+		<table class="ure-example-table">
+			<tr>
+				<td><strong><?php esc_html_e( 'List Profiles:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure profile list</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Load Profile:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure profile load "Domain Migration"</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Delete Profile:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure profile delete "Old Profile"</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Specific User:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure profile list --user-id=5</code></td>
+			</tr>
+		</table>
+
+		<h4><?php esc_html_e( '5. Settings Management', 'universal-replace-engine' ); ?></h4>
+		<p><?php esc_html_e( 'View and modify plugin settings.', 'universal-replace-engine' ); ?></p>
+		<table class="ure-example-table">
+			<tr>
+				<td><strong><?php esc_html_e( 'View All Settings:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure settings</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'View One Setting:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure settings content_batch_size</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Update Setting:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure settings content_batch_size 50</code></td>
+			</tr>
+		</table>
+
+		<h4><?php esc_html_e( '6. Operation History', 'universal-replace-engine' ); ?></h4>
+		<p><?php esc_html_e( 'View and rollback previous operations.', 'universal-replace-engine' ); ?></p>
+		<table class="ure-example-table">
+			<tr>
+				<td><strong><?php esc_html_e( 'View History:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure history</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'More Entries:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure history --limit=20</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Rollback Operation:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure rollback 123</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Skip Confirmation:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure rollback 123 --yes</code></td>
+			</tr>
+		</table>
+
+		<h3><?php esc_html_e( 'Common Use Cases', 'universal-replace-engine' ); ?></h3>
+
+		<h4><?php esc_html_e( 'Domain Migration Workflow', 'universal-replace-engine' ); ?></h4>
+		<div class="ure-cli-workflow">
+			<ol>
+				<li>
+					<strong><?php esc_html_e( 'Create a backup:', 'universal-replace-engine' ); ?></strong><br>
+					<code>wp ure backup --comment="Before domain migration"</code>
+				</li>
+				<li>
+					<strong><?php esc_html_e( 'Preview changes:', 'universal-replace-engine' ); ?></strong><br>
+					<code>wp ure replace "http://old-site.com" "https://new-site.com" --dry-run</code>
+				</li>
+				<li>
+					<strong><?php esc_html_e( 'Apply changes:', 'universal-replace-engine' ); ?></strong><br>
+					<code>wp ure replace "http://old-site.com" "https://new-site.com" --yes</code>
+				</li>
+				<li>
+					<strong><?php esc_html_e( 'Verify results:', 'universal-replace-engine' ); ?></strong><br>
+					<code>wp ure search "old-site.com"</code>
+				</li>
+			</ol>
+		</div>
+
+		<h4><?php esc_html_e( 'Automated Backup Script', 'universal-replace-engine' ); ?></h4>
+		<div class="ure-cli-workflow">
+			<p><?php esc_html_e( 'Create a cron job or script for automated backups:', 'universal-replace-engine' ); ?></p>
+			<pre><code>#!/bin/bash
+# Daily backup script
+cd /var/www/html
+wp ure backup --comment="Daily backup $(date +%Y-%m-%d)"</code></pre>
+		</div>
+
+		<h4><?php esc_html_e( 'Bulk Text Updates', 'universal-replace-engine' ); ?></h4>
+		<div class="ure-cli-workflow">
+			<p><?php esc_html_e( 'Update multiple terms in sequence:', 'universal-replace-engine' ); ?></p>
+			<pre><code>#!/bin/bash
+# Update company branding
+wp ure replace "Old Company Inc" "New Company LLC" --yes
+wp ure replace "old-logo.png" "new-logo.png" --yes
+wp ure replace "support@oldcompany.com" "support@newcompany.com" --yes</code></pre>
+		</div>
+
+		<h3><?php esc_html_e( 'Tips for WP-CLI Usage', 'universal-replace-engine' ); ?></h3>
+		<div class="ure-notice ure-notice-info">
+			<ul>
+				<li><strong><?php esc_html_e( 'Always use --dry-run first:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Preview changes before applying them', 'universal-replace-engine' ); ?></li>
+				<li><strong><?php esc_html_e( 'Create backups:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Always backup before major operations', 'universal-replace-engine' ); ?></li>
+				<li><strong><?php esc_html_e( 'Use --yes for scripts:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Skip confirmations in automated workflows', 'universal-replace-engine' ); ?></li>
+				<li><strong><?php esc_html_e( 'Quote your search terms:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Use quotes to prevent shell interpretation', 'universal-replace-engine' ); ?></li>
+				<li><strong><?php esc_html_e( 'Test on staging first:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Never test commands on production first', 'universal-replace-engine' ); ?></li>
+				<li><strong><?php esc_html_e( 'Check the history:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Use wp ure history to verify operations', 'universal-replace-engine' ); ?></li>
+			</ul>
+		</div>
+
+		<h3><?php esc_html_e( 'Getting Help', 'universal-replace-engine' ); ?></h3>
+		<p><?php esc_html_e( 'Get help for any command using the --help flag:', 'universal-replace-engine' ); ?></p>
+		<table class="ure-example-table">
+			<tr>
+				<td><strong><?php esc_html_e( 'General Help:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure --help</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Command Help:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure search --help</code></td>
+			</tr>
+			<tr>
+				<td><strong><?php esc_html_e( 'Replace Help:', 'universal-replace-engine' ); ?></strong></td>
+				<td><code>wp ure replace --help</code></td>
+			</tr>
+		</table>
 	</div>
 
 	<!-- Regex Mode -->
@@ -706,5 +930,38 @@ $is_pro = apply_filters( 'ure_is_pro', false );
 
 .ure-example-table tr:hover {
 	background: #f5f5f5;
+}
+
+.ure-cli-workflow {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 15px 20px;
+	margin: 15px 0;
+}
+
+.ure-cli-workflow ol {
+	margin-left: 20px;
+}
+
+.ure-cli-workflow ol li {
+	margin-bottom: 15px;
+}
+
+.ure-cli-workflow pre {
+	background: #2c3e50;
+	color: #ecf0f1;
+	padding: 15px;
+	border-radius: 4px;
+	overflow-x: auto;
+	margin: 10px 0;
+}
+
+.ure-cli-workflow pre code {
+	background: transparent;
+	color: #ecf0f1;
+	padding: 0;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 13px;
 }
 </style>
