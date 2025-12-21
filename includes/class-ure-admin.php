@@ -754,7 +754,7 @@ class URE_Admin {
 													/* translators: 1: shown count, 2: total count */
 													esc_html__( 'Showing %1$d of %2$d matches (Free version limit).', 'universal-replace-engine' ),
 													count( $this->preview_data['results'] ),
-													$this->preview_data['total']
+													absint( $this->preview_data['total'] )
 												);
 												?>
 												<br>
@@ -763,7 +763,7 @@ class URE_Admin {
 												printf(
 													/* translators: %d: total matches */
 													esc_html__( 'Clicking "Apply Changes" will replace all %d matches found, not just the ones shown in this preview.', 'universal-replace-engine' ),
-													$this->preview_data['total']
+													absint( $this->preview_data['total'] )
 												);
 												?>
 											</p>
@@ -776,7 +776,7 @@ class URE_Admin {
 												printf(
 													/* translators: %d: total matches */
 													esc_html__( 'Showing all %d matches (unlimited preview in Pro version).', 'universal-replace-engine' ),
-													$this->preview_data['total']
+													absint( $this->preview_data['total'] )
 												);
 												?>
 											</p>
@@ -902,7 +902,7 @@ class URE_Admin {
 										printf(
 											/* translators: %d: history limit */
 											esc_html__( 'History (Last %d Operations)', 'universal-replace-engine' ),
-											$history_limit
+											absint( $history_limit )
 										);
 									} else {
 										esc_html_e( 'History (Last 5 Operations)', 'universal-replace-engine' );

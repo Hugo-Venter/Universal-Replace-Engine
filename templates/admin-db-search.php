@@ -256,9 +256,9 @@ function ure_get_table_type_label( $type ) {
 				<small style="font-weight: normal; color: #666;">
 					<?php
 					printf(
-						/* translators: 1: number shown, 2: total changes */
-						esc_html__( '(Showing up to 20 examples out of %d total changes)', 'universal-replace-engine' ),
-						number_format_i18n( $total_changes )
+						/* translators: %s: number shown, total changes as formatted string */
+						esc_html__( '(Showing up to 20 examples out of %s total changes)', 'universal-replace-engine' ),
+						esc_html( number_format_i18n( $total_changes ) )
 					);
 					?>
 				</small>
@@ -270,9 +270,9 @@ function ure_get_table_type_label( $type ) {
 						<strong><?php esc_html_e( 'Note:', 'universal-replace-engine' ); ?></strong>
 						<?php
 						printf(
-							/* translators: %d: total changes */
-							esc_html__( 'This preview shows only 20 examples. Clicking "Apply Changes" will replace all %d matches found in the selected tables.', 'universal-replace-engine' ),
-							number_format_i18n( $total_changes )
+							/* translators: %s: total changes as formatted string */
+							esc_html__( 'This preview shows only 20 examples. Clicking "Apply Changes" will replace all %s matches found in the selected tables.', 'universal-replace-engine' ),
+							esc_html( number_format_i18n( $total_changes ) )
 						);
 						?>
 					</p>
@@ -401,9 +401,9 @@ function ure_get_table_type_label( $type ) {
 					<button type="submit" class="button button-primary button-large" onclick="return confirm('<?php echo esc_js( __( 'Are you sure you want to apply these changes to the database? This action cannot be easily undone. Make sure you have a backup!', 'universal-replace-engine' ) ); ?>');">
 						<?php
 						printf(
-							/* translators: %d: number of changes */
-							esc_html__( 'Apply %d Changes', 'universal-replace-engine' ),
-							$total_changes
+							/* translators: %s: number of changes as formatted string */
+							esc_html__( 'Apply %s Changes', 'universal-replace-engine' ),
+							esc_html( number_format_i18n( $total_changes ) )
 						);
 						?>
 					</button>
