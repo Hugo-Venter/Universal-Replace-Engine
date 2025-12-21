@@ -621,69 +621,6 @@ class URE_Admin {
 									<h2><?php esc_html_e( 'Preview Results', 'universal-replace-engine' ); ?></h2>
 	
 
-						<?php
-						// Check if any results are from pages with structured data (page builders, etc.)
-						if ( ! $is_pro ) {
-							$has_structured_data = false;
-							$builder_types = array();
-
-							foreach ( $this->preview_data['results'] as $result ) {
-								$post_id = $result['post_id'];
-
-								// Check for Elementor
-								if ( get_post_meta( $post_id, '_elementor_edit_mode', true ) === 'builder' ) {
-									$has_structured_data = true;
-									$builder_types['Elementor'] = true;
-								}
-
-								// Check for other page builders
-								if ( get_post_meta( $post_id, '_wpb_vc_js_status', true ) ) {
-									$has_structured_data = true;
-									$builder_types['WPBakery'] = true;
-								}
-
-								if ( get_post_meta( $post_id, '_et_pb_use_builder', true ) ) {
-									$has_structured_data = true;
-									$builder_types['Divi'] = true;
-								}
-
-								if ( get_post_meta( $post_id, '_fl_builder_enabled', true ) ) {
-									$has_structured_data = true;
-									$builder_types['Beaver Builder'] = true;
-								}
-
-								// Check for posts with significant post meta
-								$meta_count = count( get_post_meta( $post_id ) );
-								if ( $meta_count > 10 ) {
-									$has_structured_data = true;
-									$builder_types['Custom Fields'] = true;
-								}
-							}
-
-							if ( $has_structured_data ) :
-								$builder_list = implode( ', ', array_keys( $builder_types ) );
-								?>
-								<div class="notice notice-warning inline" style="border-left-color: #f0ad4e; background: #fff8e5; padding: 15px; margin: 15px 0;">
-									<p style="margin: 0 0 10px 0; font-weight: 600; color: #856404;">
-										⚠️ <?php esc_html_e( 'Important: Page Builder / Structured Data Detected', 'universal-replace-engine' ); ?>
-									</p>
-									<p style="margin: 0 0 10px 0; line-height: 1.6;">
-										<?php
-										printf(
-											/* translators: %s: list of detected builders/plugins */
-											esc_html__( 'One or more pages use structured data storage (%s). Changes made with the Free version only affect the rendered HTML content and may be LOST if you re-edit these pages with their builder.', 'universal-replace-engine' ),
-											'<strong>' . esc_html( $builder_list ) . '</strong>'
-										);
-										?>
-									</p>
-									<p style="margin: 0; line-height: 1.6;">
-										<strong><?php esc_html_e( 'Pro version updates the source data permanently', 'universal-replace-engine' ); ?></strong>
-										<?php esc_html_e( '- changes persist even after editing with page builders, and affect custom fields, widget settings, and structured content.', 'universal-replace-engine' ); ?>
-									</p>
-								</div>
-							<?php endif;
-						}
-						?>
 
 									<?php if ( $this->preview_data['limited'] ) : ?>
 										<div class="notice notice-info inline">
