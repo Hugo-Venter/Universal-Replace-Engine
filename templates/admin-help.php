@@ -58,6 +58,9 @@ $is_pro = apply_filters( 'ure_is_pro', false );
 		<h3><?php esc_html_e( 'Content Operations', 'universal-replace-engine' ); ?></h3>
 		<ul>
 			<li><strong><?php esc_html_e( 'Post Content:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Search and replace in post/page content', 'universal-replace-engine' ); ?></li>
+			<li><strong><?php esc_html_e( 'Post Meta (Custom Fields):', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Search in custom fields and post metadata', 'universal-replace-engine' ); ?></li>
+			<li><strong><?php esc_html_e( 'Elementor Data:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Search directly in Elementor page builder content', 'universal-replace-engine' ); ?></li>
+			<li><strong><?php esc_html_e( 'All Locations:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Search across all scopes (content + postmeta + Elementor)', 'universal-replace-engine' ); ?></li>
 			<li><strong><?php esc_html_e( 'Custom Post Types:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Works with any post type (products, portfolios, etc.)', 'universal-replace-engine' ); ?></li>
 			<li><strong><?php esc_html_e( 'Preview:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'See changes before applying them', 'universal-replace-engine' ); ?></li>
 			<li><strong><?php esc_html_e( 'Undo/Rollback:', 'universal-replace-engine' ); ?></strong> <?php esc_html_e( 'Reverse changes with one click', 'universal-replace-engine' ); ?></li>
