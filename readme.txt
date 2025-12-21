@@ -3,7 +3,7 @@ Contributors: hugoxtechred
 Tags: search, replace, database, migration, content, backup, restore, regex, cli
 Requires at least: 5.9
 Tested up to: 6.7
-Stable tag: 1.5.1
+Stable tag: 1.6.0
 Requires PHP: 7.4 or higher
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,7 +36,6 @@ Enterprise-grade search and replace for WordPress. Safe content operations with 
 
 * **Advanced Database Mode** - Direct table-level search and replace in any database table
 * **Full Regex Mode** - Use regular expressions for advanced pattern matching
-* **Advanced Scopes** - Search in postmeta, Elementor data, and all locations
 * **Priority Support** - Get help from our expert team
 
 [Learn more about Pro](https://xtech.red/)
@@ -155,15 +154,15 @@ Yes! The plugin safely handles WordPress serialized data, properly adjusting str
 
 = Can I search in custom fields (postmeta)? =
 
-Yes, with the Pro version! Free version searches post content only. Pro version can search:
-- Post content (free & pro)
-- Custom fields / postmeta (pro only)
-- Elementor page builder data (pro only)
-- All locations combined (pro only)
+Yes! The free version includes search and replace in:
+- Post content
+- Custom fields / postmeta
+- Elementor page builder data
+- All locations combined
 
 = Is regex supported? =
 
-Yes, with the Pro version! Pro includes full regex mode with pattern validation, capture groups, and error messages.
+Yes, with the Pro version! Pro includes full regex mode with pattern validation, capture groups, and error messages. The free version supports standard text search and replace in all content locations.
 
 = What about database tables? =
 
@@ -197,6 +196,14 @@ Perfect for automation, scripting, and server management. See the WP-CLI section
 
 == Changelog ==
 
+= 1.6.0 - 2025-12-21 =
+* Added: Post Meta (custom fields) search and replace now available in FREE version!
+* Added: Elementor page builder data search and replace now available in FREE version!
+* Added: "All Locations" scope (content + postmeta + Elementor) now available in FREE version!
+* Improved: Removed restrictions forcing users to upgrade for basic content scopes
+* Improved: Better messaging about what's included in Free vs Pro versions
+* Note: Pro version still includes Advanced Database Mode, Full Regex Mode, and Priority Support
+
 = 1.5.1 - 2025-12-20 =
 * Fixed: All plugin settings now actually work (critical bug fix)
 * Fixed: database_batch_size setting now properly controls database operations
@@ -225,6 +232,9 @@ Perfect for automation, scripting, and server management. See the WP-CLI section
 * Improved: Automation and scripting capabilities for DevOps workflows
 
 == Upgrade Notice ==
+
+= 1.6.0 =
+MAJOR UPDATE: Post Meta and Elementor search/replace are now FREE! No longer restricted to Pro version. Update now to unlock these features for all users.
 
 = 1.5.1 =
 CRITICAL BUG FIX: All plugin settings now work properly. Version 1.5.0 had non-functional settings that were stored but ignored. Upgrade immediately to ensure your settings take effect.

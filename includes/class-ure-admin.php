@@ -188,17 +188,6 @@ class URE_Admin {
 		$regex_mode = isset( $_POST['ure_regex_mode'] );
 		$scope = isset( $_POST['ure_scope'] ) ? sanitize_key( $_POST['ure_scope'] ) : 'post_content';
 
-		// Enforce Pro-only scopes.
-		$is_pro = apply_filters( 'ure_is_pro', false );
-		if ( ! $is_pro && 'post_content' !== $scope ) {
-			$scope = 'post_content';
-			$this->add_notice(
-				'ure_messages',
-				'ure_warning',
-				__( 'Advanced scopes (Post Meta, Elementor, All Locations) require Pro version. Falling back to Post Content.', 'universal-replace-engine' ),
-				'warning'
-			);
-		}
 
 		if ( empty( $search ) ) {
 			add_settings_error(
@@ -220,30 +209,6 @@ class URE_Admin {
 			$scope
 		);
 
-		// In free version, also run Pro scope previews for counts only (teaser).
-		if ( ! $is_pro ) {
-			$pro_scopes = array( 'postmeta', 'elementor' );
-			$this->preview_data['pro_counts'] = array();
-
-			foreach ( $pro_scopes as $pro_scope ) {
-				$pro_preview = $this->search_replace->run_preview(
-					$search,
-					$replace,
-					$post_types,
-					$case_sensitive,
-					false, // No regex in free version
-					$pro_scope
-				);
-
-				$this->preview_data['pro_counts'][ $pro_scope ] = array(
-					'total'   => isset( $pro_preview['total'] ) ? $pro_preview['total'] : 0,
-					'posts'   => isset( $pro_preview['affected_posts'] ) ? $pro_preview['affected_posts'] : 0,
-					'label'   => $this->get_scope_label( $pro_scope ),
-				);
-			}
-		}
-
-		// Check for regex errors.
 		if ( isset( $this->preview_data['error'] ) && ! empty( $this->preview_data['error'] ) ) {
 			add_settings_error(
 				'ure_messages',
@@ -551,40 +516,21 @@ class URE_Admin {
 													<label>
 														<input type="radio" name="ure_scope" value="postmeta"
 															<?php checked( $selected_scope, 'postmeta' ); ?>
-															<?php disabled( ! $is_pro ); ?>>
 														<strong><?php esc_html_e( 'Post Meta', 'universal-replace-engine' ); ?></strong>
 														<span class="description"><?php esc_html_e( '(custom fields, excluding Elementor)', 'universal-replace-engine' ); ?></span>
-														<?php if ( $is_pro ) : ?>
-															<span style="color: #4ade80; font-weight: 600;">✓ PRO</span>
-														<?php else : ?>
-															<span style="color: #6b7280; font-weight: 600;">🔒 PRO ONLY</span>
-														<?php endif; ?>
-													</label>
 													<br>
 													<label>
 														<input type="radio" name="ure_scope" value="elementor"
 															<?php checked( $selected_scope, 'elementor' ); ?>
-															<?php disabled( ! $is_pro ); ?>>
 														<strong><?php esc_html_e( 'Elementor Data', 'universal-replace-engine' ); ?></strong>
 														<span class="description"><?php esc_html_e( '(_elementor_data JSON field)', 'universal-replace-engine' ); ?></span>
-														<?php if ( $is_pro ) : ?>
-															<span style="color: #4ade80; font-weight: 600;">✓ PRO</span>
-														<?php else : ?>
-															<span style="color: #6b7280; font-weight: 600;">🔒 PRO ONLY</span>
-														<?php endif; ?>
-													</label>
 													<br>
 													<label>
 														<input type="radio" name="ure_scope" value="all"
 															<?php checked( $selected_scope, 'all' ); ?>
-															<?php disabled( ! $is_pro ); ?>>
 														<strong><?php esc_html_e( 'All Locations', 'universal-replace-engine' ); ?></strong>
 														<span class="description"><?php esc_html_e( '(content + postmeta + Elementor)', 'universal-replace-engine' ); ?></span>
-														<?php if ( $is_pro ) : ?>
-															<span style="color: #d97706; font-weight: 600;">⚠ USE WITH CAUTION</span>
-														<?php else : ?>
-															<span style="color: #6b7280; font-weight: 600;">🔒 PRO ONLY</span>
-														<?php endif; ?>
+														<span style="color: #d97706; font-weight: 600;">⚠ USE WITH CAUTION</span>
 													</label>
 												</fieldset>
 												<p class="description">
@@ -592,13 +538,6 @@ class URE_Admin {
 													<?php if ( ! $is_pro ) : ?>
 														<br>
 														<strong style="color: #d97706;">
-															<?php esc_html_e( 'Upgrade to Pro to unlock Post Meta, Elementor Data, and All Locations scopes.', 'universal-replace-engine' ); ?>
-														</strong>
-													<?php endif; ?>
-												</p>
-											</td>
-										</tr>
-	
 										<tr>
 											<th scope="row">
 												<?php esc_html_e( 'Post Types', 'universal-replace-engine' ); ?>
@@ -645,8 +584,8 @@ class URE_Admin {
 																   $is_regex_mode = true;
 															   }
 															   checked( $is_regex_mode );
-															   ?>
-															   <?php disabled( ! $is_pro ); ?>>
+															   disabled( ! $is_pro );
+															   ?>>
 														<?php
 														if ( $is_pro ) {
 															esc_html_e( 'Regex mode', 'universal-replace-engine' );
@@ -823,74 +762,7 @@ class URE_Admin {
 										</tbody>
 									</table>
 								</div>
-							<?php endif; ?>
-
-							<!-- Pro Scope Teaser (Free Version Only) -->
-							<?php if ( ! $is_pro && $this->preview_data && isset( $this->preview_data['pro_counts'] ) && ! empty( $this->preview_data['pro_counts'] ) ) : ?>
-								<?php
-								// Check if any Pro scope has matches.
-								$has_pro_matches = false;
-								foreach ( $this->preview_data['pro_counts'] as $counts ) {
-									if ( $counts['total'] > 0 ) {
-										$has_pro_matches = true;
-										break;
-									}
-								}
-								?>
-								<div class="ure-section ure-pro-teaser-counts" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 4px; margin-top: 20px;">
-									<h3 style="color: white; margin-top: 0;">
-										🔒 <?php echo $has_pro_matches ? esc_html__( 'Additional Matches Found (Pro Only)', 'universal-replace-engine' ) : esc_html__( 'Pro Locations Searched', 'universal-replace-engine' ); ?>
-									</h3>
-									<p style="opacity: 0.95; margin-bottom: 15px;">
-										<?php
-										if ( $has_pro_matches ) {
-											esc_html_e( 'Your search term was also found in these Pro-only locations:', 'universal-replace-engine' );
-										} else {
-											esc_html_e( 'We also searched these Pro-only locations:', 'universal-replace-engine' );
-										}
-										?>
-									</p>
-
-									<div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 4px;">
-										<?php foreach ( $this->preview_data['pro_counts'] as $scope => $counts ) : ?>
-											<div style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
-												<strong style="font-size: 16px;">
-													<?php echo esc_html( $counts['label'] ); ?>
-												</strong>
-												<br>
-												<span style="font-size: 14px; opacity: 0.9;">
-													<?php
-													if ( $counts['total'] > 0 ) {
-														printf(
-															/* translators: %d: number of matches */
-															esc_html__( 'Found %d match(es)', 'universal-replace-engine' ),
-															absint( $counts['total'] )
-														);
-													} else {
-														esc_html_e( 'No matches found', 'universal-replace-engine' );
-													}
-													?>
-												</span>
-											</div>
-										<?php endforeach; ?>
-									</div>
-
-									<?php if ( $has_pro_matches ) : ?>
-										<p style="margin-top: 15px; margin-bottom: 0; text-align: center;">
-											<a href="https://xtech.red/" class="button button-primary button-hero" style="background: white; color: #667eea; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2); margin-top: 10px;">
-												<?php esc_html_e( 'Upgrade to Pro to Search & Replace These', 'universal-replace-engine' ); ?>
-											</a>
-										</p>
-									<?php else : ?>
-										<p style="margin-top: 15px; margin-bottom: 0; text-align: center; opacity: 0.9;">
-											<?php esc_html_e( 'Upgrade to Pro to unlock search & replace in Post Meta, Elementor Data, and more.', 'universal-replace-engine' ); ?>
-											<br>
-											<a href="https://xtech.red/" style="color: white; text-decoration: underline; font-weight: 600; margin-top: 10px; display: inline-block;">
-												<?php esc_html_e( 'Learn More', 'universal-replace-engine' ); ?> →
-											</a>
-										</p>
 									<?php endif; ?>
-								</div>
 							<?php endif; ?>
 
 							<!-- History Section -->
