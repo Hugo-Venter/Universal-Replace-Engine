@@ -69,13 +69,13 @@ Comprehensive help built into the plugin:
 
 = WP-CLI Commands =
 
-Universal Replace Engine includes full WP-CLI support for command-line operations:
+Universal Replace Engine includes WP-CLI support for command-line operations:
 
-**Search for text:**
+**Search for text (in post content):**
 `wp ure search "old-domain.com"`
 `wp ure search "text" --post-type=post,page --case-sensitive --limit=50`
 
-**Replace text:**
+**Replace text (in post content):**
 `wp ure replace "old.com" "new.com" --dry-run`
 `wp ure replace "old.com" "new.com" --yes`
 
@@ -92,6 +92,8 @@ Universal Replace Engine includes full WP-CLI support for command-line operation
 `wp ure settings`
 `wp ure history --limit=20`
 `wp ure rollback 123`
+
+**Note:** WP-CLI currently searches and replaces in post content only. For Post Meta and Elementor data operations, use the web interface at **Tools → Universal Replace Engine**. Scope support for CLI coming in a future update.
 
 For complete WP-CLI documentation, see **Tools → URE Help → WP-CLI** in your WordPress admin.
 
@@ -178,14 +180,14 @@ No! The plugin only loads on admin pages and uses efficient batch processing. It
 
 = Does it support WP-CLI? =
 
-Yes! Universal Replace Engine includes comprehensive WP-CLI support for all major functions:
-- Search and replace operations with `wp ure search` and `wp ure replace`
+Yes! Universal Replace Engine includes WP-CLI support for major functions:
+- Search and replace operations with `wp ure search` and `wp ure replace` (post content only)
 - Backup creation and restoration with `wp ure backup` and `wp ure restore`
 - Profile management with `wp ure profile`
 - Settings configuration with `wp ure settings`
 - Operation history and rollback with `wp ure history` and `wp ure rollback`
 
-Perfect for automation, scripting, and server management. See the WP-CLI section above for examples.
+Note: CLI currently supports post content searches only. For Post Meta and Elementor data operations, use the web interface. Perfect for automation, scripting, and server management. See the WP-CLI section above for examples.
 
 == Screenshots ==
 
