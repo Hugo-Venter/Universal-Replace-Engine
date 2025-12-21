@@ -662,9 +662,10 @@ class URE_Admin {
 									<table class="wp-list-table widefat fixed striped ure-preview-table">
 										<thead>
 											<tr>
-												<th style="width: 20%;"><?php esc_html_e( 'Location', 'universal-replace-engine' ); ?></th>
-												<th style="width: 40%;"><?php esc_html_e( 'Before', 'universal-replace-engine' ); ?></th>
-												<th style="width: 40%;"><?php esc_html_e( 'After', 'universal-replace-engine' ); ?></th>
+												<th style="width: 18%;"><?php esc_html_e( 'Location', 'universal-replace-engine' ); ?></th>
+												<th style="width: 15%;"><?php esc_html_e( 'Scope', 'universal-replace-engine' ); ?></th>
+												<th style="width: 33%;"><?php esc_html_e( 'Before', 'universal-replace-engine' ); ?></th>
+												<th style="width: 34%;"><?php esc_html_e( 'After', 'universal-replace-engine' ); ?></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -683,6 +684,11 @@ class URE_Admin {
 															);
 															?>
 														</small>
+													</td>
+													<td>
+														<code style="font-size: 11px;">
+															<?php echo esc_html( $result['location'] ); ?>
+														</code>
 													</td>
 													<td><?php echo wp_kses_post( $result['before'] ); ?></td>
 													<td>
