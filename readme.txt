@@ -2,7 +2,7 @@
 Contributors: hugoxtechred
 Tags: search, replace, database, migration, content, backup, restore, regex, cli
 Requires at least: 5.9
-Tested up to: 6.7
+Tested up to: 6.9
 Stable tag: 1.6.0
 Requires PHP: 7.4 or higher
 License: GPLv2 or later
@@ -23,7 +23,7 @@ Enterprise-grade search and replace for WordPress. Safe content operations with 
 * **Multilingual Support** - Available in 11 languages
 * **Safe & Secure** - WordPress nonces, capability checks, prepared statements
 * **Batch Processing** - Handles large sites without timeout errors
-* **WP-CLI Support** - Full command-line interface for automation and scripting
+* **WP-CLI Support** - Command-line interface for post content operations, backups, and automation
 
 = Use Cases =
 

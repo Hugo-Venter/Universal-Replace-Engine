@@ -608,13 +608,13 @@ class URE_CLI {
 
 		WP_CLI::log( 'Rolling back...' );
 
-		$result = $this->logger->rollback( $log_id );
+		$result = $this->logger->rollback_operation( $log_id, get_current_user_id() );
 
-		if ( is_wp_error( $result ) ) {
-			WP_CLI::error( $result->get_error_message() );
+		if ( ! $result['success'] ) {
+			WP_CLI::error( $result['message'] );
 			return;
 		}
 
-		WP_CLI::success( sprintf( 'Successfully rolled back %d post(s).', $result ) );
+		WP_CLI::success( $result['message'] );
 	}
 }

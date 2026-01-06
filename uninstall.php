@@ -86,11 +86,18 @@ function ure_recursive_delete( $dir ) {
 		if ( is_dir( $path ) ) {
 			ure_recursive_delete( $path );
 		} else {
-			unlink( $path );
+			wp_delete_file( $path );
 		}
 	}
 
-	return rmdir( $dir );
+	// Use WP_Filesystem for directory deletion.
+	global $wp_filesystem;
+	if ( empty( $wp_filesystem ) ) {
+		require_once ABSPATH . '/wp-admin/includes/file.php';
+		WP_Filesystem();
+	}
+
+	return $wp_filesystem->rmdir( $dir );
 }
 
 // Run cleanup.

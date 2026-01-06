@@ -278,12 +278,6 @@ class URE_Admin {
 		// Apply replacements.
 		$scope = isset( $preview_data['scope'] ) ? $preview_data['scope'] : 'post_content';
 
-		// Enforce Pro-only scopes (additional security check).
-		$is_pro = apply_filters( 'ure_is_pro', false );
-		if ( ! $is_pro && 'post_content' !== $scope ) {
-			$scope = 'post_content';
-		}
-
 		$result = $this->search_replace->apply_replacements(
 			$preview_data['search'],
 			$preview_data['replace'],
@@ -425,11 +419,9 @@ class URE_Admin {
 							<?php
 							// Check for loaded profile data.
 							$loaded_profile = get_transient( 'ure_loaded_profile_' . get_current_user_id() );
-			error_log("URE DEBUG: render_admin_page - loaded_profile from transient: " . print_r($loaded_profile, true));
 							if ( $loaded_profile ) {
 								// Clear the transient after reading.
 								delete_transient( 'ure_loaded_profile_' . get_current_user_id() );
-				error_log("URE DEBUG: render_admin_page - cleared loaded_profile transient");
 							}
 							?>
 							<!-- Search and Replace Form -->
@@ -501,10 +493,6 @@ class URE_Admin {
 												} elseif ( isset( $_POST['ure_scope'] ) ) {
 													$selected_scope = sanitize_key( $_POST['ure_scope'] );
 												}
-												// Force post_content if not Pro.
-												if ( ! $is_pro && 'post_content' !== $selected_scope ) {
-													$selected_scope = 'post_content';
-												}
 												?>
 												<fieldset>
 													<label>
@@ -535,9 +523,10 @@ class URE_Admin {
 												</fieldset>
 												<p class="description">
 													<?php esc_html_e( 'Choose where to search and replace.', 'universal-replace-engine'); ?>
-													<?php if ( ! $is_pro ) : ?>
-														<br>
-														<strong style="color: #d97706;">
+												</p>
+											</td>
+										</tr>
+
 										<tr>
 											<th scope="row">
 												<?php esc_html_e( 'Post Types', 'universal-replace-engine' ); ?>
@@ -705,7 +694,6 @@ class URE_Admin {
 										</tbody>
 									</table>
 								</div>
-									<?php endif; ?>
 							<?php endif; ?>
 
 							<!-- History Section -->
@@ -749,12 +737,9 @@ class URE_Admin {
 							<div class="ure-section ure-pro-teaser">
 								<h3><?php esc_html_e( 'Unlock Pro Features', 'universal-replace-engine' ); ?></h3>
 								<ul>
-									<li><?php esc_html_e( 'Search and replace in postmeta, options, and term meta', 'universal-replace-engine' ); ?></li>
-									<li><?php esc_html_e( 'Elementor page builder support', 'universal-replace-engine' ); ?></li>
-									<li><?php esc_html_e( 'ACF custom fields support', 'universal-replace-engine' ); ?></li>
-									<li><?php esc_html_e( 'Unlimited preview results', 'universal-replace-engine' ); ?></li>
-									<li><?php esc_html_e( 'Full regex mode', 'universal-replace-engine' ); ?></li>
-									<li><?php esc_html_e( 'WP-CLI commands', 'universal-replace-engine' ); ?></li>
+									<li><?php esc_html_e( 'Advanced Database Mode - Direct table-level search and replace', 'universal-replace-engine' ); ?></li>
+									<li><?php esc_html_e( 'Full regex mode with pattern validation', 'universal-replace-engine' ); ?></li>
+									<li><?php esc_html_e( 'Priority support from our expert team', 'universal-replace-engine' ); ?></li>
 								</ul>
 								<?php
 								/**
@@ -1363,8 +1348,6 @@ class URE_Admin {
 	 */
 	private function handle_save_profile() {
 		// DEBUG: Log all POST data
-		error_log('URE DEBUG: handle_save_profile called');
-		error_log('URE DEBUG: POST data: ' . print_r($_POST, true));
 		
 		$profile_name = isset( $_POST['ure_new_profile_name'] ) ? sanitize_text_field( $_POST['ure_new_profile_name'] ) : '';
 
@@ -1388,7 +1371,6 @@ class URE_Admin {
 			'scope'          => isset( $_POST['ure_scope'] ) ? sanitize_key( $_POST['ure_scope'] ) : 'post_content',
 		);
 		
-		error_log('URE DEBUG: Profile data to save: ' . print_r($profile_data, true));
 
 		if ( URE_Profiles::save( $profile_name, $profile_data ) ) {
 			// Store in transient so form shows what was just saved
@@ -1418,7 +1400,6 @@ class URE_Admin {
 	 * Handle load profile action.
 	 */
 	private function handle_load_profile() {
-		error_log('URE DEBUG: handle_load_profile called');
 		$profile_name = isset( $_POST['ure_profile_name'] ) ? sanitize_text_field( $_POST['ure_profile_name'] ) : '';
 
 		if ( empty( $profile_name ) ) {
@@ -1432,7 +1413,6 @@ class URE_Admin {
 		}
 
 		$profile = URE_Profiles::get( $profile_name );
-		error_log('URE DEBUG: Retrieved profile: ' . print_r($profile, true));
 
 		if ( null === $profile ) {
 			add_settings_error(
@@ -1446,7 +1426,6 @@ class URE_Admin {
 
 		// Store loaded profile data in transient for form pre-fill.
 		set_transient( 'ure_loaded_profile_' . get_current_user_id(), $profile, HOUR_IN_SECONDS );
-		error_log('URE DEBUG: Stored profile in transient for user ' . get_current_user_id());
 
 		add_settings_error(
 			'ure_messages',

@@ -113,9 +113,6 @@ class URE_Plugin {
 	 * Initialize WordPress hooks.
 	 */
 	private function init_hooks() {
-		// Load plugin textdomain for translations.
-		add_action( 'init', array( $this, 'load_textdomain' ) );
-
 		// Enqueue admin assets.
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_assets' ) );
 
@@ -127,17 +124,6 @@ class URE_Plugin {
 		 * @param URE_Plugin $plugin The main plugin instance.
 		 */
 		do_action( 'ure_plugin_loaded', $this );
-	}
-
-	/**
-	 * Load plugin textdomain for internationalization.
-	 */
-	public function load_textdomain() {
-		load_plugin_textdomain(
-			'universal-replace-engine',
-			false,
-			dirname( URE_PLUGIN_BASENAME ) . '/languages'
-		);
 	}
 
 	/**

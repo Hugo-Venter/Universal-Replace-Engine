@@ -646,7 +646,7 @@ class URE_Database_Manager {
 
 		// Get all options (in batches).
 		$page       = 0;
-		$batch_size = 1000;
+		$batch_size = URE_Settings::get( 'database_batch_size', 5000 );
 
 		do {
 			$offset = $page * $batch_size;

@@ -112,7 +112,7 @@ class URE_Search_Replace {
 		$preview_limit = apply_filters( 'ure_preview_limit', URE_Settings::get( 'max_preview_results', self::FREE_PREVIEW_LIMIT ) );
 
 		// Batch processing for preview to prevent memory exhaustion.
-		$batch_size = 100;
+		$batch_size = URE_Settings::get( 'content_batch_size', 100 );
 		$page = 1;
 
 		do {
@@ -507,7 +507,7 @@ class URE_Search_Replace {
 		wp_suspend_cache_addition( true );
 
 		// Batch processing to prevent memory exhaustion.
-		$batch_size = 100;
+		$batch_size = URE_Settings::get( 'content_batch_size', 100 );
 		$page = 1;
 		$total_processed = 0;
 
@@ -1066,5 +1066,133 @@ class URE_Search_Replace {
 			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
 			error_log( 'URE: Elementor cache clear failed - ' . $e->getMessage() );
 		}
+	}
+
+	/**
+	 * Preview a single batch of posts (for AJAX).
+	 *
+	 * @param string $search        Search term.
+	 * @param string $replace       Replace term.
+	 * @param array  $post_types    Post types.
+	 * @param bool   $case_sensitive Case sensitive.
+	 * @param bool   $regex_mode    Regex mode.
+	 * @param int    $batch_page    Batch page number (1-based).
+	 * @param int    $batch_size    Posts per batch.
+	 * @return array Batch results with pagination info.
+	 */
+	public function preview_batch( $search, $replace, $post_types, $case_sensitive, $regex_mode, $batch_page = 1, $batch_size = 100 ) {
+		$args = array(
+			'post_type'      => $post_types,
+			'posts_per_page' => $batch_size,
+			'paged'          => $batch_page,
+			'post_status'    => 'any',
+			'fields'         => 'ids',
+		);
+
+		$query = new WP_Query( $args );
+		$matches = array();
+		$scope = 'post_content'; // For now, AJAX only supports post_content.
+
+		if ( $query->have_posts() ) {
+			foreach ( $query->posts as $post_id ) {
+				$post = get_post( $post_id );
+				if ( ! $post ) {
+					continue;
+				}
+
+				$content = $post->post_content;
+				$found_matches = $this->find_matches_in_content( $content, $search, $case_sensitive, $regex_mode );
+
+				foreach ( $found_matches as $match ) {
+					$matches[] = array(
+						'post_id'    => $post_id,
+						'post_title' => $post->post_title,
+						'post_type'  => $post->post_type,
+						'match_text' => $match['text'],
+					);
+				}
+			}
+		}
+
+		wp_reset_postdata();
+
+		return array(
+			'matches'        => $matches,
+			'current_batch'  => $batch_page,
+			'total_pages'    => $query->max_num_pages,
+			'is_last_batch'  => $batch_page >= $query->max_num_pages,
+			'posts_in_batch' => count( $query->posts ),
+		);
+	}
+
+	/**
+	 * Apply replacements to a single batch of posts (for AJAX).
+	 *
+	 * @param string $search        Search term.
+	 * @param string $replace       Replace term.
+	 * @param array  $post_types    Post types.
+	 * @param bool   $case_sensitive Case sensitive.
+	 * @param bool   $regex_mode    Regex mode.
+	 * @param int    $batch_page    Batch page number (1-based).
+	 * @param int    $batch_size    Posts per batch.
+	 * @return array Batch results with pagination info.
+	 */
+	public function apply_batch( $search, $replace, $post_types, $case_sensitive, $regex_mode, $batch_page = 1, $batch_size = 100 ) {
+		global $wpdb;
+
+		$args = array(
+			'post_type'      => $post_types,
+			'posts_per_page' => $batch_size,
+			'paged'          => $batch_page,
+			'post_status'    => 'any',
+		);
+
+		$query = new WP_Query( $args );
+		$updates = 0;
+		$scope = 'post_content'; // For now, AJAX only supports post_content.
+
+		if ( $query->have_posts() ) {
+			while ( $query->have_posts() ) {
+				$query->the_post();
+				$post = get_post();
+
+				$original_content = $post->post_content;
+				$new_content = $this->replace_in_content( $original_content, $search, $replace, $case_sensitive, $regex_mode );
+
+				if ( $original_content !== $new_content ) {
+					wp_update_post(
+						array(
+							'ID'           => $post->ID,
+							'post_content' => $new_content,
+						)
+					);
+					$updates++;
+				}
+			}
+		}
+
+		wp_reset_postdata();
+
+		// Get cumulative total from transient.
+		$transient_key = 'ure_batch_total_' . get_current_user_id();
+		$total_updates = (int) get_transient( $transient_key );
+		$total_updates += $updates;
+		set_transient( $transient_key, $total_updates, HOUR_IN_SECONDS );
+
+		$is_last = $batch_page >= $query->max_num_pages;
+
+		// Clear transient on last batch.
+		if ( $is_last ) {
+			delete_transient( $transient_key );
+		}
+
+		return array(
+			'updates'        => $updates,
+			'total_updates'  => $total_updates,
+			'current_batch'  => $batch_page,
+			'total_pages'    => $query->max_num_pages,
+			'is_last_batch'  => $is_last,
+			'posts_in_batch' => $query->post_count,
+		);
 	}
 }
